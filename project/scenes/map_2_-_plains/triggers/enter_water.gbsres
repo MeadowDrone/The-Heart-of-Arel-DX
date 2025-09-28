@@ -1,0 +1,34 @@
+{
+  "_resourceType": "trigger",
+  "id": "dba8e6b8-fa52-485c-a36a-a16e2e39df04",
+  "_index": 14,
+  "symbol": "trigger_57",
+  "prefabId": "",
+  "name": "Enter Water",
+  "x": 46,
+  "y": 69,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "In Water"
+      },
+      "id": "6d2fedf1-96b2-4cab-b3e3-54e60470c9a6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "8b4d0cbd-0263-482a-8dd5-8395a658cd04"
+    }
+  ],
+  "leaveScript": []
+}

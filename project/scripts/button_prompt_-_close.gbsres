@@ -1,0 +1,57 @@
+{
+  "_resourceType": "script",
+  "id": "021cc487-b39e-4a55-9a7c-a7cd72469007",
+  "name": "Button Prompt - Close",
+  "symbol": "script_39",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Prompt"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Prompt Opening 2"
+      },
+      "id": "1a7a3afc-355f-4856-81ad-cd78ff38128c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 4,
+        "units": "frames"
+      },
+      "id": "f922142b-9e8e-43d0-848a-628308cb0b66"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Prompt Opening 1"
+      },
+      "id": "bce55f1e-5778-473e-8115-cf75a844a1b0"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 4,
+        "units": "frames"
+      },
+      "id": "f5311c7c-bc79-42a0-b98c-71edeb2b151d"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "0"
+      },
+      "id": "d75d094e-2c27-4d01-bf33-6005b4d9bcc7"
+    }
+  ]
+}

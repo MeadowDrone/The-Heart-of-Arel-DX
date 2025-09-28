@@ -1,0 +1,76 @@
+{
+  "_resourceType": "trigger",
+  "id": "def791c4-0866-46c1-8b82-7eff762e7c29",
+  "_index": 7,
+  "symbol": "trigger_64",
+  "prefabId": "",
+  "name": "Map Lore 3-3",
+  "x": 16,
+  "y": 78,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "166",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "166"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "166",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "68a3253f-650c-45ea-8b81-a1ca718b8f9f"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27"
+            },
+            "id": "e506662c-50fe-45a4-ba33-43cfa0c9bdc7"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "610a1ba1-419e-45ec-bbdb-a20e90b2c94a",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 3
+            },
+            "id": "b3627774-3f5b-4cf7-8d0b-8be28e77b221"
+          }
+        ],
+        "false": []
+      },
+      "id": "d00d63e1-80ab-448e-a67d-1c21bf0c48be"
+    }
+  ],
+  "leaveScript": []
+}

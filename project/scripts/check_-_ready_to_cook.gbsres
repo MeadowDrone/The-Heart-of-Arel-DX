@@ -1,0 +1,572 @@
+{
+  "_resourceType": "script",
+  "id": "40031eac-3e2f-4cda-8e63-32ab48f63147",
+  "name": "Check - Ready to Cook",
+  "symbol": "script_64",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": "29",
+        "__collapse": false
+      },
+      "id": "41ccd5ba-d44f-4b55-9a54-0d1de055b775"
+    },
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "vectorX": "28",
+        "vectorY": "27",
+        "__collapse": false
+      },
+      "id": "8e8738e8-440c-4259-b318-67556e1649bc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "9eac33aa-9855-46ea-898b-eb377c6f1459"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "V0",
+        "expression": "$18$%5"
+      },
+      "id": "5680dc06-5226-432d-9b60-9c3e0cdb0640"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_EMOTE",
+      "args": {
+        "palette": "20ef6a41-5a12-4be6-a38e-1a4e01313db0"
+      },
+      "id": "e400c038-f613-4e4b-87b9-a64b81c02065"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "V0",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 0,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "20c79b0b-2b66-4c87-ae93-036381295bb1"
+            },
+            "id": "ee11d74b-e8d4-4eb4-8da2-199c815eb473"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "36ebe720-e1e0-4fda-b82c-a9087b60535b"
+            },
+            "id": "4cf42f0a-c6d8-4a34-8e1a-451acddf2f39"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "1df19c81-bcff-44e7-a37f-b1d6eba200fa"
+            },
+            "id": "3d6b0d9e-98cf-436c-b192-f8cbff0ae3e1"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "23495cda-b36a-4706-a53d-2bd5f4a30184"
+            },
+            "id": "e776d21d-7a08-4729-bd10-82aa903b35e1"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "928f3e23-d87e-464a-91ac-de3531987aef"
+            },
+            "id": "34d696f7-42bc-4c56-9510-ea4180df5796"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "30cc0378-c856-4608-91f5-b115b94627c7"
+            },
+            "id": "9131732d-4822-4a7b-a22d-83c2df6a3bf2"
+          }
+        ],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "d1b5f329-e014-4112-b531-b8c53ab62e63"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "e39f4279-b659-4e42-884f-530c16c9701a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "18",
+        "operator": "==",
+        "comparator": 5,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "18"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 5
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Idle"
+            },
+            "id": "0abfd9dd-3ec4-4160-8ab4-bc3da05f944a"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "so hungry...",
+                "soooo hungry..",
+                "..:("
+              ],
+              "portraitType": "blush"
+            },
+            "id": "a438aa7f-d41b-4488-9b63-1d2793f6cb86"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "If I don't get to eat soon I'm\ngonna start nibbling on one of\nyour arms."
+              ],
+              "portraitType": "angry"
+            },
+            "id": "7f2f126b-1cc0-425e-99d5-64eb4531eafa"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "You do that to us anyway!"
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "73075c6e-1df0-4ae6-a487-3e40324c72df"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "It's OK, we've gathered just\nabout enough food to cook.\nShall we?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "285ec02e-2c8c-4561-b349-98d5f4cba33a"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "bfaa0011-6224-44e8-bc2d-627b1cce2a88",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "d2c27427-6efc-4d08-9a96-08092d225de5"
+          }
+        ],
+        "false": []
+      },
+      "id": "f7bfbc2f-ac08-4b55-b5c1-682d0e76d7e9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "18",
+        "operator": "==",
+        "comparator": 10,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "18"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 10
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Idle"
+            },
+            "id": "c0faf42a-e872-4a21-9998-e2eccab6a528"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "OK, I actually have a ton\nof ingredients here. How about\nwe sit down here?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "5a26251a-b57c-4d4f-8816-2498807b77b2"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "You know me, I will eat\nliterally anywhere."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "3bf8b250-e7b8-4204-b79f-528f858dfce8"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "b0e11568-b6ee-487c-9f88-cee50723dc07",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "64492d95-26ab-4f88-a9f2-17132ed5e076"
+          }
+        ],
+        "false": []
+      },
+      "id": "39ac5cc0-98f9-4cef-8629-1d620838ccf8"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "18",
+        "operator": "==",
+        "comparator": 15,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "18"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 15
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Idle"
+            },
+            "id": "cc77acfc-c537-4c4c-be3d-33473b82c897"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "You know what? I'm in the mood\ncook."
+              ],
+              "portraitType": "smile"
+            },
+            "id": "78f9f2da-326d-48c4-9028-d1537ef96c57"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Hell yeah you are!"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "84ea6317-0352-48d6-b7bd-3a823557f886"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "13f9ebc0-d191-4f22-824a-1985528385d6",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "2168bd98-b56a-4aeb-9078-b5f0ae6cba8a"
+          }
+        ],
+        "false": []
+      },
+      "id": "9ca5514f-f6d6-4211-83da-4a01592dc88e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "18",
+        "operator": "==",
+        "comparator": 20,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "18"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 20
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Idle"
+            },
+            "id": "133a457a-3648-4cd2-9aff-421439fe89fe"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Well, I have another full bag\nof good quality ingredients."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "6cc7251e-7921-4729-8719-1b2d7d7441c3"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "i feel like weve picked clean\nthis whole land"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "e70315eb-916e-408f-bd3f-ec4fe3acac9f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Pretty much. We'll be ready\nfor anything after this."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "b755a4af-34ca-47b2-b16a-f780964d710e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Including the source..."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "ff98ff72-86ea-45b5-b984-7c7f3b95d970"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "So, one final meal, then."
+              ],
+              "portraitType": "expressionless"
+            },
+            "id": "1d9b638b-ded5-4330-9792-be0e0f18c45e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Are you feeling ready?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "1159e65d-8c31-4c78-a086-a41d5366cac1"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "YES!"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "549dfcd0-ab77-4c00-bcf4-ab55cdb1525e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "YEAH!"
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "a5c2c59d-26be-49fe-afb1-a9e6382ec69c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "oh my gosh yes"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "60a95c31-5078-46a0-94f7-067a97ecae36"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "ed32be3e-3454-4b04-b2e6-8450afa6056b",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "c36abc2b-336b-447c-be92-b39f6cb9204c"
+          }
+        ],
+        "false": []
+      },
+      "id": "a0f4ad6e-fada-496a-9ce5-370a0b784d21"
+    }
+  ]
+}

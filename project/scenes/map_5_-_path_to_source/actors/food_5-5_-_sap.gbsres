@@ -1,0 +1,124 @@
+{
+  "_resourceType": "actor",
+  "id": "c48f332c-0eba-4ea5-b2ed-62f1c17fda51",
+  "_index": 3,
+  "symbol": "actor_209",
+  "prefabId": "",
+  "name": "Food 5-5 - Sap",
+  "x": 29,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "218"
+      },
+      "id": "f2e401fb-56dc-47ee-a17e-07d2ce580bfe"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "182",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "e1fe3b7e-3972-48d5-bbe6-36142680ffee"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "091ae8e5-5cc0-4455-8b4a-78a6aa9a3172"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "1c7db253-a827-432f-bb52-a70a47daea06"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "This tree looks a bit\nbare."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "33e5774d-1c47-4357-ab97-254925966084"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I appreciate it. Reminds me\nof me."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "84bc027f-0518-421a-9da9-8b6665f51bcc"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Good sources of food are\nscarce here. But this tree\nhas a sweet, salty sap that",
+          "goes great in stews."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "a165e909-805b-4318-85de-0a8e653112f0"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "33639ef2-2c62-4107-9f8b-6b99427a1c2e"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "182",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "182"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "eea055d9-8662-4364-9ae2-c1b256a8fa0e"
+          }
+        ],
+        "false": []
+      },
+      "id": "58f4eb41-18dc-42b9-9838-5e1034649fe4"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

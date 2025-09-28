@@ -1,0 +1,53 @@
+{
+  "_resourceType": "trigger",
+  "id": "52cae9eb-55dd-4b01-bd09-debd0b200e28",
+  "_index": 16,
+  "symbol": "trigger_73",
+  "prefabId": "",
+  "name": "Enter Swamp Path",
+  "x": 34,
+  "y": 117,
+  "width": 3,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "In Water"
+      },
+      "id": "fe86c1aa-fa55-4a90-8384-98002f6a9437"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "105f9549-8cb5-46bb-8544-af5c27c404d8"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "In Water"
+      },
+      "id": "9a6a60ac-9d7b-420c-8da3-76a4fa51d038"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "0811a110-255c-48ae-ab7e-b3b56a54e217"
+    }
+  ]
+}

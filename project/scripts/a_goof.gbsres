@@ -1,0 +1,484 @@
+{
+  "_resourceType": "script",
+  "id": "0db7430d-4bc0-4cbc-9687-a3b2c49551ef",
+  "name": "A goof",
+  "symbol": "script_34",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Um... what are you up to over\nthere?"
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__collapse": false
+      },
+      "id": "5e94c0f8-6b97-4ee0-bacd-e5b81acc5396"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "chostin"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__collapse": false
+      },
+      "id": "95773fea-c12a-49a0-b12d-0798b00e577a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_ANGRY",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Uh huh. You're \"chosting\"."
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ìÔÕ\nüíå\nóýõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "205fb87a-cb34-4a6e-912e-2721860a10de"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Yeah! It's something you can\ndo on cohost."
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "7ec66719-9f37-44d0-bdc3-55377a89f5ed"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Many people actually prefer to\ncall it co-posting, but after\na certain point I suppose you",
+          "can't argue with the will of\nthe community."
+        ],
+        "nameTag": "ÜÝÞ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÙÚÛ\néêë\nùúû",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "6d860b62-2624-4031-83e6-c79461e0aefc"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "So like... I still don't\nreally get what you're actually\ndoing though."
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "0d916f0d-5ae6-4942-9ed5-1dd25cc39ae3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "you write stuff!"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "084b4664-c8c2-46d5-93d5-ec68664a46c3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Like anything?"
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__collapse": false
+      },
+      "id": "ab9301b4-4949-42f7-8403-ed346b2d08d2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "yeah. anything"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "d370b2d9-6720-45ef-82cc-c8955b4a1c3f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "The other day I wrote a 6,000\nword essay containing new\ntheories of ancient alchemy."
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "5594895b-754b-4a88-a1c4-c747facd4aa9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_SHOCK",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "ohhh"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\nîËÌ\nöÍø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "8d3f36b9-3f29-4b1b-b18b-e3b25dbc3e50"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "i remember seeing that one but\nforgot it was you!"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__collapse": false
+      },
+      "id": "b8abcde2-9132-4b6c-ad2f-9095b3031e21"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_RELAX",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "It's adorable that you thought\nanyone else could write that."
+        ],
+        "nameTag": "ÜÝÞ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÎÏÛ\néêë\nùßû",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__collapse": false
+      },
+      "id": "b0bd3c88-81fe-4b45-a136-735141dc7a55"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "It had diagrams and references\nand everything! I was pretty\nproud of it, to be honest.",
+          "You don't usually talk about\nthis kind of thing on there,\nbut just between us, the post",
+          "got five likes and two shares!"
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "ae982097-2997-4fcd-a30a-56108b500ffe"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_SMILE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Not that it matters how many\nlikes it got. Your amazing mind\nspeaks for itself, Eionn."
+        ],
+        "nameTag": "ÜÝÞ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÙÚÛ\néêë\nùßû",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "9db15675-a841-4a44-bdd6-9f8c26b161c2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_BLUSH",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Oh... umm... I mean it d-"
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "°Ñ±\n³´µ\nð¶ò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "5ee03daf-5ea3-439c-961f-3bea6d05bbe8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Just say thank you, ya goof."
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "52364d1a-97d9-476a-8fa7-c6e3b3e84ea3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Um, yeah, thank you!"
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "0d83ed9f-85a5-4ad8-8e07-8e38de3d4361"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Oh wow. This place is full of\npics of naked monster girls!\nWhy didn't you lead with that?!"
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "7bbb9d6f-2330-469e-8bc9-7a44c992a545"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "im glad youre happy with it my\nstarlight £"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "1584d989-1b33-4031-9a8e-4c4b29fed99d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "What did you post anyway,\nHarthe?"
+        ],
+        "nameTag": "ÜÝÞ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÙÚÛ\néêë\nùúû",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "9a320848-7a33-4964-83b9-ae9efe95ce63"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "idk ive already forgotten",
+          "let me check",
+          "okay yeah i just wrote",
+          "\"girls\"",
+          "oh looks like it did severals"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "d7c68282-b753-49df-99e6-83ddc634a7e4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "!F:277dca36-e8e8-4b7a-aaf2-9f3849f3589b!That did?! Already?!"
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "!F:277dca36-e8e8-4b7a-aaf2-9f3849f3589b!あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "8b6fe538-c028-4b4e-a365-de7b35013994"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Right. It \"did severals\"."
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "5c313853-4254-47bf-808b-7ffd4cdb683e"
+    }
+  ]
+}

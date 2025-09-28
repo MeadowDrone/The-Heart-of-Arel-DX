@@ -1,0 +1,81 @@
+{
+  "_resourceType": "trigger",
+  "id": "8d1163b7-51b1-42c4-9a5e-d966f0ac3748",
+  "_index": 3,
+  "symbol": "trigger_60",
+  "prefabId": "",
+  "name": "Enter Campfire Area",
+  "x": 106,
+  "y": 11,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "167",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "167"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "7e53207d-4198-4697-ad2c-ee3d51c2aa84"
+            },
+            "id": "63af93cc-6603-439b-8f77-cd101ec31525"
+          }
+        ],
+        "false": []
+      },
+      "id": "9f36012d-53e7-4e05-bf86-6a114f0a00b9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "167",
+        "__collapseElse": false,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "167"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "173",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "54dbf5bc-cd34-49dc-abaa-c81a17ca13b5"
+          },
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "0e4bba6f-4358-40f1-bb87-e8185947ee34"
+          }
+        ],
+        "false": []
+      },
+      "id": "8b7424c6-b406-4574-ae46-b36dafd4c9c3"
+    }
+  ],
+  "leaveScript": []
+}

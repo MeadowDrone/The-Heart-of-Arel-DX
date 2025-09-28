@@ -1,0 +1,173 @@
+{
+  "_resourceType": "actor",
+  "id": "93ace879-32cf-4b6b-85af-1939dad9e5e4",
+  "_index": 1,
+  "symbol": "actor_14",
+  "prefabId": "",
+  "name": "Food 1-2 Deiray Vines",
+  "x": 10,
+  "y": 17,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "210"
+      },
+      "id": "7d7939e4-a65c-45b5-b079-11fbda202c65"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "3",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "ee293951-e3a4-4bc4-bce5-69aad0ec192b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "6bfca030-b4bf-4946-bd2f-577ff3100465"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "58d414bf-4747-42db-a77e-ff3fe647a125"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I didn't know there were\ndeiray vines here. Let me cut\nthem down real quick."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "3a54d829-f274-4271-ba02-aa9d05a4dd7c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Wait. You can eat these\nthings?"
+        ],
+        "portraitType": "angry"
+      },
+      "id": "ed4fba84-95a8-4602-991c-e8152d2ec56a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "People usually use these for\nrope, but if you cut it to",
+          "its centre, you can extract a\nsweet, fatty oil from it."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "1629236b-4fcc-4ee8-b3a4-1f9fc16ad945"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "oohh"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "260d6d0c-91ed-4973-a3a8-691896f75440"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "that sounds great",
+          "lets get more!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "5016c634-e8fb-4799-b18d-6bc8e0fbdf64"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "005eea34-bb0f-459c-aa6b-06e727c9a91d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Rope, huh..."
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "5415df4b-3b38-46ee-86e2-074f4908bfa2"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "bc1acbfc-d625-4f51-a9df-11677ac53263"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "3",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "3"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "7d801d25-9b3e-4e27-a8ec-b2fa852c1a1d"
+          }
+        ],
+        "false": []
+      },
+      "id": "c19df32c-3bd6-419f-9583-51961af0c275"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,160 @@
+{
+  "_resourceType": "scene",
+  "id": "3c443f9c-37e1-4629-bae2-0eda8d6e3668",
+  "_index": 28,
+  "type": "TOPDOWN",
+  "name": "Cooking 2B Cutscene",
+  "symbol": "scene_16",
+  "labelColor": "red",
+  "x": 1040,
+  "y": 1720,
+  "width": 80,
+  "height": 18,
+  "backgroundId": "41e02d97-88eb-4a31-a700-efa0125b1b15",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "60c36bbc-0f91-4c83-a16f-a44b35e17fec",
+    "b55d841d-cab9-4ef2-b879-b446acfc99ce",
+    "5bd03c58-55c3-4920-ac47-c3fc3398dd09",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "b508b487-ac76-456f-93ba-143baf0bbc78",
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "1d5e87f9-41d5-4e41-ab99-b034ad8da07a"
+  ],
+  "autoFadeSpeed": null,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1292b9c-0797-4b9a-9c40-4a1d143dbd3a"
+      },
+      "id": "1e5ad081-e3a6-4264-bc71-ea65e6ef22a4"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "08f11536-8807-4d8a-a07d-8640fa14615a"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "9e9108b0-ab6b-427e-b603-525d4789d7b8"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 4
+      },
+      "id": "c6cddd44-2b83-4978-874c-651ec1aaa8b5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "this tastes incredible??\nagain? ??",
+          "how do you do it??"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "606ad26d-f621-42e8-a123-546c6ae68bde"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I have my wonderful girlfriends\nto give me feedback. Even if\npeople don't say anything,",
+          "I can tell what they're\nthinking. I just iterate from\nthere."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "a4aa7f64-553e-436d-9b12-998b9e4694f2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "your meals always feel so",
+          "personal.",
+          "i never really had\nthis growing up so i feel so",
+          "lucky to get to experience\nthis now"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "311816ff-82d7-404e-ad6c-5e50ee86b695"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Oh..."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "4715ebeb-e26f-449a-a88b-97cab9dbf80d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "You're the bubbliest,\nloveliest, warmest girl I've\never known, Harthe.",
+          "You deserve the best."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "24e6f8ad-fb64-4098-aeed-29ab5e661c65"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Do you not take after your\nfamily, then?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "41ec3bcc-272f-4c7c-ba0e-369557ddf516"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "i..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "d3fbc403-1840-4a26-835f-f7aaa47e2135"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4f93a6a2-8222-443e-bdf6-83aeef1f1606",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "9ce582cd-2856-457b-809d-0fd1dfe557cd"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005a0+"
+}

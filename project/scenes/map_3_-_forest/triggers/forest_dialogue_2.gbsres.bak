@@ -1,0 +1,108 @@
+{
+  "_resourceType": "trigger",
+  "id": "dfe53edf-aca9-4cc6-b92f-f6e1e4e70499",
+  "_index": 8,
+  "symbol": "trigger_66",
+  "prefabId": "",
+  "name": "Forest Dialogue 2",
+  "x": 90,
+  "y": 48,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "176",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "176"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "216"
+            },
+            "id": "09ace978-50ce-4054-bd61-1103979ad27d"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "88150b62-9941-4679-94f4-ff73d339a59f"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Shooed away an unkindness of crows!"
+              ],
+              "avatarId": ""
+            },
+            "id": "b29e6b29-e507-4ce4-a88a-45c754580acd"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "13567f9a-08c7-4e51-abd5-a9f4931bcb52"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "they looked sneaky",
+                "like they're plotting\nsomething"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "9c783d56-0617-46d3-a490-57395b5fdf7f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "176",
+              "__collapse": false,
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "e04d7459-9d25-4bd4-8a38-206b31f73dc3"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "65e22da9-589f-4633-b5d0-5608155a1cd8"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "7a80a8c3-8dac-427f-9577-905289a4a462"
+          }
+        ],
+        "false": []
+      },
+      "id": "bb49dacb-b1e8-4d4c-a32f-f79766b52cfb"
+    }
+  ],
+  "leaveScript": []
+}

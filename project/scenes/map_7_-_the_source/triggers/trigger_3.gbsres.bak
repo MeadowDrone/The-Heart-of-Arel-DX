@@ -1,0 +1,115 @@
+{
+  "_resourceType": "trigger",
+  "id": "7e061970-8f07-413d-8583-5f17d385b03b",
+  "_index": 3,
+  "symbol": "trigger_82",
+  "prefabId": "",
+  "name": "",
+  "x": 35,
+  "y": 142,
+  "width": 14,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 30
+      },
+      "id": "7a72c0c6-0fd3-4ea8-999e-7c5441805280"
+    },
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "L0",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 4
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Success"
+            },
+            "id": "4250789c-efaf-4780-9a33-5f20bffe802e"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.2,
+              "frames": 30,
+              "shakeDirection": "horizontal",
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "236c5643-4734-4c9a-b8aa-6f30f58e9fa2"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.2,
+              "frames": 30,
+              "shakeDirection": "vertical",
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "735c3626-6c2b-4983-b606-2fa41a25497f"
+          }
+        ]
+      },
+      "id": "5bb632d1-764a-4de9-89ad-d3a1d92de6dd"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "a0e49b8a-3b11-4a66-ba71-29abdfde0140"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "It's getting more intense.\nLet's be out of here quick."
+        ],
+        "nameTag": "ÜÝÞ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÙÚÛ\néêë\nùúû",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "68f50bcc-8938-4a40-bdbe-7a26ea5c0679"
+    }
+  ],
+  "leaveScript": []
+}

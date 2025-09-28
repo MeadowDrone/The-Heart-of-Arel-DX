@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "005909aa-95b8-422b-8b43-a56d7f1833b0",
+  "_index": 1,
+  "symbol": "actor_138",
+  "prefabId": "",
+  "name": "Anon2",
+  "x": 14,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0a860628-2ea4-42a2-a490-c88cf0f93d3b",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "af6e4c92-4b20-422f-8281-1065c8f8f61c"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

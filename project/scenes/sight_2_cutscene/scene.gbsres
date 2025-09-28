@@ -1,0 +1,204 @@
+{
+  "_resourceType": "scene",
+  "id": "da02b3f1-468a-4a51-8324-85bbcc7e5fad",
+  "_index": 42,
+  "type": "TOPDOWN",
+  "name": "Sight 2 Cutscene",
+  "symbol": "scene_26",
+  "labelColor": "orange",
+  "x": 2168,
+  "y": 2736,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "70e088e1-1299-4e0b-8ef9-aeedda2b12d8",
+  "tilesetId": "",
+  "paletteIds": [
+    "f9781a84-7476-4ead-85da-d11fb3bda6cb",
+    "a325b3db-653e-4b28-a9d0-68d953430d82",
+    "c67e6087-96ac-4f9f-baad-0544401ed375",
+    "ff5fb13a-7200-4e93-b4d3-9f09153704d5"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "... there!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "0a59fc10-3c65-4b68-bbd6-372e7a201d78"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "94810ac2-fa1f-487f-aad1-89dd234632ea",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "691af33b-e83c-44e5-932b-de047b3841e6"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "94810ac2-fa1f-487f-aad1-89dd234632ea",
+        "spriteStateId": "In Water Pulling",
+        "__collapse": false
+      },
+      "id": "157423f5-0619-4a66-a855-cee7a70d1a3a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "94810ac2-fa1f-487f-aad1-89dd234632ea",
+        "speed": 127,
+        "__collapse": false
+      },
+      "id": "01875a44-6f26-4709-a4c4-59b4657b33e2"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "597516a5-ee79-4c3c-acd9-22eec61250aa",
+        "$actor[0]$": "6b2eb90b-e244-4b36-9519-f78dae7a1858"
+      },
+      "id": "18efbce6-5cee-4bfb-80c8-da390dcdc956"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 22
+      },
+      "id": "c0c6bc92-0854-44b7-9fef-45d73fe1da7a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "94810ac2-fa1f-487f-aad1-89dd234632ea",
+        "spriteStateId": "Success",
+        "__collapse": false
+      },
+      "id": "29dc83a8-6db9-41f6-85f3-4a21852ef9c5"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "94810ac2-fa1f-487f-aad1-89dd234632ea",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "f28655ef-bf8e-4e35-810e-cece68c6484d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "94810ac2-fa1f-487f-aad1-89dd234632ea",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": false
+      },
+      "id": "17a64fc8-81f6-43e4-9000-cf55935c7335"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Time for that fancy sheet\nof yours."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "d82a89f5-d69f-45ee-86ce-1c222df97e59"
+    },
+    {
+      "command": "EVENT_SET_FLAGS",
+      "args": {
+        "variable": "139",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": true,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false,
+        "__collapse": false
+      },
+      "id": "7cc41a73-4be5-4f95-bf98-33df85a69eb9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "94810ac2-fa1f-487f-aad1-89dd234632ea",
+        "spriteStateId": "Read Paper"
+      },
+      "id": "967bd1d4-d1b2-44d7-807f-e195de3872f4"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "6ee8bc72-a7bf-4307-a8f6-c7fcfa927bc8"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "df7f6a70-d9f5-404d-ab5b-221558f66643",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "5a6f562b-038a-48f4-ad8c-377d31b34cfa"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

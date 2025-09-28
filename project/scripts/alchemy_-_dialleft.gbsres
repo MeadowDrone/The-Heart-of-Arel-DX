@@ -1,0 +1,48 @@
+{
+  "_resourceType": "script",
+  "id": "312d8b1e-2a03-4468-b490-3d060a8dc0be",
+  "name": "Alchemy - DialLeft",
+  "symbol": "script_10",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "4": {
+      "id": "4",
+      "name": "Knob Left"
+    },
+    "5": {
+      "id": "5",
+      "name": "Knob Middle"
+    },
+    "6": {
+      "id": "6",
+      "name": "Knob Right"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "4",
+        "spriteStateId": "Knob Rolling Left"
+      },
+      "id": "1ea96d84-a864-44a5-944b-483c0b10631d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "5",
+        "spriteStateId": "Knob Rolling Left"
+      },
+      "id": "6c5da0d8-6600-492f-a17e-8edc464fd084"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "6",
+        "spriteStateId": "Knob Rolling Left"
+      },
+      "id": "5b455cb4-3863-4c3f-b86a-9c9e4de9e4f6"
+    }
+  ]
+}

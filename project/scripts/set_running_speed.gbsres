@@ -1,0 +1,47 @@
+{
+  "_resourceType": "script",
+  "id": "9f3256ab-6ea8-4e2b-b1ba-f6664d7e3cd4",
+  "name": "Set Running Speed",
+  "symbol": "script_79",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "13",
+        "__collapseElse": false,
+        "__disableElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "13"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1.2
+            },
+            "id": "4649aeef-c51c-413c-a308-b17fdefbb66a"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            },
+            "id": "74b1b366-7a36-42d8-86fc-0468bf32d9f9"
+          }
+        ]
+      },
+      "id": "1cc6880d-a620-4af3-816f-23b67f5cbfda"
+    }
+  ]
+}

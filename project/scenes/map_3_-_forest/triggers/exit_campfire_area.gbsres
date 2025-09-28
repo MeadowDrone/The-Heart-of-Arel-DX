@@ -1,0 +1,35 @@
+{
+  "_resourceType": "trigger",
+  "id": "262524cb-e325-47fc-aa05-152a9adf8773",
+  "_index": 4,
+  "symbol": "trigger_61",
+  "prefabId": "",
+  "name": "Exit Campfire Area",
+  "x": 103,
+  "y": 11,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "173",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": false
+      },
+      "id": "ca190d16-e413-4b4a-a6b2-0d3a1c0accf0"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "a78a16a7-1455-429d-ba8a-e4e194ebf06a"
+      },
+      "id": "e065a8de-80e4-48c5-b13f-fb30cd762608"
+    }
+  ],
+  "leaveScript": []
+}

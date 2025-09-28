@@ -1,0 +1,476 @@
+{
+  "_resourceType": "script",
+  "id": "c3d8edbd-1ede-4ca1-a3a3-ca579ee6745c",
+  "name": "Dialogue-SingingScenePlains",
+  "symbol": "script_44",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Aoba"
+    },
+    "1": {
+      "id": "1",
+      "name": "Harthe"
+    },
+    "2": {
+      "id": "2",
+      "name": "Eionn"
+    },
+    "3": {
+      "id": "3",
+      "name": "Eryr"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "cb27a4a8-757e-4c6c-aaa1-479875397c91"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "It's been a while."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "f3cc82a7-0d7d-49a9-b4be-74bb47a33099"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "1",
+        "x": {
+          "type": "number",
+          "value": 8
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "da9ab56e-2a21-45a9-8523-544ece278c92"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "25b042e8-a2a9-4905-ab7d-6c6f920a058a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": false
+      },
+      "id": "5122a997-3ca4-45a5-89ac-045c41b9b476"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "are you okay, my lovely?"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "27ee061d-06d6-4ac3-ba02-b4f772328bf7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "aa946789-179b-4d81-bca8-60ba5199fcc4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Fine. This place just reminds\nme of a girl I used to date.\nThe smell takes me back so",
+          "vividly... I remember when I\nstarted picking the herbs and\nharvesting all kinds of",
+          "different foods. And I'd be so\nexcited to cook all kinds of\nnew combinations for her."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "e1e3a937-4eac-45ae-89b5-f90ef15dbf20"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "It was just a teenage first\nlove. It's not like I have\nthe fondest memories of it,",
+          "but I still remember the smile\non her face..."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "a5712484-6938-4b98-b04b-9b8d2109e1f4"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "number",
+          "value": 14
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "eae06917-559e-46c5-8fef-42f90061e028"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "cf0592a4-36b8-4007-9e8f-91a6153fbc6d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "022028cb-bd73-4fa2-9d28-bf926957f0d9"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "c79fa749-8ee0-4593-b998-d5fa0c8722a5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I think that was the moment I\nrealised how much I love to\ncook. And now..."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "87c5ca6e-eb71-46f7-a996-6b9d27825eb7"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "fb0dd86c-6b48-4a14-bb6d-40138e7fee2c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": false
+      },
+      "id": "21c15947-52fe-4b95-9647-734621a56a5e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I love it even more."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "e9d6f752-3c49-42b2-995e-059c9abf6dd1"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "d5236aff-be78-4e3b-98bf-ab11ebd00838"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": false
+      },
+      "id": "7b6ab88a-8ae3-45f6-87c2-b9e0cc30f984"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "d498bb35-7fbd-4feb-b4ef-04e5e1fe6983"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "7f6e91ba-9925-41c6-8983-82adfded855c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "ef875891-f7e3-4e45-b166-e5480776dec6"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": false
+      },
+      "id": "f0c908a1-0e71-485a-af41-cdc686b17e9d"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "289f0922-fcee-42d7-b532-e332f95f8130"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": false
+      },
+      "id": "ff7fbd4a-0976-4112-95d3-0fc6a744577b"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "c6b1c05a-4835-42b9-9a69-600206abaa0d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": false
+      },
+      "id": "201818c2-fcf3-408c-97e1-d8fbb4ca6d40"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "edb2e748-0b22-426c-ae56-90478f4c29ae"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "7851a790-d01c-42d3-9fd4-5c0ff4bd7466"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "that's SO cute"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "d5171aad-55f3-4eec-872f-cbe8ce4cb766"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Mmm. I don't think we could\nmake the same meal now, that\nI made then, though. The",
+          "miasma has spread too far to\nallow the flora to grow."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "636936ff-8baf-40b0-9dc9-fc2c075ade8f"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "d7c7cffd-a117-4b77-8b74-3d15c81a1f44"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I remember her!"
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "026964f2-0722-4b9f-88e4-162f3413e2ba"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": false
+      },
+      "id": "fd82f3f7-5314-45f7-8a5b-1c7865611e1c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "a053983a-52a5-48cf-97c3-d5ee6629472d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Well, based on what we've\ngathered so far, we should be\nin for a good meal tonight."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "5b42bf40-0a94-4ee8-a48c-aca36f15cee6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Aw yeaaaah."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "57270520-f569-4bce-b6cb-8596c7a97064"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Oh boy, I can't wait to have a\nproper rest."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "9f2f57ed-0ce0-407f-976d-56911ff9d226"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "84b86a48-aa36-4bd6-b53d-5e8621c843f7"
+    }
+  ]
+}

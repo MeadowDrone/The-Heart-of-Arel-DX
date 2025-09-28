@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "20a5524b-64ca-4541-81f6-50310cba2389",
+  "name": "map_3_sing",
+  "symbol": "bg_map_2_sing_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "map_3_sing.png",
+  "tileColors": "001a+028+00c+028+00a+02c+008+02c+006+0210+004+0210+004+025+036+025+004+024+038+024+002+026+038+024+002+026+038+024+004+024+038+024+004+025+036+025+004+0210+004+0210+006+02c+008+02c+0018+",
+  "autoColor": false
+}

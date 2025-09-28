@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "458edc4a-30a2-43d2-aa86-000f6ac1f571",
+  "_index": 2,
+  "symbol": "actor_202",
+  "prefabId": "",
+  "name": "Sing Scene Aoba",
+  "x": 1,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "542b3299-862f-4232-bfb7-abcf13f289e2",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "19b2b69f-a9e3-439d-9ea5-9c5eec054df0"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

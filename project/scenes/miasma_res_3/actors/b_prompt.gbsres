@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "1dcf4b4b-3d44-4b3e-95e3-abb90798e1d9",
+  "_index": 4,
+  "symbol": "actor_62",
+  "prefabId": "",
+  "name": "B Prompt",
+  "x": 7,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a6ab82b9-a388-4f34-b9a0-344131798732",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "ea8f7e99-1d8b-4a64-8c56-acffacabee5e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

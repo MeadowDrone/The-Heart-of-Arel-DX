@@ -1,0 +1,97 @@
+{
+  "_resourceType": "trigger",
+  "id": "723049e7-047c-48af-8721-df14f3d85df0",
+  "_index": 1,
+  "symbol": "trigger_40",
+  "prefabId": "",
+  "name": "Forest Dialogue 1",
+  "x": 26,
+  "y": 97,
+  "width": 2,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "185",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "185"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "185",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "a4c86805-3c21-4e2b-99c9-3e4c2e9d7779"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Idle"
+            },
+            "id": "30589a7d-94b7-4074-914c-c6503663c918"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "spooks"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "9b030fd6-de3b-48b5-97a1-84f00e057704"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "It's not spooks. It's just a\nnice little woodland."
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "2b12d440-5ad2-486e-8164-c1c45130c34a"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "mmm i dunno",
+                "feelin kinda spooks"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "ce075f9c-b679-46ff-ab2e-6d893644b2e4"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "1e2b21cc-b67c-4e8c-b12b-3895578dfe8d"
+          }
+        ],
+        "false": []
+      },
+      "id": "543658a2-961b-485b-a447-18f8be2f1b1c"
+    }
+  ],
+  "leaveScript": []
+}

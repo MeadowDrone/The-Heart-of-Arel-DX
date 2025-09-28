@@ -1,0 +1,24 @@
+{
+  "_resourceType": "trigger",
+  "id": "e7c26ff7-8c76-470c-97e3-3f7e4f4185bf",
+  "_index": 21,
+  "symbol": "trigger_78",
+  "prefabId": "",
+  "name": "Climb Down Wall - End",
+  "x": 111,
+  "y": 15,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "147573fc-a112-4282-81ac-1b6b4ecf700e"
+    }
+  ],
+  "leaveScript": []
+}

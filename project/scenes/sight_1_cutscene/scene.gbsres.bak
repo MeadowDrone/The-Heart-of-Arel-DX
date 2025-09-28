@@ -1,0 +1,213 @@
+{
+  "_resourceType": "scene",
+  "id": "0bee0a8e-4a38-4172-a0a0-c0581cafb97c",
+  "_index": 23,
+  "type": "TOPDOWN",
+  "name": "Sight 1 Cutscene",
+  "symbol": "scene_27",
+  "labelColor": "orange",
+  "x": 1992,
+  "y": 2736,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "70e088e1-1299-4e0b-8ef9-aeedda2b12d8",
+  "tilesetId": "",
+  "paletteIds": [
+    "f9781a84-7476-4ead-85da-d11fb3bda6cb",
+    "c67e6087-96ac-4f9f-baad-0544401ed375",
+    "9bb238e9-10fc-44f1-8a43-76566c704b33"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I got that tingly feeling\nagain..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "0b4afb0a-d96e-41cc-8c83-ae82cd714f5e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Here!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "aeed731c-1df4-4771-916c-b1a94b1e86af"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "383889b7-9205-4a38-b7f6-111b0f203bd9",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "478d59d1-c926-4057-bcbb-7b95e1a65d60"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "383889b7-9205-4a38-b7f6-111b0f203bd9",
+        "spriteStateId": "In Water Pulling",
+        "__collapse": false
+      },
+      "id": "93525254-5c1e-4c14-9271-adc1641c99c9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "383889b7-9205-4a38-b7f6-111b0f203bd9",
+        "speed": 127,
+        "__collapse": false
+      },
+      "id": "d8b789a9-c6ed-4a7a-8794-08eb4838db29"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "597516a5-ee79-4c3c-acd9-22eec61250aa",
+        "$actor[0]$": "3b3dacb6-cbb8-46a1-8564-b59bb7898618"
+      },
+      "id": "e74a7e6d-b08c-4bab-9e87-d95a8bdd8e79"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 22
+      },
+      "id": "46176bd8-ec5f-4838-bde5-f95f617d7556"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "383889b7-9205-4a38-b7f6-111b0f203bd9",
+        "spriteStateId": "Success",
+        "__collapse": false
+      },
+      "id": "e1495fa7-8ee3-4139-81f8-07ea526cffb5"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "383889b7-9205-4a38-b7f6-111b0f203bd9",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "f4477f23-a1e8-4144-85fc-b6d0b4f962b7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "383889b7-9205-4a38-b7f6-111b0f203bd9",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": false
+      },
+      "id": "2e14ef2a-c29b-43be-9497-d86a593319fc"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Let's see where this goes."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "52946021-43af-439b-af80-41aea7ee2743"
+    },
+    {
+      "command": "EVENT_SET_FLAGS",
+      "args": {
+        "variable": "139",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": true,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false,
+        "__collapse": false
+      },
+      "id": "7aee7ece-f69d-4652-bca5-d06e73e4165f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "383889b7-9205-4a38-b7f6-111b0f203bd9",
+        "spriteStateId": "Read Paper"
+      },
+      "id": "958389ca-4e05-4dae-bec1-1c24a34bc067"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "ffcfc741-a6eb-4361-bd34-9ecddb823fc7"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "df7f6a70-d9f5-404d-ab5b-221558f66643",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "8e7534b6-e108-4d3d-ba25-a51da8127353"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

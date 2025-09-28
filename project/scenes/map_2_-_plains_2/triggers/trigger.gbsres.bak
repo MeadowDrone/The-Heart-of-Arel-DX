@@ -1,0 +1,221 @@
+{
+  "_resourceType": "trigger",
+  "id": "9dfc6524-ad2e-482f-abc6-4dd7ec73c8ab",
+  "name": "",
+  "prefabId": "",
+  "x": 51,
+  "y": 49,
+  "symbol": "trigger_71",
+  "prefabScriptOverrides": {},
+  "width": 7,
+  "height": 6,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "219",
+        "__collapseElse": true,
+        "__comment": false,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "219"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "219",
+              "__collapse": true,
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "81e59b74-05fb-426f-b95f-b3cae8ec17a2"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 55
+              },
+              "y": {
+                "type": "number",
+                "value": 52
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "cd125eb6-731a-40f9-93bf-3cb31f63c625"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              },
+              "__collapse": true
+            },
+            "id": "8618dc34-9c2c-4bcd-9380-bb814eeae979"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27",
+              "__collapse": true
+            },
+            "id": "e8926a33-9d5f-4ff1-96d8-bdb384a6562e"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              },
+              "__collapse": false
+            },
+            "id": "8ba04d18-cf43-4639-a493-f63ab5f98b6e"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "e8d9d17a-3d99-45a7-98a7-0eaa22f5a3ea",
+              "persist": false,
+              "__collapse": false
+            },
+            "id": "9d0d4241-dace-4da6-914a-29fc5e4d7507"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Hey, wait a minute. This...",
+                "This is...!"
+              ],
+              "portraitType": "shy"
+            },
+            "id": "2ec487f1-bbd9-41d9-bc62-ac2bd9fc85a8"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 189\nVM_REPLACE_TILE_XY     53, 51, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1\nVM_PUSH_CONST 190\nVM_REPLACE_TILE_XY     54, 51, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "40bc2469-8965-40ff-9a05-75a8da9e5602"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Success",
+              "__collapse": true
+            },
+            "id": "5f48d632-7043-41b6-a8e7-29b57fa36cde"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "a sheet of paper!!!"
+              ],
+              "portraitType": "shock"
+            },
+            "id": "6d4509ee-9115-4039-b8e0-db2ddde032e6"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 2,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "366a1e1e-3c0c-4332-a2fe-3a29a185d44b"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__collapse": true
+            },
+            "id": "628327cb-0d40-4e56-8eeb-332bfb71d7d8"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Well yeah. But look!"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "903fbb9e-f767-4ad6-98b6-dc6c734622bf"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Read Paper"
+            },
+            "id": "a24d406e-2d58-4e52-9397-9a44507ecad8"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "80188d12-3fa3-48c4-b2b2-e84767600b8b"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "2850e833-5fc3-4a07-9f1e-e0826ad369ad"
+            },
+            "id": "f1bd0058-cc51-4b38-9468-12dff5d9f53c"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e927c303-8c22-4492-b9cd-f26e2fbaab5b",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "70c88825-ffa6-4391-817a-dfba63c80e2c"
+          }
+        ],
+        "false": []
+      },
+      "id": "7e5971d0-af31-41cc-a54b-23b34cd8723a"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 23
+}

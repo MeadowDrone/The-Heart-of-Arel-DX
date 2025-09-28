@@ -1,0 +1,292 @@
+{
+  "_resourceType": "scene",
+  "id": "b4d54642-efbb-466c-9220-c4b8a3ccb79e",
+  "_index": 2,
+  "type": "PLATFORM",
+  "name": "Intro Cutscene",
+  "symbol": "scene_3",
+  "labelColor": "red",
+  "x": 176,
+  "y": 280,
+  "width": 120,
+  "height": 18,
+  "backgroundId": "106d2574-14cb-4126-910b-68f4a404543e",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "5b573c0d-4b4f-4b75-91c8-9e0a809f5ab8",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "c67e6087-96ac-4f9f-baad-0544401ed375",
+    "a325b3db-653e-4b28-a9d0-68d953430d82",
+    "ff5fb13a-7200-4e93-b4d3-9f09153704d5",
+    "3376117d-641e-45fa-87ef-432c973388e6"
+  ],
+  "spritePaletteIds": [
+    "4a40412e-77cb-49fa-a664-953408591d15",
+    "109754b8-d7e6-415f-900b-16773641adbd",
+    "8931ab5b-989d-466d-a60b-ffb31e978ae1",
+    "f3948438-a4d7-4f9c-9df1-2200e3509701",
+    "382d1d7e-2913-4422-9c28-b811db01b09b"
+  ],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "parallax": [
+    {
+      "height": 12,
+      "speed": 2
+    },
+    {
+      "height": 1,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__comment": false,
+        "__collapse": true
+      },
+      "id": "72326c90-5dfd-455e-8a33-fa325887699a"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 1,
+        "__collapse": false,
+        "__comment": false
+      },
+      "id": "3354de29-4e50-4ecb-b36f-e5dba9778b2e"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 30
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 0.5,
+        "__collapse": false,
+        "__comment": false
+      },
+      "id": "cefb83f0-d516-40ec-a5de-0165087e48ec"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30,
+        "__collapse": true,
+        "__comment": false
+      },
+      "id": "04f23372-0914-4888-97fa-5fa11a28daeb"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "7f316d15-6fe9-461a-9a99-3ac69f9c2739",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": true
+      },
+      "id": "ad3a4ac6-a6d0-4155-a328-b00b25a8a76c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Well, it's about time we set off..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "a863e869-9cc4-42d0-a025-ee4357ef36e8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "It's going to be tough. But it's\njust like you say. If nobody else\nis going to do it,",
+          "it has to be us."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "47ec89cb-8d90-4720-a44b-1fdfef96d95f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Can we really do this? It sounds\nlike a *lot*."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "f4ff1643-38a6-42c3-a567-e62212313391"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "a55e1d3b-293e-4fc3-ab21-cfb1c0fad374",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "ecce34c0-b93b-4e75-94b6-229f7fd4e2c0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "oh, we've got this!",
+          "sure, we're only gonna put a\nstop to a world-ending threat.",
+          "but i know we can do it!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "a0d39123-f827-4e5d-a6f8-26aa79793193"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "a55e1d3b-293e-4fc3-ab21-cfb1c0fad374",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "a37676a9-aa4d-4a0f-bb86-c3ac6df03130"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "7f316d15-6fe9-461a-9a99-3ac69f9c2739",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "03570a8e-7c38-437a-ab21-a71d755588cc"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "!F:55a29c8f-0c1f-4df0-806d-72ac846a08d6!W!F:9d090742-f097-4842-bfc8-480d8070c213!e!F:8a80dd70-d7d8-46c7-a89f-207feedea586!l!F:616aaa04-9538-4399-b15c-77732bf3b0d2!l!F:616aaa04-9538-4399-b15c-77732bf3b0d2!..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "29022102-3282-4773-80f4-269dafe262f7"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Shall we?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "4611366e-bf36-4a7a-8006-19c0ee880e78"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "516c2564-ebe6-44fc-8286-42bfe4a7de21"
+      },
+      "id": "2fb81ef1-c1e7-4d66-ab35-7bff4a47be99"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "04dec954-bd80-4b56-bdb3-5f7d40a4f0ad",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "56e540cf-b085-4096-919a-5bff5763da5b"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 39
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 0.5,
+        "__comment": false
+      },
+      "id": "ff389fe1-b61f-4dfa-ba56-840163321474"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 87
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 1,
+        "__comment": false
+      },
+      "id": "c0391e7f-a9db-4b7d-b1fa-40f56c20d1c9"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 7,
+        "frames": 30,
+        "units": "time"
+      },
+      "id": "1ccded9b-ead9-4671-afc7-2dca5db7fad9"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "8855861a-8a2d-4816-94d0-92831fd7a345",
+        "x": {
+          "type": "number",
+          "value": 20
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "",
+        "fadeSpeed": 1,
+        "__comment": false
+      },
+      "id": "c2c2fe07-df11-4c86-a7a1-b8ff81e08e8e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

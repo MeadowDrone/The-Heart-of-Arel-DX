@@ -1,0 +1,137 @@
+{
+  "_resourceType": "trigger",
+  "id": "c0009a12-16c6-49f7-ad06-12466ab63f11",
+  "_index": 0,
+  "symbol": "trigger_74",
+  "prefabId": "",
+  "name": "Rumble 1",
+  "x": 23,
+  "y": 223,
+  "width": 10,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "249"
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "249",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "2ad71fe9-c071-43d0-b21a-4fd6084471e3"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 30
+            },
+            "id": "b07cd071-92d6-4ad2-8213-1ec350a3cffd"
+          },
+          {
+            "command": "EVENT_LOOP_FOR",
+            "args": {
+              "variable": "L0",
+              "from": {
+                "type": "number",
+                "value": 0
+              },
+              "comparison": "<=",
+              "to": {
+                "type": "number",
+                "value": 2
+              },
+              "operation": "+=",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Success"
+                  },
+                  "id": "fb74fc1f-3d8c-4667-967f-6a2d1647623b"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "ffde260e-b301-4f14-8103-20548200a542"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 30,
+                    "shakeDirection": "vertical",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "8429419d-33a1-4b2e-8168-a5888b17f6a5"
+                }
+              ]
+            },
+            "id": "9f082fd0-3171-4473-b1f9-f7ffd0299768"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "3d4df91c-dd88-4d21-ab25-a077e4392c27"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Is everyone okay?",
+                "Be careful!"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "a7b8fcc5-d165-4c6d-b1eb-bd92b89af233"
+          }
+        ],
+        "false": []
+      },
+      "id": "e5a32f64-2787-4b20-9644-e3ccbfe65bbf"
+    }
+  ],
+  "leaveScript": []
+}

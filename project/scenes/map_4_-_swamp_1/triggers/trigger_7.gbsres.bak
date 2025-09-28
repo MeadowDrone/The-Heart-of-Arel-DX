@@ -1,0 +1,109 @@
+{
+  "_resourceType": "trigger",
+  "id": "096b2893-5643-4bdd-a008-e67abd2aedfe",
+  "_index": 15,
+  "symbol": "trigger_59",
+  "prefabId": "",
+  "name": "",
+  "x": 28,
+  "y": 0,
+  "width": 6,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "104",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "b666b590-b368-4540-a6ff-0e594ea0b368"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Hey, that's the end of the\ndemo!"
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "eb6efa28-e733-4528-be9e-071b008f117b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "tysm for playing £££"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "1b8135a9-c9d3-4753-a226-e67f560cc55c"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": -2
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__comment": true
+      },
+      "id": "f7d46f26-b2b0-4b7c-a02f-684c49c30906"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ce0ea1c6-1791-419b-87b3-d9484e9e5eb1"
+      },
+      "id": "fafd7c95-d064-4b48-8298-774109f1176b"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2af58929-9ce0-4199-9cf4-05934a4cf5ef",
+        "x": {
+          "type": "number",
+          "value": 101
+        },
+        "y": {
+          "type": "number",
+          "value": 115
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__comment": false
+      },
+      "id": "42966869-ee20-46cc-8abd-7c414895fdcf"
+    }
+  ],
+  "leaveScript": []
+}

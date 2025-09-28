@@ -1,0 +1,44 @@
+{
+  "_resourceType": "script",
+  "id": "24ea5e9f-de9a-4221-93fc-84d4d71f02ec",
+  "name": "Play Animation - Read Paper",
+  "symbol": "script_25",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "vectorX": "28",
+        "vectorY": "27"
+      },
+      "id": "6f990762-4de4-4af9-b186-8fd56443735c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Read Paper"
+      },
+      "id": "cb732cb6-3c5b-48ee-b5b5-78db69f8f459"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "f085124f-21d9-46a8-a667-8439a3e41434"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "7298ce26-f498-48f2-8b44-f52ac9e14906"
+    }
+  ]
+}

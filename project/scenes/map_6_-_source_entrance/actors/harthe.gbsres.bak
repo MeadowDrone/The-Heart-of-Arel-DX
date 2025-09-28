@@ -1,0 +1,42 @@
+{
+  "_resourceType": "actor",
+  "id": "4b3e5dac-bc6d-4bf3-b499-b13312b131bb",
+  "_index": 1,
+  "symbol": "actor_220",
+  "prefabId": "",
+  "name": "Harthe",
+  "x": 16,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "29dda22c-80a1-41da-bf60-b682242b9860",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "c18e6e14-d089-4c5d-89e6-38616fce4261"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "2bd7d64b-ff24-476c-8b83-b4c26dd55d2b"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

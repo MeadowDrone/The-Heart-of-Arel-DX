@@ -1,0 +1,108 @@
+{
+  "_resourceType": "trigger",
+  "id": "dd2acd29-098e-4c70-8a14-e44962e63900",
+  "_index": 2,
+  "symbol": "trigger_46",
+  "prefabId": "",
+  "name": "Encounter 4-4",
+  "x": 46,
+  "y": 113,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "189",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "189"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "220"
+            },
+            "id": "1e71f48f-ff18-454e-8232-2a1da6fe6a94"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "189",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "1f68c55f-58b2-40bf-a863-f4088711e8cc"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "09dca6a6-3e73-471a-a46e-39e2b10d53aa"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Outran a screeching rodent with wide,\nwild eyes and sharp teeth!"
+              ],
+              "avatarId": ""
+            },
+            "id": "9313ad7d-155f-41f7-9ab0-97ce9c04ffe7"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "ugghh..",
+                "idk what that was but these\ncreatures are getting angrier\nfor sure"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "bebe15f6-c6f2-48d7-91c7-5aa0d75f0866"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "0b2fa609-f5c7-4dde-8a69-5221fd706d5d"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "d735990c-e025-4e01-a201-9f3ce8a98565"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "74ae655d-d915-4ebf-8f80-7a3e103d6489"
+          }
+        ],
+        "false": []
+      },
+      "id": "15e6bb05-f103-4b01-bedd-31f565b0faf1"
+    }
+  ],
+  "leaveScript": []
+}

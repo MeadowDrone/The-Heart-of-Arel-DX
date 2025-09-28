@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "1137da0c-1736-4b0f-92c0-1726c06547d5",
+  "_index": 2,
+  "symbol": "actor_129",
+  "prefabId": "",
+  "name": "Eryr",
+  "x": 11,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9751e8a2-0052-49cf-8501-a1762127fdfa",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "7ed7187d-6e0a-4716-ab30-3be276e75be7"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

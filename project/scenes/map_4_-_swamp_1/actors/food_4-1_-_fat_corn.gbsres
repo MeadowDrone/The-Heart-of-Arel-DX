@@ -1,0 +1,156 @@
+{
+  "_resourceType": "actor",
+  "id": "a05ad67f-f553-4460-9ece-737e5a311a04",
+  "_index": 0,
+  "symbol": "actor_26",
+  "prefabId": "",
+  "name": "Food 4-1 - Fat Corn",
+  "x": 98,
+  "y": 34,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "214"
+      },
+      "id": "0a921e77-91b2-4332-90a5-21eeb7b592a0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "108",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "d3b3ee50-b788-44cf-8219-0adc9f1ff956"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "b0d4a614-7099-49b9-adb1-f5ea76fe1925"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "d4d46fce-63e3-49b5-a527-ac3905abd4e0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "hey! i know this",
+          "fat corn!!!"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "2d901e1e-cfb2-4b25-b755-ba2485e2997e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "\"Fat Corn\"????"
+        ],
+        "portraitType": "angry"
+      },
+      "id": "a92e4a28-cdce-4b7a-bdb9-bab4bb7de1a3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "its so good eryr you gotta\ntry it"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "bb8f64cf-6fb5-40ac-bd47-0c49991dc97d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "It does look beautifully fat."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "caaaa2d1-745e-4183-8ab2-5d6e8a83cc8d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Most people believe that's\nwhere the name comes from,\nbut the true origin is from",
+          "the way it cooks itself to\nperfection when fried in fat."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "4d21fed8-9010-4390-a470-65c35a27a55a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "That sounds amazing. Can... we\neat some?",
+          "Right now?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8ce6c10c-61e3-40ef-89c7-2774f7469f5c"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "0e4cbab1-9f89-488f-8a54-0e509f2b1470"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "108",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "108"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "5f74f969-b6e6-4d8c-8f3f-91401b28428a"
+          }
+        ],
+        "false": []
+      },
+      "id": "c29c4c83-6e71-479d-bb61-7fb680dd9992"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

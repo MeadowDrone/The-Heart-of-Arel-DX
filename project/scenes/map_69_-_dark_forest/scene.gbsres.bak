@@ -1,0 +1,149 @@
+{
+  "_resourceType": "scene",
+  "id": "345eb5f1-d2ee-4934-9e77-362242164d90",
+  "_index": 47,
+  "type": "TOPDOWN",
+  "name": "Map 69 - Dark Forest",
+  "symbol": "scene_51",
+  "labelColor": "purple",
+  "x": 3320,
+  "y": 1168,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "81d27fd3-dae5-441f-8cbb-c030b1d6cb09",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "d229d87e-3d93-468e-89b0-ed38e8c1b7c5"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "154",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "b2927ff1-44d2-41ca-8d1b-1388e4518e7b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "um",
+          "i dont want to surprise or\nalarm anyone",
+          "but"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "319de8b2-f958-47a0-a8e9-dd0ec36aba26"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "0ab95a95-bbb6-4090-8f9d-1c2de850f64a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "it dark"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "801804da-a8f5-4098-9e00-2a262ea51bad"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Where are you Harthe? I can't\nsee anyone... oh god I'm\nlost I'm--"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "a3ddb953-f98b-4436-aeb9-413f0967db4e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Everyone's right here, ya\ngoof. I can see where you all\nare but this forest is way",
+          "too dense for me to be able\nto navigate easily.",
+          "Much like my ex."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "dde8b2ad-01e8-4faf-a834-eb231b853388"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "lmao"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "32175f1f-b0c7-4d23-b869-728aedd0a5e6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Let's head back to the plains.\nMaybe we can figure something\nelse out later."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "73cde39a-5af4-408c-b19d-1840db9eacc8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "01afb68e-9a7c-4b4c-8396-2f63da56759b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "That sounds like an extremely\ngood idea."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "99dd3646-3e4e-4752-9c18-464ac338420a"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2af58929-9ce0-4199-9cf4-05934a4cf5ef",
+        "x": {
+          "type": "number",
+          "value": 44
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "",
+        "fadeSpeed": 3
+      },
+      "id": "e690bfe9-ceb5-424a-bf42-511fe38502e4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

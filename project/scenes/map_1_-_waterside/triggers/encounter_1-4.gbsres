@@ -1,0 +1,151 @@
+{
+  "_resourceType": "trigger",
+  "id": "b0aa4f6f-b3ac-49e5-8968-68e8d792f571",
+  "_index": 3,
+  "symbol": "trigger_25",
+  "prefabId": "",
+  "name": "Encounter 1-4",
+  "x": 60,
+  "y": 36,
+  "width": 7,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "30",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "30"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "93",
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "93"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "211"
+                  },
+                  "id": "50ee8f48-70a4-4cde-8404-2f119d30e547"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "93",
+                    "__collapse": true,
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "f4e901d1-0358-405d-ae60-46d234f0d79a"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb",
+                    "__collapse": true
+                  },
+                  "id": "ff39a251-3f1d-478a-9890-df18c45616d4"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Scared away an angry\ngoose!"
+                    ],
+                    "avatarId": "",
+                    "__collapse": true
+                  },
+                  "id": "822df5cd-7dab-4769-b24b-83c534fe53ef"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "",
+                    "__collapse": true
+                  },
+                  "id": "c94a2537-9479-4af3-a316-f69409618edb"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Wow...",
+                      "That goose was just the worst."
+                    ],
+                    "portraitType": "pensive"
+                  },
+                  "id": "5f5b0e5c-c50e-4896-9eaa-fd86a594f944"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "Hey, it's just tryna make a\nliving..."
+                    ],
+                    "portraitType": "cheeky"
+                  },
+                  "id": "442069fd-d454-4b3d-aac5-24b8ccd0274e"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "They kinda are the worst\nthough."
+                    ],
+                    "portraitType": "angry"
+                  },
+                  "id": "2a2077cd-3da0-4dbd-a3e2-6f829bb7d3cb"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e",
+                    "__collapse": false
+                  },
+                  "id": "444b6b67-89ef-4f84-91b5-d65d0cf54745"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+                  },
+                  "id": "94506a82-43ac-44e1-b299-727b7d152af8"
+                }
+              ],
+              "false": []
+            },
+            "id": "cd6c27e4-7302-4439-826a-a164b92dc6b5"
+          }
+        ],
+        "false": []
+      },
+      "id": "aa64c84d-422a-4a7e-be0d-839b5171b92f"
+    }
+  ],
+  "leaveScript": []
+}

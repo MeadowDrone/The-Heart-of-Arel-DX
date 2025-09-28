@@ -1,0 +1,63 @@
+{
+  "_resourceType": "script",
+  "id": "82c22c8e-1661-4f90-873d-4b143b21b763",
+  "name": "Dialogue - Sundown 2 Mid",
+  "symbol": "script_27",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I... ummm...",
+          "Sorry, I just..."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "77547f30-6d01-4672-9a13-b73653d3b683"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "you just",
+          "need some cuddles? headpats?\nscritches?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "6ea071a5-eded-42b8-89e8-05e5a43efc3f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I mean, it would be pretty\nnice..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "1f8abf23-a9fd-4ba1-a321-3204f1cdac83"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Oh boy. You're killin' us here,\nEionn."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "485c5472-a1a9-4646-8c4c-982d77a8c72b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "any time you need them, my\nlove, you can just ask. but\nyou need to *ask*, ok?"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "548ac3a5-4617-45dc-821d-e233f677b297"
+    }
+  ]
+}

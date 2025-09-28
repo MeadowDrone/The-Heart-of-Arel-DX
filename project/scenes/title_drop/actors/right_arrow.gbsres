@@ -1,0 +1,43 @@
+{
+  "_resourceType": "actor",
+  "id": "aab7ebee-9d2b-4239-b1c6-59f7a89be058",
+  "_index": 5,
+  "symbol": "actor_32",
+  "prefabId": "",
+  "name": "Right Arrow",
+  "x": 12,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bebd59f2-ca1c-48af-a579-587a8eb1e91a",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Idle Right"
+      },
+      "id": "ccabe9c6-2758-4119-b326-815d759697b7"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "a29afce2-1722-425e-80cb-12bea3ef82a8"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

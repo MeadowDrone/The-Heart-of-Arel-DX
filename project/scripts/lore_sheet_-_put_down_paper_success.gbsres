@@ -1,0 +1,79 @@
+{
+  "_resourceType": "script",
+  "id": "e024f070-220a-4fac-9cdc-4b1ee9d05fe8",
+  "name": "Lore Sheet - Put Down Paper Success",
+  "symbol": "script_59",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "46",
+        "__collapse": false,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "ecac1dbd-5d32-4e53-b801-dac400af2cb5"
+    },
+    {
+      "command": "EVENT_CLEAR_FLAGS",
+      "args": {
+        "variable": "139",
+        "flag1": true,
+        "flag2": true,
+        "flag3": true,
+        "flag4": true,
+        "flag5": true,
+        "flag6": true,
+        "flag7": true,
+        "flag8": true,
+        "flag9": true,
+        "flag10": true,
+        "flag11": true,
+        "flag12": true,
+        "flag13": true,
+        "flag14": true,
+        "flag15": true,
+        "flag16": true,
+        "__collapse": false
+      },
+      "id": "6a0c3358-22b0-43f4-904a-21d38a59bd17"
+    },
+    {
+      "command": "EVENT_CLEAR_FLAGS",
+      "args": {
+        "variable": "67",
+        "flag1": true,
+        "flag2": true,
+        "flag3": true,
+        "flag4": true,
+        "flag5": true,
+        "flag6": true,
+        "flag7": true,
+        "flag8": true,
+        "flag9": true,
+        "flag10": true,
+        "flag11": true,
+        "flag12": true,
+        "flag13": true,
+        "flag14": true,
+        "flag15": true,
+        "flag16": true,
+        "__collapse": false
+      },
+      "id": "59850552-93db-44db-b255-4c916277562a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_SPRITE",
+      "args": {
+        "actorId": "$self$",
+        "spriteSheetId": "acb45d05-477d-4526-ab4d-e2ba64f99229",
+        "__collapse": false
+      },
+      "id": "7755a956-792d-4a82-9a5d-f8308c66990f"
+    }
+  ]
+}

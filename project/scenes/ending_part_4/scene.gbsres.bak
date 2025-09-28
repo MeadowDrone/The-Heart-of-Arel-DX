@@ -1,0 +1,180 @@
+{
+  "_resourceType": "scene",
+  "id": "81eb1daf-2f2f-43f4-97ee-a8d110241ae2",
+  "_index": 69,
+  "type": "TOPDOWN",
+  "name": "Ending Part 4",
+  "symbol": "scene_73",
+  "x": 5520,
+  "y": 2688,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "03ed5a4d-24c6-4803-9efb-2d401f926436",
+  "tilesetId": "",
+  "paletteIds": [
+    "ff5fb13a-7200-4e93-b4d3-9f09153704d5",
+    "c67e6087-96ac-4f9f-baad-0544401ed375",
+    "a325b3db-653e-4b28-a9d0-68d953430d82",
+    "c67e6087-96ac-4f9f-baad-0544401ed375",
+    "ff5fb13a-7200-4e93-b4d3-9f09153704d5"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 6,
+  "autoFadeEventCollapse": false,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "bd0a90f9-9e92-472b-bf5a-b4e22a81b5e3"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "69375b45-79cf-44c8-9833-c0683b493381",
+        "x": {
+          "type": "number",
+          "value": -1
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "c03cdb1c-6b06-41b4-b2e1-3f2802ef358b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "69375b45-79cf-44c8-9833-c0683b493381",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "4ba4d656-131a-49d1-bd61-6eae99fbeda3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Hey."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "4f9c0f88-d595-4a98-8242-7a2d661205fa"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Ummmm"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "524f8163-64e6-4f0e-8994-1b495795b2f6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Use your words, Eionn."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "0a78484e-39cc-4dac-9bdc-f1f4fae97ac7"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Would you wanna... maybe...\nlike, no pressure or\nanything...",
+          "But would you wanna move in\ntogether, theoretically,\nmaybe?"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "c3388d56-bd0c-49ff-91b7-e9a58194a839"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Oh."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "d4b8e763-d88f-43d1-8c36-7154b7bfc1fc"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "If we can get a comfortably\nbig kitchen and garden, then\nI'd love nothing more."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "f94a2f92-1ae1-46f3-be0b-5f2c79c5b128"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Oh this sounds fun! As long\nas I get a nice cage to\nsleep in."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "d2af5a54-6b05-46a6-928f-a91d31f176a9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "omg"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "0d20f55c-56a0-40fc-8960-d6a3faaa34d8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "yes!!!",
+          "can we get an unreasonably\nhuge bed"
+        ],
+        "portraitType": "happy",
+        "__collapse": false
+      },
+      "id": "5e42f6b1-18e3-413d-8907-cd003e2baf1e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "244",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "d034a963-7f66-49e1-8a69-57ba20be7abc"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I love the way you think."
+        ],
+        "portraitType": "happy"
+      },
+      "id": "886c8887-5454-4cf0-942a-37c162ee88cc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "2566ef48-82cb-4176-8310-9a29ffbf423d",
+  "_index": 4,
+  "symbol": "trigger_83",
+  "prefabId": "",
+  "name": "Move to Map 8",
+  "x": 35,
+  "y": 98,
+  "width": 2,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "317217e7-fcef-4efe-825e-fe221db0902c",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 16
+        },
+        "direction": "",
+        "fadeSpeed": 6
+      },
+      "id": "c92ab3b9-476c-40dc-ab88-58882a07cff5"
+    }
+  ],
+  "leaveScript": []
+}

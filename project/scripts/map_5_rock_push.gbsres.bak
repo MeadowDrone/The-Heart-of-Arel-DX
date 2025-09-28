@@ -1,0 +1,341 @@
+{
+  "_resourceType": "script",
+  "id": "f2ab2dc8-67f8-46b5-8a04-976e23f3b772",
+  "name": "Map 5 Rock Push",
+  "symbol": "script_51",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 30
+      },
+      "id": "9910a282-df0b-47b5-904d-526193419f7d"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "193",
+        "__collapse": true
+      },
+      "id": "76d11931-ab3c-49b8-aa5c-820c6d10d88b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Success",
+        "__collapse": true
+      },
+      "id": "6fbfdf57-1b3d-44c5-a33a-72c13bbf7e28"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "__collapse": true,
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "ffb2bf24-74bb-40c1-b96c-66f3972c5c32"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "193",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "aaaaaaaaa waawawawa"
+              ],
+              "portraitType": "shock"
+            },
+            "id": "928e1842-8032-4f20-b68e-d5bcc129f659"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__collapse": true
+            },
+            "id": "9d878f38-2c59-4252-a511-6d2697f7a9bb"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "COOL ROCK??"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "14c80148-ae07-492a-b769-c835d5219732"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Cool rock."
+              ],
+              "portraitType": "happy"
+            },
+            "id": "fd498497-91e7-4b8b-a930-22f6a33fb85e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "But what happened?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "20727cd2-6b99-4a4c-bdbb-263bf046b704"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "You're hot is what happened."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "dc77f3d3-85b0-486d-abd2-b335ddac7006"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Thank you, but I really am\ncurious about if this affected\nsomething elsewhere."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "5e94dabb-cb58-4097-b9a0-e10750465fb1"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 184\nVM_REPLACE_TILE_XY     117, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "226bbb32-b96a-473b-b6dc-a03cfb27310d"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Rock party!"
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "90cef98c-fbc2-4b6b-a58c-7bf15772298c"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__collapse": true
+            },
+            "id": "332f3cf5-123a-4add-b8b7-753477f1a044"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "lets dance, baby"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "a7a6081e-806d-4539-9e20-25a4bb892c14"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 185\nVM_REPLACE_TILE_XY     118, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "58bb0c3b-8515-4965-8553-2a259ede049e"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Another rock! Another cool,\ncool rock!"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "3e676630-72df-4e5e-a17e-f980cb107b7d"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__collapse": true
+            },
+            "id": "8d590337-3125-4312-9266-6559aa27d1d3"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 186\nVM_REPLACE_TILE_XY     117, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "aa6a0f3e-988a-4fb3-b14a-0cedb92d3027"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Jeez, there are so many rocks\nhere, aren't there?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "6b71629f-b44e-4f0a-a52d-e84218cc61e9"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__collapse": true
+            },
+            "id": "841b1688-f68a-409c-9a4e-c0d76addea99"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "We're on a mountain, Eionn."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "4987c6af-d79d-4c26-94ff-06d30ff244a6"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I-- I know that..."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "86381f67-7ea1-4103-ad5a-48a0b759ef13"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 187\nVM_REPLACE_TILE_XY     118, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "1467f3e3-5cc0-414d-a78d-2eb52da4db61"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "think we got em all? idk but\ni got a feeling"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "317cb157-3d47-4e61-899e-bc5e32e807b5"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__collapse": true
+            },
+            "id": "aa452bcd-2747-48e4-8775-d222bd7c910c"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 188\nVM_REPLACE_TILE_XY     119, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "a0c64ab4-8213-439a-b833-e9a273f81b9c"
+          }
+        ],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "070b06da-8e5b-4b53-bd87-8522bd853fa8"
+    }
+  ]
+}

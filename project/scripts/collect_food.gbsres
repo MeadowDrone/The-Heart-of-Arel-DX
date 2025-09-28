@@ -1,0 +1,56 @@
+{
+  "_resourceType": "script",
+  "id": "ba4f268f-ec70-47a9-8bfb-450f47d97bde",
+  "name": "Collect Food",
+  "symbol": "script_74",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Self"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "18",
+        "__collapse": false
+      },
+      "id": "e05c448f-104c-4e23-98a2-511d9ae501d3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "242",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "666188ee-7555-483c-a2fd-fa86af3e30f9"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 21
+      },
+      "id": "4f27fcfb-329e-47ec-860d-3bc1ff60c644"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "0",
+        "__collapse": false
+      },
+      "id": "66161d7d-3fbb-4520-a5ee-c2c798645f0b"
+    }
+  ]
+}

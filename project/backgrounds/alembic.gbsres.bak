@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "af470cf3-d9a3-40ed-8830-e22cb72557f2",
+  "name": "alembic",
+  "symbol": "bg_alembicv_copy_png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "alembic.png",
+  "tileColors": "00168+",
+  "autoColor": false
+}

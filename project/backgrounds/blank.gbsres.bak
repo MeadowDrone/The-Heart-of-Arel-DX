@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "593e01e0-3e56-4f8d-9c11-a961da86188d",
+  "name": "blank",
+  "symbol": "bg_placeholder_copy_2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "blank.png",
+  "tileColors": "",
+  "autoColor": false
+}

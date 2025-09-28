@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "fc07dab7-6c04-4222-a572-d37c155c898c",
+  "name": "anim",
+  "symbol": "bg_anim",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "anim.png",
+  "tileColors": "01168+",
+  "autoColor": false
+}

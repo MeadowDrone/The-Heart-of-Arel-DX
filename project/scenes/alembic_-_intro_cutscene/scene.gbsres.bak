@@ -1,0 +1,125 @@
+{
+  "_resourceType": "scene",
+  "id": "ce2a407c-f5af-416a-8bb3-fa5369e8263e",
+  "_index": 59,
+  "type": "TOPDOWN",
+  "name": "Alembic - Intro Cutscene",
+  "symbol": "scene_63",
+  "labelColor": "gray",
+  "x": 160,
+  "y": 480,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "af470cf3-d9a3-40ed-8830-e22cb72557f2",
+  "tilesetId": "",
+  "paletteIds": [
+    "fbc0adb7-1521-48d9-967b-188a5b9b9c5e"
+  ],
+  "spritePaletteIds": [
+    "f3948438-a4d7-4f9c-9df1-2200e3509701"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "8f9a569e-8938-4f46-a2cc-0978131a0f7f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "This panel thing on the front\nlooks neat!",
+          "I guess!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "f4abb5bd-287a-40e4-951c-7e5f611ca1b0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "so are these dials supposed\nto do something?"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "44b18a69-ee42-49cb-817d-bcee8feee87f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "No idea! I've played around\nwith this for hours trying to\nget it to do..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "64a093fe-45a2-467f-b074-d0b7e4635342"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "... well, anything, but it\njust doesn't function."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "051c9114-4eca-44a9-8166-0cbbed406d25"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I'd heard that the research\nshowed it was extremely old,\nbut there's no surviving",
+          "information about it - only\nthat it was found on the foot\nof the mountain where the",
+          "miasma is emanating from."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "15ad827e-f3d9-42e6-b638-43f340c17dc8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Yeah. And inside it was this\nweird parchment..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "6e33bfc5-1177-4263-ab97-3d884e337adb"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "a487806d-923c-4ce8-bb60-d333951db838"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "72a8c19a-bb6b-4f5b-a213-69c1ce2acc48",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "68c3c5ee-0955-4885-990a-915a4f3da26c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

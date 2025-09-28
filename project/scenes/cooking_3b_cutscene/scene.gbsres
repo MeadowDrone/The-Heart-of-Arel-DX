@@ -1,0 +1,136 @@
+{
+  "_resourceType": "scene",
+  "id": "08a8875b-78ce-4f1b-988a-f5420de0b64a",
+  "_index": 33,
+  "type": "TOPDOWN",
+  "name": "Cooking 3B Cutscene",
+  "symbol": "scene_38",
+  "labelColor": "red",
+  "x": 64,
+  "y": 2488,
+  "width": 80,
+  "height": 18,
+  "backgroundId": "41e02d97-88eb-4a31-a700-efa0125b1b15",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "60c36bbc-0f91-4c83-a16f-a44b35e17fec",
+    "b55d841d-cab9-4ef2-b879-b446acfc99ce",
+    "5bd03c58-55c3-4920-ac47-c3fc3398dd09",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "92dab46c-dc33-4354-aa4e-cb70ba2c6a11",
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "1d5e87f9-41d5-4e41-ab99-b034ad8da07a"
+  ],
+  "autoFadeSpeed": null,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1292b9c-0797-4b9a-9c40-4a1d143dbd3a"
+      },
+      "id": "0e873256-52dc-4f90-9514-a6ca0fc0d3d6"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "8aba9440-4e75-46c9-af5d-843804d1f8a2"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": "2"
+      },
+      "id": "9f74b2ec-74be-4383-8f32-abb687de302d"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "4f17579b-649f-48bc-b587-fb05d1b83da1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Eryr, how did you and Eionn\nfirst meet? I know it was\nquite a while before we did..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "e57a7a89-5e13-4f3b-a620-aa31daea32ab"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Oh yeah! It was--"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "c334aee8-caf0-42ce-82b3-db3407b3869c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Crap, it really was a while\nago now huh?"
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "e9f94342-a533-4a63-9dbd-dae535a7d360"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Literally don't even ask me how\nmany years it's been."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "6fe321da-90f0-4e5c-9687-75152343020e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "We were kinda in the same\nsocial circles for a little\nwhile and had been introduced,",
+          "but I remember what happened\nso clearly where we properly\nmet."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "73d97290-6cd3-4446-b8e0-636df823f85e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1171ceb9-1642-4375-ab10-24ade553c617",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__collapse": true
+      },
+      "id": "6a24e429-7200-425c-ad7a-b09cb9d5d075"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005a0+"
+}

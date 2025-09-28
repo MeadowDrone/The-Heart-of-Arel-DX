@@ -1,0 +1,76 @@
+{
+  "_resourceType": "trigger",
+  "id": "d0eb2ee1-06c6-454f-a107-f765ab17cc5a",
+  "_index": 13,
+  "symbol": "trigger_18",
+  "prefabId": "",
+  "name": "Heart Island - Enter Check",
+  "x": 13,
+  "y": 105,
+  "width": 3,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "225164c7-94f3-45f2-88ef-0bad0a2458a4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "0284a9ee-6a90-452f-99c1-f4756a9cb613"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "106",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "106"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "117",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "44d405e6-4a77-48b7-95f8-6e3244949800"
+          }
+        ],
+        "false": []
+      },
+      "id": "328b57c5-6002-4984-893f-9c889c6a5bb3"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bf69484f-3c14-4d85-905b-632a93eea47d"
+      },
+      "id": "0129da13-1463-4a8d-a417-5de32fddbc2b"
+    }
+  ],
+  "leaveScript": []
+}

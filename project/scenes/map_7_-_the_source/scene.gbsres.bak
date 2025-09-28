@@ -1,0 +1,431 @@
+{
+  "_resourceType": "scene",
+  "id": "945d8b3e-66ce-45e7-bfcf-3b1546c10917",
+  "_index": 17,
+  "type": "ADVENTURE",
+  "name": "Map 7 - The Source",
+  "symbol": "scene_21",
+  "labelColor": "purple",
+  "x": 4793.273270994013,
+  "y": 367.94608117581737,
+  "width": 64,
+  "height": 254,
+  "backgroundId": "4b0f62da-a934-4066-9775-5d16ba7abd95",
+  "tilesetId": "",
+  "paletteIds": [
+    "f823f95b-bcc6-45fb-9bd2-64f1489a094c"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "7e53207d-4198-4697-ad2c-ee3d51c2aa84",
+        "__collapse": true
+      },
+      "id": "04e16139-7bfa-4959-bbd1-120fa25db65b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "77",
+        "value": {
+          "type": "number",
+          "value": 7
+        },
+        "__collapse": true
+      },
+      "id": "0d62074f-ff1c-409b-b8f5-fc304723163b"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "cee83083-7e9a-4fd7-8bfe-595e788a8139"
+            },
+            "id": "880455d3-0220-43e4-9750-8cb2dfa7d459"
+          }
+        ]
+      },
+      "id": "e7a6c012-f12b-4c38-b6c9-bf9f6f8cceca"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "229",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "229"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "229",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "59ffd834-1f30-4679-aeb4-ca52769ee519"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "wah"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "b56635dc-4deb-4a6e-af01-b9a4d29ab96c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "This place looks...\nfeels, so..."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "ef63919c-8355-4ad3-8f49-82000250eb11"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Different."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "6246a07f-a5ec-4d06-9a21-3264bd4961e9"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "it doesn't feel like anything i\nrecognise. like i'm on a\ndifferent world"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "9a5c7ee8-136a-4962-86a0-533cb1072a58"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "That said, the floor appears to\nbe solid enough, for now. Let's\nbe careful, but we can't lose",
+                "sight of the source."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "cbb24d5f-729d-43db-b6a6-9198369e9acc"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "We'll leave it up to you to feel\nthis place out, Eryr. If\nsomething's off, let us know!"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "2e1a166c-9026-41aa-852f-3519fc2b208c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "I'm not gonna let anything bad\nhappen to you, babes."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "eb8d1320-9b06-4da4-8b9e-e1efebb83194"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "8defa5ae-4297-466f-a143-499bde65c514"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "We've filled our tummies."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "d0ec1fec-87e0-4ec0-9c1c-be010e6e45ee"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I've brewed our potions."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "784ecbaa-9f44-49ce-a8ec-2b00c6a01f73"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "ive given your headpats"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "a7fdee54-4284-46ab-a82f-8fb200af78ba"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "I've mostly been vibin'."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "21c211b7-f3cb-40f4-af6e-78e1383fad0a"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Onward!"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "618e8e2a-73b2-4707-a44a-99f3f55fc955"
+          }
+        ],
+        "false": []
+      },
+      "id": "21472c0b-ac68-41a2-a640-d7621c8a164d"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "231",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "231"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "231",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "cb1cf7c3-c0f5-4f90-aef2-6518da11530e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "whoa"
+              ],
+              "portraitType": "shock"
+            },
+            "id": "7f4da7c1-9a61-43a7-bcef-197b5a2564c6"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "225",
+              "operator": ">=",
+              "comparator": 5,
+              "__collapseElse": false,
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "225"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Examine Alembic"
+                  },
+                  "id": "ac4d6318-de4b-4f76-b718-dd981e23b919"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "I... I see!",
+                      "I felt like the truth was\non the tip of my tongue,\nbut...",
+                      "I get it now!"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "6a6def2e-789c-404b-af2d-0aa225a3a67b"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                  "args": {
+                    "text": [
+                      "that was neato",
+                      "gotta wonder what the rest\nof it said, though"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "c52e90c3-5ce2-4889-938d-12e313534a82"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Who knows... for now, there's\nonly one thing that really\nmatters."
+                    ],
+                    "portraitType": "pensive"
+                  },
+                  "id": "cb83e4fa-d1dc-4266-b782-f2095e06262f"
+                }
+              ]
+            },
+            "id": "d504ca7b-d2c5-4f2c-9745-93d8ca01d2ea"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 30
+            },
+            "id": "5f6ad053-24c0-4d2f-aa4f-593f3729552b"
+          },
+          {
+            "command": "EVENT_LOOP_FOR",
+            "args": {
+              "variable": "L0",
+              "from": {
+                "type": "number",
+                "value": 0
+              },
+              "comparison": "<=",
+              "to": {
+                "type": "number",
+                "value": 3
+              },
+              "operation": "+=",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Success"
+                  },
+                  "id": "8746bc57-b34d-4bc5-ba32-f4b4325850c4"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "0cd6e09e-d8a7-4206-bbe6-6d9c92d7e92b"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 30,
+                    "shakeDirection": "vertical",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "713e7f90-23c0-45f3-a75c-01684ec04f11"
+                }
+              ]
+            },
+            "id": "af216267-1ddd-4207-b192-1279eb9e5990"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "192dcf9d-5108-48b7-8982-5edcaa134372"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Alright, time to kick your\nbutts back into reality. We\ngotta get moving!"
+              ],
+              "portraitType": "angry"
+            },
+            "id": "98eb0317-0da4-4500-a727-57e8a4eacbec"
+          }
+        ],
+        "false": []
+      },
+      "id": "960b34d7-9ae2-489a-8269-a0047643386b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f18a3+002+0f3e+002+0f3e+002+0f3e+002+0f3e+002+0f3e+002+0f3e+002+0f3c+006+0f3a+006+0f3a+006+0f3c+002+0f3a+00a+0f36+00a+0f36+00a+0f3a+002+0f38+00e+0f32+00e+0f32+00e+0f38+002+0f3e+002+0f3e+002+0f3e+002+0f3e+002+0f3e+002+0f3e+002+0f3c+006+0f3a+006+0f38+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f3a+006+0f3a+006+0f3a+006+0f3a+006+0f3a+006+0f3a+006+0f3a+006+0f3a+006+0f3a+006+0f3a+006+0f3a+006+0f3a+00e+0f32+00e+0f32+00e+0f32+00e+0f1e+008+0f6+0014+0f1e+008+0f6+0014+0f1c+0026+0f1a+0026+0f1a+0028+0f18+0028+0f18+0028+0f18+0028+0f18+0028+0f1a+0026+0f1a+0026+0f1a+006+0f2+001c+0f1c+006+0f2+001c+0f24+008+0f2+006+0f4+006+0f26+008+0f2+006+0f4+006+0f26+008+0f4+002+0f32+008+0f4+002+0f32+008+0f38+008+0f38+008+0f34+00c+0f35+00b+0f30+0010+0f30+0010+0f30+0020+0f20+0020+0f20+0022+0f20+0020+0f20+0020+0f22+001e+0f22+001e+0f26+001a+0f26+001a+0f2a+0014+0f2c+0014+0f32+00e+0f32+00e+0f34+00c+0f34+00c+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f2e+0014+0f2c+0014+0f2c+0014+0f2c+0014+0f2c+0014+0f2c+0014+0f2c+0014+0f2c+0012+0f2e+0012+0f2e+0012+0f2e+0012+0f2e+0010+0f30+0010+0f30+0010+0f30+0010+0f30+00e+0f32+00e+0f34+008+0f38+008+0f38+008+0f38+008+0f38+008+0f36+00a+0f36+008+0f36+00a+0f36+00a+0f34+00c+0f34+00c+0f32+00e+0f32+00c+0f34+00c+0f34+00a+0f36+00a+0f36+00a+0f36+00a+0f36+008+0f38+008+0f38+006+0f3a+006+0f3a+006+0f38+008+0f38+008+0f38+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0f36+00a+0fa1+"
+}

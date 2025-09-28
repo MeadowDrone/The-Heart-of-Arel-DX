@@ -1,0 +1,46 @@
+{
+  "_resourceType": "script",
+  "id": "802bd4b7-e2bc-4dee-bcfd-8e2a8ab6b0b9",
+  "name": "Change Scene - Map to Alembic",
+  "symbol": "script_21",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d7e0d181-b8ed-4c07-8b03-e5c20590f9a0",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L4"
+        },
+        "$actor[0]$": "0",
+        "__collapse": false
+      },
+      "id": "d155119e-330f-4047-a5bd-cf250d47c319"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "06db05bd-1cfa-4fe4-ba5d-569d0a5b3ba7"
+    }
+  ]
+}

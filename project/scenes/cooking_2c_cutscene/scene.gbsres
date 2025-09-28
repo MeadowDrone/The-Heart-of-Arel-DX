@@ -1,0 +1,421 @@
+{
+  "_resourceType": "scene",
+  "id": "4f93a6a2-8222-443e-bdf6-83aeef1f1606",
+  "_index": 30,
+  "type": "TOPDOWN",
+  "name": "Cooking 2C Cutscene",
+  "symbol": "scene_35",
+  "labelColor": "red",
+  "x": 1280,
+  "y": 1904,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "593e01e0-3e56-4f8d-9c11-a961da86188d",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 4,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "922fabfe-41d0-43b9-ae37-960b29226ce4"
+      },
+      "id": "fc8d6db5-c334-4418-8e18-38c294d1ee0c"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "b4656115-e64e-4ad8-bce0-53f35e86edd6"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "94ff69ba-aff9-48b4-a5e2-2bbb451774b1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "i... don't. kinda the opposite\nactually. when i was little i\nwas looked after well enough"
+        ],
+        "portraitType": "struggle"
+      },
+      "id": "14dfa3e0-09cf-40eb-9630-02166e047237"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "2fce1bc8-c314-4907-98ad-06999327d56d",
+        "__collapse": true
+      },
+      "id": "b9d4cd1e-8fb7-48f4-9312-37da2413ff18"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "005909aa-95b8-422b-8b43-a56d7f1833b0",
+        "__collapse": true
+      },
+      "id": "808ba32a-06af-46b9-b018-dd33f4220c5c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "908b67ae-9909-48bf-8aae-9a4c1385265a"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "1cab0b89-effc-4dc2-96be-0f413d6daefa",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "55c23e32-e2a0-43de-a2f9-ab9b92e7a63a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "but my parents weren't too...\nphysically affectionate?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "524d63c1-a5cd-47ef-8df8-489f0294043b"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "2fce1bc8-c314-4907-98ad-06999327d56d",
+        "x": {
+          "type": "number",
+          "value": 8
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "06c05e88-c5a2-4083-9311-cc064e62ca12"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "005909aa-95b8-422b-8b43-a56d7f1833b0",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "c8fdda9e-d7a8-4e35-b6c5-43322c259dd5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "i saw my friends and other kids\nmy age getting hugs, kisses,\nholding hands.. sigh"
+        ],
+        "portraitType": "struggle"
+      },
+      "id": "26541188-5e16-4fde-bb1e-47987cfc94d6"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1cab0b89-effc-4dc2-96be-0f413d6daefa",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "e677d436-786a-47c4-9557-17a08d9b1281"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "maybe my parents just wanted\nme to be independent. but i\ngrew up up without that, and",
+          "i had no siblings either. i\nwanted it so badly"
+        ],
+        "portraitType": "struggle"
+      },
+      "id": "109d4d24-da71-497b-97cf-a215a3715d7c"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "1cab0b89-effc-4dc2-96be-0f413d6daefa",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "5a5b4186-6f9e-4b18-8e71-8007c0e7ccd8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "e88d5802-55f6-4ef8-b19b-bbc786076bf8"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "2fce1bc8-c314-4907-98ad-06999327d56d",
+        "x": {
+          "type": "number",
+          "value": 20
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "7a693886-2ffa-40fc-bf42-b0c6d95330f9"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "2fce1bc8-c314-4907-98ad-06999327d56d",
+        "__collapse": true
+      },
+      "id": "8876d722-9b3b-40a4-aaad-cfa459675f96"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "005909aa-95b8-422b-8b43-a56d7f1833b0",
+        "x": {
+          "type": "number",
+          "value": 20
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "1c049c03-7180-4ce9-8c65-b20f92cbc2f7"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "005909aa-95b8-422b-8b43-a56d7f1833b0",
+        "__collapse": true
+      },
+      "id": "3c3a9335-89e4-4efd-8d6e-760061511b68"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "so i was kinda cold as a kid\ncause i was afraid of getting too\nclose to people"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "608190bc-f34d-4159-8183-c278fca3eae6"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "28004d13-eada-4f35-a737-f1a4d7fc89b5",
+        "x": {
+          "type": "number",
+          "value": 20
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "a9f58123-64df-4f51-927e-a8743ef44c92"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "1cab0b89-effc-4dc2-96be-0f413d6daefa",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "7a6e2a72-5aaf-436a-8585-29f52c12ad4d"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "28004d13-eada-4f35-a737-f1a4d7fc89b5"
+      },
+      "id": "06c5b6fb-cc26-494c-96d9-5e5dc4f5c2b6"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "28004d13-eada-4f35-a737-f1a4d7fc89b5",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "1382a6a2-4833-4352-9572-803ce388448d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1cab0b89-effc-4dc2-96be-0f413d6daefa",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "5fc03710-fcc9-4e81-8f58-9524925c42de"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "but then i met someone who was\nso touchy-feely..."
+        ],
+        "portraitType": "happy"
+      },
+      "id": "c847d1d3-a3e4-4be9-b001-46425fdfbcaa"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "28004d13-eada-4f35-a737-f1a4d7fc89b5",
+        "x": {
+          "type": "number",
+          "value": 8
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "28bdb069-a274-4bce-8b25-d3e8a85caca1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "28004d13-eada-4f35-a737-f1a4d7fc89b5",
+        "spriteStateId": "Affection"
+      },
+      "id": "3fb90697-fef8-487b-b26e-02a073b4d170"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1cab0b89-effc-4dc2-96be-0f413d6daefa",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "5dcfc221-e7ca-4fa1-bf46-1ed9e3676833"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "it was intense at first. but i\nquickly realised how much i\nloved it and needed it"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "4cfeeca8-d499-4b04-8b71-5277660fe83b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1cab0b89-effc-4dc2-96be-0f413d6daefa",
+        "spriteStateId": "Giving Headpats Still Low"
+      },
+      "id": "890f3fce-c358-48b1-9185-b652eb163202"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 5,
+        "frames": 30
+      },
+      "id": "6092853e-b161-437e-92d9-3196d86e99bd"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "96cef5bc-d10a-484d-aa81-bc62f29b722e",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "56e31321-20a2-4687-8fa0-5825b75ae4be"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

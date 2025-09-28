@@ -1,0 +1,331 @@
+{
+  "_resourceType": "script",
+  "id": "578d6aa4-aa6f-4010-a23c-3346c0e3be6e",
+  "name": "Map2ShortcutUp",
+  "symbol": "script_54",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "96",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "96"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 64
+              },
+              "y": {
+                "type": "number",
+                "value": 97
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "f6d0d4c2-9fad-4147-9ec3-ef666993b352"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Kneel Right"
+            },
+            "id": "fe07a081-705b-4a2c-83bf-765faaa2e14b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "99",
+              "__collapseElse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "99"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "99",
+                    "__collapse": true,
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "99b92adc-5055-4d06-a6b2-523eef4037f2"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "That's a hole in the ground."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "12240676-9113-4e30-8a8d-4d6ef445d08a"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                  "args": {
+                    "text": [
+                      "hm. i agree"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "5e6d9f5a-b950-47d2-b6b1-97bc6bd6088b"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "OK let's go!"
+                    ],
+                    "portraitType": "cheeky"
+                  },
+                  "id": "8e6b152d-139b-4310-9a33-f5d5ab67c671"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "W-wait! It might not be safe\nthough? It looks like it could\nbe an incredibly deep drop..."
+                    ],
+                    "portraitType": "shy"
+                  },
+                  "id": "44be7f22-afb7-4f26-b2b7-54863fc00b51"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "Don't tell me you forgot which\nkickass partner you're\ntravelling with?",
+                      "I can see down there, and I\ncan hear from the echoes\nthat it's not that deep.",
+                      "It seems to be a tunnel\nthat leads somewhere."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "ac7a3e6e-f9a8-41f5-b119-d2e513b8ad63"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_AOBA_NEW",
+                  "args": {
+                    "text": [
+                      "That's all I needed to hear.\nLet's see where we end up."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "1accb0d5-e5ed-4b31-bec2-478e7a4b4559"
+                },
+                {
+                  "command": "EVENT_ACTOR_HIDE",
+                  "args": {
+                    "actorId": "$self$",
+                    "__comment": false,
+                    "__collapse": true
+                  },
+                  "id": "ee3bdcce-b194-4837-b5c7-9d53bc6ec9d8"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 76
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 59
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": true
+                  },
+                  "id": "f4efa296-4c6a-4626-b93f-428b1fbb9957"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 73
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 48
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": true
+                  },
+                  "id": "830f91f0-dab9-4cfb-bd2d-34df332ed7e3"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 82
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": false
+                  },
+                  "id": "798808ed-dc75-444e-a982-47adb73197cd"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "",
+                    "__collapse": true
+                  },
+                  "id": "9633709a-f122-4ffd-aa42-f2bf8091f75d"
+                },
+                {
+                  "command": "EVENT_ACTOR_SHOW",
+                  "args": {
+                    "actorId": "$self$",
+                    "__collapse": true
+                  },
+                  "id": "3fed5f90-16d9-4c35-8849-6b8029978cd8"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Actually..."
+                    ],
+                    "portraitType": "shy"
+                  },
+                  "id": "5c4164ed-139f-43cb-8d66-277f88d28714"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "That was fun, can we do it\nagain??"
+                    ],
+                    "portraitType": "happy"
+                  },
+                  "id": "d6099935-fe44-4f5f-8f15-e29586a82791"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_HIDE",
+                  "args": {
+                    "actorId": "$self$",
+                    "__comment": false,
+                    "__collapse": true
+                  },
+                  "id": "d2befc50-1150-4a7b-a480-ce683347a523"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 76
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 59
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": true
+                  },
+                  "id": "12586b42-b3f9-4dbc-831c-506253da4f2d"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 73
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 48
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": true
+                  },
+                  "id": "99485df1-e596-4bb7-8e9c-5d06fce5bb3c"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 82
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": true
+                  },
+                  "id": "019cf14b-1370-4546-b112-2c0f351054a7"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "",
+                    "__collapse": true
+                  },
+                  "id": "f0344dca-fb61-4de0-8ecb-264a1fa8aa8b"
+                },
+                {
+                  "command": "EVENT_ACTOR_SHOW",
+                  "args": {
+                    "actorId": "$self$",
+                    "__collapse": true
+                  },
+                  "id": "87497180-b9d7-4698-86f9-39c2699aa3b7"
+                }
+              ]
+            },
+            "id": "a9e7343b-e95c-496d-9eb7-afa6df62f764"
+          }
+        ],
+        "false": []
+      },
+      "id": "cc409577-713b-479a-9ad2-4d47f52e666e"
+    }
+  ]
+}

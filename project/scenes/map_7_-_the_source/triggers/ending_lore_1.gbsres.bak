@@ -1,0 +1,266 @@
+{
+  "_resourceType": "trigger",
+  "id": "363b8fe0-2705-4da0-944c-3c8caf8b2626",
+  "_index": 1,
+  "symbol": "trigger_80",
+  "prefabId": "",
+  "name": "Ending Lore 1",
+  "x": 35,
+  "y": 106,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "2850e833-5fc3-4a07-9f1e-e0826ad369ad"
+      },
+      "id": "2d5e7975-8002-45bc-abe9-9b798bb03fe2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "230",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "230"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "e8d9d17a-3d99-45a7-98a7-0eaa22f5a3ea",
+              "persist": false
+            },
+            "id": "247139cc-5a1f-45f1-9d1d-734d436cbca8"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27"
+            },
+            "id": "ce1c588d-34ef-47c6-8b60-f1df56284a92"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "230",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "8122529b-926b-4f4b-bcb0-8125fc0289a7"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "231",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "31d6fea8-487b-4d8a-b450-c7918527e054"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 35
+              },
+              "y": {
+                "type": "number",
+                "value": 107
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "f6f31d3b-2065-4081-9209-e5be1858df8b"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Idle"
+            },
+            "id": "886d136b-9400-4815-8156-ddc8d7e30ab2"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Oh, ummm... oohh jeez..."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "58bf509d-b1ad-4d36-8ccd-5d39a724fd9a"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "what is it, lovely??"
+              ],
+              "portraitType": "shock"
+            },
+            "id": "1c5f3105-559c-45b5-bb4e-182b252779ff"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I feel REALLY buzzy."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "5151a072-70ff-455e-ae1d-7c5c794e5380"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "cae1bf74-4ffc-4a51-83f9-2d60bec2633d"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Not gonna lie, I don't really\nknow what to do with this\ninformation."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "108b5d37-a838-49f3-999a-1ea2a2e968b3"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Read Paper"
+            },
+            "id": "e3034cbc-89b8-49fc-b147-e13ed074ac1c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I just... I feel something\nemanating from this\nparchment."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "8474da82-f5dc-4670-b5c2-82ec434d221e"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "15",
+              "vectorY": "16"
+            },
+            "id": "c198e337-e91b-47db-9800-2b2208adf477"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "225",
+              "operator": ">=",
+              "comparator": 1,
+              "__collapseElse": false,
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "225"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_DIALOGUE_AOBA_NEW",
+                  "args": {
+                    "text": [
+                      "Oh, it's glowing. What's\nhappening to it?"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "1986c102-48b5-4221-8d15-e0aebb62af63"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "699ea239-5fb1-4a39-bcf9-dff4aef4e5f7",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "b267c2f3-b14c-4a0c-9b8e-3ae4233a8ca0"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "I'm... not sure. We'll need\nto just keep going."
+                    ],
+                    "portraitType": "pensive"
+                  },
+                  "id": "9209ec72-7faa-425e-8282-5d61d9576b8f"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "If you say so..."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "88a8dbbe-a8b5-4311-a251-a4baeb652bb7"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": ""
+                  },
+                  "id": "9ad2bd47-122e-480f-8f4b-f8d6859be135"
+                }
+              ]
+            },
+            "id": "4540db5e-7d15-4542-a5c6-610766cfc97d"
+          }
+        ],
+        "false": []
+      },
+      "id": "2ece25b5-9a2a-4202-87f8-1e75fc6d799a"
+    }
+  ],
+  "leaveScript": []
+}

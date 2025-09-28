@@ -1,0 +1,24 @@
+{
+  "_resourceType": "trigger",
+  "id": "74eb28c0-37e6-4f30-b3a0-77d558f0266b",
+  "_index": 19,
+  "symbol": "trigger_76",
+  "prefabId": "",
+  "name": "",
+  "x": 111,
+  "y": 9,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Climbing"
+      },
+      "id": "59b46354-6dc7-440a-a232-c2edfc87d384"
+    }
+  ],
+  "leaveScript": []
+}

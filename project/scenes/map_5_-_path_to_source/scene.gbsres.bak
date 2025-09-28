@@ -1,0 +1,689 @@
+{
+  "_resourceType": "scene",
+  "id": "f540c3e4-055a-48ce-97d3-6888014c388f",
+  "_index": 18,
+  "type": "ADVENTURE",
+  "name": "Map 5 - Path To Source",
+  "symbol": "scene_22",
+  "labelColor": "purple",
+  "x": 3728,
+  "y": 208,
+  "width": 124,
+  "height": 130,
+  "backgroundId": "61402d1b-166f-4525-a162-6580f88cb833",
+  "tilesetId": "",
+  "paletteIds": [
+    "b508b487-ac76-456f-93ba-143baf0bbc78",
+    "c2b178de-8820-467d-8520-599c62441612",
+    "f8b2bb35-782d-41b7-896d-544368fc05a4",
+    "445a649a-242c-487d-a36b-d619e20cca9e",
+    "c6345d13-cb62-4e44-b567-a70affbc9252",
+    "1cacd09a-fb9e-488b-bd46-7c39c5a718f8",
+    "1f902694-9095-415c-9884-d263af1dab20"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "b55d841d-cab9-4ef2-b879-b446acfc99ce"
+  ],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "fb1c90a7-1cc2-4dea-bb8a-91b5ae9348cc",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "98f056fb-7d96-47ce-9bb8-446c877f4e93"
+      },
+      "id": "7afca3f9-1e39-416a-b633-c99bf423e2a6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "77",
+        "value": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": true
+      },
+      "id": "ce99f03c-2ebe-4eb5-b1dd-ee5fd4589e07"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e69dd610-89af-49f7-9710-88e976bc0d43",
+        "$actor[0]$": "36d66d6e-43f9-4415-929d-e77b970c9536",
+        "__collapse": true
+      },
+      "id": "8e7908a6-7ba3-4527-b1b9-5bf9b82a865b"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "193",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 184\nVM_REPLACE_TILE_XY     117, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "bd68dc67-889e-4443-9495-662fb2e9188f"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 184\nVM_REPLACE_TILE_XY     117, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 185\nVM_REPLACE_TILE_XY     118, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "10707d56-d9ae-4fe6-9c3b-74881ac8f31b"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 184\nVM_REPLACE_TILE_XY     117, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 185\nVM_REPLACE_TILE_XY     118, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 186\nVM_REPLACE_TILE_XY     117, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "645aa42d-13c1-4e6f-85cb-61bdff1a7745"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 184\nVM_REPLACE_TILE_XY     117, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 185\nVM_REPLACE_TILE_XY     118, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 186\nVM_REPLACE_TILE_XY     117, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 187\nVM_REPLACE_TILE_XY     118, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "74155c07-54f3-4413-b862-1d76621aceba"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 184\nVM_REPLACE_TILE_XY     117, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 185\nVM_REPLACE_TILE_XY     118, 68, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 186\nVM_REPLACE_TILE_XY     117, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 187\nVM_REPLACE_TILE_XY     118, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 188\nVM_REPLACE_TILE_XY     119, 69, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "19793a4c-21ef-4cb0-b5ae-a731f0bc8a3b"
+          }
+        ],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "3c087d12-0d6c-4662-835d-d7c90d1d03c0"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "cee83083-7e9a-4fd7-8bfe-595e788a8139"
+            },
+            "id": "c17c3972-9757-4fdc-b2a6-66796607d1e3"
+          }
+        ]
+      },
+      "id": "8f79cb0d-df35-4efd-a786-742fc60181cc"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e",
+              "__collapse": false
+            },
+            "id": "cc816c65-e7f7-4f21-82db-ab35d6a5c84a"
+          }
+        ]
+      },
+      "id": "38894eb3-12bd-432b-bd07-973c5c181970"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "2850e833-5fc3-4a07-9f1e-e0826ad369ad"
+            },
+            "id": "feb74a91-de83-4f38-bb17-e7d58f72739b"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "8684d43b-5afb-4dee-8772-15242ce5a82d",
+              "$actor[0]$": "190bf2cd-d0ab-4e0a-bec4-a13e288260f8"
+            },
+            "id": "ecc4d009-e721-48b0-a187-0b615636faf2"
+          }
+        ]
+      },
+      "id": "ba9b16cf-bc06-4cb3-8d53-68898701cfc3"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "219",
+              "__collapseElse": true,
+              "__disableElse": true,
+              "condition": {
+                "type": "variable",
+                "value": "219"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_GET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": "29",
+                    "__collapse": true
+                  },
+                  "id": "3915eafe-2e50-4b26-b9a5-9434bb85c560"
+                },
+                {
+                  "command": "EVENT_ACTOR_GET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "vectorX": "28",
+                    "vectorY": "27",
+                    "__collapse": true
+                  },
+                  "id": "cf93cb66-2927-42f1-9642-34ffadfbf8ae"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "e927c303-8c22-4492-b9cd-f26e2fbaab5b",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "c90dedb8-fac2-4cfc-b150-f9346bdb5399"
+                }
+              ],
+              "false": []
+            },
+            "id": "eaa82e74-df5f-4252-8596-03e11a3cd122"
+          }
+        ]
+      },
+      "id": "9ed591ae-9f81-4247-8410-f19920b81d6e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "224",
+        "__collapseElse": true,
+        "__comment": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "224"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "e8d9d17a-3d99-45a7-98a7-0eaa22f5a3ea",
+              "persist": false
+            },
+            "id": "5fddaa98-8636-402b-a5bb-a5a6be165a47"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "224",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "44776084-8766-4c5f-a14b-8663db9f972e"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "228",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "7c5b26d9-cc84-49a5-91fa-e804fd16ef83"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "It's a map with some numbers\non it? It feels like the\nalchemy recipes..."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "9a963190-58a4-4779-ab87-4dccb183c532"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I feel buzzy when I hold it."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "40c5fa45-92e1-4ca6-9dc0-835b8d0cdf87"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "I definitely can't relate,\nbut this must be an\nalchemically-infused artifact."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "13cf3153-1fa7-48a6-8c79-a5efd029d96b"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Well, it's fascinating. And I'm\ngonna study this thing inside-\nout when I get home.",
+                "In the meantime, let's make\nuse of it!"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "076261c1-9650-46e6-9db2-b67697c05649"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Read Paper"
+            },
+            "id": "37e9051d-b78f-4c48-85e9-47c745412c64"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "There's this sheet of weird\nmarkings, too... I can't\nhelp but feel there's a",
+                "connection here. I can feel\na subtle pull between them\nsomehow..."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "57660887-489e-4928-80aa-6b106b82f2dd"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "225",
+              "operator": ">=",
+              "comparator": 1,
+              "__collapseElse": false,
+              "__disableElse": true,
+              "__collapse": true,
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "225"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                  "args": {
+                    "text": [
+                      "look!!"
+                    ],
+                    "portraitType": "shock"
+                  },
+                  "id": "deda32d5-6230-44dd-b652-246753eb10e7"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "It's... glowing?!"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "0ad2fc2a-2279-4d03-8b49-7cfa34aeb90a"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "226",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "bdd9c3f7-fde9-4738-a622-611d4d34c383"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "b5601b12-613e-4a0a-9ba1-9c8c2c3a434e",
+                    "$variable[V0]$": {
+                      "type": "variable",
+                      "value": "225"
+                    }
+                  },
+                  "id": "6dbb48c8-fa87-48fe-a76a-9ce4b511effc"
+                }
+              ],
+              "false": []
+            },
+            "id": "f240826a-00d5-410b-ab7e-079986ab5174"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You've unlocked the MAP OF THE LAND!\nYou can open it from the START menu."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "bd926852-7d86-4d3a-b7dd-ceaa33806592"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "1334f759-18d6-4494-b37a-b214a7ef769e"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "eb28956c-45f9-4f05-9f53-e2cb07fb0759"
+            },
+            "id": "b0b3c86b-699a-4d7f-a14f-6ff5eb780b48"
+          }
+        ],
+        "false": []
+      },
+      "id": "888d5296-fa17-4a11-af30-97c393c75263"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "227",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "227"
+        },
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "e8d9d17a-3d99-45a7-98a7-0eaa22f5a3ea",
+              "persist": false
+            },
+            "id": "b9e8a10b-febc-4295-89be-1454f50eeea0"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "227",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "2d46eb82-e1b0-4c03-b8bf-27acef8cc274"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Read Paper"
+            },
+            "id": "2cf8a758-c1c3-497f-b3b6-dc95800eb649"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Can... can you like...\nunderstand any of this?"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "4d5946e9-64ac-44ae-bc69-e26131f0d11a"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "... *sigh*",
+                "Nope. No idea.",
+                "But it feels so peculiar.\nThe closer we've been getting\nto the source, the stronger",
+                "this indescribable feeling\nbecomes. I think... we need\nto keep getting closer."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "8cb3f64a-95e1-48ae-a916-15220e171dae"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "We're right here with you,\nEionn."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "cb1e3432-63c1-42ae-aa23-453ff1361c7d"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "39cc6f37-1463-42de-a3d9-c9ad51b4dc6e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "And I'm right here for you\nall too!"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "33004e8f-9f03-4b39-8401-bf4404a6c6d5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You've unlocked the MAP OF THE LAND!",
+                "You can open it from the START menu."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "1eb09e7c-b200-4329-8c5a-87b8a7f672b9"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "19eef106-699a-4c2f-929b-0927310360bf"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "eb28956c-45f9-4f05-9f53-e2cb07fb0759"
+            },
+            "id": "96c7fee3-e3eb-4d99-8920-1a7586d49554"
+          }
+        ],
+        "false": []
+      },
+      "id": "3f17e5b2-3515-41b8-a40f-2dc965658df9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "238",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "238"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "238",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "aafd56a1-973a-4a61-bb3c-535cd389000a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "5c3b86ec-48ef-4e3d-af13-924a66cbeaca"
+            },
+            "id": "24e7b019-d27b-4c83-a9f1-1c17b17a11c1"
+          }
+        ],
+        "false": []
+      },
+      "id": "be962a65-76c7-488b-8d0d-41e5a2c8e88c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f15a+009+0f2f+00a+0f39+00b+0f2d+00c+0f38+00c+0f2c+00c+0f38+00c+0f2c+005f+0f1d+005f+0f1d+005f+0f1d+00c+0f3f+004+0f2d+00c+0f40+002+0f2e+00c+0f40+002+0f34+003+0f!002+0f40+002+0f2e+009+0f!002+0f40+002+0f2e+009+0f!002+0f40+002+0f2e+009+0f!002+0f40+002+0f38+002+0f40+002+0f38+002+0f40+002+0f38+002+0f40+002+0f38+002+0f40+002+0f37+003+0f40+002+0f33+007+0f40+002+0f33+007+0f3f+003+0fb+005+0f23+007+0f23+0010+0f7+008+0f5+00c+0f22+003+0f!003+0f3+002+0f16+001d+0f2+008+0f2+00f+0f22+002+0f3+002+0f2+004+0f7+0023+0f2+006+0f2+008+0f2+00f+0f22+002+0f3+00!08!04!08!04!002+08!04!001c+027+00e+0f2+003+0f7+006+023+006+0f21+003+0f3+00!08!04!08!04!002+08!04!007+0f2+0012+0f!017+0f!00d+0f2+002+0f8+005+0f!013+0f!005+0f16+004+0f3+007+0f3+00!08!04!08!04!002+08!04!003+0f2+0016+0f!007+0f!00d+0f2+002+0f8+004+0f!004+08!04!004+0f13+007+0f3+007+0f3+00!08!04!08!04!002+08!04!00b+0f2+00e+0f4+002+0f3+00d+0f2+002+0f8+003+0f!006+0f!004+0f11+005+0f2+002+0f3+007+0f3+00!08!04!00!0f!002+0f!008+0f2+0012+0f3+004+0f2+00d+0f2+002+0f8+002+08!04!006+08!04!003+0f10+00a+0fd+00!08!04!00!0f!002+0f!0032+0f2+002+0f8+003+0f3+002+0f3+004+0fe+00d+0fc+00!08!04!00!0f!002+0f!0032+0f2+002+0f8+003+0f3+002+0f3+004+0fd+003+0f2+009+0fc+00!08!04!00!0f!0035+0f2+002+0f8+003+0f3+002+0f3+004+0fc+00f+0fc+00!08!04!0011+0f2+0011+022+0011+0f2+002+0f8+003+0f3+002+0f3+004+0fb+0010+0fb+002+08!04!00b+0f2+00f+027+0f!012+0f!02!00f+0f2+002+0f8+00f+0fb+0010+0f3+00a+08!04!009+0f2+0010+0f!017+004+01!0f!02!00d+0f2+002+0f8+00f+0fa+0011+0f3+00a+08!04!0018+022+0f!00e+01!0f!022+00a+0f2+002+0f8+00f+0fa+0011+0f3+00b+0f!0017+0f!012+005+0f2+00a+012+0f!02!008+0f2+002+0f8+00f+0f9+0012+0f3+003+0f8+00!0f!0014+02!0f!00c+0f2+009+01!0f!023+004+0f2+002+0f8+00f+0f9+0012+0f3+002+0f9+002+0f!0010+022+0f!01!002+0f2+00d+0f2+007+013+0f!003+0f2+009+08!04!00e+0f9+00d+0f2+00!0f!003+0f!002+0f9+003+0f!025+005+02!002+02!0f!012+009+0f2+0014+08!04!002+0f2+009+08!04!00e+0f8+00e+0f3+004+0f!002+0f9+004+015+005+01!0f2+01!001a+0f2+002+0f2+003+0f!02!00!0f2+009+08!04!00c+022+0f7+00f+0f!01!005+0f!002+0f9+00f+0f!00b+0f2+005+0f2+0012+01!0fa+002+08!04!00a+02!0f!012+0f6+00f+0f!007+0f!002+0f9+00e+0f!0019+0f2+00e+0fa+00!08!04!00a+01!003+0f6+00e+0f!008+0f!002+0f9+00b+022+0f!002a+0fa+00!08!0f2+005+0f!007+0f6+00d+0f!009+0f!002+0f9+007+023+0f!012+002b+0fa+00!08!04!00!0f!003+02!0f!007+0f8+00a+08!04!009+0f!002+0f9+006+0f!013+002e+0f3+005+0f2+00!08!04!002+0f!02!0f!01!008+0f4+00e+0f!00a+0f!002+0f9+005+0f!0032+0f3+005+0f2+00!08!04!003+01!00a+0f4+00d+0f!00b+0f!002+0f9+004+0f!0033+0f3+005+0f2+00!08!04!00e+0f4+00c+08!04!00b+0f!004+0f7+0038+0f3+002+0f5+00!08!04!00e+0f4+028+004+0f!00c+0f!006+0f2+002+0f2+002e+0f2+007+0f3+008+08!04!00e+0f4+017+0f!003+0f!04!00c+0f!0039+0f3+007+0f3+008+08!04!00e+0f3+00c+0f!00d+0f!0038+0f4+007+0fc+00f+0f3+00b+08!04!00d+0f!0020+0f2+0015+0f5+007+0fc+00f+0f3+00b+08!04!00d+0f3+0019+0fe+00c+0f7+0012+08!04!00e+0f3+00b+08!04!00d+0f5+0210+0f17+029+0f8+0012+08!04!00e+0f3+00b+08!04!0012+0110+0017+019+001a+08!04!00d+0f4+00b+0f!005d+08!04!00c+0f5+00a+08!04!005d+0f!00d+0f5+00a+08!04!005c+08!04!00c+0f6+00a+08!04!004d+027+008+0f!00c+0f7+00a+08!04!004b+02!0f!017+0f!006+08!04!00b+0f9+00a+0f!004a+0f!01!009+0f!005+0f!00b+0fa+00a+0f!0048+02!0f!00c+0f!003+08!04!00a+0ff+006+0f!0023+02c+0018+0f!01!00d+08!04!002+0f!00b+0fc+009+0f!0022+0f!01c+0f!026+0010+0f!00f+08!04!00!08!04!00b+0fc+00a+0f!0020+0f!00e+016+0f!00d+02!0f!0011+0f3+04!00a+0fe+009+0f2+001e+0f!0016+0f!00b+0f!01!0013+012+00b+0fe+009+0f2+001d+0f!0018+0f!029+0f!0022+0fe+00a+0f!001c+0f!00c+022+00c+019+0022+0f!005+0fa+009+0f2+001a+08!04!009+022+0f!012+0f!02!0035+0f!005+0fa+00a+0f!001a+0f!009+0f!012+004+01!0f!0034+0f!005+0fa+00a+0f2+0018+08!04!008+08!04!008+0f!02!0015+024+0019+08!04!005+0f9+00b+0f!0018+0f!009+08!04!009+01!0f!0012+02!0f!014+0f!022+0016+08!04!005+0fa+00a+0f2+0016+08!04!009+08!04!00a+08!04!0010+0f!01!006+012+0f!0015+08!04!005+0fa+00b+0f!0016+08!04!009+08!04!00a+08!04!00f+0f!00b+0f!0014+08!04!004+0fb+00b+0f!0016+0f!00a+08!04!00a+08!04!00e+0f!00c+08!04!0013+08!04!005+0fb+00a+0f2+0014+08!04!00b+0f4+002+0f6+00e+08!04!00c+08!04!0013+08!04!005+0fb+009+0f3+0014+08!04!00b+0f4+002+0f6+00f+0f4+002+0f8+0015+0f!005+0fc+009+0f2+0014+08!04!00b+0f4+002+0f6+00f+0f4+002+0f8+0015+08!04!003+0fd+009+0f2+0014+08!04!00b+0f4+002+0f6+00f+0f4+002+0f8+0015+08!04!004+0fc+00a+0f!0014+08!04!00b+0f4+002+0f6+00f+0f4+002+0f8+0015+08!04!004+0fc+00a+0f!0014+0f!00c+0f4+002+0f6+00f+0f4+002+0f8+0016+0f!004+0fd+008+08!04!0013+0f!00d+0f4+002+0f6+00f+0f4+002+0f8+0016+08!04!002+0fe+008+0f!0013+0f!00e+0f4+002+0f6+00f+0f4+002+0f8+0016+08!04!003+0fc+008+0f!0013+0f!00f+0f4+002+0f6+00f+0f4+002+0f8+0016+08!04!003+0fc+007+08!04!0012+08!04!00f+0f4+002+0f6+00f+0f4+002+0f8+0016+08!04!003+0fc+007+0f!0013+0f!0010+0f4+002+0f6+00f+0f4+002+0f8+0016+08!04!002+0fd+006+0f!0013+08!04!0010+0f4+002+0f6+00f+0f4+002+0f8+0016+08!04!003+0fc+005+0f!0014+08!04!0010+0f3+004+0f5+00f+0f4+002+0f8+0016+08!04!003+0fb+005+08!04!0014+08!04!002b+0f4+002+0f8+0016+08!04!003+0fb+005+08!04!0014+08!04!002b+0f3+004+0f7+0016+08!04!002+0fc+005+0f!0015+08!04!004f+08!04!003+0fa+005+08!04!0066+08!04!003+0f9+006+08!04!0066+08!04!003+0f8+007+08!04!0066+08!04!002+0f8+008+08!04!0066+08!04!003+0f6+009+08!04!0066+08!04!003+0f6+00a+0f!0066+08!04!003+0f5+00b+0f!0054+0f4+00e+08!04!002+0f6+00b+0f!0053+0f7+00c+08!04!003+0f4+00c+0f2+00f+0f5+003d+0f9+00b+08!04!003+0f4+00c+0f3+00c+0f8+0019+0f10+0012+0fb+00a+08!04!003+0f4+00c+0f4+009+0fb+0016+0f13+00f+0fe+009+08!04!002+0f8+009+0f7+004+0fe+0014+0f16+00c+0ff+009+08!04!003+0f5+00b+0f1b+00f+0f1a+009+0f12+008+08!04!003+0f6+00a+0f1d+00b+0f37+008+08!04!003+0f3+00d+0f22+024+0f39+008+08!04!002+0f4+002f+014+0038+08!04!007+08!04!003+0f3+006b+08!04!007+08!04!003+0f4+006a+08!04!007+08!04!003+0f4+0073+08!04!002+0f5+0073+08!04!003+0f4+0073+08!04!003+0f4+006+0f2+006b+08!04!003+0f4+008+0f2+005+0f4+0012+0f6+0048+08!04!002+0f6+00b+0f8+0010+0f9+0046+08!04!003+0f6+008+0fb+00e+0fb+0024+0f2+00b+0f8+005+0f2+005+08!04!003+0f1a+00d+0fc+003+0f2+008+0f3+002+0f7+006+0f2+00d+0fe+008+08!04!003+0f1b+00b+0fe+004+0f2+002+0f2+006+0fa+002+0f2+006+0f2+005+0f11+00b+0f1d+009+0f10+00d+0fd+00f+0f14+00a+0f1d+007+0f13+007+0f12+00c+0f18+008+0f1e+006+0f2e+008+0f1d+005+0f1e+005+0f77+005+0f78+004+0f78+004+0f78+004+0f78+004+0f5b+"
+}

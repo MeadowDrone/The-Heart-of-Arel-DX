@@ -1,0 +1,50 @@
+{
+  "_resourceType": "script",
+  "id": "37a178d4-fd87-4b7e-bac3-d7a510e0059e",
+  "name": "Party Member - Despawn",
+  "symbol": "script_62",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Party Member"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "player",
+        "vectorX": "28",
+        "vectorY": "27",
+        "__collapse": true
+      },
+      "id": "52d45fa9-33f2-4aa8-bedb-b40560f273b6"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "variable",
+          "value": "28"
+        },
+        "y": {
+          "type": "variable",
+          "value": "27"
+        },
+        "moveType": "diagonal",
+        "useCollisions": true
+      },
+      "id": "9cae8921-c1d7-4a1a-baf5-1a6624061acc"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "0"
+      },
+      "id": "c75d0dbe-ab0e-42df-9a5c-49d37b4666a5"
+    }
+  ]
+}

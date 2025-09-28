@@ -1,0 +1,15 @@
+{
+  "_resourceType": "font",
+  "id": "349bf0ea-10b7-437d-a7fb-83301d3efe83",
+  "name": "Condensed Mini Avatars",
+  "symbol": "font_condensed_mini_avatars_2",
+  "width": 128,
+  "height": 112,
+  "filename": "condensed-mini-avatars.png",
+  "mapping": {
+    "﹩": 36,
+    "あ": 208,
+    "お": 227,
+    "え": 228
+  }
+}

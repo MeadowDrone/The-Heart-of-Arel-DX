@@ -1,0 +1,540 @@
+{
+  "_resourceType": "scene",
+  "id": "edeba9b7-aa89-498d-8f9f-ce68efa96472",
+  "_index": 70,
+  "type": "TOPDOWN",
+  "name": "Ending Part 3",
+  "symbol": "scene_74",
+  "x": 5307.61857403299,
+  "y": 2686.965154743274,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "593e01e0-3e56-4f8d-9c11-a961da86188d",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "b2b13596-473e-4975-b09d-e76560dd5591"
+  ],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bf69484f-3c14-4d85-905b-632a93eea47d",
+        "__collapse": true,
+        "__comment": true
+      },
+      "id": "078836d2-f7e3-4555-b150-de973a20bd55"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "x": {
+          "type": "number",
+          "value": 20
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "__collapse": true
+      },
+      "id": "e4f1017e-c4d3-4143-83b5-8dcbf2296a04"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "773a527f-1fd8-4c21-9d72-dd12a8b083ec"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "7b5f75b9-074f-4706-a5f5-c1e14824cdcd"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "1d5e87f9-41d5-4e41-ab99-b034ad8da07a"
+      },
+      "id": "f3c74848-6945-4643-8a92-ca439236349e"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Eionn - Happy\nEryr - Straight\nHarthe - Smile\nAoba - Sweat!"
+      },
+      "id": "c5c6aa19-f08f-4b4b-823a-c3ffedd041ae"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "Hi!",
+          "Thanks so much for playing\nthis lil' game."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "2f5fa2b7-91e2-4f47-898d-101c4d7b7ba5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "It means so much to me that\nyou'd see it through to the\nend."
+        ],
+        "portraitType": "happy"
+      },
+      "id": "4441c5a9-dcc4-409a-ba6e-b44b072a2911"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "234e02d4-78b4-43f1-8ed1-ef30321ff2ec"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "Well..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "92f70c7f-bb82-4303-a861-b4e44b2aa1f8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "avatar",
+        "text": [
+          "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!Well..."
+        ],
+        "nameTag": "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!ÀÁÂÃ",
+        "nameX": 3,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "d8ed083f-a345-4c3c-9a30-1bad4212ea49"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "7a520cf7-78fa-4bce-9cb0-a0bba421e7b6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "I developed this game in GB\nStudio 3.1, and the colour\nversion in 4.1.3.",
+          "I made the artwork in\nAsperite, and created the\nsound effects in FX Hammer.",
+          "I used the condensed fonts set,\nby edo999 (edo999.itch.io).",
+          "The incredible boxart is by\nRose Chevailler!\nlinktr.ee/rose_chevailler"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "752cc110-6959-48b0-94e5-99a2be7bd5ac"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "Thanks so much to Nowhere,\nRaini, Eragur and Nic for\ngraciously playtesting! <3"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "8294a6a9-d9e3-4c04-b5a1-ad44023fe172"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "x": {
+          "type": "number",
+          "value": -2
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "b1af1dd3-afc3-45f8-93b1-dabbe4088f67"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "1e1360da-1f66-40f3-9c4a-7336143ab918"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "461ebf3f-2871-4efc-a7db-85862267ae4a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "I'd like to dedicate this\ngame to everybody who supplied\nthe love, cuddles and headpats",
+          "that fuelled and inspired this\ngame."
+        ],
+        "portraitType": "sweat"
+      },
+      "id": "55e22ba9-a746-48a0-b3ec-73f91b8e48aa"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "f2809c97-ebe4-4ea7-9251-4b448c92f3b6"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "77ce6e09-ac62-4155-b218-ab3a79afe989"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "c4df5dcc-698b-4539-a3b3-fe4957ed81a2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "Also, a special shoutout to\nall of you who have gone\nthrough unrequited love,",
+          "devastating crushes,",
+          "and those who had that special\nbond with someone but were\njust too shy and/or gay to",
+          "admit your feelings for\neach other."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "cf2f2218-7084-421d-931c-6bae6282bfa8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "00018831-7487-4810-aebb-55d9b1c21008"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "(that's me covering all\nthree bases there)"
+        ],
+        "portraitType": "sweat"
+      },
+      "id": "26730273-df4a-4dfa-a076-9390689cb71e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "It'll be OK!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "a6cfdb62-ad6e-4130-9aa7-763fde4874d1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "ＦYou'll get there!"
+        ],
+        "nameTag": "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "6f7a71d1-47cc-4c38-97c8-992e6dd3a7bb"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "5b70be3d-73af-4115-8311-053b0080b23d"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "225",
+        "operator": "<=",
+        "comparator": 4,
+        "__collapseElse": false,
+        "__disableElse": false,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "225"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DIALOGUE_ERIKA",
+            "args": {
+              "text": [
+                "If you want to uncover all the\nsecrets of the miasma,\nyou can choose Continue from",
+                "the title screen to go back to\nthe entrance to the Source and\nkeep exploring the land."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "539eed98-ecd2-42d3-b7d1-947955e38aed"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "If you want to uncover all the\nsecrets of the miasma,\nyou can choose Continue from",
+                "the title screen to go back to\nthe entrance to the Source."
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left",
+              "__comment": true
+            },
+            "id": "b96d8587-7853-41f3-97fe-be830f934454"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_DIALOGUE_ERIKA",
+            "args": {
+              "text": [
+                "Wow, you really 100%ed it,\nhuh?"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "756536f0-464a-41e4-ae39-15d821d97b0f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERIKA",
+            "args": {
+              "text": [
+                "Amazing!"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "258b2edd-c2a3-4d76-a9b3-4addf3a4ee48"
+          }
+        ]
+      },
+      "id": "4ed03b22-240f-4dbe-ac0f-e705da7b6aa7"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!Finally, if you enjoyed this\nenough to throw in a little\nmoney, all money raised will",
+          "go towards two causes:",
+          "Dandelion, a harm reduction\nand information centre, and\nneedle exchange, for trans+",
+          "people who are self-medding\nwith DIY HRT.",
+          "I'll also be giving money to\nTrans Aid Bristol, a mutual\naid fund in my city for trans",
+          "folk needing financial\nsupport for transition and\nliving expenses."
+        ],
+        "nameTag": "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!ÀÁÂÃ",
+        "nameX": 3,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "601fe512-de42-44a9-baa3-807fea521517"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": null,
+        "frames": 30
+      },
+      "id": "75dd45aa-a7ad-4f45-b033-81aa274d4291"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERIKA",
+      "args": {
+        "text": [
+          "Anyway, that's my spiel\nover. See you in the next\nadventure!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "e06d9731-4770-4828-be68-a095216a61e9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "ＦAnyway, that's my spiel\nover. See you in the next\nadventure!"
+        ],
+        "nameTag": "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "!F:56fa37db-9454-4a8b-b897-5f09e195aa1f!あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__comment": true
+      },
+      "id": "b0eb1fc1-58f1-47ee-bbf0-7200282bdc42"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "82cfab11-0713-4760-a0c3-c9cbfc1e5a17"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "53be6230-5ee2-4dff-b97f-a2f9ff01a226",
+        "x": {
+          "type": "number",
+          "value": 14
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "35a08848-6bc1-47f5-9ef7-bb2b64762aae"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 5,
+        "frames": 30
+      },
+      "id": "9fed97ff-76ad-4923-a348-0a0e5e57b8d7"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "81eb1daf-2f2f-43f4-97ee-a8d110241ae2",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "5fb68e57-dcb9-4826-9e30-540822f9c6d2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

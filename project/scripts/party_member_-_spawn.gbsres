@@ -1,0 +1,48 @@
+{
+  "_resourceType": "script",
+  "id": "5c469e39-4400-4c1d-a61d-cb24a0216f52",
+  "name": "Party Member - Spawn",
+  "symbol": "script_61",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Party Member"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "player",
+        "vectorX": "28",
+        "vectorY": "27",
+        "__collapse": true
+      },
+      "id": "b0c749a6-d810-4855-bfdb-34efce8ada04"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "variable",
+          "value": "28"
+        },
+        "y": {
+          "type": "variable",
+          "value": "27"
+        }
+      },
+      "id": "a69f182d-85da-4ed5-beff-7d2466dc73a3"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "0"
+      },
+      "id": "a2a15e00-f2e2-420b-99da-87be6e819c64"
+    }
+  ]
+}

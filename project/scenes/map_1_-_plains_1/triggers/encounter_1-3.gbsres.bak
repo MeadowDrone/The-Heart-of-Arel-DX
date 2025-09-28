@@ -1,0 +1,177 @@
+{
+  "_resourceType": "trigger",
+  "id": "477c0275-4541-4112-8ea0-2c684a9cbf29",
+  "_index": 1,
+  "symbol": "trigger_3",
+  "prefabId": "",
+  "name": "Encounter 1-3",
+  "x": 18,
+  "y": 30,
+  "width": 10,
+  "height": 9,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "21",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "211"
+            },
+            "id": "52d04910-0fd8-4cf2-99b8-38331b3b18cc"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "2aa6cd69-6043-4e5a-9e17-34403c2d7fd9"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Tamed a wild cat!"
+              ],
+              "avatarId": ""
+            },
+            "id": "1496a3df-185f-4f22-85a0-cb9ddd19ef54"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "9a197fa0-fa36-47bd-8a5b-4ce932558879"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "cat!!"
+              ],
+              "portraitType": "shock"
+            },
+            "id": "7263e604-7d2d-4bb1-96fa-cae1acb74ea5"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "here kitty"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "d8a0730c-53bf-4c5c-8b01-55979175c128"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "*purr*"
+              ],
+              "avatarId": ""
+            },
+            "id": "767e4f6a-fe6d-4bc1-8680-969db365d38a"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "awww. look! this wild thing is\nso affectionate. i love them £"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "c7a169ec-afb1-4154-9c3a-07be12a08897"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Sorry Harthe, but that cat is\njust marking its territory,\nnot being affectionate."
+              ],
+              "portraitType": "expressionless"
+            },
+            "id": "b76eb693-731d-4431-9601-e387570f850e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "i"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "a1d295f5-db79-4ee7-ac94-9ada0513983c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "i dont care :("
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "6fb6d867-9d27-444e-9c58-ae827351385c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "I want to be marked as\nterritory."
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "9a7456db-83b8-486b-a188-5007707e87b2"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "2216dfd9-9885-4816-9806-96afc95f9a02"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "73be32ac-5a23-468a-bc56-297afa390ed9"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "681039f2-e938-4abf-8838-3c8909c80368"
+          }
+        ],
+        "false": []
+      },
+      "id": "56a28176-2a27-442c-91ca-d15fbec9de64"
+    }
+  ],
+  "leaveScript": []
+}

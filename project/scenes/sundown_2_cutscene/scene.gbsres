@@ -1,0 +1,574 @@
+{
+  "_resourceType": "scene",
+  "id": "e50cca3f-0bd8-44b7-abf4-ca47da540ccf",
+  "_index": 12,
+  "type": "TOPDOWN",
+  "name": "Sundown 2 Cutscene",
+  "symbol": "scene_14",
+  "labelColor": "yellow",
+  "x": 312,
+  "y": 1240,
+  "width": 80,
+  "height": 18,
+  "backgroundId": "41e02d97-88eb-4a31-a700-efa0125b1b15",
+  "tilesetId": "",
+  "paletteIds": [
+    "4308cb27-f814-49b8-a1cc-b7fc7e2e485a",
+    "e30e340c-e993-4b1e-850b-9150e24da74c",
+    "d4dc48fc-a424-426e-970e-0c0716cd6dc5",
+    "46fee4ee-4ca9-42c0-ae88-47b8f2d30ba2",
+    "d4dc48fc-a424-426e-970e-0c0716cd6dc5",
+    "b508b487-ac76-456f-93ba-143baf0bbc78",
+    "f9781a84-7476-4ead-85da-d11fb3bda6cb"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": null,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "b390fdab-7c0d-4243-b574-c2e1135ab5ec"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bf69484f-3c14-4d85-905b-632a93eea47d"
+      },
+      "id": "6dd74d8d-ac7d-4a1a-b1e7-e2d17edb4bec"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1292b9c-0797-4b9a-9c40-4a1d143dbd3a",
+        "__collapse": false
+      },
+      "id": "d350c21c-6a96-4774-a961-832f92c1b7e1"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": "2"
+      },
+      "id": "374ce83e-e3eb-4ebd-a330-87b22a4b54ff"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "dbd1ab91-7fdd-4b17-b36a-e522f8dbe802",
+        "$actor[0]$": "0951c774-4d4d-4bf4-8a63-fc7ce1a9456f",
+        "$actor[1]$": "8e633457-edb4-464e-ac9e-b7cbcee01cc3",
+        "$actor[2]$": "69743b3d-6cda-4321-a668-0ebe9a44cabe",
+        "$actor[3]$": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "__collapse": false
+      },
+      "id": "d678b206-7379-437a-8da3-a8b7e208948c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "spriteStateId": ""
+      },
+      "id": "2dc908f8-55f6-4b23-93dd-4583de275b53"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "754668f4-0d32-420e-8303-49ff65f91c6d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0951c774-4d4d-4bf4-8a63-fc7ce1a9456f",
+        "spriteStateId": ""
+      },
+      "id": "c691c8b5-7655-4ad1-91b9-d48feea03096"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0951c774-4d4d-4bf4-8a63-fc7ce1a9456f",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "e086d2f7-d074-4fd4-bb38-1881a9926bcd"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "We ain't mind readers, and\nwe're all here because we work\nbetter as a team to lift each",
+          "other up. But if something's\nup, then we need to know."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "9cf7eeaa-10ba-4daf-9129-ccd720a375e9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "and making sure youre looked\nafter emotionally is so much\nmore important than ppl know",
+          "especially w/ all the\nhazardous land we need to trek\nthrough.. and we cant look",
+          "after you if you dont tell us\nwhat you need"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "cefe4223-214f-4ec7-984e-16d9851dcd38"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "yknow what i mean?"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "5f868af4-3746-4633-9a99-c8fb96381108"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "... yeah. I get it."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "310a3cfd-97a3-44ee-af82-0b61d1d561f3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "8e633457-edb4-464e-ac9e-b7cbcee01cc3",
+        "spriteStateId": ""
+      },
+      "id": "7b688ba0-3af2-4dde-8d00-ab57c78524b8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "8e633457-edb4-464e-ac9e-b7cbcee01cc3",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "06d0aecc-e794-46ca-9bc2-dd48b0214d72"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "It's OK to be shy, of course.\nBut don't keep putting yourself\nlast.",
+          "We'll be worse off as a group\notherwise."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "885925a4-0b13-4d3f-b019-f08d99325ee7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "598e3b5e-2840-4cb8-94d3-b4755c782e14"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "OK. I guess I needed to hear\nthat. With everything going on,\nI've just been feeling...",
+          "tired."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "531eea21-288f-45f8-9500-f19cc7ddf99b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "But like, also emotionally tired.\nLike my head's been stewing in\nyour cauldron for hours."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "83d7bbfb-05ca-45f9-b3e6-c0e0fa0e2ebf"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0951c774-4d4d-4bf4-8a63-fc7ce1a9456f",
+        "spriteStateId": "Comfy"
+      },
+      "id": "4fa87d5e-6043-4ccf-a173-6a1bf4790499"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "At least you'd taste good after\nthat."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "727bd8be-8082-491e-b1ca-7fe0c208ddc6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Haaa... I think... I do need\nsome TLC right now."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "5b48fb92-d733-471b-a5fe-e81d56e8dc05"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Then what are you waiting for?\nGet over here."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "63cad3db-d164-4063-977b-a7cd81a2e048"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "8e633457-edb4-464e-ac9e-b7cbcee01cc3",
+        "spriteStateId": "Comfy"
+      },
+      "id": "7ef08885-cdc5-473f-9683-0b1bddab3c24"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "speed": 0.5
+      },
+      "id": "0d5f03dd-0e67-4831-88c0-4b247308e22e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "68a5c5bd-1291-44dd-b86e-92c33cd2d3e0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "cf6431b6-ebe7-4a14-95ea-ffd710bc1c7a"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "69743b3d-6cda-4321-a668-0ebe9a44cabe",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "cced424b-bacb-43cd-9f06-97ad7600990d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "69743b3d-6cda-4321-a668-0ebe9a44cabe",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "3a69052f-b641-4a63-8e53-40cd9bf587e7"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "you poor thing. lets settle\ndown and relax properly £"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "53b9f17d-ee5b-4e0d-a74d-a7580c766b8c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Okay..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "f7c02830-9042-4d56-9d82-ba95a5fe4247"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "332800a6-36b4-4425-90c8-af92b74f95ea"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": true
+      },
+      "id": "15ecebde-9d06-455e-b550-220fdb6de92a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "77d7dc83-1fc2-494c-b132-3aebb87849be",
+        "spriteStateId": "Comfy",
+        "__collapse": true
+      },
+      "id": "5c2374c7-3566-431b-8a5c-8d8476e0a6f1"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "4b0df5c9-d637-4bb5-a057-11316772d59c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "69743b3d-6cda-4321-a668-0ebe9a44cabe",
+        "spriteStateId": "Giving Headpats Still High",
+        "__collapse": true
+      },
+      "id": "024ce742-aabc-4476-9ff6-c378b9cbb487"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "4fd6dae9-d0c3-4bfe-a4a7-519da642e68e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "69743b3d-6cda-4321-a668-0ebe9a44cabe",
+        "speed": 127,
+        "__collapse": true
+      },
+      "id": "e4230cdc-b33d-4e42-b7f3-d766ba28d8cc"
+    },
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "L1",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 2
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__comment": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "715d449f-ecfb-4800-9dbb-d4bae978eefd",
+              "$actor[0]$": "92f9d722-5182-4b48-a6f6-f65433c24eb7"
+            },
+            "id": "f855965b-8ed3-4114-8b75-c8549ddc6638"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "15891cac-4f09-4d9f-a23c-6e098cbde021",
+              "$actor[0]$": "69743b3d-6cda-4321-a668-0ebe9a44cabe"
+            },
+            "id": "1c315275-07c1-4ae3-ac78-e8ce5f57aa39"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 2,
+              "frames": 30,
+              "__comment": true
+            },
+            "id": "8bf58db1-2c4b-4305-89bc-d4ded80065ad"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "c41eb42f-a06c-4cd4-a83e-981cd8ae4d12",
+              "$actor[0]$": "92f9d722-5182-4b48-a6f6-f65433c24eb7"
+            },
+            "id": "31bddbcb-af60-4fb6-aadc-2595dc9a1fdb"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "07663e9e-f870-4b1d-aa83-ae1413b1a18b",
+              "$actor[0]$": "69743b3d-6cda-4321-a668-0ebe9a44cabe"
+            },
+            "id": "17fb18dd-9b09-4ea2-9918-f59271d21b42"
+          }
+        ]
+      },
+      "id": "4269e749-eeda-4e7e-b7b9-b2828ef817a5"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "69743b3d-6cda-4321-a668-0ebe9a44cabe",
+        "spriteStateId": "Giving Headpats",
+        "__collapse": true
+      },
+      "id": "bca81db8-6294-40d4-8be3-986c6eafc2b4"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "086559bb-9a7c-43e8-bb6b-341c9fd76675"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Zzz..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "3a5c1992-5e3c-4f72-9ade-5a18a40010b8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "f5687afc-8f60-432f-b65c-2f72dbe4a8d5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "£££"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "2b67666f-7022-4c5a-9c9d-bd694702a90e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "5bd08e91-28a3-4c8e-a7f1-1ba886e9aff8"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "eb071970-344a-4f1d-89bd-fe3564161f93",
+        "$actor[0]$": "69743b3d-6cda-4321-a668-0ebe9a44cabe"
+      },
+      "id": "32050af7-2f1a-40b8-a9c3-8c5921c55b09"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "69743b3d-6cda-4321-a668-0ebe9a44cabe",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "bb2d71eb-9c81-472b-96fe-451ce7bca135"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "0ed6f9bc-d38d-41d8-8f5a-d9da7a196ee6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "b822cc59-6436-4c65-9994-72a6213a8357"
+      },
+      "id": "98ebe0b2-f20d-41e5-94fe-c184927bbc69"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005a0+"
+}

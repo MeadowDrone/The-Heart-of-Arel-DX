@@ -1,0 +1,119 @@
+{
+  "_resourceType": "script",
+  "id": "d2b496da-e9c0-428c-a5ab-92469d62df0c",
+  "name": "HeartOfArel-MoveBoulderUp",
+  "symbol": "script_83",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "i",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Boulder"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "V0",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 1
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.2,
+              "frames": 30,
+              "shakeDirection": "horizontal",
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "56273259-0701-472d-aa7b-d245eede9b48"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.2,
+              "frames": 30,
+              "shakeDirection": "vertical",
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "4d31a3ac-1abe-4454-9a07-e396362836d8"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.2,
+              "frames": 30,
+              "shakeDirection": "diagonal",
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "8369039d-6885-4c9f-9862-3bb33f053748"
+          }
+        ]
+      },
+      "id": "040c3c26-8b12-4ce2-906e-cde07e852768"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 30,
+        "__collapse": true
+      },
+      "id": "ff2a8e66-785c-499d-bde9-b1fecffdc45a"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": -1
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "45f8c941-5699-41c9-bb51-a5c1e81714f3"
+    }
+  ]
+}

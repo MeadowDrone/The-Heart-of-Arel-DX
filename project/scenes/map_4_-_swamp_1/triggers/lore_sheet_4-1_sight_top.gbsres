@@ -1,0 +1,76 @@
+{
+  "_resourceType": "trigger",
+  "id": "e4fd8030-a5e5-45ec-83f6-32238a1bdc71",
+  "_index": 4,
+  "symbol": "trigger_54",
+  "prefabId": "",
+  "name": "Lore Sheet 4-1 Sight Top",
+  "x": 109,
+  "y": 42,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "141",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "141"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27"
+            },
+            "id": "61efb1b6-a532-4308-8c2e-dc0806467b8b"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "141",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "3f652c6f-772d-46c1-b6fb-4207ab4391f6"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "0bee0a8e-4a38-4172-a0a0-c0581cafb97c",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "d7c8cee5-0faa-4ffd-b134-f497cdcd0509"
+          }
+        ],
+        "false": []
+      },
+      "id": "e8cc34b2-8f90-439f-b7aa-17a7a16558b0"
+    }
+  ],
+  "leaveScript": []
+}

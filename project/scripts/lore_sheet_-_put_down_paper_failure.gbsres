@@ -1,0 +1,82 @@
+{
+  "_resourceType": "script",
+  "id": "9e71c893-4c32-4b80-a16b-ae16ab5c9537",
+  "name": "Lore Sheet - Put Down Paper Failure",
+  "symbol": "script_24",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "46",
+        "__collapse": true,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "4154a6ea-302f-4593-8831-7d1c3337dc48"
+    },
+    {
+      "command": "EVENT_CLEAR_FLAGS",
+      "args": {
+        "variable": "67",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false,
+        "__collapse": true
+      },
+      "id": "75cb5417-848f-4256-ae68-e1df14499a38"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Hmmm."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "59d428a3-16bb-4975-b5f3-613a5f7a0271"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_SPRITE",
+      "args": {
+        "actorId": "$self$",
+        "spriteSheetId": "acb45d05-477d-4526-ab4d-e2ba64f99229",
+        "__collapse": false
+      },
+      "id": "1881983a-fc06-4b39-a2b7-d1478e4c7344"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "df7f6a70-d9f5-404d-ab5b-221558f66643",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "direction": "",
+        "fadeSpeed": 1
+      },
+      "id": "85b84b31-0b8a-44be-9a64-5ed78fdbd38e"
+    }
+  ]
+}

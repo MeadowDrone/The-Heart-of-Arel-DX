@@ -1,0 +1,123 @@
+{
+  "_resourceType": "actor",
+  "id": "a8fe4792-1527-4cd9-8543-0c3a3183b543",
+  "_index": 4,
+  "symbol": "actor_15",
+  "prefabId": "",
+  "name": "Food 2-4 Earthspice",
+  "x": 89,
+  "y": 20,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "__collapse": false,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "7f6a0f2b-5b35-44ff-b538-c57f94e11449"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "213"
+      },
+      "id": "78d4ccee-d5b5-428e-b6dd-2b749f4de176"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "649824fd-3670-458a-a274-5ae67e2d8784"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "8b8d4e25-e79d-47c7-b973-1c76b8e0e74d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Oh! If I grind this down,\nthis should make some pretty\npotent Earthspice."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "e8392316-7b2e-4122-8345-6258109d34ab"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Ooooh. If I grind this down,\nthis should make some pretty\npotent Earthspice."
+        ],
+        "nameTag": "ÜÝÞ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÙÚÛ\néêë\nùúû",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "5c31ad12-586b-4fab-8378-eb8dba2faf52"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "b22e4c07-abec-4fd9-a946-a0a9a24e6fb4"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "1",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "1"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "7da8a960-f554-4b08-af3f-d162438a0063"
+          }
+        ],
+        "false": []
+      },
+      "id": "7770007f-9541-4b83-9561-8fdc3c214ebc"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

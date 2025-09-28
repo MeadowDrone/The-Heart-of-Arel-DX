@@ -1,0 +1,106 @@
+{
+  "_resourceType": "actor",
+  "id": "5e0fda39-ca80-4d24-91de-3a05747876c4",
+  "_index": 2,
+  "symbol": "actor_42",
+  "prefabId": "",
+  "name": "Food 1-4 Eggs",
+  "x": 29,
+  "y": 50,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "c99063e2-030f-441a-903e-c37e90c1f0e7",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "d04cab5a-61e4-4b1b-a8d7-ab4faf4554d4"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "210"
+      },
+      "id": "078561bd-caa2-4da4-b9d8-307a9b9b5fec"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "30",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "2de208e1-5b71-40e2-9dd4-7eb1edfdab75"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "845f1bb3-1f53-4175-95b9-ca3f7d9083ba"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Goose eggs... real... actual\ngoose eggs...",
+          "*sniff*",
+          "We're going to eat well tonight."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "1bfc9e2c-07cc-4476-911a-cfba2ea31cd8"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "e19e793a-b19a-453e-b708-278ebe350095"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "30",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "30"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "f7c35265-49f4-460b-ab0e-b49491229044"
+          }
+        ],
+        "false": []
+      },
+      "id": "c7174bad-452d-4637-8a9f-dd57eb9b613e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

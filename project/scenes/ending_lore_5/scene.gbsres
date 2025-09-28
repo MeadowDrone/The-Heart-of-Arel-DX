@@ -1,0 +1,72 @@
+{
+  "_resourceType": "scene",
+  "id": "80a4120f-c06e-4b8a-b5b0-65a65c6fff3c",
+  "_index": 65,
+  "type": "TOPDOWN",
+  "name": "Ending Lore 5",
+  "symbol": "scene_69",
+  "x": 4601.4342305738965,
+  "y": 2104.794988996107,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "25a9dba0-29eb-49bf-9b81-97454d22133e",
+  "tilesetId": "",
+  "paletteIds": [
+    "ee2315bd-2be4-49ae-bec8-5cccbc00fd4a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-bg-2"
+      },
+      "id": "19d03765-0236-4f53-b92d-30ac1293ee18"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Our Instrument, powered by the\nFoulness itself, allowed four brave souls\nto adventure into the Heart of Arel and",
+          "put a premature stop to her spread.\n\nHowever, this cannot last forever...",
+          "We hope our Instrument and the method\nto its alchemic capabilities are preserved\nfor future generations.",
+          "If Arel erupts once more, the Instrument\ntoo shall spring to life in the presence\nof the Foulness.",
+          "We hope you keep our gift to you - the\nInstrument, and its instructions - alive\nfor future generations.\""
+        ],
+        "avatarId": ""
+      },
+      "id": "31e0d090-adc9-49a9-8365-01593dfa4651"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "c646a193-147f-4781-b266-8951a7cb9eb4"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "945d8b3e-66ce-45e7-bfcf-3b1546c10917",
+        "x": {
+          "type": "number",
+          "value": 35
+        },
+        "y": {
+          "type": "number",
+          "value": 107
+        },
+        "direction": "",
+        "fadeSpeed": 6
+      },
+      "id": "ec7c425d-681f-481e-a5ab-7ca67e260fc0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

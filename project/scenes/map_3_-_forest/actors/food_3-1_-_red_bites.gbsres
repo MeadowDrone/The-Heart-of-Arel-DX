@@ -1,0 +1,166 @@
+{
+  "_resourceType": "actor",
+  "id": "36d66d6e-43f9-4415-929d-e77b970c9536",
+  "_index": 0,
+  "symbol": "actor_78",
+  "prefabId": "",
+  "name": "Food 3-1 - Red Bites",
+  "x": 48,
+  "y": 35,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "215"
+      },
+      "id": "b3b33391-e048-442f-af89-2e401d99757e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "ae8a18f7-9aa3-4c3e-815a-708c5409f66e"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "a03dbbfc-f2e6-4077-9039-2692e43c3d38"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "81",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "ba4b07b2-b940-4644-8304-fd82665b1db9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Oh, I didn't expect to find\nRed Bites here."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "f33a48ae-202f-44f1-bbbc-da44bb26895c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "red leaves..? they look kinda\nummm...",
+          "leafy?",
+          "i guess"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "2ca6f807-7877-4b2f-87b9-c1eb8673af99"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "They don't look like much...\nbut I love these.",
+          "Give one a small bite!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "3f3f2105-0324-446e-8fdf-c2fa96c25dfc"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "efbd9124-b756-48ef-8c0c-f09524d8de8c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "apples!!"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "f3c4d596-63c8-46c6-9d36-631a72e7394c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "wait..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "f4c95eee-ca97-4865-839e-83934603e105"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "They have that same sharp\nsweetness as apples, right?\nAnd they're good for you, too."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "ff8b2fa8-eb70-496f-b1e3-3238cb333346"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "56abc411-b882-42e7-9de1-ef1f56dadcdd"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "81",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "81"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "83e314b1-cd20-47d8-a157-cafdbb63d711"
+          }
+        ],
+        "false": []
+      },
+      "id": "ffb261db-5783-44be-a0b1-d6d3e1e23009"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

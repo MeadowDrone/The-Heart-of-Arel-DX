@@ -1,0 +1,118 @@
+{
+  "_resourceType": "trigger",
+  "id": "b57032da-95d7-4e12-80c9-4f46ba7dc2bc",
+  "_index": 11,
+  "symbol": "trigger_72",
+  "prefabId": "",
+  "name": "Encounter 3-4 Alt - Rats",
+  "x": 50,
+  "y": 46,
+  "width": 9,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "20",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "20"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "216"
+            },
+            "id": "4a1e91e2-bfaf-4dfe-9e1d-97d57a9a75fc"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "c726e1ce-ab7f-4831-a343-899afc97bd3a"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Escaped from a feral pack of rats!"
+              ],
+              "avatarId": ""
+            },
+            "id": "b830f8fc-70b9-4d7a-a89f-2057f172a98a"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "d658e387-f3eb-4225-8c11-cf944dc82e67"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "no no no no no no no no no no no\n no no no no no no no no no no no",
+                " "
+              ],
+              "portraitType": "shock"
+            },
+            "id": "43846c44-786b-46de-856f-4f69c6d90650"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "no no no no no no no no no no",
+                "nope"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "14e471ea-aa0a-47ad-bcbb-7026953ebd44"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "6a5d7650-6e7c-4c70-90b0-8707f6003ced"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "b40be3e8-3bfc-4cdb-8f7b-c520b9e72ed9"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "723c3aad-91c5-4037-946d-1ac4f64a21b6"
+          }
+        ],
+        "false": []
+      },
+      "id": "9748146d-a0a8-4948-9317-d1fe3529c5b6"
+    }
+  ],
+  "leaveScript": []
+}

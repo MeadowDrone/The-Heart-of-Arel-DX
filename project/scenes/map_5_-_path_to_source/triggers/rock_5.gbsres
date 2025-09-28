@@ -1,0 +1,76 @@
+{
+  "_resourceType": "trigger",
+  "id": "0f76a871-756f-4c44-bd17-ef21cea5f3f2",
+  "_index": 7,
+  "symbol": "trigger_90",
+  "prefabId": "",
+  "name": "Rock 5",
+  "x": 22,
+  "y": 33,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "198",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "198"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "198",
+              "__collapse": true,
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "73065fac-0256-4f6a-b56c-fd2da8879aa9"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 22
+              },
+              "y": {
+                "type": "number",
+                "value": 34
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": false
+            },
+            "id": "29bb90d6-cc7b-40ca-8868-9b2972f42959"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f2ab2dc8-67f8-46b5-8a04-976e23f3b772"
+            },
+            "id": "238b1391-5a44-4211-9881-af26a3b8a851"
+          }
+        ],
+        "false": []
+      },
+      "id": "00da2b84-5441-4c1b-a816-69be3af40d44"
+    }
+  ],
+  "leaveScript": []
+}

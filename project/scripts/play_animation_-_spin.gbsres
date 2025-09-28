@@ -1,0 +1,121 @@
+{
+  "_resourceType": "script",
+  "id": "8e750402-ca36-4bbb-98cc-a482e9c96f8b",
+  "name": "Play Animation - Spin",
+  "symbol": "script_23",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Character"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "",
+        "__collapse": true
+      },
+      "id": "ed138935-7dd4-45af-8b83-3f987ae0a3dc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": true
+      },
+      "id": "09951e78-62f2-41da-8d17-32eea09f9539"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "ebb7b361-2d24-4ed7-b468-0e1604015ddf"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": false
+      },
+      "id": "4fe58ef4-19eb-442b-a34a-c8d3734d8a86"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "7981cd9c-4536-4ff0-8111-68244b2e617c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": false
+      },
+      "id": "738fa8a0-8cf3-4db2-be1a-8e4fbf27f130"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "3f814219-725b-44c4-b3a5-111f09b276f1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": false
+      },
+      "id": "e1f497ad-d205-4f6b-a2dd-7fb018109413"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "e1a08778-00f1-44d9-8e0e-2e8fe37131f9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "8d08fb6a-fb28-4a67-8cab-ee65d61d5c5f"
+    }
+  ]
+}

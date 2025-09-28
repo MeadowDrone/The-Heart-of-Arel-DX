@@ -1,0 +1,179 @@
+{
+  "_resourceType": "trigger",
+  "id": "ee05947c-3e53-442d-9c0e-ec241442e669",
+  "_index": 0,
+  "symbol": "trigger_0",
+  "prefabId": "",
+  "name": "Encounter 1 Trigger",
+  "x": 25,
+  "y": 69,
+  "width": 30,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "9",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "9"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "211"
+            },
+            "id": "d23efd0e-7726-4e09-82d9-0436617ccf86"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "2c8253d5-59a8-425e-ab74-dbb79ce35c00"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Outran a wolf!"
+              ],
+              "avatarId": ""
+            },
+            "id": "7936e60d-2030-47d9-a8b0-c3d796672ea3"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "960c6a57-422d-4c27-b69f-4b601986a179"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "wah!"
+              ],
+              "portraitType": "shock"
+            },
+            "id": "b818dab5-6146-4158-8b8a-f5b70af6adbf"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Wah!",
+                "That was close..."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "25495c3e-7036-4d65-81d5-871ba353c629"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "there are WOLVES here?\nreally..?"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "7fd71385-e917-4d38-8876-b2592ad0d162"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "There are all kinds of wild\ncreatures here. Be prepared.",
+                "The wildlife around here\nhasn't been affected by the\nmiasma, yet...",
+                "We'll have to deal with\ninfected creatures later,\nI bet. ",
+                "They'll be a lot scarier."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "36f7ab3e-8d54-40f1-9b82-0d2b02b28ea1"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "80a22863-d18d-439f-a3eb-b4d14aac1f1e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "D:"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "ac5182e3-bcc8-46cc-9d02-9c61c9068ae5"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "D:"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "c7794846-e499-454b-a731-1641e3bffa5c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "e588f612-c9a8-482e-b892-703fd80363cf"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e",
+              "__comment": false
+            },
+            "id": "b35aad0d-3e69-43f6-a576-1af49de9d736"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "8cc8f69c-0e27-415f-a97d-9dacad9b5408"
+          }
+        ],
+        "false": []
+      },
+      "id": "42aaab3c-3a96-4a7b-adca-4dad72f0fafd"
+    }
+  ],
+  "leaveScript": []
+}

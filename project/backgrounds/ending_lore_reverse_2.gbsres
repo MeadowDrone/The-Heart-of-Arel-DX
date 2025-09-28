@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7c1850a5-ab90-4ef5-abd8-b48b8d1cfe47",
+  "name": "ending_lore_reverse_2",
+  "symbol": "bg_ending_lore_reverse_1_co",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "ending_lore_reverse_2.png",
+  "tileColors": "",
+  "autoColor": false
+}

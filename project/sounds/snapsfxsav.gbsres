@@ -1,0 +1,9 @@
+{
+  "_resourceType": "sound",
+  "id": "980316eb-fa8e-4fdc-980a-323f9577c996",
+  "name": "SnapsFX.sav",
+  "symbol": "sound_gbfx_sav",
+  "filename": "SnapsFX.sav",
+  "type": "fxhammer",
+  "numEffects": 49
+}

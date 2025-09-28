@@ -1,0 +1,411 @@
+{
+  "_resourceType": "trigger",
+  "id": "4f6addda-8eac-4d48-92e9-b86c892110cf",
+  "_index": 6,
+  "symbol": "trigger_33",
+  "prefabId": "",
+  "name": "Rock Trigger",
+  "x": 65,
+  "y": 25,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 65
+        },
+        "y": {
+          "type": "number",
+          "value": 26
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "745a0740-99b3-4c84-b0bb-7cb6cb284d21"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "f12713f2-5294-40b1-8072-2776d75aa3e5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "96",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "96"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Hey.",
+                "I'm standin' on a rock."
+              ],
+              "portraitType": "happy"
+            },
+            "id": "7146cbfd-6c6f-4f5c-9f5d-a2aaeeb7e7ab"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "that's a cool rock"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "81d5c5cd-6a0c-443e-91e8-3e463d981952"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.5,
+              "frames": 30,
+              "shakeDirection": "horizontal",
+              "__collapse": true,
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "3a3a87f0-968e-4366-a6de-7e48a80e4dc1"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 30
+            },
+            "id": "4d670417-d6c7-4a15-a3e6-b46bd27944d3"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "AH?!"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "49a6c106-90b2-4ce7-bc76-7be3e246898e"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": false
+            },
+            "id": "4c7a6cc7-92f8-42b3-b1a4-61a0d01f49c8"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "96",
+              "__collapse": true,
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "afe45290-8110-44dc-aa20-df8337e02394"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_REPLACE_TILE_XY      65, 97, ___bank_bg_anim_tileset, _bg_anim_tileset, VAR_MAP2HOLE1\nVM_REPLACE_TILE_XY      66, 97, ___bank_bg_anim_tileset, _bg_anim_tileset, VAR_MAP2HOLE2\nVM_REPLACE_TILE_XY      65, 98, ___bank_bg_anim_tileset, _bg_anim_tileset, VAR_MAP2HOLE3\nVM_REPLACE_TILE_XY      66, 98, ___bank_bg_anim_tileset, _bg_anim_tileset, VAR_MAP2HOLE4",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "6adc50fb-68b1-4da3-b067-979e16c9f6f9"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Well apparently it's a REALLY\ncool rock."
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "fb09d4f9-589c-45cb-819e-189ff747ed39"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "I coulda sworn I heard\nsomething in the distance,\nthough...",
+                "... maybe south of here?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "32e6decb-e165-4b46-9026-75726bab836c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "121",
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "121"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "121",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "64be058d-ee2b-48c4-8433-81889979a0a2"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "..."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "6d664f2c-9457-4736-85e7-340644dd1755"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "right"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "fc692b10-c53d-4f77-adf5-84eea94bc06d"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 2,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "3330a726-07aa-4d5b-bec6-812be2106896"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "left"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "75890ecd-57e5-4f60-9469-e8e3698f18e6"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 2,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "d3cb61ad-6058-4ec0-a8d5-b18fb47e5ac0"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "down"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "65f235b0-9850-441a-96d0-042a49f5cb0f"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 2,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "8fbed8e1-9372-47b3-b331-89829b7a62bc"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Heheh.",
+                      "I love you, cool rock."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "b3187e19-34c3-4cab-93d0-cfa92fdd8856"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                  "args": {
+                    "text": [
+                      "can we take her with us?"
+                    ],
+                    "portraitType": "blush"
+                  },
+                  "id": "6f4b569e-5122-444d-9625-6ddac2342ce9"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "That would be undeniably\nincredible, but I think we\nshouldn't deprive other folks",
+                      "of the joy of standing on this\ncool rock."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "7597202c-5335-412f-aebb-07f593b7b377"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                  "args": {
+                    "text": [
+                      "wise words, cutie"
+                    ],
+                    "portraitType": "happy"
+                  },
+                  "id": "50eefddb-16aa-46d1-bd42-eb3f9e860d79"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "left"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "9db2f034-e1f8-46a3-8df7-720048dbd9e2"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 2,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "3ea3bcdc-4d26-475c-8bb1-01e61760aa67"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "93c76b60-81f6-4cee-a80d-764d6d972f0e"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Okay I'm done."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "59902bbd-68f4-450b-9d3e-8f02b93eace6"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 2,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "75e7ade7-0a7f-4ff2-9542-5dd7a92ed958"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": false
+                  },
+                  "id": "a955ca79-301a-40c6-8eee-245bda85d9cb"
+                }
+              ],
+              "false": []
+            },
+            "id": "884c71c5-a2cd-4017-a46c-9df2f667a7d2"
+          }
+        ]
+      },
+      "id": "d224805c-20d7-41aa-97eb-d0449af1195f"
+    }
+  ],
+  "leaveScript": []
+}

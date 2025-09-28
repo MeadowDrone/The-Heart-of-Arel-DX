@@ -1,0 +1,134 @@
+{
+  "_resourceType": "trigger",
+  "id": "fbdbd186-83c0-495c-b708-24281833969f",
+  "_index": 18,
+  "symbol": "trigger_42",
+  "prefabId": "",
+  "name": "Under Bridge S>N",
+  "x": 42,
+  "y": 103,
+  "width": 3,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "207",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "207"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "206",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "3885082b-b4a8-4465-918a-607a2a119e16"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -1
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "b014d1c1-344e-43c7-86b2-57b558993dac"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$",
+              "__comment": false
+            },
+            "id": "4e9252a4-a9de-4a8a-800b-8ddef3d848da"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "property",
+                "target": "player",
+                "property": "xpos"
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "2a922062-cde3-4aa7-82e5-a3b9a88c4f84"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$",
+              "__comment": false
+            },
+            "id": "c3b3b1d9-de2d-485e-aacc-2f0fdc0fbf89"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -2
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "b8622728-e69e-4004-85b4-0a9b16ceafa8"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "206",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "a92a8588-71a3-40de-a4b3-36d2e1aa4032"
+          }
+        ],
+        "false": []
+      },
+      "id": "026efee4-d95d-45f0-89a4-d70375309e23"
+    }
+  ],
+  "leaveScript": []
+}

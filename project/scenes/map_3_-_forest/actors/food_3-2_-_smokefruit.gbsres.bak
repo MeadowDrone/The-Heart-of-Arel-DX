@@ -1,0 +1,172 @@
+{
+  "_resourceType": "actor",
+  "id": "ae23eee8-df02-4130-809d-b53b47e6bc42",
+  "_index": 1,
+  "symbol": "actor_199",
+  "prefabId": "",
+  "name": "Food 3-2 - Smokefruit",
+  "x": 83,
+  "y": 32,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "215"
+      },
+      "id": "fc419ae1-3866-4406-9eec-d770b216ecca"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "c5932a70-b4fb-43f0-b593-6fe4a62e308f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "13306d35-0a35-4460-9373-0cdce7096da6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "160",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "85b8ed77-a9e9-49ab-920a-0e13b1452461"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "umm is there a campfire\nnearby?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "5f0e729e-c788-4fbe-9581-82ad2d08b8aa"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "No, that's the smell of\nsmokefruit."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "aec58733-77a1-4f14-add2-a8a572c1e36a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "That grows in this forest??",
+          "I had no idea!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "b2977761-b4e6-49b8-a27b-69b2e35ce704"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I've never eaten it... but\nI love when it's dried to\nmake smokefruit tea."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "7b9d8e0b-d061-42b6-a717-8de3a0185c77"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "oohh you made that for me on\na date once"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "93f87669-e23d-4abf-9f16-83256104b84a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "i still remember it fondly.."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "1f990a9e-78e9-4677-b258-a6c0a28fc124"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "People always associate that\ntea with romance but I just\nmake it for myself!"
+        ],
+        "portraitType": "angry"
+      },
+      "id": "c1a85db4-469a-46db-89c0-e4cead6a4753"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": false
+      },
+      "id": "23e41971-22f9-4588-bf01-f3ff19a79558"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "15f8ca79-e0ea-451e-81a4-a2a5a282a360"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "160",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "160"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "637557e5-9e57-4754-85cd-ff61537762c3"
+          }
+        ],
+        "false": []
+      },
+      "id": "7133e457-6e75-4d47-8fb6-214b97646888"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

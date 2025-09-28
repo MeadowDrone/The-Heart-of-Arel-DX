@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "aa03e16f-16e1-422a-a4d5-ba183e701e4b",
+  "name": "forestside",
+  "symbol": "bg_riverside_copy_0",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "forestside.png",
+  "tileColors": "063c+0528+0028+013c+022+00!012+002+012+004+012+00!034+022+003+01!004+01!00!012+022+036+002+01!00!044+00!01!002+022+00!013+032+003+046+006+014+022+01!00!046+002+018+022+003+044+00!01!00!017+032+00!022+01!004+01a+032+00!022+00!034+01a+",
+  "autoColor": false
+}

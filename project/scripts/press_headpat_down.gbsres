@@ -1,0 +1,51 @@
+{
+  "_resourceType": "script",
+  "id": "15891cac-4f09-4d9f-a23c-6e098cbde021",
+  "name": "Press Headpat Down",
+  "symbol": "script_35",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Headpat Giver"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Giving Headpats",
+        "__collapse": false
+      },
+      "id": "70ee61bc-fbd9-4a76-9378-f44b9dc2a9e5"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "7e2a8717-a0f5-4cd5-a47b-fc5e40d0e25d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Giving Headpats Still Low",
+        "__collapse": false
+      },
+      "id": "050b6a05-ee02-431a-9a22-64486dda9d3b"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "42d42064-c49a-41fe-9ffd-f36b8dc9ea6a"
+    }
+  ]
+}

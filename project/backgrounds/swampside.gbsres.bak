@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "70e088e1-1299-4e0b-8ef9-aeedda2b12d8",
+  "name": "swampside",
+  "symbol": "bg_riverside_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "swampside.png",
+  "tileColors": "0178+00f0+",
+  "autoColor": false
+}

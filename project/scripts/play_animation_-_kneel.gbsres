@@ -1,0 +1,228 @@
+{
+  "_resourceType": "script",
+  "id": "d7e0d181-b8ed-4c07-8b03-e5c20590f9a0",
+  "name": "Play Animation - Kneel",
+  "symbol": "script_4",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "AlembicPosX",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Alembic"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_IF_ACTOR_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+            "args": {
+              "variable": "V0",
+              "expression": "$28$-2",
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "ab01c059-2d77-4256-8731-1e510a1e1aff"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Kneel Left"
+            },
+            "id": "ea6330b1-6620-4610-ab80-60b5d542b9f1"
+          }
+        ],
+        "false": []
+      },
+      "id": "40d05782-29cc-47b0-92cb-7549e8e42aff"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+            "args": {
+              "variable": "V0",
+              "expression": "$28$-2",
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "1d37a71b-5ad3-4ea3-bd8e-4df88f0c1f4c"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Kneel Left"
+            },
+            "id": "abbe936a-ed4d-4907-bb44-cc4c33fe4481"
+          }
+        ],
+        "false": []
+      },
+      "id": "1edec4ca-3f06-41d1-9154-72f7a5ea4e42"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+            "args": {
+              "variable": "V0",
+              "expression": "$28$+2",
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "34dafaea-a86d-4e1f-b09d-826a3975f788"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Kneel Right"
+            },
+            "id": "04b7f7bb-a440-445a-b74a-f46a8c81ec16"
+          }
+        ],
+        "false": []
+      },
+      "id": "8d4c7e15-1964-4664-afb6-dbdd350667c9"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+            "args": {
+              "variable": "V0",
+              "expression": "$28$+2",
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "26ac994b-8ef3-4fe2-9146-a31a8bd66620"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Kneel Right"
+            },
+            "id": "a23f0ca8-22df-440f-8ae9-629d09feba5c"
+          }
+        ],
+        "false": []
+      },
+      "id": "c32f9f99-505d-4394-b6e4-cc4af4be8c34"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "y": {
+          "type": "variable",
+          "value": "27"
+        },
+        "__collapse": true
+      },
+      "id": "94f8d6c0-39ad-4ac1-a5c4-71e9fce836a5"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "436f4cec-6910-45b5-9284-9f31b038e81f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "5d5afbb1-d912-4d22-8ceb-5e6a2c1379c3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "",
+        "__collapse": true
+      },
+      "id": "ec7b3107-3d28-4ec9-9e4d-2f93d5bd5d45"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true
+      },
+      "id": "3989df6d-4030-4d5a-9795-f6799e6a4466"
+    }
+  ]
+}

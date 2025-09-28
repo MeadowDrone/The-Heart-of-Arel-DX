@@ -1,0 +1,15 @@
+{
+  "_resourceType": "font",
+  "id": "55a29c8f-0c1f-4df0-806d-72ac846a08d6",
+  "name": "Harthe Dialogue",
+  "symbol": "font_eionn_dialogue",
+  "width": 128,
+  "height": 112,
+  "filename": "font-harthe.png",
+  "mapping": {
+    "﹩": 36,
+    "あ": 208,
+    "お": 227,
+    "え": 228
+  }
+}

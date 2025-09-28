@@ -1,0 +1,133 @@
+{
+  "_resourceType": "trigger",
+  "id": "888f35a4-9b27-460a-99f4-9d273cd5de2d",
+  "_index": 10,
+  "symbol": "trigger_28",
+  "prefabId": "",
+  "name": "Under Bridge N>S",
+  "x": 42,
+  "y": 97,
+  "width": 3,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "206",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "206"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "207",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "dc7e14be-e6a0-4977-9b01-2c876aaf8706"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 1
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "cf950ece-099b-45c7-9c77-d83275aa8749"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$",
+              "__comment": false
+            },
+            "id": "2dda30c6-6960-463c-8987-1cc444048088"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 6
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "dff05a60-5b4b-4a6e-8145-2c8e963ebb2b"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$",
+              "__comment": false
+            },
+            "id": "859f94fc-06c1-4c57-bfbc-067f782a6f4e"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "76a5261d-116a-43fc-9c0f-9e01d927c9cf"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "207",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "e00b8a47-de72-4d65-8b83-331d40a32d6c"
+          }
+        ],
+        "false": []
+      },
+      "id": "2b2ecd9d-a87f-47cb-86e5-e7a988bb5c33"
+    }
+  ],
+  "leaveScript": []
+}

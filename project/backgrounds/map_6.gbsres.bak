@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "253ba7b1-6c98-4dcf-a1bb-3aac38436ccb",
+  "name": "map_6",
+  "symbol": "bg_map_copy_1",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "map_6.png",
+  "tileColors": "029+014+004+013+029+01b+029+01b+029+012+002+017+029+01b+028+01c+027+01d+026+01e+026+01e+025+00f+024+0010+023+002+01!00e+023+0011+023+0011+023+0011+023+0111+023+0111+023+0111+",
+  "autoColor": false
+}

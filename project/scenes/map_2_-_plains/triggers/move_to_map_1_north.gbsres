@@ -1,0 +1,63 @@
+{
+  "_resourceType": "trigger",
+  "id": "44b739fe-c031-49d2-8289-9201e541a9fc",
+  "_index": 1,
+  "symbol": "trigger_23",
+  "prefabId": "",
+  "name": "Move to Map 1 North",
+  "x": 2,
+  "y": 13,
+  "width": 2,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "28",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "162a8d43-5a1a-40a4-b098-e5b8e83e5448"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "27",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "a4e9b192-be6e-49f2-b849-5d1680b6c6f5"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "29",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "10f6159e-ef7b-4c5e-8a1a-028814cb2001"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "0b08bfcd-3682-4a2c-8063-ffc86794c4ad",
+        "x": {
+          "type": "number",
+          "value": 101
+        },
+        "y": {
+          "type": "number",
+          "value": 18
+        },
+        "direction": "",
+        "fadeSpeed": 3
+      },
+      "id": "19a1e07e-593e-45cc-979c-facd558b50c7"
+    }
+  ],
+  "leaveScript": []
+}

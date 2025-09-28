@@ -1,0 +1,63 @@
+{
+  "_resourceType": "trigger",
+  "id": "59854f1e-4d87-45df-8934-1558576d8740",
+  "_index": 0,
+  "symbol": "trigger_10",
+  "prefabId": "",
+  "name": "Move to Map 1 Main",
+  "x": 2,
+  "y": 55,
+  "width": 3,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "28",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "c2e5bb02-702a-400f-a7de-5ec89c595132"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "27",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "1c2853d4-09b8-4506-8edb-a41969fbaaf1"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "29",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "f8772b34-2272-4902-935e-f4f8fd00d2bf"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "0b08bfcd-3682-4a2c-8063-ffc86794c4ad",
+        "x": {
+          "type": "number",
+          "value": 116
+        },
+        "y": {
+          "type": "number",
+          "value": 116
+        },
+        "direction": "",
+        "fadeSpeed": 3
+      },
+      "id": "31334984-d684-4796-a353-a6cdf5d3eccd"
+    }
+  ],
+  "leaveScript": []
+}

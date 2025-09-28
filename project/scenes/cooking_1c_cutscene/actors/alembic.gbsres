@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "ea843561-7c21-4d00-a89b-8cb87fb82ece",
+  "_index": 1,
+  "symbol": "actor_128",
+  "prefabId": "",
+  "name": "Alembic",
+  "x": 16,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "93c2eea7-3362-4597-a3c4-e344d3978c2a",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 63,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "8d750779-767a-4f93-928c-488b1fe504c1"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

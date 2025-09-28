@@ -1,0 +1,589 @@
+{
+  "_resourceType": "script",
+  "id": "fd841a79-e686-4199-970d-ee375171a9bd",
+  "name": "Check - Ready to Rest",
+  "symbol": "script_22",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": "29",
+        "__collapse": true
+      },
+      "id": "e4d3105c-9fa9-4d03-90ca-223bf5515c06"
+    },
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "vectorX": "28",
+        "vectorY": "27",
+        "__collapse": true
+      },
+      "id": "3161d867-5bc8-4fe3-bd9d-c828aeaf5716"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "126",
+        "__collapse": false
+      },
+      "id": "67769e20-b460-4515-9737-8573976d3f35"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "520a06eb-6865-4147-9c42-d9ddb289cd96"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "V0",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 0,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "f2bc73a9-586c-4554-b469-3b4a1851b650"
+            },
+            "id": "2a52c1f8-22a1-458b-9169-7cceda39fd6e"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "8ae03e0e-3c8e-44c1-bc7d-0a16d4c9f0d9"
+            },
+            "id": "d9443582-f51d-444b-9096-84367a343e44"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "03645276-7eab-4c6a-bdec-6afb804a069c"
+            },
+            "id": "fcb1bcc4-831e-43ac-93f7-0f912226dd93"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "104bc2d9-139b-4b6c-853d-0df23a0e2ac8"
+            },
+            "id": "061d546c-e269-4c0b-bfdc-5c6c2c209283"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "ec3a0386-eba9-4244-b0c8-e084e3465613"
+            },
+            "id": "d8a12052-f1c2-4ff2-b949-b7ad5e7c1eda"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "30cc0378-c856-4608-91f5-b115b94627c7"
+            },
+            "id": "c36acff3-80d2-44e8-86a2-b2698fa3d0e5"
+          }
+        ],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "965bdae9-140b-4a55-8034-eb13fbe04b76"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "13",
+        "__collapseElse": false,
+        "__disableElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "13"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1.2
+            },
+            "id": "8b42201c-b414-411a-88ef-915c275fc604"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            },
+            "id": "f0f6a96a-09bb-4066-be0b-3028cd34492e"
+          }
+        ]
+      },
+      "id": "ac57229a-326b-4e7b-94b9-878d31916611"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "126",
+        "operator": "==",
+        "comparator": 5,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "126"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 5
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "My legs..."
+              ],
+              "portraitType": "expressionless"
+            },
+            "id": "c3a46b02-00bb-4a6b-972d-3154b91948ee"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "My everything... I'm completely\nfrazzled."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "c8b69a9f-0a7c-4a0f-abe3-a24876e672eb"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "we cant go on in this state.\nhow about we rest up for a\nwhile? x"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "f35a60c6-ed1f-4a12-8ba2-1fd0ab7b649b"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "This place looks okay, just\nover here..."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "99c2512b-05a6-4257-a047-e6fa8e72a3d8"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "9069344d-41b4-46c6-be48-0c846e52cf36"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "74e880c3-df54-46e2-8cbe-786747d945a5",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 6
+            },
+            "id": "d6841217-1b60-49b3-b449-ef7febd42fe4"
+          }
+        ],
+        "false": []
+      },
+      "id": "e4de629a-44af-43f6-a508-86e44e4a9d72"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "126",
+        "operator": "==",
+        "comparator": 10,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "126"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 10
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "yknow",
+                "i swear this land has a mission\njust to make me as tired as\npossible"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "75f3ce43-3db3-4f96-835a-f8e36542f852"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Nah, I'm exhausted too. Can we\nhave a lie down?"
+              ],
+              "portraitType": "angry"
+            },
+            "id": "0986218c-03ef-4982-abcc-6e63dff8184f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Yes please."
+              ],
+              "portraitType": "expressionless"
+            },
+            "id": "51c0901d-5862-4931-898c-634b82698efc"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I'm with you. Over here..."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "8cdb689e-41af-4482-862e-0608c9e720de"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "fa2024e8-5575-4d62-a128-4224b9698c4f"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e50cca3f-0bd8-44b7-abf4-ca47da540ccf",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 6
+            },
+            "id": "8889f5ea-0702-47b8-abf3-05078bec274f"
+          }
+        ],
+        "false": []
+      },
+      "id": "1b1c421b-bd89-45ea-8328-06cbf72dd0a1"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "126",
+        "operator": "==",
+        "comparator": 15,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "126"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 15
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "..."
+              ],
+              "portraitType": "expressionless"
+            },
+            "id": "84d997bb-e2e7-43cf-8abc-c0c55357d5e8"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "..."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "24a0e881-c017-4ff5-b54d-ec88fc1fda09"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "><;"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "fc1012dc-d224-4986-888e-2780dd573522"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Mhm. Over there."
+              ],
+              "portraitType": "angry"
+            },
+            "id": "16b4770f-8c95-4cc7-84fe-625a29a44047"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "6a6625a0-a983-45b4-9b6f-3b7109c9f1a2"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c3f476d0-70e2-4252-96df-f63ce7348e5d",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 6
+            },
+            "id": "28008589-7cf0-4b3d-a358-e9dd95c4bb30"
+          }
+        ],
+        "false": []
+      },
+      "id": "40025b1a-8931-4649-b270-65e18b3bbea3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "126",
+        "operator": "==",
+        "comparator": 20,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "126"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 20
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 5
+              },
+              "__collapse": false
+            },
+            "id": "a9cf32d8-647b-4dcc-a643-e191f237b11e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I don't think I'm ready for\nwhat lies ahead, just yet. I\nseriously gotta rest."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "9c3c9639-ea72-41b6-9532-36fe029c6812"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "You're right. I don't think\nthere are any dangers left in\nour path."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "333da51c-dea4-4218-9bf1-00dd4cea72a0"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "we gotta be as ready as we\ncan be, so lets cuddle or rest\nor snug pls"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "1ed6728a-bfd1-455d-9ce1-4560fc6e246e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Let's do all of those things."
+              ],
+              "portraitType": "shy"
+            },
+            "id": "de2ccae9-27cc-4cd9-a9a1-525346c34b2a"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "da5c7ce5-b9e1-45c8-b592-6e9e8c6ae9f1",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 6
+            },
+            "id": "da26143f-3f05-495f-80a5-3a49066efc63"
+          }
+        ],
+        "false": []
+      },
+      "id": "d9f73525-83d6-4094-aa26-d987e5cff1ff"
+    }
+  ]
+}

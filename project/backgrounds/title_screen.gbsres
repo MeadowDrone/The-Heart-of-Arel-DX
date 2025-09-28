@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f5a6ec3f-e51e-42e4-90bf-7d33b0fe5171",
+  "name": "title_screen",
+  "symbol": "bg_recipe_sheet_copy_0",
+  "width": 22,
+  "height": 18,
+  "imageWidth": 176,
+  "imageHeight": 144,
+  "filename": "title_screen.png",
+  "tileColors": "",
+  "autoColor": false
+}

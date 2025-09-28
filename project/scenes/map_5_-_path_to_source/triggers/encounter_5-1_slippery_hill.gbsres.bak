@@ -1,0 +1,144 @@
+{
+  "_resourceType": "trigger",
+  "id": "2016e05e-c297-4e7e-9985-d6db44db774d",
+  "_index": 8,
+  "symbol": "trigger_91",
+  "prefabId": "",
+  "name": "Encounter 5-1 Slippery Hill",
+  "x": 12,
+  "y": 50,
+  "width": 3,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "199",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "199"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "217"
+            },
+            "id": "089a657c-fd49-4317-ae4e-af80dfc11f2c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "199",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "d613fe47-6f2d-4d1b-95cf-58dac5f3a610"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "70882aa2-6cba-4218-bd93-ba143dac4504"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Survived a trip down a slippery hill!"
+              ],
+              "avatarId": ""
+            },
+            "id": "c7a3a247-a8c9-4bde-b0c8-1e0e8494f6c1"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Ow. I'm so clumsy..."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "e118bbcd-8b74-41eb-9382-57c7527f2b43"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_BLUSH",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Argh. I'm so clumsy..."
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "°Ñ±\n³´µ\nð¶ò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "47220888-8f7d-4edb-983d-a77e3623a192"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "sweetie, its hills everywhere\nhere. so dont be hard on\nyourself, okay?"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "b55994c9-2185-4b17-a793-9046cf87ee7b"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "b0eb761a-66ac-40a5-87fd-b8496340eee6"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "286d2cad-a54c-46b2-94f0-7f96834ec76d"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "abb09ab4-0f2d-42ba-bca0-5c81f80747a7"
+          }
+        ],
+        "false": []
+      },
+      "id": "80944496-a01a-4b33-9859-e271170d8d62"
+    }
+  ],
+  "leaveScript": []
+}

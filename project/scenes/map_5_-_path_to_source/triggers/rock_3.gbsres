@@ -1,0 +1,74 @@
+{
+  "_resourceType": "trigger",
+  "id": "db0397f4-50fd-4d08-a5a5-7d3a2c53451e",
+  "_index": 5,
+  "symbol": "trigger_88",
+  "prefabId": "",
+  "name": "Rock 3",
+  "x": 58,
+  "y": 73,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "196",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "196"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "196",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "18e65485-6faa-4928-bc8d-be1f82f7e38b"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 58
+              },
+              "y": {
+                "type": "number",
+                "value": 74
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "7df441ec-a7aa-404c-a4e0-5aaedc661360"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f2ab2dc8-67f8-46b5-8a04-976e23f3b772"
+            },
+            "id": "08837e5c-b1b6-4d3c-a3f4-72ffa9dd3434"
+          }
+        ],
+        "false": []
+      },
+      "id": "5e034875-4867-4047-acee-bb3fcdb54c1a"
+    }
+  ],
+  "leaveScript": []
+}

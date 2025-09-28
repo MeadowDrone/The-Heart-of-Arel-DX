@@ -1,0 +1,127 @@
+{
+  "_resourceType": "trigger",
+  "id": "e7243a95-07a3-455b-a48e-3689f2c88148",
+  "_index": 2,
+  "symbol": "trigger_52",
+  "prefabId": "",
+  "name": "Encounter 3-1 - Cats",
+  "x": 60,
+  "y": 92,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "175",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "175"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "216"
+            },
+            "id": "d12c3c76-3d3b-4852-9905-0e0d42f220e9"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "c37a5020-a7f5-4418-9ad8-2505c5e5416d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Avoided a pack of wild cats!"
+              ],
+              "avatarId": ""
+            },
+            "id": "b6113dee-a373-4533-95f3-f4ea5cdfcf9a"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "72895316-ad08-4c6e-8f9a-5e3f8d0d0e1e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Wait.",
+                "Were they carrying planks of\nwood?!"
+              ],
+              "portraitType": "shy"
+            },
+            "id": "e3169411-4fbb-4877-8ff9-581fe4f1c289"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Wait.",
+                "Were they carrying planks of\nwood?!"
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "0e590a23-1a6c-40d8-b587-0dc0f8d9c82c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "175",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "52c4b9df-2352-4e07-a780-2406cc795804"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "cfe929fc-9dff-4e89-a39d-4b47a76c0828"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "37c22a00-77cf-4a3b-a60a-f683a56093ea"
+          }
+        ],
+        "false": []
+      },
+      "id": "301dcc2d-de7b-4ea3-88a2-418fb08b04c8"
+    }
+  ],
+  "leaveScript": []
+}

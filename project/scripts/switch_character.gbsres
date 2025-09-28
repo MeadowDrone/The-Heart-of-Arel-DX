@@ -1,0 +1,239 @@
+{
+  "_resourceType": "script",
+  "id": "cee83083-7e9a-4fd7-8bfe-595e788a8139",
+  "name": "Switch Character",
+  "symbol": "script_33",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "241",
+        "operator": "==",
+        "comparator": 4,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "241"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "241",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "e727e8a5-1367-461d-a7bb-2edf1b598b44"
+          }
+        ],
+        "false": []
+      },
+      "id": "6a3e197c-e6da-4cd8-b5b0-c229037acc04"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "241",
+        "__collapse": true
+      },
+      "id": "cf5d75b5-f621-4e4d-80fb-51a559e07abb"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "241",
+        "choices": 4,
+        "__collapseCase0": false,
+        "value0": 3,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 9,
+              "__collapse": false
+            },
+            "id": "0fa5aed3-e030-4b87-be15-51a7436c7eea"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "df0c7cc4-ec18-4500-8397-8752fbe206ee",
+              "persist": false
+            },
+            "id": "fa1673d1-c061-44b4-bcb6-cda63c8fe24a"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 2,
+              "__collapse": false
+            },
+            "id": "f38eb884-3193-43b3-afb2-2bb8a37c5c0a"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "f622cffc-f120-4272-9cd1-8d8adf1c7fbb",
+              "persist": false,
+              "__collapse": false
+            },
+            "id": "c95b75bc-564c-40a5-9ae0-f8de98c99acc"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 1,
+              "__collapse": false
+            },
+            "id": "3ede4861-917a-4b02-8c01-7a1c78e99832"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "b1a5a6b6-75a2-4739-a737-a950d6baa5b0",
+              "persist": false
+            },
+            "id": "ec704adf-896e-438d-9ab9-d6799f137b32"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 8,
+              "__collapse": false
+            },
+            "id": "bbbbf8e6-4282-4d87-aac0-9c6bbd7f2fd0"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "fb1c90a7-1cc2-4dea-bb8a-91b5ae9348cc",
+              "persist": false
+            },
+            "id": "ce4d38cc-14ea-4a8e-ba1d-c45d838350f2"
+          }
+        ],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "5ff6e4d5-8ec8-4bf0-a4d6-218b97532193"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "125",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "125"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "In Water"
+            },
+            "id": "bdf389df-5767-400e-8dd0-c785a782d263"
+          }
+        ],
+        "false": []
+      },
+      "id": "134238dd-5a71-4ee9-9c08-e0767def9e2e"
+    }
+  ]
+}

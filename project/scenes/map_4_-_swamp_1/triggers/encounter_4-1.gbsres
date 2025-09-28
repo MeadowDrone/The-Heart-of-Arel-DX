@@ -1,0 +1,137 @@
+{
+  "_resourceType": "trigger",
+  "id": "9472a091-945e-4542-9588-e9b89c5e5cac",
+  "_index": 1,
+  "symbol": "trigger_45",
+  "prefabId": "",
+  "name": "Encounter 4-1",
+  "x": 66,
+  "y": 62,
+  "width": 1,
+  "height": 15,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "113",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "113"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "220"
+            },
+            "id": "d6e66091-8110-4d22-91eb-06c29caa471d"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "33dfea1f-9ea8-43e0-ac01-cb5b2b7a7601"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A horrific beast figure jumps out the\nswamp and growls at you!"
+              ],
+              "avatarId": ""
+            },
+            "id": "83a1a3c5-956c-4977-aaa4-51f664dd26da"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Uh oh... what do we do...?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "9f96cbbc-ea43-4260-933b-29461d6827df"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The swamp water drips off, and you\nnotice it is just a regular, hungry dog."
+              ],
+              "avatarId": ""
+            },
+            "id": "b3377230-c349-44ea-b73f-be487f19a18f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Well, I have an idea. Here girl,\neat this."
+              ],
+              "portraitType": "smile"
+            },
+            "id": "dd03cc85-b816-48a3-8a32-3da2909780bd"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The dog gratefully nibbles on the deiray\nvines on the floor."
+              ],
+              "avatarId": ""
+            },
+            "id": "fa3a406c-cd6e-4d3d-b802-c63de31393cd"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "0a58b2b1-9e53-47dd-91af-5203f055b9fd"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "f1ba802b-0284-452f-b57e-a1f2fe14b436"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "113",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "25cdaee7-a1d2-439a-8650-10c905da0878"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "30a7220c-b28a-4edd-91d8-5b0836c41e2b"
+          }
+        ],
+        "false": []
+      },
+      "id": "09b89a60-2fe8-4405-9dd9-3150cb35836c"
+    }
+  ],
+  "leaveScript": []
+}

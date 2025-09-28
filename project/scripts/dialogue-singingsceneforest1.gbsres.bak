@@ -1,0 +1,73 @@
+{
+  "_resourceType": "script",
+  "id": "84a56ac2-bf0b-4e86-a2ad-2b2ba40437da",
+  "name": "Dialogue-SingingSceneForest1",
+  "symbol": "script_75",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "3": {
+      "id": "3",
+      "name": "Eryr"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I wonder when this campfire\nwas last used."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "16306969-aaef-4d25-b464-8cab404b458c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Hmm."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "651ed40b-1a61-4905-9a66-0a2197f9896e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "90a3bc33-01ea-4ec4-90df-ef5453a8bd82"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "f589269a-b289-461e-a0c7-9045daba387b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Huh. It's not too damp!",
+          "Hang on..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "025039e7-0bd7-431c-a6f0-59ca5fcd8467"
+    }
+  ]
+}

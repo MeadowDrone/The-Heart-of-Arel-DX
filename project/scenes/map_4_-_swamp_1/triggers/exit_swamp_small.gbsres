@@ -1,0 +1,53 @@
+{
+  "_resourceType": "trigger",
+  "id": "dfc739b4-a6f0-4857-85de-7fe697695a06",
+  "_index": 8,
+  "symbol": "trigger_19",
+  "prefabId": "",
+  "name": "Exit Swamp Small",
+  "x": 10,
+  "y": 83,
+  "width": 7,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "63c48375-6948-42fa-b30b-a2c989832ed4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "44ab753f-3102-4dea-8917-46acf928986d"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "In Water"
+      },
+      "id": "af7213a0-edf4-431c-ac6a-cba37aea16e7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "0bda47f4-358c-4d6f-b1d9-2ef6c7e2006b"
+    }
+  ]
+}

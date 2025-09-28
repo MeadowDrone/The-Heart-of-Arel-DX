@@ -1,0 +1,68 @@
+{
+  "_resourceType": "scene",
+  "id": "19bd1f41-41c2-41d3-91e8-6f4d5907836d",
+  "_index": 72,
+  "type": "LOGO",
+  "name": "How To Play",
+  "symbol": "scene_31",
+  "labelColor": "gray",
+  "x": 784,
+  "y": 64,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "f787eea8-e283-45e3-b85a-9a541f5bcfc0",
+  "tilesetId": "",
+  "paletteIds": [
+    "27297c34-a4e9-4e8e-afef-69abe8c7ca8b"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select",
+          "start",
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 8
+            },
+            "id": "118525ae-e77a-447a-9645-2c9cb0c0035c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e7bd5b85-406d-4f2b-958a-7d3b29becf47"
+            },
+            "id": "37e98cce-da4c-4594-94be-29bce904a372"
+          }
+        ]
+      },
+      "id": "88ce4047-8bb3-42e3-8225-d4d8c41612fb"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

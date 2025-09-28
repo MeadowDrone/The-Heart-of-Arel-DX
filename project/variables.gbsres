@@ -1,0 +1,2185 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Current Stamina",
+      "symbol": "var_current_stamina"
+    },
+    {
+      "id": "1",
+      "name": "Food2-4Collected",
+      "symbol": "var_food2_4collected"
+    },
+    {
+      "id": "2",
+      "name": "Food1-1Collected",
+      "symbol": "var_food1_1collected"
+    },
+    {
+      "id": "3",
+      "name": "Food1-2Collected",
+      "symbol": "var_food1_2collected"
+    },
+    {
+      "id": "4",
+      "name": "Map2Hole1",
+      "symbol": "var_map2hole1"
+    },
+    {
+      "id": "5",
+      "name": "Map2Hole2",
+      "symbol": "var_map2hole2"
+    },
+    {
+      "id": "6",
+      "name": "Potion Stamina Discovered",
+      "symbol": "var_potion_stamina_discover"
+    },
+    {
+      "id": "7",
+      "name": "Potion Antidote Discovered",
+      "symbol": "var_potion_antidote_discove"
+    },
+    {
+      "id": "8",
+      "name": "Potion Eyedrop Discovered",
+      "symbol": "var_potion_eyedrop_discover"
+    },
+    {
+      "id": "9",
+      "name": "Encounter1-1Done",
+      "symbol": "var_encounter1_1done"
+    },
+    {
+      "id": "10",
+      "name": "Loop_Index_Water",
+      "symbol": "var_loop_index_water_0"
+    },
+    {
+      "id": "11",
+      "name": "StaminaPotionCounter",
+      "symbol": "var_staminapotioncounter"
+    },
+    {
+      "id": "12",
+      "name": "DashPotionCounter",
+      "symbol": "var_dashpotioncounter"
+    },
+    {
+      "id": "13",
+      "name": "Dash Potion Active",
+      "symbol": "var_dash_potion_active"
+    },
+    {
+      "id": "14",
+      "name": "Init Health",
+      "symbol": "var_init_health"
+    },
+    {
+      "id": "15",
+      "name": "LoreSheetPosX",
+      "symbol": "var_loresheetposx"
+    },
+    {
+      "id": "16",
+      "name": "LoreSheetPosY",
+      "symbol": "var_loresheetposy"
+    },
+    {
+      "id": "17",
+      "name": "Debuffed",
+      "symbol": "var_debuffed"
+    },
+    {
+      "id": "18",
+      "name": "FoodCounter",
+      "symbol": "var_foodcounter"
+    },
+    {
+      "id": "19",
+      "name": "Loop_Index_Lore_Swamp_L",
+      "symbol": "var_loop_index_lore_swamp_l"
+    },
+    {
+      "id": "20",
+      "name": "Encounter3-4Done",
+      "symbol": "var_encounter3_4done"
+    },
+    {
+      "id": "21",
+      "name": "Encounter1-3Done",
+      "symbol": "var_encounter1_3done"
+    },
+    {
+      "id": "22",
+      "name": "Encounter2-3Done",
+      "symbol": "var_encounter2_3done"
+    },
+    {
+      "id": "23",
+      "name": "Encounter1-5Done",
+      "symbol": "var_encounter1_5done"
+    },
+    {
+      "id": "24",
+      "name": "LoadGameDialogue",
+      "symbol": "var_loadgamedialogue"
+    },
+    {
+      "id": "25",
+      "name": "CookingMenuUnlocked",
+      "symbol": "var_cookingmenuunlocked"
+    },
+    {
+      "id": "26",
+      "name": "Climbing Potion Active",
+      "symbol": "var_climbing_potion_active"
+    },
+    {
+      "id": "27",
+      "name": "PlayerPosY",
+      "symbol": "var_playerposy"
+    },
+    {
+      "id": "28",
+      "name": "PlayerPosX",
+      "symbol": "var_playerposx"
+    },
+    {
+      "id": "29",
+      "name": "PlayerDirection",
+      "symbol": "var_playerdirection"
+    },
+    {
+      "id": "30",
+      "name": "Food1-4Collected",
+      "symbol": "var_food1_4collected"
+    },
+    {
+      "id": "31",
+      "name": "Food2-3Collected",
+      "symbol": "var_food2_3collected"
+    },
+    {
+      "id": "32",
+      "name": "Dial 2 Move",
+      "symbol": "var_dial_move_0"
+    },
+    {
+      "id": "33",
+      "name": "Dial 1 Move",
+      "symbol": "var_dial_move_1"
+    },
+    {
+      "id": "34",
+      "name": "Dial 3 Move",
+      "symbol": "var_dial_move_2"
+    },
+    {
+      "id": "35",
+      "name": "DialSelected",
+      "symbol": "var_dialselected_0"
+    },
+    {
+      "id": "36",
+      "name": "Dial1X",
+      "symbol": "var_dial1x"
+    },
+    {
+      "id": "37",
+      "name": "Dial1Y",
+      "symbol": "var_dial1y"
+    },
+    {
+      "id": "38",
+      "name": "Dial2X",
+      "symbol": "var_dial2x"
+    },
+    {
+      "id": "39",
+      "name": "Dial2Y",
+      "symbol": "var_dial2y"
+    },
+    {
+      "id": "40",
+      "name": "Dial3X",
+      "symbol": "var_dial3x"
+    },
+    {
+      "id": "41",
+      "name": "Dial3Y",
+      "symbol": "var_dial3y"
+    },
+    {
+      "id": "42",
+      "name": "PotionPlayerX",
+      "symbol": "var_potionplayerx"
+    },
+    {
+      "id": "43",
+      "name": "PotionPlayerY",
+      "symbol": "var_potionplayery"
+    },
+    {
+      "id": "44",
+      "name": "PotionResult",
+      "symbol": "var_potionresult"
+    },
+    {
+      "id": "45",
+      "name": "IsDashing",
+      "symbol": "var_isdashing"
+    },
+    {
+      "id": "46",
+      "name": "IsPickedUp",
+      "symbol": "var_ispickedup"
+    },
+    {
+      "id": "47",
+      "name": "RecipeDiscovered-StaminaTop",
+      "symbol": "var_recipediscovered_stamin"
+    },
+    {
+      "id": "48",
+      "name": "RecipeDiscovered-StaminaMiddle",
+      "symbol": "var_recipediscovered_stamin_0"
+    },
+    {
+      "id": "49",
+      "name": "RecipeDiscovered-StaminaBottom",
+      "symbol": "var_recipediscovered_stamin_1"
+    },
+    {
+      "id": "50",
+      "name": "RecipeDiscovered-DashTop",
+      "symbol": "var_recipediscovered_dashto"
+    },
+    {
+      "id": "51",
+      "name": "RecipeDiscovered-DashMiddle",
+      "symbol": "var_recipediscovered_dashmi"
+    },
+    {
+      "id": "52",
+      "name": "RecipeDiscovered-Dash",
+      "symbol": "var_recipediscovered_dash"
+    },
+    {
+      "id": "53",
+      "name": "StaminaTopX",
+      "symbol": "var_staminatopx"
+    },
+    {
+      "id": "54",
+      "name": "StaminaTopY",
+      "symbol": "var_staminatopy"
+    },
+    {
+      "id": "55",
+      "name": "StaminaMiddleX",
+      "symbol": "var_staminamiddlex"
+    },
+    {
+      "id": "56",
+      "name": "StaminaMiddleY",
+      "symbol": "var_staminamiddley"
+    },
+    {
+      "id": "57",
+      "name": "StaminaBottomX",
+      "symbol": "var_staminabottomx"
+    },
+    {
+      "id": "58",
+      "name": "StaminaBottomY",
+      "symbol": "var_staminabottomy"
+    },
+    {
+      "id": "59",
+      "name": "DashTopX",
+      "symbol": "var_dashtopx"
+    },
+    {
+      "id": "60",
+      "name": "DashTopY",
+      "symbol": "var_dashtopy"
+    },
+    {
+      "id": "61",
+      "name": "DashMiddleX",
+      "symbol": "var_dashmiddlex"
+    },
+    {
+      "id": "62",
+      "name": "DashMiddleY",
+      "symbol": "var_dashmiddley"
+    },
+    {
+      "id": "63",
+      "name": "DashBottomX",
+      "symbol": "var_dashbottomx"
+    },
+    {
+      "id": "64",
+      "name": "DashBottomY",
+      "symbol": "var_dashbottomy"
+    },
+    {
+      "id": "65",
+      "name": "PaperPosTempX",
+      "symbol": "var_paperpostempx"
+    },
+    {
+      "id": "66",
+      "name": "PaperPosTempY",
+      "symbol": "var_paperpostempy"
+    },
+    {
+      "id": "67",
+      "name": "WhichPaperPickedUp",
+      "symbol": "var_whichpaperpickedup"
+    },
+    {
+      "id": "68",
+      "name": "Dial4X",
+      "symbol": "var_dial4x"
+    },
+    {
+      "id": "69",
+      "name": "Dial4Y",
+      "symbol": "var_dial4y"
+    },
+    {
+      "id": "70",
+      "name": "LorePapersPlaced",
+      "symbol": "var_lorepapersplaced"
+    },
+    {
+      "id": "71",
+      "name": "PotionComplete-MiasmaRes",
+      "symbol": "var_potioncomplete_miasmare"
+    },
+    {
+      "id": "72",
+      "name": "PotionComplete-Dash",
+      "symbol": "var_potioncomplete_dash"
+    },
+    {
+      "id": "73",
+      "name": "FirstUseStaminaPotion",
+      "symbol": "var_firstusestaminapotion"
+    },
+    {
+      "id": "74",
+      "name": "FirstUseDashPotion",
+      "symbol": "var_firstusedashpotion"
+    },
+    {
+      "id": "75",
+      "name": "Miasma Resist Potion Active",
+      "symbol": "var_miasma_resist_potion_ac"
+    },
+    {
+      "id": "76",
+      "name": "FirstUseDashPotionDialogueDone",
+      "symbol": "var_firstusedashpotiondialo"
+    },
+    {
+      "id": "77",
+      "name": "CurrentLevel",
+      "symbol": "var_currentlevel"
+    },
+    {
+      "id": "78",
+      "name": "Loop_Index_Pond_L",
+      "symbol": "var_loop_index_pond_l_0"
+    },
+    {
+      "id": "79",
+      "name": "Loop_Index_Pond_R",
+      "symbol": "var_loop_index_pond_r_0"
+    },
+    {
+      "id": "80",
+      "name": "Encounter2-2Done",
+      "symbol": "var_encounter2_2done"
+    },
+    {
+      "id": "81",
+      "name": "Food3-1Collected",
+      "symbol": "var_food3_1collected"
+    },
+    {
+      "id": "82",
+      "name": "HiddenForestDone",
+      "symbol": "var_hiddenforestdone"
+    },
+    {
+      "id": "83",
+      "name": "LoreFoundLake",
+      "symbol": "var_lorefoundlake"
+    },
+    {
+      "id": "84",
+      "name": "PortraitEionnX",
+      "symbol": "var_portraiteionnx"
+    },
+    {
+      "id": "85",
+      "name": "MixPotionsUnlocked",
+      "symbol": "var_mixpotionsunlocked"
+    },
+    {
+      "id": "86",
+      "name": "Loop_Index_Flower_A",
+      "symbol": "var_loop_index_flower_a"
+    },
+    {
+      "id": "87",
+      "name": "Encounter2-1Done",
+      "symbol": "var_encounter2_1done"
+    },
+    {
+      "id": "88",
+      "name": "FirstExhaustionCheck",
+      "symbol": "var_firstexhaustioncheck"
+    },
+    {
+      "id": "89",
+      "name": "Rest Scene Counter",
+      "symbol": "var_rest_scene_counter"
+    },
+    {
+      "id": "90",
+      "name": "Food2-2Collected",
+      "symbol": "var_food2_2collected"
+    },
+    {
+      "id": "91",
+      "name": "PortraitOaX",
+      "symbol": "var_portraitoax"
+    },
+    {
+      "id": "92",
+      "name": "Food1-3Collected",
+      "symbol": "var_food1_3collected"
+    },
+    {
+      "id": "93",
+      "name": "Encounter1-4Done",
+      "symbol": "var_encounter1_4done"
+    },
+    {
+      "id": "94",
+      "name": "FriendDialogue1",
+      "symbol": "var_frienddialogue1"
+    },
+    {
+      "id": "95",
+      "name": "LoreBookUnlocked",
+      "symbol": "var_lorebookunlocked"
+    },
+    {
+      "id": "96",
+      "name": "Map2ShortcutUnlocked",
+      "symbol": "var_map2shortcutunlocked"
+    },
+    {
+      "id": "97",
+      "name": "Map2Hole3",
+      "symbol": "var_map2hole3"
+    },
+    {
+      "id": "98",
+      "name": "Map2Hole4",
+      "symbol": "var_map2hole4"
+    },
+    {
+      "id": "99",
+      "name": "Map2ShortcutUpDialogueDone",
+      "symbol": "var_map2shortcutupdialogued"
+    },
+    {
+      "id": "100",
+      "name": "Map2ShortcutDownDialogueDone",
+      "symbol": "var_map2shortcutdowndialogu"
+    },
+    {
+      "id": "101",
+      "name": "Encounter2-4Done",
+      "symbol": "var_encounter2_4done"
+    },
+    {
+      "id": "102",
+      "name": "MiasmaResDiagramDone",
+      "symbol": "var_miasmaresdiagramdone"
+    },
+    {
+      "id": "103",
+      "name": "PortraitOkyrX",
+      "symbol": "var_portraitokyrx"
+    },
+    {
+      "id": "104",
+      "name": "Level4NorthEntrance",
+      "symbol": "var_level4northentrance"
+    },
+    {
+      "id": "105",
+      "name": "Food2-1Collected",
+      "symbol": "var_food2_1collected"
+    },
+    {
+      "id": "106",
+      "name": "SingingSceneDone-Plains",
+      "symbol": "var_singingscenedone_plains"
+    },
+    {
+      "id": "107",
+      "name": "StaminaPotionTimer",
+      "symbol": "var_staminapotiontimer"
+    },
+    {
+      "id": "108",
+      "name": "Food4-1Collected",
+      "symbol": "var_food4_1collected"
+    },
+    {
+      "id": "109",
+      "name": "LightPotionDrawing1",
+      "symbol": "var_lightpotiondrawing1"
+    },
+    {
+      "id": "110",
+      "name": "LightPotionDrawing2",
+      "symbol": "var_lightpotiondrawing2"
+    },
+    {
+      "id": "111",
+      "name": "LightPotionDrawing3",
+      "symbol": "var_lightpotiondrawing3"
+    },
+    {
+      "id": "112",
+      "name": "LightPotionDrawing4",
+      "symbol": "var_lightpotiondrawing4"
+    },
+    {
+      "id": "113",
+      "name": "Encounter4-1Done",
+      "symbol": "var_encounter4_1done"
+    },
+    {
+      "id": "114",
+      "name": "Encounter4-2Done",
+      "symbol": "var_encounter4_2done"
+    },
+    {
+      "id": "115",
+      "name": "LightPotionDrawing7",
+      "symbol": "var_lightpotiondrawing7"
+    },
+    {
+      "id": "116",
+      "name": "FirstLoreUnlocked",
+      "symbol": "var_firstloreunlocked"
+    },
+    {
+      "id": "117",
+      "name": "SingingCountdown",
+      "symbol": "var_singingcountdown"
+    },
+    {
+      "id": "118",
+      "name": "Encounter4-3Done",
+      "symbol": "var_encounter4_3done"
+    },
+    {
+      "id": "119",
+      "name": "FoxInteractDone",
+      "symbol": "var_foxinteractdone"
+    },
+    {
+      "id": "120",
+      "name": "FirstPoisonResistPotionUseDialogueDone",
+      "symbol": "var_firstpoisonresistpotion"
+    },
+    {
+      "id": "121",
+      "name": "CoolRockDialogue",
+      "symbol": "var_coolrockdialogue"
+    },
+    {
+      "id": "122",
+      "name": "LightPotionDrawing8",
+      "symbol": "var_lightpotiondrawing8"
+    },
+    {
+      "id": "123",
+      "name": "DashTimer",
+      "symbol": "var_dashtimer"
+    },
+    {
+      "id": "124",
+      "name": "DashActive",
+      "symbol": "var_dashactive"
+    },
+    {
+      "id": "125",
+      "name": "In Water",
+      "symbol": "var_in_water"
+    },
+    {
+      "id": "126",
+      "name": "EncounterCount",
+      "symbol": "var_encountercount"
+    },
+    {
+      "id": "127",
+      "name": "PortraitHartheX",
+      "symbol": "var_portraitharthex"
+    },
+    {
+      "id": "128",
+      "name": "DialogueLevel1StartDone",
+      "symbol": "var_dialoguelevel1startdone"
+    },
+    {
+      "id": "129",
+      "name": "DashSoundCycle",
+      "symbol": "var_dashsoundcycle"
+    },
+    {
+      "id": "130",
+      "name": "ReadyToMix-MiasmaRes",
+      "symbol": "var_readytomix_miasmares"
+    },
+    {
+      "id": "131",
+      "name": "ReadyToMix-Dash",
+      "symbol": "var_readytomix_dash"
+    },
+    {
+      "id": "132",
+      "name": "ReadyToMix-MiasmaDialogueDone",
+      "symbol": "var_readytomix_miasmadialog"
+    },
+    {
+      "id": "133",
+      "name": "ReadyToMix-DashDialogueDone",
+      "symbol": "var_readytomix_dashdialogue"
+    },
+    {
+      "id": "134",
+      "name": "LightPotionDrawing6",
+      "symbol": "var_lightpotiondrawing6"
+    },
+    {
+      "id": "135",
+      "name": "Food4-2Collected",
+      "symbol": "var_food4_2collected"
+    },
+    {
+      "id": "136",
+      "name": "Loop_Index_Lore_Swamp_R",
+      "symbol": "var_loop_index_lore_swamp_r"
+    },
+    {
+      "id": "137",
+      "name": "Loop_Index_ForestLore_L",
+      "symbol": "var_loop_index_forestlore_l"
+    },
+    {
+      "id": "138",
+      "name": "Loop_Index_ForestLore_R",
+      "symbol": "var_loop_index_forestlore_r"
+    },
+    {
+      "id": "139",
+      "name": "LoreSheetToPlace",
+      "symbol": "var_loresheettoplace"
+    },
+    {
+      "id": "140",
+      "name": "Food4-3Collected",
+      "symbol": "var_food4_3collected"
+    },
+    {
+      "id": "141",
+      "name": "LoreSheetDiscovered-SightTop",
+      "symbol": "var_loresheetdiscovered_sig"
+    },
+    {
+      "id": "142",
+      "name": "PotionComplete-Sight",
+      "symbol": "var_potioncomplete_sight"
+    },
+    {
+      "id": "143",
+      "name": "StaminaFoundCount",
+      "symbol": "var_staminafoundcount"
+    },
+    {
+      "id": "144",
+      "name": "ReadyToMix-Sight",
+      "symbol": "var_readytomix_sight"
+    },
+    {
+      "id": "145",
+      "name": "LightPotionDrawing5",
+      "symbol": "var_lightpotiondrawing5"
+    },
+    {
+      "id": "146",
+      "name": "SaveMenuChoice",
+      "symbol": "var_savemenuchoice"
+    },
+    {
+      "id": "147",
+      "name": "PotionComplete-Climb",
+      "symbol": "var_potioncomplete_climb"
+    },
+    {
+      "id": "148",
+      "name": "ReadyToMix-Climb",
+      "symbol": "var_readytomix_climb"
+    },
+    {
+      "id": "149",
+      "name": "ReadyToMix-SightDialogueDone",
+      "symbol": "var_readytomix_sightdialogu"
+    },
+    {
+      "id": "150",
+      "name": "ReadyToMix-ClimbDialogueDone",
+      "symbol": "var_readytomix_climbdialogu"
+    },
+    {
+      "id": "151",
+      "name": "Sight Potion Active",
+      "symbol": "var_sight_potion_active"
+    },
+    {
+      "id": "152",
+      "name": "FirstUseSightPotionDialogueDone",
+      "symbol": "var_firstusesightpotiondial"
+    },
+    {
+      "id": "153",
+      "name": "FirstUseClimbPotionDialogueDone",
+      "symbol": "var_firstuseclimbpotiondial"
+    },
+    {
+      "id": "154",
+      "name": "DarkForestSceneDone",
+      "symbol": "var_darkforestscenedone"
+    },
+    {
+      "id": "155",
+      "name": "ClimbFailDialogueDone",
+      "symbol": "var_climbfaildialoguedone"
+    },
+    {
+      "id": "156",
+      "name": "LoreSheetDiscovered-SightMiddle",
+      "symbol": "var_loresheetdiscovered_sig_0"
+    },
+    {
+      "id": "157",
+      "name": "LoreSheetDiscovered-SightBottom",
+      "symbol": "var_loresheetdiscovered_sig_1"
+    },
+    {
+      "id": "158",
+      "name": "SwampShortcutDialogueDone",
+      "symbol": "var_swampshortcutdialoguedo"
+    },
+    {
+      "id": "159",
+      "name": "FirstDialogueSwampDone",
+      "symbol": "var_firstdialogueswampdone"
+    },
+    {
+      "id": "160",
+      "name": "Food3-2Collected",
+      "symbol": "var_food3_2collected"
+    },
+    {
+      "id": "161",
+      "name": "FirstForestDialogueDone",
+      "symbol": "var_firstforestdialoguedone"
+    },
+    {
+      "id": "162",
+      "name": "Loop_Index_Flower_B",
+      "symbol": "var_loop_index_flower_b"
+    },
+    {
+      "id": "163",
+      "name": "Food3-3Collected",
+      "symbol": "var_food3_3collected"
+    },
+    {
+      "id": "164",
+      "name": "LoreSheetDiscovered-ClimbTop",
+      "symbol": "var_loresheetdiscovered_cli"
+    },
+    {
+      "id": "165",
+      "name": "LoreSheetDiscovered-ClimbMiddle",
+      "symbol": "var_loresheetdiscovered_cli_0"
+    },
+    {
+      "id": "166",
+      "name": "LoreSheetDiscovered-ClimbBottom",
+      "symbol": "var_loresheetdiscovered_cli_1"
+    },
+    {
+      "id": "167",
+      "name": "SingingSceneDone-Forest",
+      "symbol": "var_singingscenedone_forest"
+    },
+    {
+      "id": "168",
+      "name": "Loop_Index_Campfire_1",
+      "symbol": "var_loop_index_campfire_1"
+    },
+    {
+      "id": "169",
+      "name": "Loop_Index_Campfire_3",
+      "symbol": "var_loop_index_campfire_3"
+    },
+    {
+      "id": "170",
+      "name": "Loop_Index_Campfire_2",
+      "symbol": "var_loop_index_campfire_2"
+    },
+    {
+      "id": "171",
+      "name": "CampfireLit",
+      "symbol": "var_campfirelit"
+    },
+    {
+      "id": "172",
+      "name": "CampfireAnimTimer",
+      "symbol": "var_campfireanimtimer"
+    },
+    {
+      "id": "173",
+      "name": "ForestSingingCountdown",
+      "symbol": "var_forestsingingcountdown"
+    },
+    {
+      "id": "174",
+      "name": "EryrIsSinging",
+      "symbol": "var_eryrissinging"
+    },
+    {
+      "id": "175",
+      "name": "Encounter3-1Done",
+      "symbol": "var_encounter3_1done"
+    },
+    {
+      "id": "176",
+      "name": "Encounter3-2Done",
+      "symbol": "var_encounter3_2done"
+    },
+    {
+      "id": "177",
+      "name": "Encounter3-3Done",
+      "symbol": "var_encounter3_3done"
+    },
+    {
+      "id": "178",
+      "name": "Food5-1Collected",
+      "symbol": "var_food5_1collected"
+    },
+    {
+      "id": "179",
+      "name": "Food5-2Collected",
+      "symbol": "var_food5_2collected"
+    },
+    {
+      "id": "180",
+      "name": "Food5-3Collected",
+      "symbol": "var_food5_3collected"
+    },
+    {
+      "id": "181",
+      "name": "Food5-4Collected",
+      "symbol": "var_food5_4collected"
+    },
+    {
+      "id": "182",
+      "name": "Food5-5Collected",
+      "symbol": "var_food5_5collected"
+    },
+    {
+      "id": "183",
+      "name": "Food3-4Collected",
+      "symbol": "var_food3_4collected"
+    },
+    {
+      "id": "184",
+      "name": "Food4-4Collected",
+      "symbol": "var_food4_4collected"
+    },
+    {
+      "id": "185",
+      "name": "ForestDialogue1Done",
+      "symbol": "var_forestdialogue1done"
+    },
+    {
+      "id": "186",
+      "name": "SingingSceneCounter",
+      "symbol": "var_singingscenecounter"
+    },
+    {
+      "id": "187",
+      "name": "FriendInFlowerbed",
+      "symbol": "var_friendinflowerbed"
+    },
+    {
+      "id": "188",
+      "name": "LoreSheetToMapReady",
+      "symbol": "var_loresheettomapready"
+    },
+    {
+      "id": "189",
+      "name": "Encounter4-4Done",
+      "symbol": "var_encounter4_4done"
+    },
+    {
+      "id": "190",
+      "name": "SightDiagramDone",
+      "symbol": "var_sightdiagramdone"
+    },
+    {
+      "id": "191",
+      "name": "ClimbDiagramDone",
+      "symbol": "var_climbdiagramdone"
+    },
+    {
+      "id": "192",
+      "name": "PointOfNoReturnDialogueDone",
+      "symbol": "var_pointofnoreturndialogue"
+    },
+    {
+      "id": "193",
+      "name": "Map 5 Rocks Pushed",
+      "symbol": "var_map_5_rocks_pushed"
+    },
+    {
+      "id": "194",
+      "name": "Map5Rock1",
+      "symbol": "var_map5rock1"
+    },
+    {
+      "id": "195",
+      "name": "Map5Rock2",
+      "symbol": "var_map5rock2"
+    },
+    {
+      "id": "196",
+      "name": "Map5Rock3",
+      "symbol": "var_map5rock3"
+    },
+    {
+      "id": "197",
+      "name": "Map5Rock4",
+      "symbol": "var_map5rock4"
+    },
+    {
+      "id": "198",
+      "name": "Map5Rock5",
+      "symbol": "var_map5rock5"
+    },
+    {
+      "id": "199",
+      "name": "Encounter5-1Done",
+      "symbol": "var_encounter5_1done"
+    },
+    {
+      "id": "200",
+      "name": "Encounter5-2Done",
+      "symbol": "var_encounter5_2done"
+    },
+    {
+      "id": "201",
+      "name": "Encounter5-3Done",
+      "symbol": "var_encounter5_3done"
+    },
+    {
+      "id": "202",
+      "name": "Encounter5-4Done",
+      "symbol": "var_encounter5done_0"
+    },
+    {
+      "id": "203",
+      "name": "BridgeDialogueDone",
+      "symbol": "var_bridgedialoguedone"
+    },
+    {
+      "id": "204",
+      "name": "SingingSceneDone-Mountain",
+      "symbol": "var_singingscenedone_mounta"
+    },
+    {
+      "id": "205",
+      "name": "LoreTest",
+      "symbol": "var_loretest"
+    },
+    {
+      "id": "206",
+      "name": "Map2MovingNorthUnderBridge",
+      "symbol": "var_map2movingnorthunderbri"
+    },
+    {
+      "id": "207",
+      "name": "Map2MovingSouthUnderBridge",
+      "symbol": "var_map2movingsouthunderbri"
+    },
+    {
+      "id": "208",
+      "name": "LoreReferenceFromMap",
+      "symbol": "var_lorereferencefrommap"
+    },
+    {
+      "id": "209",
+      "name": "ComingFromForestSingScene",
+      "symbol": "var_comingfromforestsingsce"
+    },
+    {
+      "id": "210",
+      "name": "Map1FoodCounter",
+      "symbol": "var_map1foodcounter"
+    },
+    {
+      "id": "211",
+      "name": "Map1EncounterCounter",
+      "symbol": "var_map1encountercounter"
+    },
+    {
+      "id": "212",
+      "name": "Map2EncounterCounter",
+      "symbol": "var_map2encountercounter"
+    },
+    {
+      "id": "213",
+      "name": "Map2FoodCounter",
+      "symbol": "var_map2foodcounter"
+    },
+    {
+      "id": "214",
+      "name": "Map4FoodCounter",
+      "symbol": "var_map4foodcounter"
+    },
+    {
+      "id": "215",
+      "name": "Map3FoodCounter",
+      "symbol": "var_map3foodcounter"
+    },
+    {
+      "id": "216",
+      "name": "Map3EncounterCounter",
+      "symbol": "var_map3encountercounter"
+    },
+    {
+      "id": "217",
+      "name": "Map5EncounterCounter",
+      "symbol": "var_map5encountercounter"
+    },
+    {
+      "id": "218",
+      "name": "Map5FoodCounter",
+      "symbol": "var_map5foodcounter"
+    },
+    {
+      "id": "219",
+      "name": "WorldMapUnlocked",
+      "symbol": "var_worldmapunlocked"
+    },
+    {
+      "id": "220",
+      "name": "Map4EncounterCounter",
+      "symbol": "var_map4encountercounter"
+    },
+    {
+      "id": "221",
+      "name": "FirstMapReverseDialogueDone",
+      "symbol": "var_firstmapreversedialogue"
+    },
+    {
+      "id": "222",
+      "name": "FirstMapDialogueDone",
+      "symbol": "var_firstmapdialoguedone"
+    },
+    {
+      "id": "223",
+      "name": "DialogueLevel1StartPart2Done",
+      "symbol": "var_dialoguelevel1startpart"
+    },
+    {
+      "id": "224",
+      "name": "Map2WorldMapDialogueReady",
+      "symbol": "var_map2worldmapdialoguerea"
+    },
+    {
+      "id": "225",
+      "name": "MapsCompleteCounter",
+      "symbol": "var_mapscompletecounter"
+    },
+    {
+      "id": "226",
+      "name": "FirstLoreGlowDialogue",
+      "symbol": "var_firstloreglowdialogue"
+    },
+    {
+      "id": "227",
+      "name": "PostGlowDialogue",
+      "symbol": "var_postglowdialogue"
+    },
+    {
+      "id": "228",
+      "name": "Map2WorldMapDialogueDone",
+      "symbol": "var_map2worldmapdialoguedon"
+    },
+    {
+      "id": "229",
+      "name": "Map7FirstDialogueDone",
+      "symbol": "var_map7firstdialoguedone"
+    },
+    {
+      "id": "230",
+      "name": "EndingLoreDialogueDone",
+      "symbol": "var_endingloredialoguedone"
+    },
+    {
+      "id": "231",
+      "name": "EndingPostLoreDialogueReady",
+      "symbol": "var_endingpostloredialoguer"
+    },
+    {
+      "id": "232",
+      "name": "EndingMoveUpTogether1",
+      "symbol": "var_endingmoveuptogether1"
+    },
+    {
+      "id": "233",
+      "name": "EndingMovingUpTogether2",
+      "symbol": "var_endingmovinguptogether2"
+    },
+    {
+      "id": "234",
+      "name": "EndingMovingUpTogether3",
+      "symbol": "var_endingmovinguptogether3"
+    },
+    {
+      "id": "235",
+      "name": "Cutscene Camera Offset",
+      "symbol": "var_cutscene_camera_offset"
+    },
+    {
+      "id": "236",
+      "name": "BrewingPotion",
+      "symbol": "var_brewingpotion"
+    },
+    {
+      "id": "237",
+      "name": "SingingCutsceneEnd",
+      "symbol": "var_singingcutsceneend"
+    },
+    {
+      "id": "238",
+      "name": "Map5FirstDialogueDone",
+      "symbol": "var_map5firstdialoguedone"
+    },
+    {
+      "id": "239",
+      "name": "FirstLoreReferenceDialogue",
+      "symbol": "var_firstlorereferencedialo"
+    },
+    {
+      "id": "240",
+      "name": "Menu Opened",
+      "symbol": "var_menu_opened"
+    },
+    {
+      "id": "241",
+      "name": "OverworldCharacter",
+      "symbol": "var_overworldcharacter"
+    },
+    {
+      "id": "242",
+      "name": "A-Button Emote Flag",
+      "symbol": "var_a_button_emote_flag"
+    },
+    {
+      "id": "243",
+      "name": "Game Complete Percent",
+      "symbol": "var_game_complete_percent"
+    },
+    {
+      "id": "244",
+      "name": "Game Complete",
+      "symbol": "var_game_complete"
+    },
+    {
+      "id": "245",
+      "name": "Map5FirstTunnelDialogue",
+      "symbol": "var_map5firsttunneldialogue"
+    },
+    {
+      "id": "246",
+      "name": "TrailerDialogueTwo",
+      "symbol": "var_trailerdialoguetwo"
+    },
+    {
+      "id": "247",
+      "name": "Trailer3Dialogue",
+      "symbol": "var_trailer3dialogue"
+    },
+    {
+      "id": "248",
+      "name": "Trailer5Done",
+      "symbol": "var_trailer5done"
+    },
+    {
+      "id": "249",
+      "name": "Map7Rumble1",
+      "symbol": "var_map7rumble1"
+    },
+    {
+      "id": "250",
+      "name": "Map7Rumble2",
+      "symbol": "var_map7rumble2"
+    },
+    {
+      "id": "251",
+      "name": "Map7Rumble3",
+      "symbol": "var_map7rumble3"
+    },
+    {
+      "id": "0b08bfcd-3682-4a2c-8063-ffc86794c4ad__L1",
+      "name": "Overlay Visible",
+      "symbol": "var_overlay_visible"
+    },
+    {
+      "id": "ee05947c-3e53-442d-9c0e-ec241442e669__L0",
+      "name": "Encounter 1 Trigger",
+      "symbol": "var_encounter_1_trigger"
+    },
+    {
+      "id": "a5a1ccf6-21de-4b22-a39a-970eaa83f671__L0",
+      "name": "Encounter 1 Trigger",
+      "symbol": "var_encounter_trigger_0"
+    },
+    {
+      "id": "a5a1ccf6-21de-4b22-a39a-970eaa83f671__L1",
+      "name": "Encounter 2 Trigger",
+      "symbol": "var_encounter_2_trigger"
+    },
+    {
+      "id": "21c53b9e-b908-4815-a27c-1af5976a7541__L1",
+      "name": "Encounter3Trigger",
+      "symbol": "var_encounter3trigger"
+    },
+    {
+      "id": "477c0275-4541-4112-8ea0-2c684a9cbf29__L1",
+      "name": "Encounter3Trigger",
+      "symbol": "var_encounter3trigger_0"
+    },
+    {
+      "id": "b656cd15-e928-4834-b8f1-ae33ac1e5724__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4"
+    },
+    {
+      "id": "27d7c2a9-1d8e-4425-b952-4dd1ec5b3d02__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4_0"
+    },
+    {
+      "id": "f20cd7cc-346b-40a6-8c24-5b220a9f5fba__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4_1"
+    },
+    {
+      "id": "87a8bdd7-fbb7-4bb2-b86a-2f998c39c606__L1",
+      "name": "Encounter5",
+      "symbol": "var_encounter5"
+    },
+    {
+      "id": "0b08bfcd-3682-4a2c-8063-ffc86794c4ad__L2",
+      "name": "Menu Choice",
+      "symbol": "var_menu_choice"
+    },
+    {
+      "id": "0b08bfcd-3682-4a2c-8063-ffc86794c4ad__L3",
+      "name": "PlayerY",
+      "symbol": "var_playery"
+    },
+    {
+      "id": "bdf31d16-03fc-42e6-8ccb-9903f035e370__L0",
+      "name": "Dial 2 Start",
+      "symbol": "var_dial_start_0"
+    },
+    {
+      "id": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0__L0",
+      "name": "PotionAdjectiveIndex",
+      "symbol": "var_potionadjectiveindex_1"
+    },
+    {
+      "id": "bdf31d16-03fc-42e6-8ccb-9903f035e370__L1",
+      "name": "Dial 2 Direction",
+      "symbol": "var_dial_2_direction"
+    },
+    {
+      "id": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0__L1",
+      "name": "PotionAdjective",
+      "symbol": "var_potionadjective"
+    },
+    {
+      "id": "93c7c570-4ec4-46d5-8dbf-b809220d3f09__L0",
+      "name": "Dial 2 Start",
+      "symbol": "var_dial_2_start"
+    },
+    {
+      "id": "93c7c570-4ec4-46d5-8dbf-b809220d3f09__L1",
+      "name": "Dial 2 Direction",
+      "symbol": "var_dial_direction_0"
+    },
+    {
+      "id": "157e49c2-8be6-41ae-ad52-3597427e12f5__L0",
+      "name": "Dial 2 Start",
+      "symbol": "var_dial_start_1"
+    },
+    {
+      "id": "157e49c2-8be6-41ae-ad52-3597427e12f5__L1",
+      "name": "Dial 2 Direction",
+      "symbol": "var_dial_direction_1"
+    },
+    {
+      "id": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0__L2",
+      "name": "Local4",
+      "symbol": "var_local4"
+    },
+    {
+      "id": "93c7c570-4ec4-46d5-8dbf-b809220d3f09__L2",
+      "name": "Dial 1 Direction",
+      "symbol": "var_dial_1_direction"
+    },
+    {
+      "id": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0__L3",
+      "name": "NewHandPosY",
+      "symbol": "var_newhandposy"
+    },
+    {
+      "id": "157e49c2-8be6-41ae-ad52-3597427e12f5__L2",
+      "name": "Dial 3 Direction",
+      "symbol": "var_dial_3_direction"
+    },
+    {
+      "id": "43815f82-791c-48d4-81c5-02fe91b0ad13__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_0"
+    },
+    {
+      "id": "43815f82-791c-48d4-81c5-02fe91b0ad13__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy"
+    },
+    {
+      "id": "43815f82-791c-48d4-81c5-02fe91b0ad13__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx"
+    },
+    {
+      "id": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0__L4",
+      "name": "MovingUp",
+      "symbol": "var_movingup"
+    },
+    {
+      "id": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0__L5",
+      "name": "DialSelected",
+      "symbol": "var_dialselected"
+    },
+    {
+      "id": "87f5e8af-5152-44b2-94ca-ee0307dc3074__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_1"
+    },
+    {
+      "id": "87f5e8af-5152-44b2-94ca-ee0307dc3074__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_0"
+    },
+    {
+      "id": "87f5e8af-5152-44b2-94ca-ee0307dc3074__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_0"
+    },
+    {
+      "id": "15b4860a-6af3-4536-a26e-070e0c70c194__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_2"
+    },
+    {
+      "id": "15b4860a-6af3-4536-a26e-070e0c70c194__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_1"
+    },
+    {
+      "id": "15b4860a-6af3-4536-a26e-070e0c70c194__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_1"
+    },
+    {
+      "id": "0b08bfcd-3682-4a2c-8063-ffc86794c4ad__L4",
+      "name": "AlembicPosX",
+      "symbol": "var_alembicposx"
+    },
+    {
+      "id": "8517ad48-41cc-4e4a-aaaf-9c6d2b6c79f0__L0",
+      "name": "Food Remaining",
+      "symbol": "var_food_remaining_0"
+    },
+    {
+      "id": "f18b309b-3432-426c-addd-ec75192638db__L0",
+      "name": "PotionAdjectiveIndex",
+      "symbol": "var_potionadjectiveindex_0"
+    },
+    {
+      "id": "f18b309b-3432-426c-addd-ec75192638db__L1",
+      "name": "PotionAdjective",
+      "symbol": "var_potionadjective_0"
+    },
+    {
+      "id": "f18b309b-3432-426c-addd-ec75192638db__L2",
+      "name": "HandPosY",
+      "symbol": "var_handposy_0"
+    },
+    {
+      "id": "f18b309b-3432-426c-addd-ec75192638db__L3",
+      "name": "NewHandPosY",
+      "symbol": "var_newhandposy_0"
+    },
+    {
+      "id": "f18b309b-3432-426c-addd-ec75192638db__L4",
+      "name": "MovingUp",
+      "symbol": "var_movingup_0"
+    },
+    {
+      "id": "f18b309b-3432-426c-addd-ec75192638db__L5",
+      "name": "DialSelected",
+      "symbol": "var_dialselected_1"
+    },
+    {
+      "id": "c5c24090-81b7-426f-b6fd-1e9d97b1c367__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx"
+    },
+    {
+      "id": "c5c24090-81b7-426f-b6fd-1e9d97b1c367__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_2"
+    },
+    {
+      "id": "c5c24090-81b7-426f-b6fd-1e9d97b1c367__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_2"
+    },
+    {
+      "id": "11ad1114-0bfa-4d0d-b745-38432b6b2831__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_3"
+    },
+    {
+      "id": "11ad1114-0bfa-4d0d-b745-38432b6b2831__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_3"
+    },
+    {
+      "id": "11ad1114-0bfa-4d0d-b745-38432b6b2831__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_3"
+    },
+    {
+      "id": "f25b4da3-7b99-4bc3-8dee-4d7fd95f0afb__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_4"
+    },
+    {
+      "id": "f25b4da3-7b99-4bc3-8dee-4d7fd95f0afb__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_4"
+    },
+    {
+      "id": "f25b4da3-7b99-4bc3-8dee-4d7fd95f0afb__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_4"
+    },
+    {
+      "id": "df7f6a70-d9f5-404d-ab5b-221558f66643__L0",
+      "name": "paperposX",
+      "symbol": "var_paperposx_0"
+    },
+    {
+      "id": "328152fc-448f-4b08-aee7-f2a520f7bc44__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_5"
+    },
+    {
+      "id": "328152fc-448f-4b08-aee7-f2a520f7bc44__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_5"
+    },
+    {
+      "id": "328152fc-448f-4b08-aee7-f2a520f7bc44__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_5"
+    },
+    {
+      "id": "4c501077-5412-4c8b-8164-fb3cad04bcfb__L0",
+      "name": "Food Remaining",
+      "symbol": "var_food_remaining_1"
+    },
+    {
+      "id": "a1edfbcc-ce82-444f-bf84-5eb0f347a4b0__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4_2"
+    },
+    {
+      "id": "b0aa4f6f-b3ac-49e5-8968-68e8d792f571__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4_3"
+    },
+    {
+      "id": "2a4a9df9-4487-454f-94df-89852fe4f826__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt"
+    },
+    {
+      "id": "e50cca3f-0bd8-44b7-abf4-ca47da540ccf__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_0"
+    },
+    {
+      "id": "c3f476d0-70e2-4252-96df-f63ce7348e5d__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_1"
+    },
+    {
+      "id": "835399bb-e4a1-4050-bb84-4b27b05ad331__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_2"
+    },
+    {
+      "id": "74e880c3-df54-46e2-8cbe-786747d945a5__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_3"
+    },
+    {
+      "id": "74e880c3-df54-46e2-8cbe-786747d945a5__L1",
+      "name": "i",
+      "symbol": "var_i"
+    },
+    {
+      "id": "da5c7ce5-b9e1-45c8-b592-6e9e8c6ae9f1__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_4"
+    },
+    {
+      "id": "bfaa0011-6224-44e8-bc2d-627b1cce2a88__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_5"
+    },
+    {
+      "id": "bfaa0011-6224-44e8-bc2d-627b1cce2a88__L1",
+      "name": "i",
+      "symbol": "var_i_0"
+    },
+    {
+      "id": "b0e11568-b6ee-487c-9f88-cee50723dc07__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_6"
+    },
+    {
+      "id": "b0e11568-b6ee-487c-9f88-cee50723dc07__L1",
+      "name": "i",
+      "symbol": "var_i_1"
+    },
+    {
+      "id": "46bb0e4c-3788-47ad-a12f-3fe3123bea2e__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_7"
+    },
+    {
+      "id": "46bb0e4c-3788-47ad-a12f-3fe3123bea2e__L1",
+      "name": "i",
+      "symbol": "var_i_2"
+    },
+    {
+      "id": "5ec3621c-49c3-4986-a30b-2f8479775d22__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_8"
+    },
+    {
+      "id": "5ec3621c-49c3-4986-a30b-2f8479775d22__L1",
+      "name": "i",
+      "symbol": "var_i_3"
+    },
+    {
+      "id": "2af58929-9ce0-4199-9cf4-05934a4cf5ef__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "8855861a-8a2d-4816-94d0-92831fd7a345__L0",
+      "name": "NewGamePrompt",
+      "symbol": "var_newgameprompt"
+    },
+    {
+      "id": "8855861a-8a2d-4816-94d0-92831fd7a345__L1",
+      "name": "ConfirmNewGame",
+      "symbol": "var_confirmnewgame"
+    },
+    {
+      "id": "64cc316d-cffa-4af2-b807-2246f21ec1e3__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_9"
+    },
+    {
+      "id": "64cc316d-cffa-4af2-b807-2246f21ec1e3__L1",
+      "name": "i",
+      "symbol": "var_i_4"
+    },
+    {
+      "id": "876571f4-861e-4960-b720-072fa48a0d9c__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_10"
+    },
+    {
+      "id": "876571f4-861e-4960-b720-072fa48a0d9c__L1",
+      "name": "i",
+      "symbol": "var_i_5"
+    },
+    {
+      "id": "f4426782-ce11-4627-8573-f72eeec07330__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_11"
+    },
+    {
+      "id": "f4426782-ce11-4627-8573-f72eeec07330__L1",
+      "name": "i",
+      "symbol": "var_i_6"
+    },
+    {
+      "id": "3c443f9c-37e1-4629-bae2-0eda8d6e3668__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_12"
+    },
+    {
+      "id": "3c443f9c-37e1-4629-bae2-0eda8d6e3668__L1",
+      "name": "i",
+      "symbol": "var_i_7"
+    },
+    {
+      "id": "ed32be3e-3454-4b04-b2e6-8450afa6056b__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_13"
+    },
+    {
+      "id": "ed32be3e-3454-4b04-b2e6-8450afa6056b__L1",
+      "name": "i",
+      "symbol": "var_i_8"
+    },
+    {
+      "id": "4f93a6a2-8222-443e-bdf6-83aeef1f1606__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_14"
+    },
+    {
+      "id": "4f93a6a2-8222-443e-bdf6-83aeef1f1606__L1",
+      "name": "i",
+      "symbol": "var_i_9"
+    },
+    {
+      "id": "96cef5bc-d10a-484d-aa81-bc62f29b722e__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_15"
+    },
+    {
+      "id": "96cef5bc-d10a-484d-aa81-bc62f29b722e__L1",
+      "name": "i",
+      "symbol": "var_i_10"
+    },
+    {
+      "id": "13f9ebc0-d191-4f22-824a-1985528385d6__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_16"
+    },
+    {
+      "id": "13f9ebc0-d191-4f22-824a-1985528385d6__L1",
+      "name": "i",
+      "symbol": "var_i_11"
+    },
+    {
+      "id": "08a8875b-78ce-4f1b-988a-f5420de0b64a__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_17"
+    },
+    {
+      "id": "08a8875b-78ce-4f1b-988a-f5420de0b64a__L1",
+      "name": "i",
+      "symbol": "var_i_12"
+    },
+    {
+      "id": "1171ceb9-1642-4375-ab10-24ade553c617__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_18"
+    },
+    {
+      "id": "1171ceb9-1642-4375-ab10-24ade553c617__L1",
+      "name": "i",
+      "symbol": "var_i_13"
+    },
+    {
+      "id": "941a3da6-6d26-4025-8b77-ce7d44b73b7d__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_19"
+    },
+    {
+      "id": "941a3da6-6d26-4025-8b77-ce7d44b73b7d__L1",
+      "name": "i",
+      "symbol": "var_i_14"
+    },
+    {
+      "id": "e6260948-5616-43f8-954f-d28b58313a48__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_20"
+    },
+    {
+      "id": "e6260948-5616-43f8-954f-d28b58313a48__L1",
+      "name": "i",
+      "symbol": "var_i_15"
+    },
+    {
+      "id": "8887fbe8-1371-4c22-a782-313bc456102b__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_21"
+    },
+    {
+      "id": "8887fbe8-1371-4c22-a782-313bc456102b__L1",
+      "name": "i",
+      "symbol": "var_i_16"
+    },
+    {
+      "id": "38936546-b03a-47b2-8641-86f4c350bd5a__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_22"
+    },
+    {
+      "id": "38936546-b03a-47b2-8641-86f4c350bd5a__L1",
+      "name": "i",
+      "symbol": "var_i_17"
+    },
+    {
+      "id": "91eeda71-b9fe-49a2-9b6b-748a43331664__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_23"
+    },
+    {
+      "id": "91eeda71-b9fe-49a2-9b6b-748a43331664__L1",
+      "name": "i",
+      "symbol": "var_i_18"
+    },
+    {
+      "id": "67d4c609-fd13-4e34-af5e-122e9bb2aab2__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_24"
+    },
+    {
+      "id": "67d4c609-fd13-4e34-af5e-122e9bb2aab2__L1",
+      "name": "i",
+      "symbol": "var_i_19"
+    },
+    {
+      "id": "f90bba7b-4f46-4ff2-8d17-9b3423c40329__L0",
+      "name": "i",
+      "symbol": "var_i_20"
+    },
+    {
+      "id": "9eff3feb-751c-4bed-9524-dbdf9e3ea3bd__L0",
+      "name": "i",
+      "symbol": "var_i_21"
+    },
+    {
+      "id": "efb6a4fa-4953-4b6e-866a-72bd122c53bc__L0",
+      "name": "i",
+      "symbol": "var_i_22"
+    },
+    {
+      "id": "e50cca3f-0bd8-44b7-abf4-ca47da540ccf__L1",
+      "name": "i",
+      "symbol": "var_i_23"
+    },
+    {
+      "id": "b7a0df27-6996-4979-b8df-d1941a268ecb__L0",
+      "name": "i",
+      "symbol": "var_i_24"
+    },
+    {
+      "id": "cf0ef33e-de2f-483c-a4d2-11a30f764da5__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_25"
+    },
+    {
+      "id": "cf0ef33e-de2f-483c-a4d2-11a30f764da5__L1",
+      "name": "i",
+      "symbol": "var_i_25"
+    },
+    {
+      "id": "cf0ef33e-de2f-483c-a4d2-11a30f764da5__L2",
+      "name": "Music Selection",
+      "symbol": "var_music_selection"
+    },
+    {
+      "id": "cf0ef33e-de2f-483c-a4d2-11a30f764da5__L3",
+      "name": "Music Confirmed",
+      "symbol": "var_music_confirmed"
+    },
+    {
+      "id": "81216907-ca0a-40f1-a482-939585d35088__L0",
+      "name": "paperposX",
+      "symbol": "var_paperposx"
+    },
+    {
+      "id": "7c234924-dd3e-4151-be3c-f5b2462b7ae1__L0",
+      "name": "paperposX",
+      "symbol": "var_paperposx_1"
+    },
+    {
+      "id": "bf1ffee1-bf64-42cc-b643-62fcb7636630__L0",
+      "name": "Local 0",
+      "symbol": "var_local_1"
+    },
+    {
+      "id": "888f35a4-9b27-460a-99f4-9d273cd5de2d__L0",
+      "name": "Map2MovingSouthUnderBridge",
+      "symbol": "var_map2movingsouthunderbri_0"
+    },
+    {
+      "id": "888f35a4-9b27-460a-99f4-9d273cd5de2d__L1",
+      "name": "Map2MovingNorthUnderBridge",
+      "symbol": "var_map2movingnorthunderbri_0"
+    },
+    {
+      "id": "b57032da-95d7-4e12-80c9-4f46ba7dc2bc__L0",
+      "name": "Encounter 1 Trigger",
+      "symbol": "var_encounter_trigger_1"
+    },
+    {
+      "id": "b57032da-95d7-4e12-80c9-4f46ba7dc2bc__L1",
+      "name": "Encounter 2 Trigger",
+      "symbol": "var_encounter_trigger_2"
+    },
+    {
+      "id": "c3b83277-3c33-4946-92d5-95d091164794__L0",
+      "name": "FirstClimbSceneDone",
+      "symbol": "var_firstclimbscenedone"
+    },
+    {
+      "id": "b09c2165-dc08-43e5-94b7-8b0ec6bfb345__L0",
+      "name": "i",
+      "symbol": "var_i_26"
+    },
+    {
+      "id": "b09c2165-dc08-43e5-94b7-8b0ec6bfb345__L1",
+      "name": "timer",
+      "symbol": "var_timer"
+    },
+    {
+      "id": "90cd5595-2300-4747-bb0b-8a14f474725b__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_6"
+    },
+    {
+      "id": "90cd5595-2300-4747-bb0b-8a14f474725b__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_6"
+    },
+    {
+      "id": "90cd5595-2300-4747-bb0b-8a14f474725b__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_6"
+    },
+    {
+      "id": "81f1db45-0e7a-432c-a9bb-e7b4018b2fc0__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_7"
+    },
+    {
+      "id": "81f1db45-0e7a-432c-a9bb-e7b4018b2fc0__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_7"
+    },
+    {
+      "id": "81f1db45-0e7a-432c-a9bb-e7b4018b2fc0__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_7"
+    },
+    {
+      "id": "d5f6db4a-a995-45d2-9cee-d8699342c990__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_8"
+    },
+    {
+      "id": "d5f6db4a-a995-45d2-9cee-d8699342c990__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_8"
+    },
+    {
+      "id": "d5f6db4a-a995-45d2-9cee-d8699342c990__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_8"
+    },
+    {
+      "id": "d65f32fa-ea97-4c69-bc51-1eaa06225789__L0",
+      "name": "HandPosX",
+      "symbol": "var_handposx_9"
+    },
+    {
+      "id": "d65f32fa-ea97-4c69-bc51-1eaa06225789__L1",
+      "name": "Dial1PosY",
+      "symbol": "var_dial1posy_9"
+    },
+    {
+      "id": "d65f32fa-ea97-4c69-bc51-1eaa06225789__L2",
+      "name": "Dial1PosX",
+      "symbol": "var_dial1posx_9"
+    },
+    {
+      "id": "317217e7-fcef-4efe-825e-fe221db0902c__L0",
+      "name": "i",
+      "symbol": "var_i_27"
+    },
+    {
+      "id": "b034c224-0844-48ab-b28f-6ad3a2981855__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_26"
+    },
+    {
+      "id": "b034c224-0844-48ab-b28f-6ad3a2981855__L1",
+      "name": "i",
+      "symbol": "var_i_28"
+    },
+    {
+      "id": "8728e126-ca45-46a4-af11-5f35552094cd__L3",
+      "name": "AobaX",
+      "symbol": "var_aobax"
+    },
+    {
+      "id": "8728e126-ca45-46a4-af11-5f35552094cd__L0",
+      "name": "PlayerX",
+      "symbol": "var_playerx"
+    },
+    {
+      "id": "8728e126-ca45-46a4-af11-5f35552094cd__L1",
+      "name": "PlayerY",
+      "symbol": "var_playery_0"
+    },
+    {
+      "id": "8728e126-ca45-46a4-af11-5f35552094cd__L2",
+      "name": "PlayerDir",
+      "symbol": "var_playerdir"
+    },
+    {
+      "id": "8728e126-ca45-46a4-af11-5f35552094cd__L4",
+      "name": "AobaY",
+      "symbol": "var_aobay"
+    },
+    {
+      "id": "100fae74-d79d-4544-863c-cf772f6a9796__L3",
+      "name": "AobaX",
+      "symbol": "var_aobax_0"
+    },
+    {
+      "id": "100fae74-d79d-4544-863c-cf772f6a9796__L0",
+      "name": "PlayerX",
+      "symbol": "var_playerx_0"
+    },
+    {
+      "id": "100fae74-d79d-4544-863c-cf772f6a9796__L1",
+      "name": "PlayerY",
+      "symbol": "var_playery_1"
+    },
+    {
+      "id": "100fae74-d79d-4544-863c-cf772f6a9796__L2",
+      "name": "PlayerDir",
+      "symbol": "var_playerdir_0"
+    },
+    {
+      "id": "100fae74-d79d-4544-863c-cf772f6a9796__L4",
+      "name": "AobaY",
+      "symbol": "var_aobay_0"
+    },
+    {
+      "id": "56f1ac12-78ea-4f3c-84e6-bbfec1c10419__L3",
+      "name": "AobaX",
+      "symbol": "var_aobax_1"
+    },
+    {
+      "id": "56f1ac12-78ea-4f3c-84e6-bbfec1c10419__L0",
+      "name": "PlayerX",
+      "symbol": "var_playerx_1"
+    },
+    {
+      "id": "56f1ac12-78ea-4f3c-84e6-bbfec1c10419__L1",
+      "name": "PlayerY",
+      "symbol": "var_playery_3"
+    },
+    {
+      "id": "56f1ac12-78ea-4f3c-84e6-bbfec1c10419__L2",
+      "name": "PlayerDir",
+      "symbol": "var_playerdir_1"
+    },
+    {
+      "id": "56f1ac12-78ea-4f3c-84e6-bbfec1c10419__L4",
+      "name": "AobaY",
+      "symbol": "var_aobay_1"
+    },
+    {
+      "id": "9523e1f9-f3d6-4027-9b4b-33739b835cd8__L0",
+      "name": "Encounter 1 Trigger",
+      "symbol": "var_encounter_trigger_3"
+    },
+    {
+      "id": "bb64fb98-43d0-41b0-9e31-48e26ed463f9__L1",
+      "name": "Encounter3Trigger",
+      "symbol": "var_encounter3trigger_1"
+    },
+    {
+      "id": "c8f74ea8-6268-4e60-9aa6-258626882982__L1",
+      "name": "Encounter5",
+      "symbol": "var_encounter5_0"
+    },
+    {
+      "id": "2f16f9e2-51e7-4fec-b5b0-bf736cdfca90__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4_4"
+    },
+    {
+      "id": "1b16a0a0-35ec-45e1-9835-37271dac8b30__L0",
+      "name": "PlayerX",
+      "symbol": "var_playerx_2"
+    },
+    {
+      "id": "1b16a0a0-35ec-45e1-9835-37271dac8b30__L1",
+      "name": "PlayerY",
+      "symbol": "var_playery_4"
+    },
+    {
+      "id": "27fbcd21-9bb5-41ba-8e5f-be1b438dbe64__L1",
+      "name": "Overlay Visible",
+      "symbol": "var_overlay_visible_0"
+    },
+    {
+      "id": "27fbcd21-9bb5-41ba-8e5f-be1b438dbe64__L2",
+      "name": "Menu Choice",
+      "symbol": "var_menu_choice_0"
+    },
+    {
+      "id": "27fbcd21-9bb5-41ba-8e5f-be1b438dbe64__L3",
+      "name": "PlayerY",
+      "symbol": "var_playery_2"
+    },
+    {
+      "id": "27fbcd21-9bb5-41ba-8e5f-be1b438dbe64__L4",
+      "name": "AlembicPosX",
+      "symbol": "var_alembicposx_0"
+    },
+    {
+      "id": "76a399fd-e8a4-48c5-bc34-68e029b3aed9__L0",
+      "name": "Encounter 1 Trigger",
+      "symbol": "var_encounter_trigger_4"
+    },
+    {
+      "id": "1754e217-0805-4531-abca-8439978ba70c__L1",
+      "name": "Encounter3Trigger",
+      "symbol": "var_encounter3trigger_2"
+    },
+    {
+      "id": "49c18865-fa60-4fe9-a656-65d77989d3a6__L1",
+      "name": "Encounter5",
+      "symbol": "var_encounter5_1"
+    },
+    {
+      "id": "d86f357d-d944-41f5-9ad4-074664fdad2f__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4_5"
+    },
+    {
+      "id": "3bfd20cd-aded-486d-8d39-a26bf978b246__L0",
+      "name": "Local 0",
+      "symbol": "var_local_2"
+    },
+    {
+      "id": "94c1fc3c-b185-4da5-8890-515e5dd9b2fb__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4_6"
+    },
+    {
+      "id": "cbc7738a-6226-4086-872f-558fcd1c4f5d__L1",
+      "name": "Encounter4",
+      "symbol": "var_encounter4_7"
+    },
+    {
+      "id": "ffd0f112-6014-4738-a0bf-5bdac7094471__L0",
+      "name": "Map2MovingSouthUnderBridge",
+      "symbol": "var_map2movingsouthunderbri_1"
+    },
+    {
+      "id": "ffd0f112-6014-4738-a0bf-5bdac7094471__L1",
+      "name": "Map2MovingNorthUnderBridge",
+      "symbol": "var_map2movingnorthunderbri_1"
+    },
+    {
+      "id": "3e56d93f-d292-4942-afb5-6dd8cf839d9b__L0",
+      "name": "FirstClimbSceneDone",
+      "symbol": "var_firstclimbscenedone_0"
+    },
+    {
+      "id": "ea4a978d-b4a4-4d84-9cec-d3a49fefc883__L0",
+      "name": "A_Prompt",
+      "symbol": "var_a_prompt_27"
+    },
+    {
+      "id": "ea4a978d-b4a4-4d84-9cec-d3a49fefc883__L1",
+      "name": "i",
+      "symbol": "var_i_29"
+    },
+    {
+      "id": "410f3e84-16d2-4e70-8589-2bac9ffbfeec__L0",
+      "name": "NewGamePrompt",
+      "symbol": "var_newgameprompt_0"
+    },
+    {
+      "id": "410f3e84-16d2-4e70-8589-2bac9ffbfeec__L1",
+      "name": "ConfirmNewGame",
+      "symbol": "var_confirmnewgame_0"
+    },
+    {
+      "id": "c3c92712-6187-42bd-b129-b740317c69e9__L0",
+      "name": "NewGamePrompt",
+      "symbol": "var_newgameprompt_1"
+    },
+    {
+      "id": "c3c92712-6187-42bd-b129-b740317c69e9__L1",
+      "name": "ConfirmNewGame",
+      "symbol": "var_confirmnewgame_1"
+    }
+  ]
+}

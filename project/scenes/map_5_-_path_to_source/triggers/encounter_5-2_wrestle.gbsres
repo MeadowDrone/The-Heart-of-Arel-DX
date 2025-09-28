@@ -1,0 +1,137 @@
+{
+  "_resourceType": "trigger",
+  "id": "b9f843b2-72bc-4bbe-ab24-e165b8a873fc",
+  "_index": 9,
+  "symbol": "trigger_92",
+  "prefabId": "",
+  "name": "Encounter 5-2 Wrestle",
+  "x": 107,
+  "y": 63,
+  "width": 10,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "200",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "200"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "217"
+            },
+            "id": "fac121df-058f-4fcd-bda7-2829b09a5b94"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "200",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "dc286a1c-fa5e-456b-ae82-fc5af3a21dab"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "257fad7f-b7fc-4a7c-82ac-1a1718bdee8d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Wrestled with Eryr!"
+              ],
+              "avatarId": ""
+            },
+            "id": "a98f3900-a20d-4a7f-9970-02a27fb5653f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "What was that!?!"
+              ],
+              "portraitType": "shy"
+            },
+            "id": "92e10c93-45f5-499b-bbbe-33707bd6d1cc"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "I dunno! It's been a while!",
+                "And I just wanted to jump on\nyou."
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "f04ae321-4cc4-4a22-b852-4db77b79f187"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I guess so, and you know I'm\ndown for that, but... I mean.\nTiming?"
+              ],
+              "portraitType": "shy"
+            },
+            "id": "1d7571ce-58aa-45a2-b3eb-ea1c073a8097"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Hey, that big smile on your\nface tells me everything I\nneed to know."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "3d88b065-695e-45da-9167-9f83e833403b"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "aad5ade6-d9d8-439b-8888-e1f31ea4a529"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "e8406eaf-e268-4786-84ce-f9596687f391"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "fc06f5fe-11c8-4efe-86b5-33e274b7ae7f"
+          }
+        ],
+        "false": []
+      },
+      "id": "2e54960c-2399-427c-b04f-3e4b18ea51a8"
+    }
+  ],
+  "leaveScript": []
+}

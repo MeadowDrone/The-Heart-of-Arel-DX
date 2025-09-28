@@ -1,0 +1,174 @@
+{
+  "_resourceType": "trigger",
+  "id": "41147057-0979-44ff-bd23-8f2fa27f0d3e",
+  "_index": 1,
+  "symbol": "trigger_70",
+  "prefabId": "",
+  "name": "Point of No Return",
+  "x": 12,
+  "y": 5,
+  "width": 2,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Idle"
+      },
+      "id": "3fe7c843-d904-47d8-a70c-0583f761646e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Time to go in, then?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "588df623-c573-470b-a53c-72bf648f4a97"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": " There's more to be done first ",
+        "option2": " I'm ready",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue"
+      },
+      "id": "8af6801e-a1a7-447b-834b-8d4f9fbb59ff"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "5450af2f-5859-4610-ab9a-66a8b83770e8"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "operator": "==",
+        "comparator": 2,
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "loopAnim": true
+            },
+            "id": "26891c5e-f150-48cc-9b8d-4c99f9120fc7"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "c43cd265-ab7b-4909-8249-8f63d201b991"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "0e880511-5f0e-4366-99b4-ddb9db3dcaaa"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "28",
+              "value": {
+                "type": "number",
+                "value": 10
+              },
+              "__collapse": true
+            },
+            "id": "c4e6a046-bde7-440e-a1e7-5ebcbba4c646"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "27",
+              "value": {
+                "type": "number",
+                "value": 12
+              },
+              "__collapse": true
+            },
+            "id": "16dbe0ec-f6db-4226-bc58-478c197fcd37"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "945d8b3e-66ce-45e7-bfcf-3b1546c10917",
+              "x": {
+                "type": "number",
+                "value": 24
+              },
+              "y": {
+                "type": "number",
+                "value": 246
+              },
+              "direction": "",
+              "fadeSpeed": 4,
+              "__comment": false
+            },
+            "id": "bb7f7ae1-f71a-49f2-93de-b7bf8685a34d"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 12
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "958db61a-d1d4-468b-b865-6ac71eb3de5e"
+          }
+        ]
+      },
+      "id": "e60599d2-dbb4-47f4-ad17-4913dde19200"
+    }
+  ],
+  "leaveScript": []
+}

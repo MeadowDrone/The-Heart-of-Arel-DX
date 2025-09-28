@@ -1,0 +1,398 @@
+{
+  "_resourceType": "trigger",
+  "id": "12ebecbd-403f-40c9-b826-cc0316b74987",
+  "_index": 2,
+  "symbol": "trigger_75",
+  "prefabId": "",
+  "name": "Cave Entrance Dialogue",
+  "x": 12,
+  "y": 8,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "192",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "192"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "e8d9d17a-3d99-45a7-98a7-0eaa22f5a3ea",
+              "persist": false
+            },
+            "id": "05d2c420-c585-4234-ab42-78102d541888"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "192",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "4f41af4c-4401-4be7-86a6-e36110ffedfd"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "9d9b43e2-e37d-4e85-a194-c4d3e65f4f30"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            },
+            "id": "818aa074-4f70-45d6-871c-1a5c194802e6"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "ec0716ee-d2fe-420e-a883-db79fe3dffff",
+              "__collapse": false
+            },
+            "id": "5dbbf954-6b77-4f28-a4cb-9cdee1008daf"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "ec0716ee-d2fe-420e-a883-db79fe3dffff",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": false
+            },
+            "id": "6d04a3d0-d213-4314-97c4-e9f5168aed25"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "ec0716ee-d2fe-420e-a883-db79fe3dffff",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              }
+            },
+            "id": "a77a3c3d-446e-41d8-ad66-1a82360ed304"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "4b3e5dac-bc6d-4bf3-b499-b13312b131bb",
+              "__collapse": true
+            },
+            "id": "e6ae4782-d36d-476b-83be-c9f726361dab"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "4b3e5dac-bc6d-4bf3-b499-b13312b131bb",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__collapse": false
+            },
+            "id": "96c5db6f-fb39-4017-b527-7c7f2a631c27"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "4b3e5dac-bc6d-4bf3-b499-b13312b131bb",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            },
+            "id": "c82abfe9-daa9-46c7-a5b9-e22b76272453"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "faa37b53-dcd8-4f67-bd6e-0d61fc139aba",
+              "__collapse": true
+            },
+            "id": "9336ce68-4132-42bc-98c5-e238348969fc"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "faa37b53-dcd8-4f67-bd6e-0d61fc139aba",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__collapse": false
+            },
+            "id": "85f34051-b923-4c20-a186-d67ebb1b1e82"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "faa37b53-dcd8-4f67-bd6e-0d61fc139aba",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              }
+            },
+            "id": "36ec7874-08f1-4401-8386-f74dc8e52a64"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "We made it."
+              ],
+              "portraitType": "expressionless"
+            },
+            "id": "4d771fe7-8d96-4feb-8c24-87e67b9f9ea4"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "the source of the miasma..",
+                "i knew we could make it here."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "c78a9541-9e4b-4c9c-a4b0-3700f2160584"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "We're not done, though... we\nneed to finally put a stop to\nthis poison."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "1d2de313-0a5d-42c0-a343-38ac66f74ccf"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Eh, no probs. It'll be easy.\nLet's go!"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "b5dbdcc4-3d60-44bb-91f3-c21e22dd8061"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Hold on a second. Are we as\nprepared as we could be? Are\nwe as well fed as we could be?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "88676df9-a84c-4951-b4d2-49eae20201b7"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "are we as well rested as we\ncould be?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "9837a067-cdf9-4aec-883b-8cfe246e5fa4"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "I suppose once we're in there,\nwe're kinda gonna have to\ncommit, right?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "34519638-fc7f-453d-beb6-dcda02f70f7b"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Read Paper"
+            },
+            "id": "7b2b6589-a408-4811-97ad-0f45b8694dd4"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Definitely... I'm getting\na bit shaky from the nerves.",
+                "And this map, too... I feel that\nstrange sensation from it\nstronger than ever up here."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "8f5f6c3d-e012-4091-a475-ac110370abb1"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "aw, being nervous is totally\nokay, my queen bee.",
+                "considering where we are, id\nbe pretty concerned if you\nwerent tbh"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "3c475e8b-b34d-4767-80c0-430a9d59750a"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "6d56cafc-c72e-44c5-b8df-29adac139fc1"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Like me."
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "cf5338c7-9fce-4234-9f6e-e112719b1f26"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "exactly. like eryr"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "e1f099c2-61be-443f-b203-92b69a4257ca"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Either way... you're all so\ngreat."
+              ],
+              "portraitType": "happy"
+            },
+            "id": "9cc7d313-cb87-47f1-96ab-7b2e769e6268"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Alright, save the romance 'til\nwe're actually done."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "6c1d31b1-e53c-4b4d-9dd4-1d7ef68ff9ec"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Never!"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "e50b67e6-cd2a-4d08-ab8d-e853ef91f325"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "37a178d4-fd87-4b7e-bac3-d7a510e0059e",
+              "$actor[0]$": "ec0716ee-d2fe-420e-a883-db79fe3dffff"
+            },
+            "id": "236d1891-054a-4bc9-ac5c-22d68b996d9c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "37a178d4-fd87-4b7e-bac3-d7a510e0059e",
+              "$actor[0]$": "4b3e5dac-bc6d-4bf3-b499-b13312b131bb"
+            },
+            "id": "821a9577-dfee-463a-8d4b-41b226cd75e6"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "37a178d4-fd87-4b7e-bac3-d7a510e0059e",
+              "$actor[0]$": "faa37b53-dcd8-4f67-bd6e-0d61fc139aba"
+            },
+            "id": "77d6b396-ff35-4663-a268-9c13815ca8cd"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "eb28956c-45f9-4f05-9f53-e2cb07fb0759"
+            },
+            "id": "f47edc7d-6070-4495-9508-f53fbdaa1254"
+          },
+          {
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 2,
+              "__scriptTabs": "save"
+            },
+            "children": {
+              "true": []
+            },
+            "id": "df91334d-9884-42ae-b51f-12be68eea7ce"
+          }
+        ],
+        "false": []
+      },
+      "id": "b4aa4a96-e80a-49a5-9962-f0e45caf8a55"
+    }
+  ],
+  "leaveScript": []
+}

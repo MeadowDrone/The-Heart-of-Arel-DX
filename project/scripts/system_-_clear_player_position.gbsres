@@ -1,0 +1,44 @@
+{
+  "_resourceType": "script",
+  "id": "ce0ea1c6-1791-419b-87b3-d9484e9e5eb1",
+  "name": "System - Clear Player Position",
+  "symbol": "script_78",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "28",
+        "__collapse": true,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "0dfaf5e3-b232-48dc-937c-cc0e0e86d637"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "27",
+        "__collapse": true,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "a1aad98e-2b08-4850-a7b7-968cebfe9e00"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "29",
+        "__collapse": true,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "730cff2b-6ffc-42d3-ad16-442f2ca82713"
+    }
+  ]
+}

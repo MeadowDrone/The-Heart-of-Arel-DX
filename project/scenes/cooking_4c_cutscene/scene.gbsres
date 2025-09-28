@@ -1,0 +1,290 @@
+{
+  "_resourceType": "scene",
+  "id": "38936546-b03a-47b2-8641-86f4c350bd5a",
+  "_index": 38,
+  "type": "TOPDOWN",
+  "name": "Cooking 4C Cutscene",
+  "symbol": "scene_43",
+  "labelColor": "red",
+  "x": 1168,
+  "y": 2704,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "319bc5ca-f3c4-46b3-b341-c0abffab9890",
+  "tilesetId": "",
+  "paletteIds": [
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 4,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "922fabfe-41d0-43b9-ae37-960b29226ce4"
+      },
+      "id": "4cfdea2c-5c1f-4159-9c2d-598ca1100b8f"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "c16307e7-2305-4403-b360-b17a4ea7fcaa"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Eating together is a social\nactivity, but for me, the\ncooking itself let me be in my",
+          "own bubble, where my own\nthoughts and feelings reign.\nI've had enough instances of my",
+          "life where people struggle to\nconnect to me. Some have told\nme over the years that I'm too",
+          "blunt, or too thick-skinned, or\nnot nice enough."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "7fd5f8ef-ad00-45d4-81f0-3f4d235050b9"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "55531a83-055d-45a4-a86c-a7f47346564d",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "57234217-fc6e-4856-93f4-7f5155cc5a50"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "When I was younger, I took\nsome of those comments\npersonally. I spent time",
+          "trying to be more open, and\nput on a more extroverted,\nlively and \"likeable\" mask."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "bfa15543-be74-4c25-9d84-cafa3e709658"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "22539afe-f830-470b-ae07-4da1e3e0b73b"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "e9b24ef0-77a5-4e6c-aa74-b3bd58d711cd"
+      },
+      "id": "ba44a909-87d4-4195-bf90-c2e2e2bc7baa"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "b611544a-bb6e-407d-97c3-52768cd6c1b9"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "96e45041-7625-48f6-ab54-c7e080e427c2"
+      },
+      "id": "3924d35e-66e5-4782-b8f0-05c56b9dbf87"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "a2affba8-3195-4979-b404-6f5e27b04080"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "55531a83-055d-45a4-a86c-a7f47346564d",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "514c9de9-3912-427e-ba70-3e9e24f83c6b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "But it just left me feeling...\nstretched out too thin."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "9ef1ebb9-1d23-4727-9552-bdcd7ba20439"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "6b38b9ed-33ea-4f49-859f-1446adffd981",
+        "__collapse": true
+      },
+      "id": "9c84cc19-7a35-471e-ab7c-16848519a21f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "840024d1-7b2e-499d-99d7-5ecbb6cc7a65"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "b5d4d73b-1696-4401-88d4-6c993799ef8a",
+        "__collapse": true
+      },
+      "id": "6ab2f8bf-3bab-41a1-a2fc-5b2052c4555d"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "137f01db-5ab4-44ab-a443-9fd694c03eca"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "55531a83-055d-45a4-a86c-a7f47346564d",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "59a6a50d-df2a-4b7d-a57b-328041d0158c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Spiritually and physically\nexhausted. Burned out,\noverwhelmed."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "b2e950b0-30cc-4800-87f2-9f533d660011"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "8628f024-cd54-49fa-8be5-5d2272816975"
+      },
+      "id": "3153330d-99d3-4713-bc2e-2b696e0e42ad"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "01197c74-dcb3-4b41-8cb5-4afec2ffaf0f"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "8b6b53e2-a1f3-4798-975d-d8cfa0d7b425"
+      },
+      "id": "00d4318f-62c1-49ec-a446-09bbbe269e81"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "9afabccf-a6e9-4acc-8d51-d0d9eb3a11c5"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "55531a83-055d-45a4-a86c-a7f47346564d",
+        "spriteStateId": "Spin"
+      },
+      "id": "43d71df8-8583-486e-b866-b494f01b8101"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Eventually, I just stopped\ntrying to be someone I wasn't."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "2a717bda-fa09-46f8-ae38-819fda54910f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 7
+      },
+      "id": "c231673a-1f39-4796-abd0-7048ebb39680"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "5ce5ecc1-1dcf-449f-ac8d-b9cadbf19216"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "91eeda71-b9fe-49a2-9b6b-748a43331664",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": 5
+      },
+      "id": "aca67e40-9d16-4613-b1e2-cc813e5bd65e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

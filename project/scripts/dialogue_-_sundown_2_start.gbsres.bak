@@ -1,0 +1,594 @@
+{
+  "_resourceType": "script",
+  "id": "dbd1ab91-7fdd-4b17-b36a-e522f8dbe802",
+  "name": "Dialogue - Sundown 2 Start",
+  "symbol": "script_3",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Eryr"
+    },
+    "1": {
+      "id": "1",
+      "name": "Aoba"
+    },
+    "2": {
+      "id": "2",
+      "name": "Harthe"
+    },
+    "3": {
+      "id": "3",
+      "name": "Eionn"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "My feet are killing me... I\nswear I brought my comfy boots\ntoo."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "5a3ef228-0e53-4d5b-8f3c-a7bd1a441b25"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "comf is important",
+          "in life, one must needs strive\nfor the comf"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "fb4b1fe3-219c-40fb-97f0-3e985064c273"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Well, I'm starting to flag too.\nWe can rest up here."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "f3ca7309-e739-4092-91cb-e6f63a792ffd"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Aw yeah, time to immediately\nlie on the floor."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "6734e52d-9488-4aaa-80b7-ba4b46583d22"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Comfy"
+      },
+      "id": "4a0a9682-0e13-4381-b8e1-24f12b428048"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": true
+      },
+      "id": "b1eefb90-95f9-40f6-ab4b-8b4ed71fff81"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "860d4d58-be51-4fcf-ba19-101ad08881e3"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "8ba8b7ae-ff3e-4d3d-b0e1-33af52b038fa"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Would you like a cuddle?"
+        ],
+        "portraitType": "smile"
+      },
+      "id": "892dd572-6258-4c62-b081-26e1c6737ecf"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Stop asking silly questions\nand get your butt over here,\nGoba."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "042ec2a3-b030-4c8f-bdfd-ca3dbf6b5d69"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "a2ee8f6a-7fd0-4486-b39f-f160de63112c"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "1",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "f5fc641c-89ce-4dc8-b231-76b6c539592a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "8065fc09-87a5-47f7-bb79-78fcb932be2e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1",
+        "spriteStateId": "Comfy"
+      },
+      "id": "241b58c2-6c79-4564-8310-62de17e5c77c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Awwww."
+        ],
+        "portraitType": "happy"
+      },
+      "id": "7d3faaf4-90f4-4b0e-83f1-6b029270197f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "im gonna just"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "4e9188af-9236-41ff-95b2-34596c812818"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "2",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "266f6860-d83c-457a-8d19-e165fcfbe6e1"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "a62f06bc-860f-4619-8047-93717dfab9ff"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "cd5c21e1-bced-4230-8492-0931043069dc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "02f1b613-5f3b-4c96-9f13-bd974bcf0d54"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "a564d4f8-ddb1-4765-b783-1f9bcce779bd"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": true
+      },
+      "id": "5763578e-0fbe-4480-bc41-75df074fcd79"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "abff4a6d-9fed-403d-95a0-fb54bfbf9ebc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": true
+      },
+      "id": "ad9831f9-212a-4761-a977-14a13da6ffb0"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "f52d9271-42f3-4d85-b73d-be9e86b0f752"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": true
+      },
+      "id": "3c96e08e-07d4-401c-b181-8dd5cf8a7861"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "4ed339cb-7387-4183-a2d8-2e0370e4a2e4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "2",
+        "spriteStateId": "Comfy",
+        "__collapse": true
+      },
+      "id": "e6917c13-55f4-4c3b-b745-9c1fd2a38eaa"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "021549bf-2976-4f76-916e-b5ad571b1b02"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Oh, OK."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "102e6f6e-b485-405a-8857-0ead2b9c5690"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "08d5b71a-395b-4b78-9e78-06f45d5f6238"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "a300f662-8ae5-4d00-a0b9-3c433d5168e7"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "This spot over... here looks\nflat enough, I guess..."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "dc7c0989-9c51-44b1-b5fc-15a0681e2b1a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "3",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "64bd170a-1ce7-425f-ad22-5e4080bdb076"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "33643b2a-c1ab-4510-9692-9a68926090cf"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "3",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "9b1a974d-e6f3-480e-a2ca-b3224d20b498"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "b039d00b-b325-459c-b32e-30c60f07c794"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "3",
+        "spriteStateId": "Comfy"
+      },
+      "id": "7f769e30-9b01-4ece-a240-e27eb80f9da7"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "c6e5aa75-ef55-4ca9-a47d-131ec9ef5074"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "It's kinda a cold one, huh."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "4a4faecb-ca86-40d1-ac3d-cf92f66fd4d7"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "acc64be7-e168-4265-93b1-ddbf60a8baae"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Are you warm enough\nsleeping outdoors, Harthe?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "defc2301-8e61-4553-b801-02676043678e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "as long as i get some cuties\nto cuddle then i gots nothing\nto worry about~",
+          "are",
+          "are you doing okay all the way\nover there, my dew leaf? you\ndont have a potion that keeps"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "327cbf25-d085-4037-b56a-67523af6d9b9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "you warm or something youre\nkeeping secret do you"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "e4e5b765-0b8d-4222-9962-3f939d2d5ae8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Yeah, I mean, I guess.",
+          "Uh.",
+          "Uhhh."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "6771331f-45ee-494b-a177-cb483f8b8dce"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "ad542d94-eff7-41d5-840e-86bec479fbf3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Like I guess in theory it\nwould be nice and helpful but\nI've already got com-"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "91f67285-45f8-4d86-b1f0-a485dbfbae9f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "2",
+        "spriteStateId": ""
+      },
+      "id": "31d3ec4c-7df5-422c-afc4-08e174ae51a0"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "2",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "9bbc5f1c-1a50-46ec-9395-6fff3a8bbcd9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "4ef42c24-5b1b-4596-b2aa-855d1fbca490"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "eionn my sweet"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "478a0614-c664-4001-b006-e6ad62b8dd80"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "its ok, you can just ask me"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "443c6a89-b46e-4274-b35c-bf7714064c84"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "or any of us, anytime~"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "854819c0-c246-40ef-ba65-c6729912ac5a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "eionn my sweet",
+          "its ok, you can just ask me",
+          "or any of us, anytime~"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "0fa972da-e3a5-4a74-b90b-d3f16f11651e"
+    }
+  ]
+}

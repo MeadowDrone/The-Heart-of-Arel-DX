@@ -1,0 +1,489 @@
+{
+  "_resourceType": "script",
+  "id": "3dba0f58-dfc6-41ce-841c-7422b081da90",
+  "name": "System - Save Game",
+  "symbol": "script_1",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "243",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "ec0eb4de-e3ff-470c-ae6c-e6085cbe1785"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "71",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "71"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "243",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "V0",
+              "value": 12,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "375a5ed0-46f8-4712-84ac-18e7ad510e8d"
+          }
+        ],
+        "false": []
+      },
+      "id": "20c4fbca-3eee-49bd-a966-896f6730b1f4"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "72",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "72"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "243",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "V0",
+              "value": 12,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "7e2bfd5d-95cb-4457-b913-fb24d77a1b61"
+          }
+        ],
+        "false": []
+      },
+      "id": "803472e6-d04a-405e-a040-f98db6648b66"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "142",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "142"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "243",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "V0",
+              "value": 12,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "d15e326f-9519-4188-b8f9-111198d10dad"
+          }
+        ],
+        "false": []
+      },
+      "id": "b25e356f-7d81-43ca-bcb4-5d784c3ae68c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "147",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "147"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "243",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "V0",
+              "value": 12,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false,
+              "__collapse": true
+            },
+            "id": "7c3634b6-2f5c-436d-b0a7-bba55cf6e55b"
+          }
+        ],
+        "false": []
+      },
+      "id": "9a51be80-8d6a-4996-a27b-07ba53167d10"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "243",
+        "operation": "add",
+        "other": "var",
+        "vectorY": "18",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false,
+        "__collapse": true
+      },
+      "id": "281ed674-f328-41f1-928c-17fc7916a400"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "243",
+        "operation": "add",
+        "other": "var",
+        "vectorY": "126",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false,
+        "__collapse": true
+      },
+      "id": "0a1d2855-2537-497d-9359-48812ba54f1d"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "106",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "106"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "243",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "V0",
+              "value": 4,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "5d9e2005-27f7-4e66-b3b4-cbc703d5dee0"
+          }
+        ],
+        "false": []
+      },
+      "id": "473a4b95-f040-4b78-bbae-a37dd254a7f2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "167",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "167"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "243",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "V0",
+              "value": 4,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "179d09ec-d05a-4213-a6e7-1d6938811a18"
+          }
+        ],
+        "false": []
+      },
+      "id": "4cee0fcd-7720-4109-a24a-15421610a7c8"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "204",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "204"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "243",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "V0",
+              "value": 4,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "1eb6352e-c763-4bdc-84c2-6cb35149d09d"
+          }
+        ],
+        "false": []
+      },
+      "id": "0fc6473b-3842-42da-91ad-249e5e836351"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Read Paper Left"
+      },
+      "id": "9ac5f880-5f38-4f5a-848b-c79c409099f0"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "241",
+        "choices": 4,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "eionn my lovelyyy",
+                "weve done a lottt so far and\nyou should write it down :3"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "5e1dda14-f347-4b6d-82de-c88e1da00d0a"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Hey Eionn. What do you even\nwrite in that journal of\nyours anyway?"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "7ac67e79-9635-47df-a132-dc8ee7703d0d"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Eionn, it'd be wise to record\nour progress so far."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "cca2cdb9-8aa7-4211-8c3d-68b16a8d29f5"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Give me a sec, I wanna write\ndown everything we've done\ntoday."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "8d7882f8-bd49-4c93-ae70-965a709505a3"
+          }
+        ],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "75d33c29-f3dd-4ce8-9daf-594ac98a3b91"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "146",
+        "items": 2,
+        "option1": " Save Game",
+        "option2": " Cancel",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "menu",
+        "cancelOnLastOption": true
+      },
+      "id": "3425ec07-fb9d-4d56-a93e-89dffaa0eb68"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "146",
+        "operator": "==",
+        "comparator": 1,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "146"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 0,
+              "__scriptTabs": "save"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 7
+                  },
+                  "id": "6611fac1-b5b2-4bb6-9f9d-eddfb0208c73"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "All done!"
+                    ],
+                    "portraitType": "happy"
+                  },
+                  "id": "dc80c0a2-b9bb-4c42-954f-e40af39e3c6d"
+                }
+              ]
+            },
+            "id": "ab7d5f1f-fcf6-421f-a0fa-d25a3406d2f4"
+          }
+        ],
+        "false": []
+      },
+      "id": "fafbf213-e1a6-4ae5-a0e9-7e954e360bdf"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "f78b3b73-dea9-490c-b6b9-520be259a957"
+    }
+  ]
+}

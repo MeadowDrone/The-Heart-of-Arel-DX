@@ -1,0 +1,15 @@
+{
+  "_resourceType": "font",
+  "id": "616aaa04-9538-4399-b15c-77732bf3b0d2",
+  "name": "Erika Dialogue",
+  "symbol": "font_harthe_dialogue",
+  "width": 128,
+  "height": 112,
+  "filename": "font-erika.png",
+  "mapping": {
+    "﹩": 36,
+    "あ": 208,
+    "お": 227,
+    "え": 228
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "_resourceType": "trigger",
+  "id": "ece94ff2-ddf8-4a9d-9658-e11af7270c78",
+  "_index": 9,
+  "symbol": "trigger_37",
+  "prefabId": "",
+  "name": "Cross the Swamp Check",
+  "x": 91,
+  "y": 112,
+  "width": 25,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "75",
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "75"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27"
+            },
+            "id": "268cc26b-0898-49e0-98d2-668dcbbb225e"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+            "args": {
+              "variable": "L0",
+              "expression": "$27$+1"
+            },
+            "id": "87d29d4a-d96e-41be-8c58-f2f516d4990c"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "variable",
+                "value": "28"
+              },
+              "y": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "2eb87e2a-3a5f-44e9-8867-d8e01bcfacb6"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "ewwww"
+              ],
+              "portraitType": "shock"
+            },
+            "id": "d523db39-a70d-44bd-b1c6-1690c245a8c5"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Auuugh!"
+              ],
+              "portraitType": "angry"
+            },
+            "id": "86e43f21-3298-47e6-91fe-29c25df320ec"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 2
+            },
+            "id": "8e865122-334b-4929-b3b4-99deb2440746"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 100
+              },
+              "y": {
+                "type": "number",
+                "value": 104
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "7d4d0f9c-d148-449e-be67-de05da848738"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "43e3287a-4e6e-4ee3-a64c-ca5e849110d5"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "13",
+              "__collapseElse": false,
+              "__disableElse": false,
+              "__collapse": true,
+              "condition": {
+                "type": "variable",
+                "value": "13"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1.2
+                  },
+                  "id": "c7ff7df3-d62b-4b4a-b6bc-fae9c9313a74"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "77ff23dd-2763-4eef-a879-bc2d87a06654"
+                }
+              ]
+            },
+            "id": "02fb387b-142f-4a04-abdb-82318c3d2e2d"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Looking at the size of this\nswamp, we won't have enough\nenergy to cross."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "878d77fc-8bd1-4eed-a49f-c2f4d66b94f5"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "We need to find a way to be\nable to cross it. There were\nalways stories of a potion",
+                "that lets you cross large\ndistances easily, but I don't\nknow if it exists..."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "39ec1d5b-2b8e-4ec3-ad41-ebff415f1381"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Whatever the solution is,\nlet's try and find it."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "71bc356f-3f53-4ef1-b2e0-000568bbfd20"
+          }
+        ],
+        "false": []
+      },
+      "id": "330e03d4-5dbe-4f8a-b395-8a2b36df2118"
+    }
+  ],
+  "leaveScript": []
+}

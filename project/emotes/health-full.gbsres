@@ -1,0 +1,9 @@
+{
+  "_resourceType": "emote",
+  "id": "8fc2352b-ff55-45ee-8603-25d1315cee19",
+  "name": "health-full",
+  "symbol": "emote_health_full",
+  "width": 16,
+  "height": 16,
+  "filename": "health-full.png"
+}

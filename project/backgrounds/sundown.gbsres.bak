@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "431f82fe-c671-4449-8841-4d0f92e29231",
+  "name": "sundown",
+  "symbol": "bg_intro_parallax_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "sundown.png",
+  "tileColors": "0064+0150+0014+02!004+022+004+022+004+022+003+022+0039+022+003+023+004+022+004+02!008+022+0032+",
+  "autoColor": false
+}

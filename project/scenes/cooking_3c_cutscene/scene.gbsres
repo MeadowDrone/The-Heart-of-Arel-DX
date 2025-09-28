@@ -1,0 +1,457 @@
+{
+  "_resourceType": "scene",
+  "id": "1171ceb9-1642-4375-ab10-24ade553c617",
+  "_index": 34,
+  "type": "TOPDOWN",
+  "name": "Cooking 3C Cutscene",
+  "symbol": "scene_39",
+  "labelColor": "red",
+  "x": 176,
+  "y": 2664,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "593e01e0-3e56-4f8d-9c11-a961da86188d",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 4,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "922fabfe-41d0-43b9-ae37-960b29226ce4"
+      },
+      "id": "0e3ba9e4-1482-43f6-9cd9-2447c7cbcb26"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "8dc9fd3c-68fe-4b96-b89a-7eb6e4c1afd0",
+        "x": {
+          "type": "number",
+          "value": 22
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true
+      },
+      "id": "c50c965a-1360-40c5-bc5a-8b7c22add2f5"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "72fa80c4-8f8a-4ed5-b130-c9da0e0b9128",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 19
+        },
+        "__collapse": true
+      },
+      "id": "e9b14f93-a15e-4662-86e0-e24d08f273d0"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {
+        "__collapse": true
+      },
+      "id": "39aeac4b-59f7-446e-a8b7-5cf93776f11c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I was goin' about my business\nin our village one day when\nthese random men walked past",
+          "and started yelling at me."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "e3d7e467-1030-4d2a-9860-fe1162ce4c8b"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "8dc9fd3c-68fe-4b96-b89a-7eb6e4c1afd0",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "4fb5d4b4-a97a-447a-a6ca-e7f74364ae01"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "cdace8b0-5b23-4663-ae46-97b9b65235c1",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "17dcd2ed-324d-4c74-a848-44bde2919234"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Calling me manly, ugly, cyclops,\nall the usual dull nonsense."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "5c2ef0a9-9500-4d83-8a0e-e8fbbc244f84"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Then suddenly..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "49982638-8941-48cc-ab74-51e562111786"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "72fa80c4-8f8a-4ed5-b130-c9da0e0b9128",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "e4b15b9c-63fa-4d2c-98fd-9fd08d6f6978"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "72fa80c4-8f8a-4ed5-b130-c9da0e0b9128",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "1226af26-6df4-46f3-9dca-0b63c1931573"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          " "
+        ],
+        "portraitType": "blush"
+      },
+      "id": "3797807c-3fd4-46c5-ad48-ff4a2d11674f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "She suddenly rushed in to\ndefend me! I was so\nimpressed, but conflicted.",
+          "Because on the one hand, it was\nSO sweet! I had so much\nadmiration for you."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "f0dc8c5d-9f6a-40a2-a004-282a5cdb2bcb"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "But on the other..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "d69e0996-77dc-4c11-9299-44f89050f268"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "They started shouting abuse at\nher instead. So..."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "dc358bdd-ccd5-4603-9f97-c12abeedebc6"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "8dc9fd3c-68fe-4b96-b89a-7eb6e4c1afd0",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "8ab9cc39-53d3-416d-8413-3d13d5b75c1c"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "72fa80c4-8f8a-4ed5-b130-c9da0e0b9128",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "c62ca026-f496-4a5f-8d1c-b5aabe62ad52"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "72fa80c4-8f8a-4ed5-b130-c9da0e0b9128",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "ad8a3a27-51ab-42d0-b056-75b7f1b58eb5"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "cdace8b0-5b23-4663-ae46-97b9b65235c1",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "7f9151cb-9a8c-4417-b086-37ea34a63bca"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "cdace8b0-5b23-4663-ae46-97b9b65235c1",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "f3d307f7-c198-45f7-9f3b-3fd1cfc9584c"
+    },
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "L1",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 5
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "8dc9fd3c-68fe-4b96-b89a-7eb6e4c1afd0"
+            },
+            "id": "733c301e-8d7a-40ee-a545-9c993187f303"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.8,
+              "frames": 5,
+              "units": "frames"
+            },
+            "id": "19dde6d7-cb9b-4800-b89f-53cd40f2f958"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "8dc9fd3c-68fe-4b96-b89a-7eb6e4c1afd0"
+            },
+            "id": "94cc6423-7d08-4846-b545-e4b0c93c8405"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 5,
+              "frames": 5,
+              "units": "frames"
+            },
+            "id": "0bee62fd-4074-4fbe-87cd-f4bc7b19fcf0"
+          }
+        ]
+      },
+      "id": "99bfa087-c615-4720-bc57-e80cb9b298dd"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "8dc9fd3c-68fe-4b96-b89a-7eb6e4c1afd0",
+        "__collapse": false
+      },
+      "id": "bf1e9686-bacd-44b6-a90b-f53ad31d9068"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "You beat the hell out of them!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "e3de3c69-7d85-4e41-ac7b-c19070a949b9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Well, one of them peed their\npants and ran away but the",
+          "others looked like they had\ngone through some profound,\nlife-changing shit.",
+          "The look in their eyes..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "be4e7fc5-7440-4762-801c-8ce3ac73062a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Naturally. You had no idea that\nI'm the kinda person you don't\nneed to jump in to defend.",
+          "It was clear how much courage\nyou had, though."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "dc8c994c-6049-4a99-b97a-100ea3f9adfc"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I was so taken aback that I\nfell for you on the spot with\nthat boyish charm of yours."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "8b662328-2cf5-4075-8a01-83ad98e3c5b1"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "cdace8b0-5b23-4663-ae46-97b9b65235c1",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "e13a2182-d33d-4766-9b11-1f500c5c6247"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "cdace8b0-5b23-4663-ae46-97b9b65235c1",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": true
+      },
+      "id": "3d683618-9160-4ba8-a37c-475af8e77cf9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "72fa80c4-8f8a-4ed5-b130-c9da0e0b9128",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": true
+      },
+      "id": "837f8c63-4d0c-45d0-8991-480a833c3db2"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "adf6f1c0-24c7-4610-abf0-77728724f946"
+      },
+      "id": "2fefb89c-cc5c-4f96-9758-020abecd576f"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "941a3da6-6d26-4025-8b77-ce7d44b73b7d",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "7f6ae902-08be-4418-85d9-5692b19f52ec"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

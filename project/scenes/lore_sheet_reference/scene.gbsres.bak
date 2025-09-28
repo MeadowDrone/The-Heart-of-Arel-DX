@@ -1,0 +1,699 @@
+{
+  "_resourceType": "scene",
+  "id": "7c234924-dd3e-4151-be3c-f5b2462b7ae1",
+  "_index": 41,
+  "type": "POINTNCLICK",
+  "name": "Lore Sheet Reference",
+  "symbol": "scene_47",
+  "labelColor": "green",
+  "x": 1536,
+  "y": 56,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a9b410b7-b40a-4545-b8ed-275f0fba92f8",
+  "tilesetId": "",
+  "paletteIds": [
+    "ee2315bd-2be4-49ae-bec8-5cccbc00fd4a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "acb45d05-477d-4526-ab4d-e2ba64f99229",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "41017411-29e6-40f5-b963-42fb4bc2e953"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 2,
+        "__collapse": true
+      },
+      "id": "422ba029-2a98-4231-9f31-60856f34bfda"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "70",
+        "flag1": true,
+        "flag2": true,
+        "flag3": true,
+        "flag4": true,
+        "flag5": true,
+        "flag6": true,
+        "flag7": true,
+        "flag8": true,
+        "flag9": true,
+        "flag10": true,
+        "flag11": true,
+        "flag12": true,
+        "flag13": true,
+        "flag14": true,
+        "flag15": false,
+        "flag16": false,
+        "__collapse": false,
+        "__comment": true
+      },
+      "id": "c716b39c-3b24-4af4-80a3-d6d8af936183"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 0,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 100\nVM_REPLACE_TILE_XY     1, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 101\nVM_REPLACE_TILE_XY     2, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 102\nVM_REPLACE_TILE_XY     3, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 103\nVM_REPLACE_TILE_XY     4, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 120\nVM_REPLACE_TILE_XY     1, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 121\nVM_REPLACE_TILE_XY     2, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 122\nVM_REPLACE_TILE_XY     3, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 123\nVM_REPLACE_TILE_XY     4, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "59b62589-eeeb-4a2e-a3b0-c01c3dd528b6"
+          }
+        ],
+        "false": []
+      },
+      "id": "0394b946-8a1d-4c3c-af5a-4c2e914253be"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 1,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 140\nVM_REPLACE_TILE_XY     1, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 141\nVM_REPLACE_TILE_XY     2, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 142\nVM_REPLACE_TILE_XY     3, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 143\nVM_REPLACE_TILE_XY     4, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 160\nVM_REPLACE_TILE_XY     1, 4, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 161\nVM_REPLACE_TILE_XY     2, 4, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 162\nVM_REPLACE_TILE_XY     3, 4, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 163\nVM_REPLACE_TILE_XY     4, 4, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "aed56d6e-5ed8-4857-9162-9fc49d21c15c"
+          }
+        ],
+        "false": []
+      },
+      "id": "1600d6b1-08ee-447c-8179-23c4e0e6e6e8"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 2,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 220\nVM_REPLACE_TILE_XY     1, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 221\nVM_REPLACE_TILE_XY     2, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 222\nVM_REPLACE_TILE_XY     3, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 223\nVM_REPLACE_TILE_XY     4, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 240\nVM_REPLACE_TILE_XY     1, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 241\nVM_REPLACE_TILE_XY     2, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 242\nVM_REPLACE_TILE_XY     3, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 243\nVM_REPLACE_TILE_XY     4, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "1b1d01ca-b2fa-45b1-8b14-856b8055b636"
+          }
+        ],
+        "false": []
+      },
+      "id": "11c274ce-e17c-4547-a6de-c300faf60f5b"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 3,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 180\nVM_REPLACE_TILE_XY     1, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 181\nVM_REPLACE_TILE_XY     2, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 182\nVM_REPLACE_TILE_XY     3, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 183\nVM_REPLACE_TILE_XY     4, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 200\nVM_REPLACE_TILE_XY     1, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 201\nVM_REPLACE_TILE_XY     2, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 202\nVM_REPLACE_TILE_XY     3, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 203\nVM_REPLACE_TILE_XY     4, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "1b37263e-cc0c-446d-aec9-0d3f05ac2454"
+          }
+        ],
+        "false": []
+      },
+      "id": "ed1fed02-77c8-4900-b030-e3d71e1840eb"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 4,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 24\nVM_REPLACE_TILE_XY     11, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 25\nVM_REPLACE_TILE_XY     12, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 26\nVM_REPLACE_TILE_XY     13, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 27\nVM_REPLACE_TILE_XY     14, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 44\nVM_REPLACE_TILE_XY     11, 10, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 45\nVM_REPLACE_TILE_XY     12, 10, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 46\nVM_REPLACE_TILE_XY     13, 10, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 47\nVM_REPLACE_TILE_XY     14, 10, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 64\nVM_REPLACE_TILE_XY     11, 11, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 65\nVM_REPLACE_TILE_XY     12, 11, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 66\nVM_REPLACE_TILE_XY     13, 11, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 67\nVM_REPLACE_TILE_XY     14, 11, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 84\nVM_REPLACE_TILE_XY     11, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 85\nVM_REPLACE_TILE_XY     12, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 86\nVM_REPLACE_TILE_XY     13, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 87\nVM_REPLACE_TILE_XY     14, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 16",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "07459f4d-75da-40f2-9455-76e84b7e806a"
+          }
+        ],
+        "false": []
+      },
+      "id": "f2b6d41c-232b-4bf3-a55d-54b9e8252ecd"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 5,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 104\nVM_REPLACE_TILE_XY     11, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 105\nVM_REPLACE_TILE_XY     12, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 106\nVM_REPLACE_TILE_XY     13, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 107\nVM_REPLACE_TILE_XY     14, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 124\nVM_REPLACE_TILE_XY     11, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 125\nVM_REPLACE_TILE_XY     12, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 126\nVM_REPLACE_TILE_XY     13, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 127\nVM_REPLACE_TILE_XY     14, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 144\nVM_REPLACE_TILE_XY     11, 15, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 145\nVM_REPLACE_TILE_XY     12, 15, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 146\nVM_REPLACE_TILE_XY     13, 15, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 147\nVM_REPLACE_TILE_XY     14, 15, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 164\nVM_REPLACE_TILE_XY     11, 16, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 165\nVM_REPLACE_TILE_XY     12, 16, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 166\nVM_REPLACE_TILE_XY     13, 16, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 167\nVM_REPLACE_TILE_XY     14, 16, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 16",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "d38855a5-7ac4-4012-b27e-b965a905fa44"
+          }
+        ],
+        "false": []
+      },
+      "id": "1b009f20-a115-4fac-8721-15ff26c8cff8"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 6,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 28\nVM_REPLACE_TILE_XY     5, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 29\nVM_REPLACE_TILE_XY     6, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 30\nVM_REPLACE_TILE_XY     7, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 31\nVM_REPLACE_TILE_XY     8, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 48\nVM_REPLACE_TILE_XY     5, 10, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 49\nVM_REPLACE_TILE_XY     6, 10, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 50\nVM_REPLACE_TILE_XY     7, 10, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 51\nVM_REPLACE_TILE_XY     8, 10, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "5bc2ff08-52e8-4831-9250-ac02dd9a7f39"
+          }
+        ],
+        "false": []
+      },
+      "id": "7b0526d6-a621-4df7-b246-4a0fb9540c25"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 7,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 68\nVM_REPLACE_TILE_XY     5, 11, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 69\nVM_REPLACE_TILE_XY     6, 11, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 70\nVM_REPLACE_TILE_XY     7, 11, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 71\nVM_REPLACE_TILE_XY     8, 11, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 88\nVM_REPLACE_TILE_XY     5, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 89\nVM_REPLACE_TILE_XY     6, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 90\nVM_REPLACE_TILE_XY     7, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 91\nVM_REPLACE_TILE_XY     8, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "155a932d-1863-4af9-9c86-ec2adfc2f534"
+          }
+        ],
+        "false": []
+      },
+      "id": "3122e036-782b-4f71-adf9-dafbbeaf62b5"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 8,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 108\nVM_REPLACE_TILE_XY     5, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 109\nVM_REPLACE_TILE_XY     6, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 110\nVM_REPLACE_TILE_XY     7, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 111\nVM_REPLACE_TILE_XY     8, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 128\nVM_REPLACE_TILE_XY     5, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 129\nVM_REPLACE_TILE_XY     6, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 130\nVM_REPLACE_TILE_XY     7, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 131\nVM_REPLACE_TILE_XY     8, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "2a80e917-e250-40cb-a8ce-f4c4b448eaab"
+          }
+        ],
+        "false": []
+      },
+      "id": "3b5ad2c7-db7b-45dd-b5b1-4230ea6afad4"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 9,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 148\nVM_REPLACE_TILE_XY     5, 15, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 149\nVM_REPLACE_TILE_XY     6, 15, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 150\nVM_REPLACE_TILE_XY     7, 15, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 151\nVM_REPLACE_TILE_XY     8, 15, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 168\nVM_REPLACE_TILE_XY     5, 16, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 169\nVM_REPLACE_TILE_XY     6, 16, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 170\nVM_REPLACE_TILE_XY     7, 16, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 171\nVM_REPLACE_TILE_XY     8, 16, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "f4e25a6a-f75d-4800-b8cf-fff0ea081e2e"
+          }
+        ],
+        "false": []
+      },
+      "id": "4bc62601-a1ef-4526-aa1d-51b9f6614567"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 10,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 72\nVM_REPLACE_TILE_XY     15, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 73\nVM_REPLACE_TILE_XY     16, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 74\nVM_REPLACE_TILE_XY     17, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 75\nVM_REPLACE_TILE_XY     18, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 92\nVM_REPLACE_TILE_XY     15, 4, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 93\nVM_REPLACE_TILE_XY     16, 4, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 94\nVM_REPLACE_TILE_XY     17, 4, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 95\nVM_REPLACE_TILE_XY     18, 4, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "0ae08ffe-aac8-4f94-aa10-790efbe61934"
+          }
+        ],
+        "false": []
+      },
+      "id": "34dac478-6fcd-40a8-8d67-154bcfad71b7"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 11,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 112\nVM_REPLACE_TILE_XY     15, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 113\nVM_REPLACE_TILE_XY     16, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 114\nVM_REPLACE_TILE_XY     17, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 115\nVM_REPLACE_TILE_XY     18, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 132\nVM_REPLACE_TILE_XY     15, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 133\nVM_REPLACE_TILE_XY     16, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 134\nVM_REPLACE_TILE_XY     17, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 135\nVM_REPLACE_TILE_XY     18, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "751a2d3f-4b38-467b-8b36-8fc4a4c7cd0c"
+          }
+        ],
+        "false": []
+      },
+      "id": "9f1e472f-38bd-4e16-a1e8-fa852f881628"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 12,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 152\nVM_REPLACE_TILE_XY     15, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 153\nVM_REPLACE_TILE_XY     16, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 154\nVM_REPLACE_TILE_XY     17, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 155\nVM_REPLACE_TILE_XY     18, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 172\nVM_REPLACE_TILE_XY     15, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 173\nVM_REPLACE_TILE_XY     16, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 174\nVM_REPLACE_TILE_XY     17, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 175\nVM_REPLACE_TILE_XY     18, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "17b8b265-db98-4b9a-aed5-5bc989fe3d47"
+          }
+        ],
+        "false": []
+      },
+      "id": "e4353f0e-2a19-49b3-9395-6dcf7f222302"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "70",
+        "flag": 13,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__comment": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "; Climb Top (drawing)\nVM_PUSH_CONST 32\nVM_REPLACE_TILE_XY     15, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 33\nVM_REPLACE_TILE_XY     16, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 34\nVM_REPLACE_TILE_XY     17, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 35\nVM_REPLACE_TILE_XY     18, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 52\nVM_REPLACE_TILE_XY     15, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 53\nVM_REPLACE_TILE_XY     16, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 54\nVM_REPLACE_TILE_XY     17, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 55\nVM_REPLACE_TILE_XY     18, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 8",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "71c65f9a-f494-472b-a18d-c5fb1b6004c4"
+          }
+        ],
+        "false": []
+      },
+      "id": "8fc01976-93d7-4ef7-9533-7b87ca355dc7"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "select",
+          "start",
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "208",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "208"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "e7bd5b85-406d-4f2b-958a-7d3b29becf47"
+                  },
+                  "id": "72cb96de-e3c1-42d0-ba59-036f65ca1675"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "ba128964-e853-4625-91cb-fd010e5626f4"
+                }
+              ]
+            },
+            "id": "86fdacdc-2447-4bcb-a3c7-b263961eb34b"
+          }
+        ]
+      },
+      "id": "f34a5451-285c-4300-bdb6-c332d03c400c"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left",
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "219",
+              "__collapseElse": false,
+              "__comment": false,
+              "condition": {
+                "type": "variable",
+                "value": "219"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "2850e833-5fc3-4a07-9f1e-e0826ad369ad"
+                  },
+                  "id": "fb3a95a5-6a3b-4790-9b90-e21c0775ed40"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "b5601b12-613e-4a0a-9ba1-9c8c2c3a434e",
+                    "$variable[V0]$": {
+                      "type": "variable",
+                      "value": "225"
+                    }
+                  },
+                  "id": "8ead6128-7876-4824-adf8-5d3a6554e8f6"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "42fc2bc1-ba0a-4dd0-b0a8-3d210e07f9e0",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "b978dc90-3b32-4943-bdd9-5989caa3d80c"
+                }
+              ]
+            },
+            "id": "b74dbfcf-5567-48b6-9af9-833646c45bb2"
+          }
+        ]
+      },
+      "id": "5b4c20bb-75b0-49e1-8842-a2d8037460c7"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "240",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "variable",
+          "value": "240"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "239",
+              "__collapseElse": true,
+              "__disableElse": true,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "239"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "239",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "46e2f44d-ebd4-4fb2-a991-bd43ec3ac392"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Press LEFT or RIGHT to flip between each\nside of the lore sheet."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "debc0a0b-1462-4386-be5d-7900b0406dd3"
+                }
+              ],
+              "false": []
+            },
+            "id": "0d550d5b-2077-40a8-a0f4-a554a30854b7"
+          }
+        ],
+        "false": []
+      },
+      "id": "cdaeb7ef-d7f0-49ec-a1bd-7ec04184e5b6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

@@ -1,0 +1,228 @@
+{
+  "_resourceType": "trigger",
+  "id": "954b5866-4bfa-4cef-95d5-504ce34523d7",
+  "_index": 12,
+  "symbol": "trigger_79",
+  "prefabId": "",
+  "name": "Map 5 - Map Unlock",
+  "x": 31,
+  "y": 4,
+  "width": 10,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "219",
+        "__collapseElse": true,
+        "__comment": false,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "219"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "219",
+              "__collapse": true,
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "c9a2b342-8e0c-4e77-b9ce-5528b6d18d94"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 32
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "a816deb5-bf62-4225-b83d-09c1a91b2b3c"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27",
+              "__collapse": true
+            },
+            "id": "80b9f1fb-81de-43e2-a37d-9c39e9f81446"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              },
+              "__collapse": true
+            },
+            "id": "d730a561-af1b-407f-b22c-748af563f242"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "e8d9d17a-3d99-45a7-98a7-0eaa22f5a3ea",
+              "persist": false,
+              "__collapse": false
+            },
+            "id": "adb30104-8e20-49ef-94e1-1b59342dbc5c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Hey, wait a minute. This...",
+                "This is...!"
+              ],
+              "portraitType": "shy"
+            },
+            "id": "ecf0214b-14b7-4347-9caf-f5b604acf9d2"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 189\nVM_REPLACE_TILE_XY     32, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1"
+            },
+            "id": "2550e06a-e89f-4b2e-a609-ca19a0c42460"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Success",
+              "__collapse": true
+            },
+            "id": "a7ff1ca2-b5c0-4bd1-9335-f2ff2d157cf0"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "a sheet of paper!!!"
+              ],
+              "portraitType": "shock"
+            },
+            "id": "fb365871-166a-4914-9823-de4585b259b8"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 2,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "25964a21-bab4-439e-9f0b-eccdd8396985"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__collapse": true
+            },
+            "id": "889d4b8e-7d1c-4cef-847b-beb5847470ef"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Well yeah.",
+                "But look!"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "70085222-9871-4bb0-9206-0bdef56c77de"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Y-yeah...",
+                "But look!"
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "ede97d2c-51df-40a1-9ea8-92edaeb2a3ff"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Read Paper"
+            },
+            "id": "e906fdaa-cf1e-4384-abbc-968aaea2c3b8"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "7713ea02-6fa9-4958-af9a-59cc7e8459d1"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "2850e833-5fc3-4a07-9f1e-e0826ad369ad"
+            },
+            "id": "1804d7e7-ef48-4128-9a0a-83d323b98f16"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e927c303-8c22-4492-b9cd-f26e2fbaab5b",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "aa48ee00-36d5-4f60-b72d-8f586c374323"
+          }
+        ],
+        "false": []
+      },
+      "id": "abe71e56-fc5b-4fce-b951-9d1dfcccb925"
+    }
+  ],
+  "leaveScript": []
+}

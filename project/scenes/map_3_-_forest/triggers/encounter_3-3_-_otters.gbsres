@@ -1,0 +1,117 @@
+{
+  "_resourceType": "trigger",
+  "id": "dd0fb909-c7cf-427d-b278-a5101ec1991b",
+  "_index": 9,
+  "symbol": "trigger_67",
+  "prefabId": "",
+  "name": "Encounter 3-3 - Otters",
+  "x": 11,
+  "y": 49,
+  "width": 7,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "177",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "177"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "216"
+            },
+            "id": "8fb38b82-2816-45b6-a9ef-c9cedc3cfb39"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "2008e346-5da2-4118-808f-312ca92513ef"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Defended yourself against an army of\notters!"
+              ],
+              "avatarId": ""
+            },
+            "id": "0cf5d0b9-3f2d-42d9-a003-13b01ebb745d"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "12535ec6-da57-47ee-ba43-01472a55466d"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Ugh, get back in the sea."
+              ],
+              "portraitType": "angry"
+            },
+            "id": "34cd6466-6027-49f8-9c8c-d7ace5ad12d4"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Those riverfolk really don't\nmake great company."
+              ],
+              "portraitType": "expressionless"
+            },
+            "id": "8bb9432c-a775-429c-bdd7-5a7db2d896b4"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "177",
+              "__collapse": false,
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "13b0b5e9-cd42-42a1-a139-3beb939e8b17"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "9b1ae2d7-e7d3-43b1-9150-1fed9bb1eda3"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "86df7361-62b3-4ba8-867f-fbf41dfce56f"
+          }
+        ],
+        "false": []
+      },
+      "id": "351a94c0-0e51-4248-8102-8f5d288908a5"
+    }
+  ],
+  "leaveScript": []
+}

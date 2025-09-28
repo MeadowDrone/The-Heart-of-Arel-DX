@@ -1,0 +1,136 @@
+{
+  "_resourceType": "actor",
+  "id": "6ea858aa-ec2a-4f70-a59e-8a6ef35257a8",
+  "_index": 0,
+  "symbol": "actor_206",
+  "prefabId": "",
+  "name": "Food 5-1 - Shake Nuts",
+  "x": 89,
+  "y": 77,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "218"
+      },
+      "id": "6a911147-89d2-40b4-ad45-6a1091600623"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "178",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "85fb9796-a02e-48ae-ad61-61b8ab2ae700"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "7f22b2ae-2787-436f-b6dc-a748cf936257"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "61f1d974-ffa5-40a3-9bf3-496dce1b26a0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Oh, these Shake Nuts will go\nwith basically any meal."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "6854a8e1-d162-49b3-a4f8-edfdad9783af"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Heheheheheh.",
+          "Ehehehe.",
+          "Hey."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "9122dd59-e2a6-441d-9282-7558d4aaece4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "ehehehe",
+          "what"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "3e83b4ef-c782-4f6a-8df0-a35a91465d4c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Harthe, don't\nencourage them."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "f99536d0-2381-4e77-b049-f05e74ed96fe"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "47b53c85-2775-4445-bdfd-a729d15574e5"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "178",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "178"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "ed70d024-e76c-443a-b18b-da4bbfb1c1a8"
+          }
+        ],
+        "false": []
+      },
+      "id": "5c31cc2b-0621-43a3-b208-7c4f89c71e01"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

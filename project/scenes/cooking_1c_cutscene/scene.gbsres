@@ -1,0 +1,267 @@
+{
+  "_resourceType": "scene",
+  "id": "876571f4-861e-4960-b720-072fa48a0d9c",
+  "_index": 26,
+  "type": "TOPDOWN",
+  "name": "Cooking 1C Cutscene",
+  "symbol": "scene_33",
+  "labelColor": "red",
+  "x": 280,
+  "y": 1888,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "593e01e0-3e56-4f8d-9c11-a961da86188d",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "266bce6c-027d-4b44-92e9-0a5081c4302c",
+    "e42e2f83-5633-499d-9197-099537013999"
+  ],
+  "autoFadeSpeed": 4,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "922fabfe-41d0-43b9-ae37-960b29226ce4"
+      },
+      "id": "1ce81f55-83e1-4779-a0e5-c8d403a94031"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player",
+        "__collapse": true
+      },
+      "id": "2fba87a5-95f8-40b6-8e24-a8331bee4555"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "7840feb2-31ad-4cd9-b78a-0f3a2e7088e4"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "7363a17b-31af-4b50-b287-a1c9b6ba96ff",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "79f44d8c-05be-4f4a-8ab2-3e6eb1d8372e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Well, when I was a kid, I\nalways wanted to be a herbalist.\nI'm not sure *why* - I think",
+          "I'd just heard about it and was\ntold it was a good skill. As cool\nas it seemed, I felt like I'd just",
+          "passively accepted it."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "a1cdbcc5-08b3-458b-9046-2564e517eed3"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "ea843561-7c21-4d00-a89b-8cb87fb82ece"
+      },
+      "id": "eebae103-adcb-41ee-af67-571f5a7c2353"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "c89ce238-bdce-40a8-8f85-8fccec786783"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "7363a17b-31af-4b50-b287-a1c9b6ba96ff",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "c3534944-c352-4d27-82ef-40c11d333fa0"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "cf5de771-9708-47a9-90fb-4c06aaba46b2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "But then I laid my eyes on this\nstrange device for the first\ntime... and while I didn't know",
+          "what it was for, much less\nanyone else, I found myself\ntotally transfixed."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "eb3d7a77-5091-4dfb-abb2-72dd65671e49"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "7363a17b-31af-4b50-b287-a1c9b6ba96ff",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "b82cd685-cdca-4276-87e8-29bc6e8ba21c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "By its mysterious energy. The\ndials, the symbols, the strange,\nalluring shape of it..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "2e82dec8-f4c2-43f9-864f-9b6739464356"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "7363a17b-31af-4b50-b287-a1c9b6ba96ff",
+        "x": {
+          "type": "number",
+          "value": 14
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "31487cd2-1540-4389-bae4-4378d3de8b22"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "7363a17b-31af-4b50-b287-a1c9b6ba96ff",
+        "spriteStateId": "Kneel Right"
+      },
+      "id": "dcfbc629-5bc6-4ed4-9a7f-9e7603e82dd1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "whoa"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "ee9506f4-867c-4520-b818-e7739e1d68e6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "And so a part of this journey,\nfor me, is the best chance I'll\nget at discovering its secrets."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "46ead74e-7e34-4472-9921-563cfbe396ea"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "As well as supporting my\nwonderful girlfriends, and\neveryone else I can support!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "ccf50721-bb53-4fba-a73e-4d5b3571539a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Not to mention saving the\nland from this deadly\npollution."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "a4b0e727-e089-4470-8c79-f8b037c34630"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "You don't need to justify it,\nlovely. It's adorable hearing\nabout your passion.",
+          "Not that you need to tell me\nabout it."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "3736ba22-a922-4171-941a-0ef2a4acec12"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I can see it in your eyes."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "2bf79e10-ee04-45d5-afec-6b08d7d220bf"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Oh... wow... thanks. You're real\nnice, Aoba..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "56ddda9a-1444-42d0-99d5-d41e12df7071"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f4426782-ce11-4627-8573-f72eeec07330",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "fe07ab15-8969-4384-a154-a2e19a08461b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

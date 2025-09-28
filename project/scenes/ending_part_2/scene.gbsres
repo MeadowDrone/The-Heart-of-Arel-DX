@@ -1,0 +1,292 @@
+{
+  "_resourceType": "scene",
+  "id": "2ac18a85-00e8-4cb5-a454-3037cb7bad58",
+  "_index": 68,
+  "type": "TOPDOWN",
+  "name": "Ending Part 2",
+  "symbol": "scene_29",
+  "x": 4904,
+  "y": 2880,
+  "width": 124,
+  "height": 130,
+  "backgroundId": "50a1f95a-d24e-4f4e-aa22-3c433a631f57",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "5b573c0d-4b4f-4b75-91c8-9e0a809f5ab8",
+    "",
+    "5b573c0d-4b4f-4b75-91c8-9e0a809f5ab8",
+    "3376117d-641e-45fa-87ef-432c973388e6",
+    "df557a63-862c-4b64-8315-9fd4fe269aa9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 6,
+  "autoFadeEventCollapse": false,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "9f6eb22a-d6eb-4140-b6c3-4202ec711ae9",
+        "x": {
+          "type": "number",
+          "value": 111
+        },
+        "y": {
+          "type": "number",
+          "value": 117
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "22b9e482-59a5-4781-9128-a0efe15e53dc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "9f6eb22a-d6eb-4140-b6c3-4202ec711ae9",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": true
+      },
+      "id": "ecdc854d-5f80-4863-a63d-38339569ec57"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "7b8feaa2-ca31-4a03-b92c-8237971e7c2e",
+        "x": {
+          "type": "number",
+          "value": 113
+        },
+        "y": {
+          "type": "number",
+          "value": 117
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "cd53800e-2ebe-4de5-957a-ee1d16ecf2bc"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "6bef92df-8022-42cf-83bb-7c639d40366c",
+        "x": {
+          "type": "number",
+          "value": 113
+        },
+        "y": {
+          "type": "number",
+          "value": 115
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "afdbc690-e613-45a2-9872-954f52b4748c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "6bef92df-8022-42cf-83bb-7c639d40366c",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": true
+      },
+      "id": "98d18b55-5da9-42d5-bc26-38ab2b76614a"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "251ef538-1b5d-41ac-a26e-dacffe46a486",
+        "x": {
+          "type": "number",
+          "value": 115
+        },
+        "y": {
+          "type": "number",
+          "value": 115
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "574b0e0c-bea2-4ed4-8ab8-b5c6b883c7e5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "It's weird.",
+          "I can feel the powers we\ngained from your potions\nfading away already."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8e41b452-83c8-4a35-ae00-68141c5700eb"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "9f6eb22a-d6eb-4140-b6c3-4202ec711ae9",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": true
+      },
+      "id": "915b650d-5850-464f-8d70-7f3037a2159e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "9f6eb22a-d6eb-4140-b6c3-4202ec711ae9",
+        "spriteStateId": "Examine Alembic"
+      },
+      "id": "b1673249-5952-4f7e-be1c-813e60e2b29b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "225",
+        "operator": ">=",
+        "comparator": 5,
+        "__collapseElse": false,
+        "__disableElse": false,
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "225"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 5
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "So the people who built this\nmachine used the miasma\nitself to power it?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "c4dd4e94-962d-482a-8cf8-fed214e6dd4e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Yeah. It's fascinating!",
+                "No wonder it wasn't\nfunctional until we took\nit out here.",
+                "It's been kept too far away\nfrom Mount Arel for it to\nfunction.",
+                "But as soon as it was exposed\nto the miasma, it came back to\nlife again."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "f64ba222-e23e-4108-859f-a225db55ca28"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "c669d6d4-0c2b-410b-a5ea-cce2d305fca7"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "It's already lost its power.\nIt doesn't react to anything\nI'm doing to it anymore...",
+                "But now that we understand\nhow it works, we can study it\neven more deeply and",
+                "understand this ancient\ntechnology."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "93c9448c-b448-44ac-a5c2-5fbb3088be46"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Imagine the\npossibilities!"
+              ],
+              "portraitType": "shy"
+            },
+            "id": "14886f95-8d10-4ba4-a000-a8966a38d7a1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Yeah. It seems like there's\nsome connection to my potions\nand its origins, but we'll",
+                "need to study more to find\nout..."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "47888bb2-de6d-44f5-b25d-d3ee889301ef"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "seems like that map has\nsomething to do with it, huh"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "f4418b16-a931-4367-ba53-a5bfeece263c"
+          }
+        ]
+      },
+      "id": "8b621df4-b78b-4f32-a29b-63824d6b1ef9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "well",
+          "don't you dare get home and\nimmediately get working",
+          "it's time to rest for all of\nus. and that's an order~"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8fadf796-cf25-4d05-9d29-1e9a007b067a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "9f6eb22a-d6eb-4140-b6c3-4202ec711ae9",
+        "spriteStateId": ""
+      },
+      "id": "9c7ef083-9b42-4d19-bacc-cdfe2ca311c1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Sounds great."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "c9b75da8-24fa-4424-819f-2ac52b974ab7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f30b+003+0f79+004+0f75+007+0f73+009+0f7+018+0f64+009+0f6+00a+0f63+009+0f5+006+0f2+005+0f65+005+0f9+006+0f2+002+0f4a+006+0fa+007+0f2+007+013+007+0f2+007+0f49+006+0fa+007+0f2+0016+0f2+002+0f43+0016+0f2+0022+0f42+0032+0f2+007+0f24+007+0f16+003d+0f21+00b+0f13+002+0f4+006+0f8+002a+0f1f+00c+0f13+002+0f4+006+0f6+002d+0f1d+00d+0f13+002+0f10+002d+0f1c+00e+0f13+002+0f10+0014+0f2+0018+0f1a+008+0f1a+002+0f12+0016+0f4+006+0f2+00b+0f18+008+0f1b+002+0fe+002+0f2+001f+0f4+00b+0f16+008+0f1c+002+0fe+0017+0f2+00!0f2+006+0f6+00c+0f14+007+0f1d+002+0fe+0021+0f7+00d+0fe+002+0f3+006+0f1e+002+0f10+001b+0fa+00f+0fa+00d+0f1f+006+0fa+00f+0f4+007+0fc+0010+0f9+00d+0f20+006+0fa+00d+0f19+0011+0f7+00e+0f20+006+0fa+00!0f2+008+0f1b+0012+0f6+00e+0f22+004+0fa+00a+0f16+002+0f4+0013+0f5+00d+0f23+004+0fa+006+0f2+00!0f17+002+0f5+0013+0f4+00c+0f24+002+0fc+00a+0f16+002+0f6+0013+0f4+004+0f2b+002+0fe+008+0f15+01!002+0f7+0013+0f8+013+0f27+002+0fc+007+0f2+00!0f14+01!003+0f8+0012+0f6+012+005+01!0f24+006+0f8+00a+0f13+01!004+0f8+009+0f3+006+0f2+014+008+0f24+006+0f8+00a+0f12+01!005+0f8+007+0f6+005+0f2+00c+0f24+006+0f6+00c+0f12+006+0f8+006+0f7+005+0f2+00c+0f28+002+0f6+007+0f2+002+0f13+006+0f6+012+006+0f7+005+0f2+00c+0f28+004+0f2+00d+0f13+006+01!0f5+007+0f8+005+0f2+00c+0f28+004+0f2+00d+0f13+007+0f5+006+0f9+005+0f2+00c+0f28+004+0f!008+0f2+003+0f15+006+0f5+006+0f9+005+0f2+00d+0f2c+00c+0f15+01!005+0f6+006+0f9+005+0f2+00d+0f2c+04!004+0f2+004+0f14+012+006+0f6+006+0fa+004+0f2+00d+0f2c+04!00a+0f14+008+0f6+006+0f8+006+0f2+00d+0f2b+00b+0f15+008+0f6+005+0f8+0016+0f2a+007+0f12+012+0f6+005+0f9+005+0f7+0017+0f29+005+0f10+015+002+015+005+0f!013+002+014+005+0f6+0017+0f29+005+0f10+01!0020+0f6+009+0f2+00c+0f28+006+0ff+01!0020+0f6+00a+0f2+00c+0f28+007+0fe+0021+0f6+00a+0f2+00d+0f27+007+0f10+001f+0f5+00b+0f2+00e+0f25+008+0f1c+0010+0f8+00b+0f2+0010+0f23+008+0f34+00b+0f2+0011+0f21+009+0f35+00a+0f2+0012+0f20+009+0f36+009+0f2+0012+0f21+007+0f3a+006+0f2+0013+0f21+007+0f39+006+0f2+0014+018+0f18+009+0f37+006+0f2+001d+0f17+0013+0f2d+006+0f2+001e+0f16+0016+0f28+008+0f2+001f+0f16+0016+0f27+008+0f2+0020+0f18+0018+0f8+009+0f5+004+0f7+00a+0f2+001f+0f19+0043+0f2+001e+0f1a+0043+0f4+001b+0f1b+0044+0f3+001a+0f22+003e+0f3+0019+0f23+003f+0f2+0017+0f25+003e+0f2+0016+0f16+014+0fd+001d+0f4+001c+0f2+0015+0f17+004+0ff+0015+0fc+001a+0f2+0014+0f18+004+0ff+0014+0fe+0019+0f2+0014+0f18+004+0f10+0012+0f10+0018+0f2+0014+0f18+004+0f11+0010+0f13+0016+0f2+0014+0f18+004+0f12+00a+0f18+0016+0f2+0014+0f18+004+0f12+00a+0f19+0015+0f2+0013+0f19+005+0f11+009+0f1b+0014+0f2+0012+0f1a+006+0ff+009+01!0f1b+0014+0f2+0011+0f1b+007+015+002+0f7+00a+0f1c+0013+0f2+0010+0f1c+00e+0f7+009+01!0f1c+0013+0f2+00f+0f1d+00e+0f7+00a+0f1d+0012+0f2+00e+0f1f+00d+0f7+00a+0f1c+0013+0f2+00d+0f29+004+0f8+009+01!0f1b+0013+0f2+00c+0f2b+003+0f8+00a+01!0f1a+01!0012+0f2+00c+0f2b+003+08!0f6+04!00b+01!0f19+0013+0f2+00c+0f28+012+005+016+00e+0f17+0014+0f2+00c+0f26+01!001c+08!0f16+0014+0f2+00d+0f21+014+001e+0f17+0023+0f1f+0023+0f18+0023+0f1d+0024+0f18+0024+01a+0f11+0014+08!0f2+002+0f4+04!007+0f18+0011+0f4+001a+0ff+0014+08!0f9+04!007+0f17+01!0012+0f2+001c+0fd+0015+0f9+04!008+0f16+01!0012+0f3+001d+0fb+0016+0f5+014+009+0f15+01!0012+0f4+001e+0fa+0016+08!0f4+04!00b+02!0f14+01!0012+0f5+001e+0fa+0017+014+00b+02!0f14+01!0013+0f5+001e+0fb+0022+0f17+01!0013+0f6+001e+0fb+0021+0f17+01!0012+0f8+001e+0fb+0021+0f16+01!0013+0f8+001e+0fa+0022+0f16+0013+0f9+001c+0fc+0022+0f16+0011+0fb+001c+0fc+0021+0f16+0011+0fd+001b+0fd+001a+0f1c+0010+0ff+001a+0fe+0018+0f1d+0010+0f10+0019+0f11+005+0f2+04!00c+08!0f1d+00f+0f12+0018+0f19+04!00a+02!0f1d+00e+0f15+0018+0f19+007+0f21+00d+0f17+0018+0f19+005+0f23+00b+0f19+0017+0f19+005+0f23+00b+0f1a+0016+0f18+01!005+0f20+012+00c+0f1b+0014+0f19+004+0f21+00f+0f1c+0012+0f1a+004+0f20+0010+0f1c+0012+0f1a+004+0f1f+0011+0f1c+0013+0f19+004+0f1e+0012+0f1c+0014+0f18+004+0f1e+0012+0f1c+0018+0f14+004+01!0f1d+0012+0f1c+0018+0f14+005+01!0f1c+0011+0f1d+0018+0f14+006+0f1d+00e+0f1f+0018+0f14+006+0f1e+00d+0f1f+0014+0f18+01!005+0f1f+00b+0f20+0012+08!0f19+006+0f20+008+0f22+0012+08!0f19+006+0f21+006+0f23+005+0f2+004+0f5+003+0f19+006+0f76+01!005+0f76+006+0f76+02!004+02!0f254+"
+}

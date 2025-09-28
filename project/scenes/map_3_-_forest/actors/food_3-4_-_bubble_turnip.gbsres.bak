@@ -1,0 +1,182 @@
+{
+  "_resourceType": "actor",
+  "id": "74f82228-43d0-4aee-84ea-36403a2d8ce1",
+  "_index": 3,
+  "symbol": "actor_210",
+  "prefabId": "",
+  "name": "Food 3-4 - Bubble Turnip",
+  "x": 35,
+  "y": 85,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "215"
+      },
+      "id": "d8688589-0f20-4d27-a817-fe7c554d7621"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "85e7496c-13a3-4e61-be80-bb6c5511db4a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "8997ec7a-eb41-457f-9c91-02d671315d18"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "183",
+        "__collapse": false,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "44552fdf-d5a2-476f-bb17-9728af648d83"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Oh, bubble turnips. My ex\nwas obsessed with these."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "112b7674-8cf3-46ee-bd10-cc010587feb5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "so whats ur take on them?",
+          "id love to hear thoughts\nfrom someone much cuter\nthan ur ex"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "4da76524-222b-49c9-a6f1-2f751e3b9894"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "They're alright."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "ef96192f-3710-4dae-bce1-7c7a288d6baa"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "hm. ok"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "b0b5d2ad-733c-4054-96f2-56dd5ec5a7e5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I'm kinda with Aoba. They're\naggressively alright."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "70765f19-4f88-4be6-8ab4-95edd7d48af3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Well I like 'em..."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "7f93bf5b-407d-4b12-8d5b-6283192712db"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "Well I like 'em..."
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left",
+        "__collapse": false
+      },
+      "id": "4839ff97-7b59-4886-b97b-80a611a8c185"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "bf85a9d7-39c8-4a85-bb95-2acaa7b936f6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "cc068b04-37d9-4983-9ecf-1c4402efc5e0"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "183",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "183"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "acff1bc2-0376-4821-8be6-c926587078d4"
+          }
+        ],
+        "false": []
+      },
+      "id": "cbe80b7d-7968-408d-bbb7-e9d6c89d3191"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,89 @@
+{
+  "_resourceType": "trigger",
+  "id": "169407bb-f25e-48b0-9223-1e45fa989e20",
+  "_index": 4,
+  "symbol": "trigger_26",
+  "prefabId": "",
+  "name": "LoreFoundLake",
+  "x": 50,
+  "y": 30,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "47",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "47"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27"
+            },
+            "id": "91bfb77c-336c-4c7a-a46e-076e4daae4e2"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "47",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "429e1e67-3bed-466c-859a-08d30d99df67"
+          },
+          {
+            "command": "EVENT_SET_FLAGS",
+            "args": {
+              "variable": "139",
+              "flag1": true,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "e3f0b148-1879-463a-93bb-f52914e55cd8"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "a490b995-fa4c-4d50-a111-49a8aac28b6a"
+            },
+            "id": "d707fff3-cbaa-43fe-9a85-7e1b52f84129"
+          }
+        ],
+        "false": []
+      },
+      "id": "f915b200-1334-4081-b930-ca9957e20e58"
+    }
+  ],
+  "leaveScript": []
+}

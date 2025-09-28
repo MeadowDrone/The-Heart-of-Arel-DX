@@ -1,0 +1,220 @@
+{
+  "_resourceType": "script",
+  "id": "710e3dc9-b783-4e2f-bd87-d8d8e0e9afab",
+  "name": "Map2ShortcutDown",
+  "symbol": "script_55",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "96",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "96"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$",
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "d2382209-e05c-4a29-97b3-06c946fd4938"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 82
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "e4742366-d6b3-43a0-b88a-6eff8fe6f509"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 73
+              },
+              "y": {
+                "type": "number",
+                "value": 48
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "2be61544-8b29-4dec-9710-a1a2fbbeae73"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "100",
+              "__collapseElse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "100",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "1e80399c-e141-45a7-8544-9540e9a9f1ab"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "Hey."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "912d8f91-e99c-4e5a-9e50-63b099d5a5ab"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 76
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 59
+                    },
+                    "moveType": "vertical",
+                    "useCollisions": false,
+                    "__collapse": true
+                  },
+                  "id": "2a6d265b-5134-4eef-ab1d-47232145a22e"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "You got a cute butt."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "2f9dfe60-236e-4f37-baa8-94a95e138e50"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_AOBA_NEW",
+                  "args": {
+                    "text": [
+                      "Thanks."
+                    ],
+                    "portraitType": "smile"
+                  },
+                  "id": "e5e31a61-6c81-4da6-8f72-c6ef171ba636"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "How do you know they're\ntalking to you?"
+                    ],
+                    "portraitType": "shy"
+                  },
+                  "id": "06060248-08eb-4652-b54d-18e198f8eaf6"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_AOBA_NEW",
+                  "args": {
+                    "text": [
+                      "I just know these things."
+                    ],
+                    "portraitType": "smile"
+                  },
+                  "id": "e47acee8-aec1-48fe-bee1-5eb82da2a0d6"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 76
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 59
+                    },
+                    "moveType": "vertical",
+                    "useCollisions": false,
+                    "__collapse": true
+                  },
+                  "id": "717e1fa9-a235-4bf9-bedc-0fc828c2f5d1"
+                }
+              ]
+            },
+            "id": "916b3a84-0ca5-41a4-baaa-dbb470f44f92"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 63
+              },
+              "y": {
+                "type": "number",
+                "value": 98
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "07e0d81d-3504-4285-b46e-825f389c7fc6"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "b3818652-11e3-4861-b601-82e52e53822c"
+          }
+        ],
+        "false": []
+      },
+      "id": "68895d11-444d-4855-9f3a-647331f3362c"
+    }
+  ]
+}

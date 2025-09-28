@@ -1,0 +1,170 @@
+{
+  "_resourceType": "scene",
+  "id": "64cc316d-cffa-4af2-b807-2246f21ec1e3",
+  "_index": 25,
+  "type": "TOPDOWN",
+  "name": "Cooking 1B Cutscene",
+  "symbol": "scene_32",
+  "labelColor": "red",
+  "x": 64,
+  "y": 1712,
+  "width": 80,
+  "height": 18,
+  "backgroundId": "41e02d97-88eb-4a31-a700-efa0125b1b15",
+  "tilesetId": "",
+  "paletteIds": [
+    "92dab46c-dc33-4354-aa4e-cb70ba2c6a11",
+    "60c36bbc-0f91-4c83-a16f-a44b35e17fec",
+    "b55d841d-cab9-4ef2-b879-b446acfc99ce",
+    "5bd03c58-55c3-4920-ac47-c3fc3398dd09",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "92dab46c-dc33-4354-aa4e-cb70ba2c6a11",
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "1d5e87f9-41d5-4e41-ab99-b034ad8da07a"
+  ],
+  "autoFadeSpeed": null,
+  "autoFadeEventCollapse": false,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1292b9c-0797-4b9a-9c40-4a1d143dbd3a"
+      },
+      "id": "3e12efe2-8632-47cd-91a1-e277ad9c1224"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 6
+      },
+      "id": "e10724ff-d2f8-457e-9bb8-b5de49dc7003"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player",
+        "__collapse": true
+      },
+      "id": "1e5b13d9-010a-4828-b410-e19ec83d790d"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "d1c35f8a-da7e-409f-ac74-2c5497fdd6de"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "78622b0a-4926-48c4-af7a-460dc352a617",
+        "speed": 127
+      },
+      "id": "08c31af0-f13a-4b54-89d5-2658b59680e8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I literally cannot believe what\nI am eating right now."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "8d5075ca-eba3-4449-b5f1-5d98f9bb0a88"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "i kNOW???"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "3df6c923-8c2a-4fc8-abe5-9f02036edf2a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "*nom nom nom*",
+          "...",
+          "*nom nom nom*"
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "d446f91d-2725-45d4-9ffb-e7035fbff138"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I'm glad to hear it. I'm rather\nhappy with this one."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "64b2af20-fc71-450d-bba7-65c8edbc6497"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Oh my",
+          "That was",
+          "Thank you so much"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "12dfad09-1070-47aa-b9ff-af0f83ebe946"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "eionn, my sweet £\ni was wondering",
+          "i was wondering",
+          "you seem so fascinated by that\nalchemy device you're carrying\naround.",
+          "how did you like",
+          "get into all of that anyway?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "e63540ad-4a46-4445-86a7-62f7f1b7d81f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Hmmmm."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "8654b3ea-8e6d-4c78-b497-d5a07df91d45"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "876571f4-861e-4960-b720-072fa48a0d9c",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "7211e7cc-7b36-41ab-ba66-a4b279020410"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005a0+"
+}

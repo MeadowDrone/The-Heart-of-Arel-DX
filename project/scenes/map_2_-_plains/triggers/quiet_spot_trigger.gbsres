@@ -1,0 +1,52 @@
+{
+  "_resourceType": "trigger",
+  "id": "8fcb3471-2f03-481f-89d6-24701aaf7c71",
+  "_index": 12,
+  "symbol": "trigger_17",
+  "prefabId": "",
+  "name": "Quiet Spot Trigger",
+  "x": 13,
+  "y": 104,
+  "width": 3,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "In Water"
+      },
+      "id": "25fe28b4-675d-41cf-9266-de143dc3c3f3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "fcdccad4-29e9-4a7c-b05e-79e7d3f2344b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "117",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "481b2060-f75d-4356-b878-559f0d070d89"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "af491776-09f3-443b-a4bf-f5a9c9edecfa"
+      },
+      "id": "bfa55da2-3d46-475a-9123-124bec0dbc1a"
+    }
+  ],
+  "leaveScript": []
+}

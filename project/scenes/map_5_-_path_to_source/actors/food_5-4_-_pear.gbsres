@@ -1,0 +1,148 @@
+{
+  "_resourceType": "actor",
+  "id": "42f31225-6315-43a0-ba30-28be133ef56a",
+  "_index": 2,
+  "symbol": "actor_208",
+  "prefabId": "",
+  "name": "Food 5-4 - Pear",
+  "x": 76,
+  "y": 28,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "218"
+      },
+      "id": "9e1b67ed-3157-4510-bdca-cfa7031e10db"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "181",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "9c4a8fa7-778b-4860-ba10-2009104fb6d0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "410d5023-badd-44d8-ab8f-532c9824e599"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "81350d52-45c2-465a-8862-31c0ba6f69a6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "ohhhhh",
+          "a pear"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "b3c2382a-1b3b-4d94-9770-18739b1e8bb3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Ooh! ",
+          "A pear.",
+          "What kinda pear is this,\nAoba?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "96eeceb3-5b79-4e8d-b5b5-62f439d528b2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Sometimes a pear is just a\npear."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "5a8a19c0-c337-45c1-b4c0-22e012c2cd1a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "id say thats disappointing",
+          "but",
+          "normal regular straight\npears are still pretty\ngreat"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "592521e3-b3a2-4dce-b19e-f3db42d223d4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Ewww, straight pears."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "ad93f1a0-4f43-43c4-ab7b-2586a2033ce7"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "b918230e-3ae8-4ca0-870f-07b69181df37"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "181",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "181"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "696cb446-7896-4b6d-988a-d5980212110b"
+          }
+        ],
+        "false": []
+      },
+      "id": "d48fce23-c471-4da6-bbcf-381c1902bacc"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

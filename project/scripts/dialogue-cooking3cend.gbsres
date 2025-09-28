@@ -1,0 +1,71 @@
+{
+  "_resourceType": "script",
+  "id": "adf6f1c0-24c7-4610-abf0-77728724f946",
+  "name": "Dialogue-Cooking3CEnd",
+  "symbol": "script_73",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Hey, Eionn, right? Are you OK?"
+        ],
+        "portraitType": "young"
+      },
+      "id": "fb35193a-355c-43f5-812a-6f4a69413ff0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I... am..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "64085da5-13ae-4d4d-871b-d2da40c6e5e9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I'm gonna go sing. Wanna come\nalong?"
+        ],
+        "portraitType": "young"
+      },
+      "id": "d7776949-47bd-465e-aa20-b5cb7231c30f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "You're gonna... sing? To who?\nAre you learning something?"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "80be060c-39a0-4229-b473-9677357e9a03"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "What? No. I just feel the\nlands calling to me. Don't you\nfeel it too?"
+        ],
+        "portraitType": "young"
+      },
+      "id": "6360fb92-060f-4424-a497-6e7f7c1bb8ef"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Umm. I don't really follow,\nbut I'll come with!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "c3c4557c-264e-4041-ae07-b18dc7d0bcda"
+    }
+  ]
+}

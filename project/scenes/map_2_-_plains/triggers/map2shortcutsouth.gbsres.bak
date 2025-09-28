@@ -1,0 +1,156 @@
+{
+  "_resourceType": "trigger",
+  "id": "f02eb286-30fc-4ce1-86ee-5d347b072587",
+  "_index": 7,
+  "symbol": "trigger_35",
+  "prefabId": "",
+  "name": "Map2ShortcutSouth",
+  "x": 65,
+  "y": 97,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "100",
+        "__collapseElse": false,
+        "__disableElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "100"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "f4f1d125-1db9-4e87-965f-6e4aab596a41"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 75
+              },
+              "y": {
+                "type": "number",
+                "value": 94
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "4ddbd383-2bf8-410d-8540-0babd29cde5f"
+          },
+          {
+            "command": "EVENT_FADE_OUT",
+            "args": {
+              "speed": "2"
+            },
+            "id": "d5b7f781-fb51-44e0-b50f-11dc26b654bc"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "0183d9fe-d0f6-4f27-98af-506fb55649c4"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 72
+              },
+              "y": {
+                "type": "number",
+                "value": 18
+              }
+            },
+            "id": "e548b966-68da-43ab-8471-06be37da13c4"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "0b55b91a-de9f-4376-99e9-db490b216cf1"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1c5df249-eade-497a-bb73-f25bc3265197"
+          },
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": "2"
+            },
+            "id": "dc325370-29fc-43ea-a1e8-9924678ed014"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 82
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "7f04e5aa-de8d-4083-ac6c-27f363d7c714"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "532a8252-4203-4512-af2b-3e8daab3057b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "e8d9d17a-3d99-45a7-98a7-0eaa22f5a3ea",
+              "persist": false
+            },
+            "id": "598a6db3-064b-4137-8c3c-ef3e973f36bf"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "578d6aa4-aa6f-4010-a23c-3346c0e3be6e"
+            },
+            "id": "291bd0af-276f-4595-8563-9aaab8839490"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "eb28956c-45f9-4f05-9f53-e2cb07fb0759"
+            },
+            "id": "bfeca9f5-d339-4d30-9f3b-9d6c12b3b1ef"
+          }
+        ]
+      },
+      "id": "563959c2-1fb5-4e2f-a516-60d64c7dbf3c"
+    }
+  ],
+  "leaveScript": []
+}

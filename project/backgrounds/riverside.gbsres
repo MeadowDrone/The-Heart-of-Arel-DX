@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "218bba71-e49a-4c41-8034-8728f156766f",
+  "name": "riverside",
+  "symbol": "bg_sundown_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "riverside.png",
+  "tileColors": "043c+0328+0250+0042+015+00e+015f+",
+  "autoColor": false
+}

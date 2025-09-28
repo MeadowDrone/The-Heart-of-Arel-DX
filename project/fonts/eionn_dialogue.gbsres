@@ -1,0 +1,15 @@
+{
+  "_resourceType": "font",
+  "id": "f01b8e75-d2eb-4a05-980f-9565871c7bb2",
+  "name": "Eionn Dialogue",
+  "symbol": "font_condensed_mini_avatars",
+  "width": 128,
+  "height": 112,
+  "filename": "font-eionn.png",
+  "mapping": {
+    "﹩": 36,
+    "あ": 208,
+    "お": 227,
+    "え": 228
+  }
+}

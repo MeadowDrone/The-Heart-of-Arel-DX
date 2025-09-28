@@ -1,0 +1,76 @@
+{
+  "_resourceType": "trigger",
+  "id": "eb53a692-6a27-4923-9806-dfdfd45f82d2",
+  "_index": 7,
+  "symbol": "trigger_21",
+  "prefabId": "",
+  "name": "Lore Sheet 4-2 Sight Middle",
+  "x": 11,
+  "y": 82,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "156",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "156"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27"
+            },
+            "id": "ad2289df-0c8f-4a63-9132-99542b1b1f29"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "156",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "936afd1f-765f-4008-966b-b9c7622f133b"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "da02b3f1-468a-4a51-8324-85bbcc7e5fad",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "e1c57252-671e-4401-8169-d30ab22b44cd"
+          }
+        ],
+        "false": []
+      },
+      "id": "54bc5cf8-e5bc-45e8-a612-bd2efd1fe985"
+    }
+  ],
+  "leaveScript": []
+}

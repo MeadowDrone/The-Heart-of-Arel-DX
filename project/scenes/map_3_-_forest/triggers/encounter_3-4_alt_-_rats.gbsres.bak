@@ -1,0 +1,137 @@
+{
+  "_resourceType": "trigger",
+  "id": "b57032da-95d7-4e12-80c9-4f46ba7dc2bc",
+  "_index": 11,
+  "symbol": "trigger_72",
+  "prefabId": "",
+  "name": "Encounter 3-4 Alt - Rats",
+  "x": 50,
+  "y": 46,
+  "width": 9,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "20",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "20"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "216"
+            },
+            "id": "1b111f6f-daca-431b-8ac9-88333ad77c31"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "660d9343-651e-4bdc-b7a4-51f6d9867bea"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Escaped from a feral pack of rats!"
+              ],
+              "avatarId": ""
+            },
+            "id": "b88e04b7-e524-4eee-b47f-c6559bd283ef"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "a721ae20-8934-4baf-b181-a1a1410c097b"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_SHOCK",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "no no no no no no no no no no no\n no no no no no no no no no no no",
+                "",
+                "no no no no no no no no no no",
+                "nope"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\nîËÌ\nöÍø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "83681524-ef5b-440c-8a05-e63a0c168377"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Wow... One of those rats\nlooked like it was leading the\nrest, like a horde."
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "3c6ce788-1a44-4b0a-a802-6e72d1577e7e"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "d1331b90-357a-469c-88ff-f20c74922e36"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "848c0b2b-ce06-496f-846d-eb641dae3002"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "9c643c6c-baf3-48b9-9c61-1d1af34a6503"
+          }
+        ],
+        "false": []
+      },
+      "id": "151ddf0b-2407-4085-9284-b2e8e7e6983b"
+    }
+  ],
+  "leaveScript": []
+}

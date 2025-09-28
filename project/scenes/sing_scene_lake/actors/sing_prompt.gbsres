@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "312219f9-1700-4e2a-ae5b-025fde31d46b",
+  "_index": 4,
+  "symbol": "actor_64",
+  "prefabId": "",
+  "name": "Sing Prompt",
+  "x": 13,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a6ab82b9-a388-4f34-b9a0-344131798732",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "9d792930-3a1b-4e44-b935-86d4e03dff49"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

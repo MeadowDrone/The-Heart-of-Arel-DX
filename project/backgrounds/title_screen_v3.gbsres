@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f0c7240e-af32-44d1-afe3-ec27954fce57",
+  "name": "title_screen_v3",
+  "symbol": "bg_title_screen_v3",
+  "width": 22,
+  "height": 18,
+  "imageWidth": 176,
+  "imageHeight": 144,
+  "filename": "title_screen_v3.png",
+  "tileColors": "022+0514+022+0514+022+0514+022+0414+022+0414+022+0414+022+0414+022+0314+022+0314+025a+0014+022+00!052+00!052+003+062+005+052+002+022+004+062+00e+022+00e+052+004+022+008+015+007+",
+  "autoColor": false
+}

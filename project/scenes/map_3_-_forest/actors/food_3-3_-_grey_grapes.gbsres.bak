@@ -1,0 +1,153 @@
+{
+  "_resourceType": "actor",
+  "id": "3985c643-d394-4dae-b7c6-36e8e553b96c",
+  "_index": 2,
+  "symbol": "actor_200",
+  "prefabId": "",
+  "name": "Food 3-3 - Grey Grapes",
+  "x": 16,
+  "y": 19,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "215"
+      },
+      "id": "43ca3b7f-d9ab-4251-b70f-80159b1fca59"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "078c40b5-1725-4801-bdca-021847292911"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "3e35353b-97ba-4629-8807-ebb83589fbb9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "163",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "74a37a8f-d46a-4298-ad30-ff57e80c4b35"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Augh, grey grapes?? I hate\nthese!"
+        ],
+        "portraitType": "angry"
+      },
+      "id": "09908c78-49ec-4a5e-b2df-c7063f57321c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Have you ever eaten one\nbefore?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "de15c369-2efa-46c6-a246-d52810e6e320"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "No?? I don't need to. Just\nlook at them!"
+        ],
+        "portraitType": "angry"
+      },
+      "id": "917fe9d4-2087-49bb-a50c-0f6013e4b312"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "People dismiss grey grapes a\nlot, but if you don't take\ninto consideration the colour,",
+          "they actually stand up against\ngreen and red grapes. Many\nactually come to prefer them."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "20fdc99c-f059-45a6-9cc9-3a1b1f21cae4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "...",
+          "I... guess I can try some...",
+          "Later..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "0972fd3b-efe0-47ea-bf92-a9c59477d4a5"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "2299df50-20e2-4f11-a36c-533dc76483c4"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "d93e1826-55c3-4774-af2e-23c58fbefe51"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "163",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "163"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "3d80cd8c-8826-4adc-bcf6-77d54c306581"
+          }
+        ],
+        "false": []
+      },
+      "id": "8ef0f51e-b664-4f90-8d72-6dee6df059ce"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

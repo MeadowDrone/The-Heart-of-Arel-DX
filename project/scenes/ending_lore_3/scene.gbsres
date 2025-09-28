@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "1f22c167-852d-4ba4-8939-e873558b04df",
+  "_index": 63,
+  "type": "TOPDOWN",
+  "name": "Ending Lore 3",
+  "symbol": "scene_67",
+  "x": 4595.886913831048,
+  "y": 1692.213306246826,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "1718bf5c-4506-4f97-92dd-a6efaaaf0d89",
+  "tilesetId": "",
+  "paletteIds": [
+    "ee2315bd-2be4-49ae-bec8-5cccbc00fd4a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-bg-2"
+      },
+      "id": "8ea96b8d-674c-4000-b92b-12dcdab8f7ec"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Our generation was determined to break\nthis cycle. Though it cost us greatly, we\ndevised an Instrument that would grant",
+          "us great power, with a desperate hope\nthat we can tame our giant neighbour.\""
+        ],
+        "avatarId": ""
+      },
+      "id": "1aeca054-6671-4a27-85b1-8a66d1e99e58"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "2849d5da-b5e1-42bc-bc64-ae3bec7fc4eb"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "225",
+        "operator": ">=",
+        "comparator": 4,
+        "__collapseElse": false,
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "225"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "84940f90-a421-4ce2-8769-696c20706029",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 4
+            },
+            "id": "cdaf137c-2532-48dd-bf67-b00bd0c719c7"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "945d8b3e-66ce-45e7-bfcf-3b1546c10917",
+              "x": {
+                "type": "number",
+                "value": 35
+              },
+              "y": {
+                "type": "number",
+                "value": 107
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "89a5a0f9-f928-439a-8017-4df053f44a9d"
+          }
+        ]
+      },
+      "id": "20b8ace8-fa85-4dce-84cc-afe2c31cc687"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

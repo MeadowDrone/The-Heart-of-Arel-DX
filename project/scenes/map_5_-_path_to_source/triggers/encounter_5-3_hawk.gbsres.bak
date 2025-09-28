@@ -1,0 +1,157 @@
+{
+  "_resourceType": "trigger",
+  "id": "1a6d34b6-dbe8-434f-9671-222541d7ab79",
+  "_index": 10,
+  "symbol": "trigger_93",
+  "prefabId": "",
+  "name": "Encounter 5-3 Hawk",
+  "x": 50,
+  "y": 6,
+  "width": 2,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "201",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "201"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "217"
+            },
+            "id": "774f646c-1e87-4145-a9a4-9225af86ae4f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "201",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "1cd1387a-bcc0-4920-b7cd-6507b612ca97"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "c5a0d86f-fb5d-400f-96e9-92da1e9daa4e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Dived out the way of an infected hawk!"
+              ],
+              "avatarId": ""
+            },
+            "id": "5a717c9d-5ef7-4a60-9fad-db7f1d5407be"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "please, birds, can you\njust not..",
+                "not here",
+                "please"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "ee86b6d3-d242-4084-9a8a-ce3aeec601d6"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "That one was too close. There\nwas acid frothing out of its\nmouth. Did anyone get hurt?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "5a22615c-e434-4409-ae52-d53c169f9913"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "That one was too close. There\nwas acid frothing out of its\nmouth. Did anyone get hurt?"
+              ],
+              "nameTag": "ÜÝÞ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "ÙÚÛ\néêë\nùúû",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "3bb4cd73-2f12-4a2b-b347-8d0172b379ff"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Apart from almost falling off\na bridge, and getting pecked \nat or kidnapped, or suffering ",
+                "horrible chemical burns, I'm\ndoing quite alright actually."
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "3965c275-1af2-4211-b0d7-3f92c8fe21b3"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "17094ffa-1426-420e-ba52-67e104cd8471"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "cc7def84-2f1b-434f-9d40-471f6f0549e8"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "019d5ac9-d6ae-49dd-a552-c3e61680bcd0"
+          }
+        ],
+        "false": []
+      },
+      "id": "ca933f68-9626-4a57-a5bc-2709556780c2"
+    }
+  ],
+  "leaveScript": []
+}

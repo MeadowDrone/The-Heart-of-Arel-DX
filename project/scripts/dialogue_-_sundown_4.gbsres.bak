@@ -1,0 +1,274 @@
+{
+  "_resourceType": "script",
+  "id": "bc2ce269-de0a-4a96-942e-64cd76049ee3",
+  "name": "Dialogue - Sundown 4",
+  "symbol": "script_29",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Harthe"
+    },
+    "1": {
+      "id": "1",
+      "name": "Eryr"
+    },
+    "2": {
+      "id": "2",
+      "name": "Eionn"
+    },
+    "3": {
+      "id": "3",
+      "name": "Aoba"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "6fcc9919-7e4e-4d47-a3f5-d6c1a2f0cf24"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "oh, yk, tired but ready for\nwhats next. and always in the\nmood to give scritches ehehe"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "3b559a4a-56d2-4692-a345-6eb4a79979d8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Sure you're ready? You telling\nme you don't need any of those\nscritches yourself?"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "6d1a6b46-1349-441e-ad4b-b25244e6826a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "",
+        "__comment": false
+      },
+      "id": "d10d7009-98df-4cc4-9994-d0ef01a83a3e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "3bdafd41-7566-499c-86ba-1782abb61309"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "well",
+          "ummm",
+          "i mean"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "5617768e-7535-4084-aece-2e4daf40e1d1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "2",
+        "spriteStateId": "Comfy",
+        "__collapse": true
+      },
+      "id": "5eb835e8-c199-4905-96df-52ba2b43da35"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "3",
+        "spriteStateId": "",
+        "__collapse": true
+      },
+      "id": "8aeebf38-f189-4a73-8f5c-fb33f9537dce"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": true
+      },
+      "id": "d6528827-5d04-4438-a5a7-264a6edcc6cc"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.3,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "0316ade6-8a5b-4f89-aae6-177af0f4639c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "3",
+        "spriteStateId": "Giving Headpats",
+        "__collapse": true
+      },
+      "id": "7e4e7344-2cbb-4216-9330-3fcf19d23988"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": true
+      },
+      "id": "22d20a48-d599-4ee1-97db-a59e3f9d2ada"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I knew it! C'mere."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "1fe1ae04-fcd0-49d3-af7a-35b199216db6"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Comfy",
+        "__collapse": true
+      },
+      "id": "4628a5d9-f238-4584-a966-aef0cb61358b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1",
+        "spriteStateId": "Cuddle Static",
+        "__collapse": true
+      },
+      "id": "0a7fd044-781c-464b-8f1b-ce6beab059ec"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "3",
+        "spriteStateId": "Comfy",
+        "__collapse": true
+      },
+      "id": "31864343-90b5-45e8-9a73-1bcf2e9b690d"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 5,
+        "frames": 30,
+        "units": "time",
+        "__collapse": true
+      },
+      "id": "1768383d-8264-480c-a8ed-2f489fe4cae1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "yes",
+          "everything about this",
+          "thank you <3"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "a74b8ad6-4b17-482b-bc4b-a50b16f990a2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Anytime, babes."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "0cfc9257-8ffa-465b-a6e4-660600b4a607"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 5,
+        "frames": 30
+      },
+      "id": "e60a0a99-acb9-490b-8150-8e1a70bb7352"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Is like... this OK?"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "756cedf3-6f6a-4740-86b5-a6d7dc676eef"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "zzzzz"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "24a1a495-c91c-418c-b63e-d134b3a7cc98"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "e197ac4b-5ea7-463c-8955-c9f11982834c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "..."
+        ],
+        "nameTag": "ÇÈÉ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "fcbb8ed5-e336-4d20-b1e5-7fff706764c0"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "_resourceType": "trigger",
+  "id": "257e90f9-5883-4eff-b0ee-9ee5dcc448c9",
+  "_index": 3,
+  "symbol": "trigger_34",
+  "prefabId": "",
+  "name": "Encounter 2-4",
+  "x": 90,
+  "y": 96,
+  "width": 20,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "101",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "101"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "212"
+            },
+            "id": "267f840a-6dd4-4203-9128-13d407af0ad6"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "149d5592-389a-417b-b15e-bf8e93c7021c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "91c9009d-8c68-4b75-8310-040b9475bc51"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Outran an enraged badger!"
+              ],
+              "avatarId": ""
+            },
+            "id": "41803ff2-da6f-4187-859d-bce849ef28a6"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "92ae1b9f-3d57-4917-a31e-19df34bdb87d"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Aah! We almost went right into\nthat swamp."
+              ],
+              "portraitType": "shy"
+            },
+            "id": "1b46af4a-81e6-4a79-ae5a-683415c975ed"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "dont tell me--"
+              ],
+              "portraitType": "struggle"
+            },
+            "id": "86a416c0-9ba1-40c1-a4c7-026dcebe80fd"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Yes, it's a poison swamp. It's\nbeen polluted from the miasma."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "ea72bbde-765b-45b1-b75e-ef6e296dd80c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_ANGRY",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Ugh, that poor thing... it's\ncompletely addled."
+              ],
+              "nameTag": "ÇÈÉ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "ìÔÕ\nüíå\nóýõ",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "b1cdf5c7-b37d-41ad-9715-aa6b2e1233c1"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "we gotta keep going... and\nput a stop to this. its\nheartbreaking.."
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "e9f47288-d8e7-4880-b282-8153dc258646"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "9f85129a-8e01-4f21-8a93-95c5a1d7a6da"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "5584e37d-e654-41bb-b051-2134fe6a4f81"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "75a323fb-6cb7-410e-ac56-c561946d257b"
+          }
+        ],
+        "false": []
+      },
+      "id": "94a9acc0-8fe7-4b95-81f6-fb4569fc7c12"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,42 @@
+{
+  "_resourceType": "actor",
+  "id": "d6b2fd17-5919-4708-aa1d-2c0edd17a6d8",
+  "_index": 8,
+  "symbol": "actor_248",
+  "prefabId": "",
+  "name": "Aoba Prompt",
+  "x": 6,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "16de3243-023e-4273-a0cc-ede2bedfa724",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "fe7a1474-8327-4d2d-b73f-e6c602c5dd36"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "88a4151e-649a-4545-9ef2-d5555347d000"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

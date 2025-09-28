@@ -1,0 +1,142 @@
+{
+  "_resourceType": "scene",
+  "id": "e6260948-5616-43f8-954f-d28b58313a48",
+  "_index": 36,
+  "type": "TOPDOWN",
+  "name": "Cooking 3E Cutscene",
+  "symbol": "scene_41",
+  "labelColor": "red",
+  "x": 60,
+  "y": 2848,
+  "width": 80,
+  "height": 18,
+  "backgroundId": "41e02d97-88eb-4a31-a700-efa0125b1b15",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "60c36bbc-0f91-4c83-a16f-a44b35e17fec",
+    "b55d841d-cab9-4ef2-b879-b446acfc99ce",
+    "5bd03c58-55c3-4920-ac47-c3fc3398dd09",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "b508b487-ac76-456f-93ba-143baf0bbc78",
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "1d5e87f9-41d5-4e41-ab99-b034ad8da07a"
+  ],
+  "autoFadeSpeed": null,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1292b9c-0797-4b9a-9c40-4a1d143dbd3a"
+      },
+      "id": "676552d3-cc95-483a-b154-5b81ba2720e1"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bf69484f-3c14-4d85-905b-632a93eea47d",
+        "__comment": true
+      },
+      "id": "dbb3cf69-7d7f-4a07-bc5a-87e36ad16b40"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 4
+      },
+      "id": "cc0930bc-9ac2-4d75-a3aa-66cab870bf4d"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "195d52ef-d6fe-4af6-b139-be8323b71751"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "f5822d30-1e02-49ee-9174-9349075cb14c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "oh gosh"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "6b1cb7fc-3941-467c-a681-7e1087eb38ce"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "you two are adorable"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "d65e0096-d5b5-40e2-b279-6754dfba3d07"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Wow."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "1155087c-23cf-4de7-a6b1-1823058b5482"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I'm glad I asked."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "a63e3d1d-069f-48cb-a35e-2105d234c009"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I'm glad you asked too. But now\nI'm gonna be quiet for a bit\nwhile I wolf down the rest of",
+          "this great food."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "3edd111d-bda1-4c5b-871a-91b40b3f5c3e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "£"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "1abca086-0175-4c47-aadc-db3a5f67b940"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "b822cc59-6436-4c65-9994-72a6213a8357"
+      },
+      "id": "d492094b-d4cf-49a9-b095-c0b4687d2ca5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005a0+"
+}

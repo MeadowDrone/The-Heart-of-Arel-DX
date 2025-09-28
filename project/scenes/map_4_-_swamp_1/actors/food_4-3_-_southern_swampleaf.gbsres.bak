@@ -1,0 +1,143 @@
+{
+  "_resourceType": "actor",
+  "id": "f293040c-b855-4984-bce9-85b6d5b26e3d",
+  "_index": 2,
+  "symbol": "actor_28",
+  "prefabId": "",
+  "name": "Food 4-3 - Southern Swampleaf",
+  "x": 54,
+  "y": 128,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "214"
+      },
+      "id": "3c22105c-a50d-4bbc-80bb-4cf0d04efe6e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "140",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "29ba769c-e369-4579-b8cd-67e4dd9989f6"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "5d0edcb3-d87b-45c7-8ec4-6fbbb52afe2c"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "b252d6ab-2f04-488f-bcda-ec907c729c9f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Wow. I'd heard that Southern\nSwampleaf was incredibly\nresilient, but I didn't expect",
+          "to find it flourishing in\nsuch a lonesome place."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8fe99513-0617-4942-a779-b3bc488af672"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Is it definitely OK to eat food\nobtained from... here?"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "4e4b1bf9-ea20-4d19-9d99-fd6272b60ebb"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "It will be when I'm done\ncooking with it."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "ab7694ee-473b-45cb-93a5-203a08ad1041"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "It will be when I'm done\ncooking with it."
+        ],
+        "nameTag": "ÜÝÞ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÙÚÛ\néêë\nùúû",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "7cd93643-9955-4707-8352-d832db9ed1e1"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "8a90663e-3b88-46aa-bb37-732ed0f7b1b3"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "140",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "140"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "3917f800-beae-47b1-b5b4-963afdee7af3"
+          }
+        ],
+        "false": []
+      },
+      "id": "d4d93ca6-a92b-4fa7-ad69-3a5f236eed7e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

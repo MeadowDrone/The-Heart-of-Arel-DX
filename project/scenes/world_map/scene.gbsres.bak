@@ -1,0 +1,1784 @@
+{
+  "_resourceType": "scene",
+  "id": "e927c303-8c22-4492-b9cd-f26e2fbaab5b",
+  "_index": 51,
+  "type": "LOGO",
+  "name": "World Map",
+  "symbol": "scene_54",
+  "labelColor": "gray",
+  "x": 680,
+  "y": 488,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "d3af87f6-a731-42b9-9889-21d4c2a53a86",
+  "tilesetId": "",
+  "paletteIds": [
+    "27297c34-a4e9-4e8e-afef-69abe8c7ca8b",
+    "8a48d954-2054-4392-954e-e763eca8667d"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Food - 62, 63, 80, 81, 82, 83\nEncounters - 116, 117, 118, 119, 136, 137"
+      },
+      "id": "b0e4bf0c-1d31-4126-bce2-cf00ecb51671"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Map 1 - Lakes",
+        "__collapse": true
+      },
+      "id": "7d623b49-7f5a-4fe3-9c41-f753d6686649"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "210",
+        "choices": 4,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 62\nVM_REPLACE_TILE_XY     1, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "fcd5f679-886d-4d32-8ee1-2ff907ef6997"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 63\nVM_REPLACE_TILE_XY     1, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "f374c1d6-cb1a-4003-a010-9cd57956987f"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 80\nVM_REPLACE_TILE_XY     1, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "d1fdfac4-4988-48e9-95ad-5c602cefa5dc"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 81\nVM_REPLACE_TILE_XY     1, 8, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "24ec72ae-c1a6-4df4-882e-edf14eca357b"
+          }
+        ],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "337e7fb0-c469-4a39-aea8-9351b519713b"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "211",
+        "choices": 6,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 5,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 116\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "1cf0f604-2bc6-46a0-9675-caf71c000e3b"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 117\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "f5df9b31-cc60-4799-856a-2e6d9d874fba"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 118\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "ff967955-f5dc-4f30-945c-3331c69d0a2a"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 119\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "b6d7f7cd-e31f-4ec5-9868-7e629ca4a492"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 136\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "306a6073-bffe-4f9a-ab80-a597e2a1f79a"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 137\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "12e5938f-6ccb-4632-91da-42356ebe1197"
+          }
+        ],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "0e9f2777-becf-4ee4-bb03-78d834f98678"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Map 2 - Plains",
+        "__collapse": true
+      },
+      "id": "ed40f577-9302-4b03-880c-44deb9d8db3d"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "213",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 62\nVM_REPLACE_TILE_XY     7, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "48f74045-8aea-4bb9-b3cc-1401d2c8649f"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 63\nVM_REPLACE_TILE_XY     7, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "51bcf6a8-5ab7-4d8c-a0ce-9b949d415b8f"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 80\nVM_REPLACE_TILE_XY     7, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "4d9997c0-feff-429a-b430-9c3a79e8e414"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 81\nVM_REPLACE_TILE_XY     7, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "a6ea5e56-03ad-465c-928d-aac2b27775eb"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 82\nVM_REPLACE_TILE_XY     7, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "4e2a04f0-78a3-4e21-a11d-e924c92cc69f"
+          }
+        ],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "746958a8-fe7b-42a8-87e8-59fc7696d563"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "212",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 116\nVM_REPLACE_TILE_XY     7, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "208f5615-2467-4d09-adb1-f8820fc7ad49"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 117\nVM_REPLACE_TILE_XY     7, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "1ce182f8-39f2-4edf-af22-32e0fbc5f0be"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 118\nVM_REPLACE_TILE_XY     7, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "57419f38-53a7-4e55-a728-785bf4f0c145"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 119\nVM_REPLACE_TILE_XY     7, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "84ae5f78-44a9-46dd-86c1-7bc2c6f4eb3e"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 136\nVM_REPLACE_TILE_XY     7, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "73744c2f-bde9-442d-b97f-171db061137e"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 147\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "ad042595-c3ed-44c9-af23-5439da6d1179"
+          }
+        ],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "63370647-8534-4286-b89e-d5309eed4c90"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "106",
+        "__collapseElse": false,
+        "__disableElse": false,
+        "__collapse": true,
+        "condition": {
+          "type": "variable",
+          "value": "106"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 117\nVM_REPLACE_TILE_XY     7, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "494611a8-971a-4851-b698-bdb5293f9ea3"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 116\nVM_REPLACE_TILE_XY     7, 14, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "af6451c4-2715-4b6e-a82e-b7dc22d41063"
+          }
+        ]
+      },
+      "id": "ec48822e-9cb0-4df0-8c87-45ca151e6b0b"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Map 3 - Forest",
+        "__collapse": true
+      },
+      "id": "869cea17-05de-4c6f-bfcd-2806ff2aad32"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "215",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 62\nVM_REPLACE_TILE_XY     2, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "3e2cefe3-c63e-4b14-b3c4-3b3285211c9b"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 63\nVM_REPLACE_TILE_XY     2, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "2483e0b4-56b3-4f58-be5d-e4ea465037b7"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 80\nVM_REPLACE_TILE_XY     2, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "7570e585-d31b-4641-8135-2b68368307d5"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 81\nVM_REPLACE_TILE_XY     2, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "03b8024a-9e95-41da-b643-47543fca2c88"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 82\nVM_REPLACE_TILE_XY     2, 1, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "7a1b79bb-98ce-4521-bd66-73a768753471"
+          }
+        ],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "565e028f-708e-4fac-8ed4-9f388ad12683"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "216",
+        "choices": 6,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 5,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 116\nVM_REPLACE_TILE_XY     2, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "abe2c1c3-fae5-4b02-9cd2-a76cbd0740c7"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 117\nVM_REPLACE_TILE_XY     2, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "500d84ab-1383-493f-8f0f-c53202958ba3"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 118\nVM_REPLACE_TILE_XY     2, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "00f65af1-25d6-4973-ba12-968bd765221b"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 119\nVM_REPLACE_TILE_XY     2, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "de429736-62e7-4684-b9c2-476cb189ae2d"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 136\nVM_REPLACE_TILE_XY     2, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "da2274ed-4039-44aa-b730-02d10a72b45b"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 137\nVM_REPLACE_TILE_XY     2, 2, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "9a99775e-d302-4e88-8f49-a10b38933ae3"
+          }
+        ],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "4c036ab7-8371-4c45-8a5d-951d0b6fa307"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "167",
+        "__collapseElse": false,
+        "__disableElse": false,
+        "__collapse": true,
+        "condition": {
+          "type": "variable",
+          "value": "167"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 117\nVM_REPLACE_TILE_XY     2, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "6f1b7061-4231-48b6-a2e5-1712988f859b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 116\nVM_REPLACE_TILE_XY     2, 3, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "2a7a5173-5158-410d-88d2-412fd3f7f656"
+          }
+        ]
+      },
+      "id": "7e877068-4764-4fcf-a1ee-f1333bf5bf96"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Map 4 - Swamp",
+        "__collapse": true
+      },
+      "id": "8972e239-3f66-4cee-bbc1-63399f50035e"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "214",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 62\nVM_REPLACE_TILE_XY     18, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "161fc525-471e-4141-ace0-894ea308b635"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 63\nVM_REPLACE_TILE_XY     18, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "dcf74ec8-951d-462e-8cbc-701b3f9e2bc0"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 80\nVM_REPLACE_TILE_XY     18, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "d351d63f-0cab-4501-9947-461f4260a7ad"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 81\nVM_REPLACE_TILE_XY     18, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "5ba7749d-a704-451d-855e-4dbee7d35807"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 82\nVM_REPLACE_TILE_XY     18, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "afbe5777-c9a3-487d-86b5-9ba6e645da85"
+          }
+        ],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "3f65c2e6-27e9-4186-8dd5-3e272afad45a"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "220",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 116\nVM_REPLACE_TILE_XY     18, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "48158d99-44b2-4316-82ed-b64ff1ea5001"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 117\nVM_REPLACE_TILE_XY     18, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "cc1ed7a6-1a12-4ccc-9ab8-2fdeddf54aee"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 118\nVM_REPLACE_TILE_XY     18, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "93bd10f2-53ba-4409-bf1e-9ba7466ea3a3"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 119\nVM_REPLACE_TILE_XY     18, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "f25baf7e-e374-4c9e-8f22-b4842ff6f59a"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 136\nVM_REPLACE_TILE_XY     18, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "e9154d78-c24f-4748-a04c-3f31fef82c71"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 147\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "0d468788-86d4-408c-bf61-c80b5c31e4e9"
+          }
+        ],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "90c63327-5baf-4a0c-a7ea-32fa44de0574"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Map 5 - Mountain",
+        "__collapse": true
+      },
+      "id": "2ebb357f-cb20-42c2-8b1e-3cf20a9b66a8"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "218",
+        "choices": 6,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 5,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 62\nVM_REPLACE_TILE_XY     18, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "20d1865f-2e0d-442f-9b7f-f8b94c18f083"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 63\nVM_REPLACE_TILE_XY     18, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "59f40383-5671-4247-ac27-2bb6877f77a8"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 80\nVM_REPLACE_TILE_XY     18, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "a28433f2-d8f6-4863-8249-dd566bf46d73"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 81\nVM_REPLACE_TILE_XY     18, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "14746fc8-5b9f-4a79-851b-df28776f3a1f"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 82\nVM_REPLACE_TILE_XY     18, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "dc1f47d6-7368-4b1e-b031-d9b9d680a1c9"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 83\nVM_REPLACE_TILE_XY     18, 5, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "c02cc3a9-91f7-42c0-a807-2614236dbbe4"
+          }
+        ],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "a3cd7170-4ee9-4133-88d5-183622012a89"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "217",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 4,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 116\nVM_REPLACE_TILE_XY     18, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "5ff20d57-6c5a-44e9-9948-96a92db24a71"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 117\nVM_REPLACE_TILE_XY     18, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "b977426d-a05f-4227-ab28-62889704e54d"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 118\nVM_REPLACE_TILE_XY     18, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "e6f6c1d9-5665-4eec-85f1-65b07e0776eb"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 119\nVM_REPLACE_TILE_XY     18, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "1a65c681-c21c-421c-b401-0d0192f98ea9"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 136\nVM_REPLACE_TILE_XY     18, 6, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "a455af08-a30c-4386-abfe-a6618dd26b7c"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 147\nVM_REPLACE_TILE_XY     1, 9, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "0d2e3a32-5ef5-4841-ab95-f3ab2a6661da"
+          }
+        ],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "fa4284e4-8944-4e68-a4ec-be9cf58a77e3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "204",
+        "__collapseElse": false,
+        "__disableElse": false,
+        "__collapse": true,
+        "condition": {
+          "type": "variable",
+          "value": "204"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 117\nVM_REPLACE_TILE_XY     18, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "6c1b530c-9a37-482d-a0ec-eeb2366f7263"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 116\nVM_REPLACE_TILE_XY     18, 7, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "7bd513a5-0929-4201-828e-1c8ab063790c"
+          }
+        ]
+      },
+      "id": "64301642-a62d-4684-83a8-8cc76bf56279"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "228",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "228"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "222",
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "222"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "222",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "326823b7-727e-4ead-a971-8a90497f42d5"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "224",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "f149ad1d-e8c9-4e59-bf72-ebd7a8f481bc"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 5,
+                    "frames": 30
+                  },
+                  "id": "cc819ca9-bbbd-4ab2-a4ce-07b108d3fbd7"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "2af58929-9ce0-4199-9cf4-05934a4cf5ef",
+                    "x": {
+                      "type": "number",
+                      "value": 55
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 52
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "f8a6c27c-fd0b-4e2d-afa4-89d4c3a8300f"
+                }
+              ],
+              "false": []
+            },
+            "id": "3e210664-e86a-4cb8-9be0-bf35823cc9c7"
+          }
+        ],
+        "false": []
+      },
+      "id": "1d4ec8ce-2b59-4eb4-b7b9-b72ad58b73df"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "select",
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e7bd5b85-406d-4f2b-958a-7d3b29becf47"
+            },
+            "id": "53ee5066-ee49-41d8-8412-e9047265e0ab"
+          }
+        ]
+      },
+      "id": "ea498f57-a184-4fa9-a07b-f72b3eae3902"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

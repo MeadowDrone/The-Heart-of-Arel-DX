@@ -1,0 +1,79 @@
+{
+  "_resourceType": "scene",
+  "id": "410f3e84-16d2-4e70-8589-2bac9ffbfeec",
+  "_index": 75,
+  "type": "TOPDOWN",
+  "name": "Trailer Title",
+  "symbol": "scene_81",
+  "labelColor": "yellow",
+  "x": 2612.197772776534,
+  "y": 3318.67631420237,
+  "width": 22,
+  "height": 18,
+  "backgroundId": "f0c7240e-af32-44d1-afe3-ec27954fce57",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "50984ef0-7926-4666-84f5-ff8eb1d4ca71"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 4,
+        "frames": 30
+      },
+      "id": "ca08df3e-3b61-4c05-8ff6-0d67286188eb"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Oh jeez, you're cute.",
+          "Oh-- umm. Sorry. I meant to say...",
+          "The Heart of Arel is a free, comfy\nexploration game out now for Game Boy,\nPC and phones!",
+          "You can find it on itch.io, or just google\nThe Heart of Arel £"
+        ],
+        "avatarId": ""
+      },
+      "id": "52ac9bc3-3c2b-4fa7-93bf-d0860841108e"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "208213e2-a119-48d1-8f9b-25ead1ce8861",
+        "$actor[0]$": "d394b8d5-eb87-4c98-a4c0-c092a0e9a4f2"
+      },
+      "id": "e0448922-456b-4cc1-ac60-7e5e5f173d65"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 8
+      },
+      "id": "6fe1ecd6-7c2a-4376-8479-c671ff4a579a"
+    },
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": "2"
+      },
+      "id": "27afee72-7728-4160-9c88-a74075882d43"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,317 @@
+{
+  "_resourceType": "script",
+  "id": "6825cdf0-eb1f-4374-85ca-309d3d09bc49",
+  "name": "Dialogue-SingingSceneForest2",
+  "symbol": "script_76",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Aoba"
+    },
+    "4": {
+      "id": "4",
+      "name": "Harthe"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "holy moly youre the best eryr"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "e13f97a4-d36c-46d0-b3a3-e4748de3ae65"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "This feels sooo good..."
+        ],
+        "portraitType": "happy"
+      },
+      "id": "04c27cd3-2963-40e2-872f-16ed2a95d1a8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "4848705c-4c7d-4eed-966f-6da6dee6169a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Sidestep"
+      },
+      "id": "2e921e63-a0e1-40f1-aae0-cccba290a626"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "number",
+          "value": 8
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "7c71469b-0984-410a-ad72-9f01997d9143"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "ccbc2b65-a49f-4ca8-82a3-dc6b02de700c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": ""
+      },
+      "id": "14c6e9e8-da9b-49ac-8d32-4741d1552342"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "bb54237b-0e27-4527-85b6-8173daba4b79"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Don't go falling asleep, now."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "f3126688-b3de-43ec-9f49-4c5cdc51504d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Or maybe do."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "f50bfe7e-8beb-4d90-a74a-1b876efcb566"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Aaah. The grass on my feet.",
+          "That musty scent of bark and\nleaves.",
+          "The tingling chill of the air."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "07d80221-514d-4a17-8a23-30428d6bfc19"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Feels like my true home."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "ce8aed34-0fd5-448e-b0ef-a116c6789338"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "i think ill take a big comfy\nbed and a nice view but yeah"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "36e4ed0c-39a0-40e4-a56a-17dad5cce339"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "this place has your energy for\nsure"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "f0227a07-03eb-48a0-96e9-7a4e62c7326e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I thought I'd be terrible at\nroughing it out away from\ncivilisation, but..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "b4b00aee-d9f6-45be-baba-cd44a73459cd"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Well, it's been way easier\nthan I thought with you three\naround."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8dbd8b19-9b1b-4789-8822-55464eadf17e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "5ac25c37-81a0-4e8c-a4a6-e13d3a4f99b0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "4",
+        "spriteStateId": "Idle Left"
+      },
+      "id": "6f88e4cf-f4e2-4bc6-bc95-bb3ff5b4b14e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "4",
+        "x": {
+          "type": "number",
+          "value": -1
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "d8f002a1-66f0-4ce5-bc60-1d84cc93d1cf"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "4",
+        "emoteId": "8fc2352b-ff55-45ee-8603-25d1315cee19"
+      },
+      "id": "53cab840-bbc7-4bb8-ac36-5ea22581b491"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "570a3479-350e-4700-be04-de3d5748ffee"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "4",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "c6587f5b-ed63-4112-a62a-46175da76bca"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "8c495599-3e14-49df-9ef2-3728d8745e1e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_BLUSH",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "..."
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "°Ñ±\n³´µ\nð¶ò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "49401a8b-f0bc-4d4a-9649-2694714f506c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "4",
+        "spriteStateId": ""
+      },
+      "id": "97dedb26-2c5f-4c6a-9991-f01849c06055"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "4",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "875e9e1f-4f3d-40bc-b49b-6c6b57d650ab"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "12c3b20d-f482-4b80-ba9c-8f32d4177ae8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "4",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "b9ebf1dd-c0ca-4f7c-9383-4238c0da9423"
+    }
+  ]
+}

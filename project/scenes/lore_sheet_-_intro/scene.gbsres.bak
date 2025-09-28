@@ -1,0 +1,95 @@
+{
+  "_resourceType": "scene",
+  "id": "72a8c19a-bb6b-4f5b-a213-69c1ce2acc48",
+  "_index": 60,
+  "type": "TOPDOWN",
+  "name": "Lore Sheet - Intro",
+  "symbol": "scene_64",
+  "labelColor": "green",
+  "x": 346.85124595087154,
+  "y": 478.77237707852,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a9b410b7-b40a-4545-b8ed-275f0fba92f8",
+  "tilesetId": "",
+  "paletteIds": [
+    "ee2315bd-2be4-49ae-bec8-5cccbc00fd4a"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "default-bg-6"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "db73a6ac-cee0-4019-9a9b-14c19aec9b97"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "There's clearly something...\nunfinished about this sheet.",
+          "But nobody knows what."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "5886d727-a1f2-4f43-8109-75a9bd9ac9d0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "There's clearly something...\nunfinished about this sheet.",
+          "But nobody knows what..."
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "9e312b52-27a7-4b67-833d-be9bbc09524e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "def91a0f-e02e-49f3-b9bb-03950bcb7862"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "42fc2bc1-ba0a-4dd0-b0a8-3d210e07f9e0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "30dbe558-f672-40a5-b3ed-29cf88cf4069"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

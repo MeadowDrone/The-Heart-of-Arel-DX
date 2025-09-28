@@ -1,0 +1,213 @@
+{
+  "_resourceType": "trigger",
+  "id": "186e3a5e-410d-4843-ac21-ada22991fbc2",
+  "_index": 5,
+  "symbol": "trigger_62",
+  "prefabId": "",
+  "name": "Map Lore 3-1",
+  "x": 95,
+  "y": 71,
+  "width": 4,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "164",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "164"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Idle"
+            },
+            "id": "4606fad3-34e9-46c7-9768-19577e2943c7"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "164",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "adef9e11-900f-4465-a9bf-daef97fc1c4f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "I feel it..."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "a9cfbec0-6b19-4005-88ad-594ac50b5bc7"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "You got that look in your\neyes! Like you're beaming\nstatic or... something."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "8c08ae4f-5d6a-4266-beb6-8dd571483e0e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "This place feels... moist\nthough. And a bit squishy.",
+                "... Okay, there's obviously\nsomething here. Hang back a\nsec."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "25ccd8b6-8152-4c2c-8777-c3fbd9f41e33"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "leave it to eryr"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "1f885efb-a709-48d4-92eb-7182b6567c3c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "..."
+              ],
+              "portraitType": "angry"
+            },
+            "id": "12479e82-c0af-4572-bc76-d3c4c85bfe37"
+          },
+          {
+            "command": "EVENT_FADE_OUT",
+            "args": {
+              "speed": 4
+            },
+            "id": "aae39e69-ab68-4111-a0f2-62d8ee094a99"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_REPLACE_TILE_XY      96, 73, ___bank_bg_anim_tileset, _bg_anim_tileset, VAR_LOOP_INDEX_FORESTLORE_L\nVM_REPLACE_TILE_XY      97, 73, ___bank_bg_anim_tileset, _bg_anim_tileset, VAR_LOOP_INDEX_FORESTLORE_R",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+                }
+              ],
+              "__collapse": false
+            },
+            "id": "b5d37213-d0c5-45bb-9e9e-12569151c1c2"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 2,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "8ec2c5bc-8a31-444e-8a67-11d5d76041ab"
+          },
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": "2",
+              "__collapse": true
+            },
+            "id": "c8717d0a-fa9c-4df6-a7cd-664a1fc48965"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Gotta admit, when it comes to\nyou going sweaty and feral,\nI can watch you all day."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "2c65c281-316e-4f3e-9120-02706864d77f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Good thing too - look at\nthis!"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "a6a54c19-59e2-433e-9b8f-0c21712801c6"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Well, let's investigate.\nReady, Eionn?"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "bdddbda2-cd52-4986-9dee-05493385868b"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Ready!"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "26c409f0-b7f1-4801-bb08-27357c908103"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27"
+            },
+            "id": "90047652-2197-4b1c-9c38-8af78fabcfcc"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "6ee6bf38-b894-459c-9c58-b6be7ce3cd9b",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 3
+            },
+            "id": "fdcb0d12-5853-4292-8c8e-2f5cbf55fbf3"
+          }
+        ],
+        "false": []
+      },
+      "id": "a4e31267-7932-4f7c-b681-799192de0eb7"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "03ed5a4d-24c6-4803-9efb-2d401f926436",
+  "name": "ending_map_4",
+  "symbol": "bg_sundown_copy_1",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "ending_map_4.png",
+  "tileColors": "003c+0111+003+0111+003+052a+04!05!042+052+04!053+04!055+04!05!043+055+042+054+042+054+0314+04!034+042+034+043+033+052+033+052+0339+042+034+052+034+052+034+04!038+042+0332+"
+}

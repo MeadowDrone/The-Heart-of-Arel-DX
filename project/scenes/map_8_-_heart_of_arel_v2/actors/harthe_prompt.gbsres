@@ -1,0 +1,42 @@
+{
+  "_resourceType": "actor",
+  "id": "eef9eb01-21a6-480a-b9dd-7decd657ea61",
+  "_index": 7,
+  "symbol": "actor_247",
+  "prefabId": "",
+  "name": "Harthe Prompt",
+  "x": 6,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "16de3243-023e-4273-a0cc-ede2bedfa724",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "554f6680-946b-4e3c-9ae2-5fbf21038c3f"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "53bf6d2b-9ea9-4653-9c61-8432c950d002"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

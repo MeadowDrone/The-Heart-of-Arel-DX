@@ -1,0 +1,127 @@
+{
+  "_resourceType": "actor",
+  "id": "c0f3a5f6-f2e4-40bc-8909-2ea3462e6228",
+  "_index": 0,
+  "symbol": "actor_10",
+  "prefabId": "",
+  "name": "Food 2-2 - Azure Onions",
+  "x": 30,
+  "y": 94,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "6884e8c2-1fd4-47db-8df1-af3426ef2616"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "213"
+      },
+      "id": "3b03eb69-646d-4708-b171-0f41d33a7b97"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "90",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "05cce684-386d-4705-8c7f-c7e5019e5bf2"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "f4c77522-92fd-4909-925a-be193e096824"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Oh, I thought I could smell\nthese from back there...\nAs your onions, right?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8086742f-5e5b-4c3d-a551-c64d5fd1ae38"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "oh sweetie",
+          "theyre \"azure onions\"",
+          "they sure are great though"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8c7c5166-7ae2-4f85-bb12-85671863d174"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "They sure are. They have this\ndistinctive blue colour, which\nyou don't see on any other ",
+          "type. There's a myth that the\nblue tint they have originated\nfrom a blessing bestowed from",
+          "a widely worshipped but\nlong since forgotten god."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "ab786184-2adf-4322-94d1-4d5233c722a4"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "6bc42dd5-97fd-4246-a0b5-f4f60de9e789"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "90",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "90"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "4c4aa034-46d1-442d-b930-a441e19b62e4"
+          }
+        ],
+        "false": []
+      },
+      "id": "1386debe-f122-4d24-8ce3-3e18bc15cb4a"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

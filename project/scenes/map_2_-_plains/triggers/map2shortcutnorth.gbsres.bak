@@ -1,0 +1,158 @@
+{
+  "_resourceType": "trigger",
+  "id": "22f4eb80-993b-4b9b-b8b5-113e8656a122",
+  "_index": 8,
+  "symbol": "trigger_36",
+  "prefabId": "",
+  "name": "Map2ShortcutNorth",
+  "x": 84,
+  "y": 7,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "100",
+        "__collapseElse": false,
+        "__disableElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "100"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 84
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "9882cc60-c034-447d-90da-c4feba6587c7"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "40bfcfae-856a-4d98-a632-4242aa39297a"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 82
+              },
+              "y": {
+                "type": "number",
+                "value": 16
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "3b92bfd2-eab0-4ca3-b040-931ca0657f79"
+          },
+          {
+            "command": "EVENT_FADE_OUT",
+            "args": {
+              "speed": "2"
+            },
+            "id": "d9186cbe-cfdb-4b02-9d4c-2d5c1f8cfcb9"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "7c1539ce-c1e9-4768-9d1f-5fb47488de7e"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 72
+              },
+              "y": {
+                "type": "number",
+                "value": 95
+              }
+            },
+            "id": "d1d1e681-8de2-4cd1-806f-c47da42c1af0"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "75bcb733-3f18-416c-b168-d1f101ace19a"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "48980f5c-9777-4d3b-8968-9b664e9499f0"
+          },
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": "2"
+            },
+            "id": "b83125f1-8fb3-4a0f-ada4-a2eb4123974f"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 62
+              },
+              "y": {
+                "type": "number",
+                "value": 98
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "373c5085-cd71-43b2-b55f-0d118c7d844a"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "03920292-beda-458b-b97c-56e7254688e6"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "710e3dc9-b783-4e2f-bd87-d8d8e0e9afab"
+            },
+            "id": "b9034726-00f0-436c-beb6-67194dc532d5"
+          }
+        ]
+      },
+      "id": "a35f4d3f-9403-4c52-8db7-6903d2a41a7c"
+    }
+  ],
+  "leaveScript": []
+}

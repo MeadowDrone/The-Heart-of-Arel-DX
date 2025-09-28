@@ -1,0 +1,40 @@
+{
+  "_resourceType": "trigger",
+  "id": "0b94087a-b459-4166-8ebf-9e0f771e6286",
+  "_index": 0,
+  "symbol": "trigger_39",
+  "prefabId": "",
+  "name": "Move to Map 2",
+  "x": 35,
+  "y": 127,
+  "width": 9,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ce0ea1c6-1791-419b-87b3-d9484e9e5eb1"
+      },
+      "id": "a31b8ae8-eee7-4913-ac93-2d0a38729fa2"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2af58929-9ce0-4199-9cf4-05934a4cf5ef",
+        "x": {
+          "type": "number",
+          "value": 44
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "59cc2e99-0b34-47ab-b8a2-3e66249193ce"
+    }
+  ],
+  "leaveScript": []
+}

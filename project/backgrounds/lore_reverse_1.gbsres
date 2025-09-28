@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "dd354f1e-98b6-4827-a1d9-74c32ac353a9",
+  "name": "lore_reverse_1",
+  "symbol": "bg_map_reverse_full_copy_3",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "lore_reverse_1.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "652a6e9b-fb25-4ec4-8099-991d8013cc4a",
+  "_index": 4,
+  "symbol": "actor_101",
+  "prefabId": "",
+  "name": "Prompt",
+  "x": 13,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a6ab82b9-a388-4f34-b9a0-344131798732",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "c305ab1a-7dfc-49a5-a4fe-5ca27b8a3cb7"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,112 @@
+{
+  "_resourceType": "trigger",
+  "id": "0a6d475e-41a6-46bb-bb96-2af5159e2008",
+  "_index": 3,
+  "symbol": "trigger_47",
+  "prefabId": "",
+  "name": "Encounter 4-2",
+  "x": 95,
+  "y": 75,
+  "width": 12,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "114",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "114"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "220"
+            },
+            "id": "30cf4bbc-2561-4380-81cc-694db589f909"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb",
+              "__collapse": true
+            },
+            "id": "6f4e52f1-43ae-47d7-be9b-74391421a4d7"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Dodged out of the way of a turtle\nsnapping at your feet!"
+              ],
+              "avatarId": ""
+            },
+            "id": "7c0862f1-d422-4c19-a384-f0da26ed6a4d"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Wow, rude. We had to walk ever\nso slightly faster than usual."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "b4800043-ed5e-4f61-a629-ed62b6124d35"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__collapse": false
+            },
+            "id": "a7954be9-6f35-45e7-aee7-d27a0d3a238a"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "114",
+              "__collapse": true,
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "2ed92d32-4b8e-4a93-a867-357fb5ed2012"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e",
+              "__collapse": true
+            },
+            "id": "3f452887-fcc2-48a5-948d-cc44b26611ef"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd",
+              "__collapse": true
+            },
+            "id": "351ab27c-20d9-4ccf-b30f-30b4af9dda1e"
+          }
+        ],
+        "false": []
+      },
+      "id": "9a3c5173-1041-44c2-9287-7a3226793867"
+    }
+  ],
+  "leaveScript": []
+}

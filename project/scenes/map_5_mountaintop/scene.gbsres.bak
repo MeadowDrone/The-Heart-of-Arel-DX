@@ -1,0 +1,139 @@
+{
+  "_resourceType": "scene",
+  "id": "986293b7-0fdc-4314-b92b-cbe0354a5c43",
+  "_index": 71,
+  "type": "ADVENTURE",
+  "name": "Map 5 Mountaintop",
+  "symbol": "scene_56",
+  "labelColor": "yellow",
+  "x": 3296,
+  "y": 272,
+  "width": 52,
+  "height": 24,
+  "backgroundId": "8bf6eec4-c79a-41be-9825-de7bdda8c8dc",
+  "tilesetId": "",
+  "paletteIds": [
+    "b508b487-ac76-456f-93ba-143baf0bbc78",
+    "c2b178de-8820-467d-8520-599c62441612",
+    "1cacd09a-fb9e-488b-bd46-7c39c5a718f8"
+  ],
+  "spritePaletteIds": [
+    null,
+    null,
+    null,
+    null,
+    "266bce6c-027d-4b44-92e9-0a5081c4302c"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "fb1c90a7-1cc2-4dea-bb8a-91b5ae9348cc",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "77",
+        "value": {
+          "type": "number",
+          "value": 9
+        }
+      },
+      "id": "cb2ef285-f43b-4037-a829-1d1bdd004998"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bf69484f-3c14-4d85-905b-632a93eea47d"
+      },
+      "id": "58ba4872-ad49-4786-857e-6276d6048325"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e69dd610-89af-49f7-9710-88e976bc0d43"
+      },
+      "id": "5c862ae7-fb05-4338-8976-5a77f31e0949"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "cee83083-7e9a-4fd7-8bfe-595e788a8139"
+            },
+            "id": "4ec59089-9d9b-4b4c-94f9-3c744c6d6bc6"
+          }
+        ]
+      },
+      "id": "f61550b9-7633-4494-9de5-77225a39a832"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e",
+              "__collapse": false
+            },
+            "id": "3b062bdf-45a1-49ff-8e77-41e69917529c"
+          }
+        ]
+      },
+      "id": "4f6acdfe-bd1e-457b-b790-67f09bcf81ab"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__comment": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "2850e833-5fc3-4a07-9f1e-e0826ad369ad"
+            },
+            "id": "b17b23ff-0b72-4f71-9a09-452c444b09ac"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "8684d43b-5afb-4dee-8772-15242ce5a82d",
+              "$actor[0]$": "190bf2cd-d0ab-4e0a-bec4-a13e288260f8"
+            },
+            "id": "26d514e0-9023-42c0-8d29-f23a384aaf11"
+          }
+        ]
+      },
+      "id": "33e23bb1-7a80-410b-8ee1-654431e89c44"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3c+00d+0f2+0012+0f13+00c+0f4+00!0f2+00e+0f13+00d+0f2+007+0f2+009+0f13+002+022+0f4+005+0f2+009+0f2+007+0f12+002+0f!012+00!0f2+00!0f!0018+0f12+00!08!04!003+0f2+00!08!04!009+0f2+00c+0f12+00!08!04!006+08!04!0017+0f12+00!08!04!006+08!04!0017+0f12+00!08!04!006+08!04!0017+0f12+00!08!04!006+08!04!007+0f2+005+0f2+007+0f12+002+0f4+003+0f!0017+0f13+0020+0f14+001f+0f16+00c+0f4+005+0f2+006+0f17+00c+0f4+00c+0f18+00d+0f2+00c+0f19+00d+0f2+00c+0f19+00c+0f4+003+0f2+005+0f1b+00b+0f4+009+0f1d+00b+0f2+009+0f1f+00a+0f2+007+0f22+00f+0f4d+"
+}

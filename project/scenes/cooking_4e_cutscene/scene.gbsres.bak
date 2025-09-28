@@ -1,0 +1,184 @@
+{
+  "_resourceType": "scene",
+  "id": "67d4c609-fd13-4e34-af5e-122e9bb2aab2",
+  "_index": 40,
+  "type": "TOPDOWN",
+  "name": "Cooking 4E Cutscene",
+  "symbol": "scene_45",
+  "labelColor": "red",
+  "x": 1040,
+  "y": 2888,
+  "width": 80,
+  "height": 18,
+  "backgroundId": "41e02d97-88eb-4a31-a700-efa0125b1b15",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "60c36bbc-0f91-4c83-a16f-a44b35e17fec",
+    "b55d841d-cab9-4ef2-b879-b446acfc99ce",
+    "5bd03c58-55c3-4920-ac47-c3fc3398dd09",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "b508b487-ac76-456f-93ba-143baf0bbc78",
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "1d5e87f9-41d5-4e41-ab99-b034ad8da07a"
+  ],
+  "autoFadeSpeed": null,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1292b9c-0797-4b9a-9c40-4a1d143dbd3a"
+      },
+      "id": "393c9715-6daf-44de-bf14-814e9fa00bc0"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bf69484f-3c14-4d85-905b-632a93eea47d",
+        "__comment": true
+      },
+      "id": "87a1f6b7-c168-415d-979d-974f1509f6a8"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "25bf634b-ffad-4543-a754-153d26af85af"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 4
+      },
+      "id": "60c5a9e2-5a91-48c2-8875-ab8a6585fad4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "We don't just accept you.\nWe love you for it!"
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "30c1958f-e4de-45da-9b9e-4de66e2b450e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "That's the thing. I've realised\nthis is who I am. I am someone\nwho needs quiet.",
+          "Someone who needs space.",
+          "And someone who needs time to\nprocess my thoughts and\nemotions. I feel them so",
+          "strongly and so clearly inside\nof me, it's just not in my nature\nto know how to translate that",
+          "outwardly."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8f93e29c-0574-4419-b2e4-ee550565a1ff"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "aa1d3022-112a-477a-aa90-71b24d56b28b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "But now? I feel I have people\nin my life who actually\nunderstand this, and",
+          "understand me, for the first\ntime."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "11746959-3584-4267-af3b-b4895b23c290"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Better late than never, huh?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "6b3f90eb-07a0-4ab8-b6ea-b021f349328f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Definitely. Harthe, Eionn,\nEryr. I love you."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "33086247-7fe8-4fc7-8d27-5f71f6d29166"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "4765b225-c85a-47c0-a62a-d997b8507b61"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2987ba6b-85a0-47d9-bdbe-357c4c0cbe92",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "d5143800-579d-4c64-a623-e2c663887e95"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "gosh. i love you too, aoba £"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "2bf09641-232a-4025-9f7b-458cd492c791"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "We all do."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "4efaeb31-7b58-4fac-984d-7070857d4a5a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "62ec4a20-1447-4ef3-a799-153bc052d0c2"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "b822cc59-6436-4c65-9994-72a6213a8357"
+      },
+      "id": "2da01000-9a97-49e4-845b-f3f9843eb24b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005a0+"
+}

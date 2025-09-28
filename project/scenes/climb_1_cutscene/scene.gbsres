@@ -1,0 +1,241 @@
+{
+  "_resourceType": "scene",
+  "id": "6ee6bf38-b894-459c-9c58-b6be7ce3cd9b",
+  "_index": 44,
+  "type": "TOPDOWN",
+  "name": "Climb 1 Cutscene",
+  "symbol": "scene_48",
+  "labelColor": "orange",
+  "x": 1992,
+  "y": 2920,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "aa03e16f-16e1-422a-a4d5-ba183e701e4b",
+  "tilesetId": "",
+  "paletteIds": [
+    "60c36bbc-0f91-4c83-a16f-a44b35e17fec",
+    "5bd03c58-55c3-4920-ac47-c3fc3398dd09",
+    "1b386b16-9b1a-4e78-b212-3bdf2c7e4b05",
+    "96835d11-b5bc-4e32-baec-7f6899f68086",
+    "dc3d4627-3f0c-4b23-a1ec-4c8edd518a9b",
+    "c67e6087-96ac-4f9f-baad-0544401ed375",
+    "ff5fb13a-7200-4e93-b4d3-9f09153704d5"
+  ],
+  "spritePaletteIds": [
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "You got this, Eionn."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "b29fdd6b-83ed-4ca6-9335-38dac45b3118"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "3e83a6c6-ecab-4cf5-ac73-7dad1b8c574b",
+        "spriteStateId": "In Water Pulling",
+        "__collapse": false
+      },
+      "id": "ee91cf9b-43d3-454d-845e-a5b8898a2680"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3e83a6c6-ecab-4cf5-ac73-7dad1b8c574b",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "04f3001b-6921-4b07-affb-bddc90659ca0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "3e83a6c6-ecab-4cf5-ac73-7dad1b8c574b",
+        "speed": 127,
+        "__collapse": false
+      },
+      "id": "888095ea-bbea-4054-8eee-a8b7ceca5772"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "597516a5-ee79-4c3c-acd9-22eec61250aa",
+        "$actor[0]$": "ec9a7bc9-58b6-42f9-b4c4-ff0c638a6146"
+      },
+      "id": "64fc9a75-952e-4d75-9ee0-b625f4ba16fa"
+    },
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "L0",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 2
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9356d0fe-961e-4082-8e86-834765b586fd",
+              "$actor[0]$": "ec9a7bc9-58b6-42f9-b4c4-ff0c638a6146"
+            },
+            "id": "1d170690-b3f3-4413-8781-09a835edc70a"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "45ff3770-5621-4cf8-b4d0-be437f0a982e"
+          }
+        ]
+      },
+      "id": "0230a884-f090-4114-a90d-8bf0f545ea80"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 22
+      },
+      "id": "c16a7c04-77f1-46f0-b7fa-05560b16f242"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "3e83a6c6-ecab-4cf5-ac73-7dad1b8c574b",
+        "spriteStateId": "Success",
+        "__collapse": false
+      },
+      "id": "b3538db8-c4a7-455d-bd3f-c698f14b625e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3e83a6c6-ecab-4cf5-ac73-7dad1b8c574b",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "2d5aae28-0600-4ad7-a8dd-3354bde88c3e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "that thing is starting to\nlook lovely and full, huh"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "edab46f8-c940-4254-9286-61a393c8a547"
+    },
+    {
+      "command": "EVENT_SET_FLAGS",
+      "args": {
+        "variable": "139",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": true,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false,
+        "__collapse": false
+      },
+      "id": "917c877e-12e9-426c-8cf8-1a6f304ecb2e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "3e83a6c6-ecab-4cf5-ac73-7dad1b8c574b",
+        "spriteStateId": "Read Paper"
+      },
+      "id": "f3318bb9-288b-4177-85db-a7920f345aed"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "dc9c55a2-eda3-4956-8a07-3b979c4d5378"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "df7f6a70-d9f5-404d-ab5b-221558f66643",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "2bcf02e6-ee36-446c-9b18-a6f1ef3ffb29"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

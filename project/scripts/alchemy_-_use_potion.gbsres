@@ -1,0 +1,184 @@
+{
+  "_resourceType": "script",
+  "id": "24517bf4-c96a-4e42-ae4c-25a33ff1b5ea",
+  "name": "Alchemy - Use Potion",
+  "symbol": "script_17",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "AdjectiveIndex",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "V0",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "V0",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": 7,
+        "clamp": false,
+        "__collapse": true
+      },
+      "id": "a47898e9-5d16-4f37-a492-929539091b3a"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "V0",
+        "choices": 8,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 0,
+        "__collapseCase6": false,
+        "value6": 6,
+        "__collapseCase7": false,
+        "value7": 7,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brewed a bittersweet potion!"
+              ],
+              "avatarId": ""
+            },
+            "id": "d24e357b-9897-4513-b1c0-48056b4978d0"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brewed a sour potion!"
+              ],
+              "avatarId": ""
+            },
+            "id": "5fcfcc9d-b438-4625-9d63-6a736ef2ae88"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brewed a nostalgically sweet potion!"
+              ],
+              "avatarId": ""
+            },
+            "id": "8fe47f80-c6e7-4cc6-968f-1f5408048ee5"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brewed a warming potion!"
+              ],
+              "avatarId": ""
+            },
+            "id": "dda4e57c-cb6f-4c5f-8333-3514a2bd0628"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brewed a fizzy potion!"
+              ],
+              "avatarId": ""
+            },
+            "id": "98497e02-9450-401a-bb61-d7d1e0f9ddfb"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brewed a nauseating potion!",
+                "It should work, at least..."
+              ],
+              "avatarId": ""
+            },
+            "id": "a8f9bd5b-c356-4afe-b368-a12a7f44dc90"
+          }
+        ],
+        "true6": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brewed a metallic-tasting potion!"
+              ],
+              "avatarId": ""
+            },
+            "id": "ed38c959-6929-4c77-94e5-7e1e223b6c9f"
+          }
+        ],
+        "true7": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brewed a pristine-looking potion!",
+                "It turns into vapour as you swallow it,\nbut you still feel its effects."
+              ],
+              "avatarId": ""
+            },
+            "id": "f7d4af3b-8c65-4ad5-99c2-77ff46f6d19a"
+          }
+        ],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "16247f10-ad53-4604-849d-ada844baa392"
+    }
+  ]
+}

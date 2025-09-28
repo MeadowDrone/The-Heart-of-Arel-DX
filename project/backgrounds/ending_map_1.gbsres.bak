@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "66a52bad-85af-4f81-b9de-17c84f54d937",
+  "name": "ending_map_1",
+  "symbol": "bg_map_copy_2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "ending_map_1.png",
+  "tileColors": "039+02b+039+02b+039+02b+039+02b+039+02b+038+02c+037+02d+036+02e+036+02e+035+00f+034+0010+033+0011+033+0011+023+0011+023+0011+033+0211+033+0211+033+0211+",
+  "autoColor": false
+}

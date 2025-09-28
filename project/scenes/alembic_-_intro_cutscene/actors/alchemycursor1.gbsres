@@ -1,0 +1,43 @@
+{
+  "_resourceType": "actor",
+  "id": "90cd5595-2300-4747-bb0b-8a14f474725b",
+  "_index": 0,
+  "symbol": "actor_227",
+  "prefabId": "",
+  "name": "AlchemyCursor1",
+  "x": 9,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b48f3da2-1c5c-411d-80ed-dd82ac8a4826",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 4,
+  "animSpeed": 3,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 4
+      },
+      "id": "7647a313-558f-413e-ac0a-fde128814cc6"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "708544e2-7566-4d4b-9d55-be40e5198419"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

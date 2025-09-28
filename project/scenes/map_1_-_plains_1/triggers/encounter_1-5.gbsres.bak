@@ -1,0 +1,129 @@
+{
+  "_resourceType": "trigger",
+  "id": "87a8bdd7-fbb7-4bb2-b86a-2f998c39c606",
+  "_index": 2,
+  "symbol": "trigger_7",
+  "prefabId": "",
+  "name": "Encounter 1-5",
+  "x": 66,
+  "y": 77,
+  "width": 39,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "23",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "23"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "211"
+            },
+            "id": "31a9be88-5712-41ac-9750-67087ca63f5c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "23",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "5be99f41-c57c-4a2d-9ef1-951c20b56988"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "8c5cdd01-0a10-4490-bb5b-324a6caf7553"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Soothed a panicked fox!"
+              ],
+              "avatarId": ""
+            },
+            "id": "1990a42a-fd11-4893-aaff-e7c3bf2052b2"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Awwwwwww. What a friend.",
+                "I'm gonna call them",
+                "Friend."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "ad315529-8cc1-4964-aa97-cb6766875c50"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Awwwwwww. What a friend.",
+                "I'm gonna call them...",
+                "Friend."
+              ],
+              "nameTag": "ÇÈÉ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "fc4a886b-d41f-4b56-9c93-8947175be816"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "895616c5-886a-49b6-9454-567c4b9b0ed3"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "6b5bcf0e-2d04-4b8a-ba88-c8098e30b0ac"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "e619c332-12ad-4e8f-befd-cca5bc26d9da"
+          }
+        ],
+        "false": []
+      },
+      "id": "6b2186a5-84a5-43b9-af00-1108ecfe8be0"
+    }
+  ],
+  "leaveScript": []
+}

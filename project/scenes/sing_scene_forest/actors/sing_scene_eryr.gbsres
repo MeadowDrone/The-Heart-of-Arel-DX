@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "027f7f41-433c-4ff2-928c-c48fec1990c1",
+  "_index": 3,
+  "symbol": "actor_201",
+  "prefabId": "",
+  "name": "Sing Scene Eryr",
+  "x": 2,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9751e8a2-0052-49cf-8501-a1762127fdfa",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "27d27afe-02ab-41d3-9049-0d646501289e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

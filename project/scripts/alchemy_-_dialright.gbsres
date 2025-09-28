@@ -1,0 +1,166 @@
+{
+  "_resourceType": "script",
+  "id": "d061b6fb-2604-4290-a637-8b2b02bbc30c",
+  "name": "Alchemy - DialRight",
+  "symbol": "script_14",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "1": {
+      "id": "1",
+      "name": "Dial 1"
+    },
+    "2": {
+      "id": "2",
+      "name": "Dial 2"
+    },
+    "3": {
+      "id": "3",
+      "name": "Dial 3"
+    },
+    "4": {
+      "id": "4",
+      "name": "Knob Left"
+    },
+    "5": {
+      "id": "5",
+      "name": "Knob Middle"
+    },
+    "6": {
+      "id": "6",
+      "name": "Knob Right"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "35",
+        "operator": "==",
+        "comparator": 1,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "35"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "1"
+            },
+            "id": "7009ff23-b391-47d9-8236-8594234fec4c"
+          }
+        ],
+        "false": []
+      },
+      "id": "2e464fb9-e342-4eca-9f90-ce01cc5f620a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "35",
+        "operator": "==",
+        "comparator": 2,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "35"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "2",
+              "__collapse": false
+            },
+            "id": "933950a6-4cb6-4bfb-ae98-e51b60bccf54"
+          }
+        ],
+        "false": []
+      },
+      "id": "ce544eab-55d4-4a87-831b-a0a0acf4b221"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "35",
+        "operator": "==",
+        "comparator": 3,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "35"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "3"
+            },
+            "id": "e142642c-82c8-4c0f-ab4e-07ed73dc4083"
+          }
+        ],
+        "false": []
+      },
+      "id": "4cbebbe3-ba6a-4654-b61b-dacb7a35ef59"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "4",
+        "spriteStateId": "Knob Rolling Right"
+      },
+      "id": "a250a986-00c5-4ced-ae6d-88e3aad3dff4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "5",
+        "spriteStateId": "Knob Rolling Right"
+      },
+      "id": "33b2b145-ace3-482f-adb8-24bca072ef9d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "6",
+        "spriteStateId": "Knob Rolling Right"
+      },
+      "id": "6bb72d78-ccad-4157-ba9c-5a2dab2a3cb5"
+    }
+  ]
+}

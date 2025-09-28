@@ -1,0 +1,97 @@
+{
+  "_resourceType": "actor",
+  "id": "7a12fdc9-0078-474d-a9a5-5abac6344c49",
+  "_index": 1,
+  "symbol": "actor_250",
+  "prefabId": "",
+  "name": "Eionn",
+  "x": 11,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e8eed382-7270-40f7-84ec-a4a95f8cdb5a",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "9d212757-5c51-4f57-a9da-47e02b8fe7e3"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "2ac18a85-00e8-4cb5-a454-3037cb7bad58",
+              "x": {
+                "type": "number",
+                "value": 114
+              },
+              "y": {
+                "type": "number",
+                "value": 112
+              },
+              "direction": "",
+              "fadeSpeed": 6
+            },
+            "id": "e4444f17-b474-449f-810b-21c434600065"
+          },
+          {
+            "command": "EVENT_STOP",
+            "args": {},
+            "id": "7417b5c5-be3e-4ee2-86da-4a77619c7357"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": -1
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "e9f2a34a-7dcf-44a4-9626-77fb364c129d"
+          }
+        ]
+      },
+      "id": "1d118c04-85cf-4fc3-b544-8d13f161ba55"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

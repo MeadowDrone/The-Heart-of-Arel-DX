@@ -1,0 +1,133 @@
+{
+  "_resourceType": "actor",
+  "id": "8a987211-9ffc-4445-b98a-ed181fffc552",
+  "_index": 0,
+  "symbol": "actor_8",
+  "prefabId": "",
+  "name": "Food 1-1 Sweet Dew Leaves",
+  "x": 9,
+  "y": 72,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "210"
+      },
+      "id": "76a5aa79-a8e1-4188-92d3-6755289a465e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "676b8a5e-fe95-4b2f-97dd-7c1d6e4f1abf"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "e0830c4a-5651-4d79-b32c-c4b1a4c3f9b6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "15c5ea4c-8e7a-4c6a-b7aa-d788b4ebae7a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Sweet Dew leaves."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "8d79e267-babf-4221-adf0-d7f77e90f6be"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "These are pretty common, but\nare basically essential to\nany good meal."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "587d6735-e061-4a95-a108-fa31fc3d96a4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Sometimes I just eat a whole\nbowl of these by themselves."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "e709e54f-6be2-41ec-9ba2-04a105ddfb4f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "The sweet and slightly syrupy\naftertaste makes them\nstrangely addictive."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "1e83ee18-05e7-4be7-aea3-2dc36cfad802"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "28b290f0-f33a-4dc6-b4ea-2a52e89e5cb0"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "2",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "2"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "4a51f651-5c15-417e-860a-a291b24fb60c"
+          }
+        ],
+        "false": []
+      },
+      "id": "c7fd35b1-cd57-4421-97dd-75329f118ac2"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

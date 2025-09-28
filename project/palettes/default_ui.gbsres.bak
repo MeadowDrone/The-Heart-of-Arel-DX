@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-ui",
+  "name": "Default UI",
+  "colors": [
+    "F8F8E8",
+    "086000",
+    "0020F8",
+    "001800"
+  ],
+  "defaultName": "Default UI",
+  "defaultColors": [
+    "F8F8B8",
+    "90C8C8",
+    "486878",
+    "082048"
+  ]
+}

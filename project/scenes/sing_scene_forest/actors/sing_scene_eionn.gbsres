@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "531ef371-06b0-49e9-a249-ef9670ca61e0",
+  "_index": 0,
+  "symbol": "actor_204",
+  "prefabId": "",
+  "name": "Sing Scene Eionn",
+  "x": 3,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e8d9d17a-3d99-45a7-98a7-0eaa22f5a3ea",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "0e1272bc-7637-41fc-9ddb-58c1013bd39f"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

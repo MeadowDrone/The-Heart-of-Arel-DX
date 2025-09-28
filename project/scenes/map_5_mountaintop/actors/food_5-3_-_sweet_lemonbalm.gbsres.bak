@@ -1,0 +1,184 @@
+{
+  "_resourceType": "actor",
+  "id": "99c662e6-202f-4ca8-a1f6-a2e098575c37",
+  "_index": 0,
+  "symbol": "actor_223",
+  "prefabId": "",
+  "name": "Food 5-3 - Sweet Lemonbalm",
+  "x": 10,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "218"
+      },
+      "id": "35fa5682-d07c-4c9f-90d2-72e50d4da1ed"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "180",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "8094bb86-287a-4246-832d-fb68968e215f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "a5425cbe-4bde-4384-97b6-8b970218d6d4"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "dc874cd6-91fe-4f78-94fe-5fbca058a470"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Wow. I hoped to find this\nsomewhere up here, but\nsomebody must have planted",
+          "this here deliberately."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "131b8558-e631-4c00-8190-0bc233a2137f"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I could smell it since we\ngot up here. It's amazing!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "1ac1df77-d93a-487c-b9cb-3bc2759c84c1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Sure is. Sweet Lemonbalm,\none of the hardiest herbs\nin the entire land."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "cd1cb9a6-a520-4952-b084-017cb15f39f9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "A nice reward for making it\nall the way up here, too!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "412f543b-8650-4154-bd21-929c72acca53"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "i wonder how old that flag\nis..",
+          "i doubt anyone could have\ngotten up here since the\nmountain erupted"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "4918f66b-1a3f-4050-bc8e-7f210957a7ee"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "i wonder how old that flag\nis..",
+          "i doubt anyone could have\ngotten up here since the\nmountain erupted"
+        ],
+        "nameTag": "ÀÁÂÃ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "b06e4d99-98ea-4ade-a8f6-ea7a1c1da3d1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "And yet, the lemonbalm\nthrives. This'll add heaps\nof flavour to the next meal."
+        ],
+        "nameTag": "ÜÝÞ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "ÙÚÛ\néêë\nùúû",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "362b8fe0-0e26-41c2-935b-6433364c212c"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "29cbb39f-fc06-4f31-b6f3-123efabd494e"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "180",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "180"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "c8cc9b71-69b1-460e-9d9f-8fafa8a31b63"
+          }
+        ],
+        "false": []
+      },
+      "id": "3891cf88-347b-470e-8954-abfa7c70b1b8"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

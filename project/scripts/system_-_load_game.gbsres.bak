@@ -1,0 +1,332 @@
+{
+  "_resourceType": "script",
+  "id": "6b24940f-fc03-41f7-9639-860344f6efb4",
+  "name": "System - Load Game",
+  "symbol": "script_0",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Variable B",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF_SAVED_DATA",
+      "args": {
+        "saveSlot": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "241",
+              "choices": 4,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false,
+              "__disableElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                  "args": {
+                    "text": [
+                      "hey eionn, what was that last\nthing you wrote in your\njournal..?"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "e70f05f2-c1ad-4f28-a1aa-4da2ecbed1c1"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "Hey Eionn. Remember that time\nI did that thing?"
+                    ],
+                    "portraitType": "cheeky"
+                  },
+                  "id": "d6e99338-c354-41f7-9413-49d1e49d1bc5"
+                }
+              ],
+              "true2": [
+                {
+                  "command": "EVENT_DIALOGUE_AOBA_NEW",
+                  "args": {
+                    "text": [
+                      "Hey Eionn, could I look at that\nlast thing you wrote down in\nyour journal?"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "582d1869-ee82-484e-8010-915db1fa990a"
+                }
+              ],
+              "true3": [
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Wait, what was I doing\nearlier again...?"
+                    ],
+                    "portraitType": "pensive"
+                  },
+                  "id": "23b30755-9693-46d6-9a91-d56eb4c99903"
+                }
+              ],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            },
+            "id": "4683cad6-7ac5-47c6-a42c-61ff3038fe29"
+          },
+          {
+            "command": "EVENT_PEEK_DATA",
+            "args": {
+              "variableDest": "243",
+              "variableSource": "V1",
+              "saveSlot": 0
+            },
+            "id": "05b9971a-377d-4ab9-8830-51b25b9fe1f4"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "V0",
+              "items": 3,
+              "option1": "  Load Journey from Manual Save",
+              "option2": "  Load Journey from Autosave",
+              "option3": "  Cancel",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "6beb5b0a-fafb-4cfe-9c1d-395889eff429"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "V0",
+              "choices": 2,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 8
+                  },
+                  "id": "798e39d8-8779-4e15-86d9-c8eaeab5ef71"
+                },
+                {
+                  "command": "EVENT_LOAD_DATA",
+                  "args": {
+                    "saveSlot": 0
+                  },
+                  "id": "12e033d4-5748-4772-8904-ad906880a71a"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 8
+                  },
+                  "id": "be080dc6-7a7f-4686-8fc0-3fd5614e096a"
+                },
+                {
+                  "command": "EVENT_LOAD_DATA",
+                  "args": {
+                    "saveSlot": 1
+                  },
+                  "id": "fd0a7c61-2e62-4f26-b871-669d2a21619b"
+                }
+              ],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": [
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Let's get back to that later!"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "df391c2d-ec4b-4710-a75b-23218ac5755d"
+                }
+              ]
+            },
+            "id": "6e4b805d-ecb4-44ad-b884-88969fcfd666"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Hang on, I haven't written\nanything in my journal yet!"
+              ],
+              "portraitType": "shy"
+            },
+            "id": "0b4d3cc4-a92d-4389-8d4d-dcfd1410bebc"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Ahh, hang on, I haven't written\nanything in my journal yet!"
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "8fdd55f1-a3dd-4d37-8b28-7cb17554ee3e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "You really do have a\nprocrastinating streak, Eionn."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "0e099bc1-7323-4764-8118-2c27a17bce70"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Oof."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "c8794471-565d-46c8-9fa6-833462bdfd50"
+          }
+        ]
+      },
+      "id": "2659d6ce-b053-42ba-97c3-8e4cb89016f4"
+    }
+  ]
+}

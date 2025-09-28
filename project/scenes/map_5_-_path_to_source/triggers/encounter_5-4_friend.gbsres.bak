@@ -1,0 +1,175 @@
+{
+  "_resourceType": "trigger",
+  "id": "5e2ba484-e349-4ca9-8622-8d22e4fc0c67",
+  "_index": 11,
+  "symbol": "trigger_94",
+  "prefabId": "",
+  "name": "Encounter 5-4 Friend",
+  "x": 50,
+  "y": 41,
+  "width": 5,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "202",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "217"
+            },
+            "id": "f9461d19-1a5e-4158-8b5a-5eeec3e65900"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "d7d17ef3-fd96-4db5-89f7-e5afee73e390"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "d4ab0342-3294-45e4-ae14-207faa06ad1b"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "AAAH!",
+                "That big furry fox just jumped\nright on me!",
+                "Wait a minute..."
+              ],
+              "portraitType": "shy"
+            },
+            "id": "127f555b-ed5c-46df-a316-3a59e45d55bc"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "wait a minute.."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "05fa4987-272d-42eb-96db-aa427cadfd35"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Oh."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "ddc89cd9-0946-4c5e-826c-f3533af29643"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "its.."
+              ],
+              "portraitType": "shock"
+            },
+            "id": "bf1eb99c-453e-4db2-915b-1a52d12a84b2"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "Friend!!"
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "cb40a094-41ac-4395-ac65-6fbacbdf1329"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "hi friend :3"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "ea5abe5d-d176-41d7-b50c-974069e31d01"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "*nuzzles*"
+              ],
+              "avatarId": ""
+            },
+            "id": "3f9a8d8d-cfe2-479b-81c0-dade023c2f3f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "I'm glad they made it this\nfar out OK."
+              ],
+              "portraitType": "smile"
+            },
+            "id": "c5672902-3552-4bde-a177-a800df806b86"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "db1f90f4-b279-4fa6-abf3-a779a234cd2d"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "4d088b18-4695-4629-adea-8a83b22c1032"
+            },
+            "id": "ee505682-c75d-455f-bb9b-e0da21f0e88f"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "3df05de0-9b3a-4d4e-a26a-04e1fdb3c092"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "c028b415-a3a9-4607-89ba-0f6dd7822c0c"
+          }
+        ],
+        "false": []
+      },
+      "id": "6d967f62-e400-4629-bd6c-6e9037da00d4"
+    }
+  ],
+  "leaveScript": []
+}

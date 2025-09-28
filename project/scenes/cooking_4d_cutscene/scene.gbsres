@@ -1,0 +1,104 @@
+{
+  "_resourceType": "scene",
+  "id": "91eeda71-b9fe-49a2-9b6b-748a43331664",
+  "_index": 39,
+  "type": "TOPDOWN",
+  "name": "Cooking 4D Cutscene",
+  "symbol": "scene_44",
+  "labelColor": "red",
+  "x": 1352,
+  "y": 2704,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "593e01e0-3e56-4f8d-9c11-a961da86188d",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 2,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "55f5ca59-827b-43d1-9281-37d5e0a6f0c6",
+        "spriteStateId": "Spin"
+      },
+      "id": "b83ca670-6bb3-4ecc-bd97-7d5eaec4b59b"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "4d5c30ed-c64e-49ff-83f7-06341ba6c107"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "396cc8e4-439b-4212-bda4-9e1817cb7edd"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "55f5ca59-827b-43d1-9281-37d5e0a6f0c6",
+        "spriteStateId": ""
+      },
+      "id": "ae21eda9-37bd-46e5-809a-242f0b0b2e68"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "55f5ca59-827b-43d1-9281-37d5e0a6f0c6",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "e9fbfcae-1c98-4a1c-b54d-79d9f4b5d8a3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I immediately felt relieved,\nbut also like I'd failed\neveryone, and myself.",
+          "I was... down on myself for a\nlong time."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "612996fb-bd8e-41ef-b2b7-78efab11cdd1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "But since getting to know\nyou all, you've just accepted\nme for just being like this."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "8704b5e2-b08b-4d0a-9f55-9381f09a91db"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "67d4c609-fd13-4e34-af5e-122e9bb2aab2",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": 6
+      },
+      "id": "0c6ecaaf-e3c8-4e0f-9a17-85e87386e614"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

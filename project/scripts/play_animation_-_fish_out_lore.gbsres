@@ -1,0 +1,135 @@
+{
+  "_resourceType": "script",
+  "id": "dfa2e1bc-6cce-42f0-9aa2-bde3ace9fda1",
+  "name": "Play Animation - Fish Out Lore",
+  "symbol": "script_37",
+  "description": "",
+  "variables": {
+    "V1": {
+      "id": "V1",
+      "name": "Variable B",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Prompt"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "0",
+        "__comment": true
+      },
+      "id": "4390e6f9-ef77-49ee-88ca-e3dd690d3fb4"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "14ad93db-9c15-4bad-9a9f-e79b73a1514e",
+        "$actor[0]$": "0",
+        "__comment": true
+      },
+      "id": "5618c9f9-c952-4cd9-ac1d-a574702b89bc"
+    },
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "V1",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 4
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "2168eee5-871f-4e91-b2e4-6ad340f0133d",
+              "$actor[0]$": "6fe96bd9-c034-4906-b223-bbc340c739d1",
+              "__collapse": true,
+              "__comment": true
+            },
+            "id": "c8c2519b-b338-4d2b-a050-3bf226a6df20"
+          },
+          {
+            "command": "EVENT_AWAIT_INPUT",
+            "args": {
+              "input": [
+                "b"
+              ]
+            },
+            "id": "50be9e2e-ac23-4142-8971-139622c8645a"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+            "args": {
+              "actorId": "0",
+              "speed": 1,
+              "__collapse": false
+            },
+            "id": "8cfe81b6-6062-4ffc-bbde-845079748558"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "Button Shake",
+              "__collapse": false
+            },
+            "id": "b2fa1f8a-fc44-46c0-afac-7ab315738ee2"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.7,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "56ae375f-5e20-4ecd-9a09-35e2be2850ac"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": ""
+            },
+            "id": "cf73ed26-a8be-411c-923d-a4829fcfd79f"
+          }
+        ]
+      },
+      "id": "05c396b4-eaf4-473c-9efd-74df62f3bc92"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "021cc487-b39e-4a55-9a7c-a7cd72469007",
+        "$actor[0]$": "0",
+        "__comment": true
+      },
+      "id": "d3671fec-e32a-4a36-9e82-81e5b5bb2802"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "0",
+        "__comment": true
+      },
+      "id": "5a24ec71-39c1-47a8-bf24-c2d62df95524"
+    }
+  ]
+}

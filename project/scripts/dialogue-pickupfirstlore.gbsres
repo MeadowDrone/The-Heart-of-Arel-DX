@@ -1,0 +1,219 @@
+{
+  "_resourceType": "script",
+  "id": "8aaaf9dc-48cf-4d55-9025-ca3df9ed6dc1",
+  "name": "Dialogue-PickUpFirstLore",
+  "symbol": "script_60",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Eionn"
+    },
+    "1": {
+      "id": "1",
+      "name": "Eryr"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "95",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "be911316-f1b4-4591-99f9-6b0cfaf26dc2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Oh, I see it. That there is\ndefinitely one of your missing\npieces of alchemy lore."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "c7086fe4-3975-4f65-ba36-ad259fb6a3c2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Ummmm."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "3f3985c5-e9c3-47ed-9f99-7f171fd239ac"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I KNEW they were out here! I'm\ngonna make the best potions\nyou've ever seen!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "12d7f714-2558-45de-9ef9-b9c437b507f0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "but nobody's made a potion\nbefore! not in our lifetime, at\nleast"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "3c2ec258-0b8e-4efc-a2fe-e53030dd78cb"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "but I know you can do it, eionn £"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "bf1dcf46-259c-4766-a797-842fbd4dd9c1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "2b2db3b6-b0ab-4b3c-8c6e-17e770862cc7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "257eb6dd-de42-45bd-aa4e-fbeaede430ba"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "8729c979-e50b-45bf-ba45-9fd1f1bb7818"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "9a33f214-5345-4c6b-964e-43a6ddcc4cda"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Did you just pull out a piece of\npaper from the WATER? How is\nit... still...",
+          "paper?"
+        ],
+        "portraitType": "angry"
+      },
+      "id": "699aaf32-a084-47bb-ba3b-ec9f6fea35e8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Eryr, that's."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "9b38923e-403c-4917-9ccc-a61a17bc4897"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "... a very good question."
+        ],
+        "portraitType": "expressionless"
+      },
+      "id": "883fa081-ebbc-436b-ac19-0b4e6f728eb8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Read Paper",
+        "__collapse": false
+      },
+      "id": "49e67dbc-1d19-476f-a030-6d458dcf3ac8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Hm."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "fb1091af-58ce-444d-a2dd-10b685046fd7"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "d75da2d7-73ae-4d8d-a467-995e7a9bed73"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I wonder if it's imbued with an\nalchemical protection of some\nkind?"
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "7112d65a-0957-47dd-9f89-23f9e5336ad1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "",
+        "__collapse": false
+      },
+      "id": "188ed5d9-4a9f-49d7-bb3a-f139dcc314ab"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I wanna drink a potion that lets\nme be a piece of paper that can\nlive in water."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "afa605aa-f85a-4a68-a493-6587a4fb7369"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "honestly",
+          "same"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "31bc6579-d220-4fc2-a366-ed54dbdfa823"
+    }
+  ]
+}

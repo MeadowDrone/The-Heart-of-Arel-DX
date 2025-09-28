@@ -1,0 +1,139 @@
+{
+  "_resourceType": "scene",
+  "id": "2730aad3-1f80-4be6-a2d6-c89ae60d086a",
+  "_index": 66,
+  "type": "TOPDOWN",
+  "name": "Ending Part 1",
+  "symbol": "scene_71",
+  "x": 4920,
+  "y": 2688,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "66a52bad-85af-4f81-b9de-17c84f54d937",
+  "tilesetId": "",
+  "paletteIds": [
+    "b508b487-ac76-456f-93ba-143baf0bbc78",
+    "1cacd09a-fb9e-488b-bd46-7c39c5a718f8",
+    "a81a6478-8305-46a7-90b3-215b2848f942",
+    "ff5fb13a-7200-4e93-b4d3-9f09153704d5"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Sunlight!"
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "2766ddf0-a225-4c64-aa72-a90de998c8a6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "It's going to take a long\ntime to recover fully, but\nthe air already feels nicer."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "76b4ab13-9c53-4018-a033-779b141b3062"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "e58e4748-366d-4fd4-a40b-1f1391e884bb",
+        "__collapse": false
+      },
+      "id": "d5333c40-949f-44c6-9cbb-ba8a89eecdbe"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Back home we go."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "4a1ac083-4894-4dca-95e4-a28c14bdaa94"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "7a12fdc9-0078-474d-a9a5-5abac6344c49",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "f93fadbc-2b14-442b-a64b-bc4d616ee62c"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "f844e3a5-815b-439f-a868-3b0be7fa6067",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "9a00a937-4761-48dd-815c-10dc134b7b5e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "549314cb-6b94-418b-a88c-7418f1e379e2",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "60b74601-6e0c-4aaf-938c-73d6a975678e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "15d9df10-c6ba-45f9-92f3-7f475d5f42b4",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "d439ce35-5e08-4550-9f7d-ca8185a3a958"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

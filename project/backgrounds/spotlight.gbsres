@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "319bc5ca-f3c4-46b3-b341-c0abffab9890",
+  "name": "spotlight",
+  "symbol": "bg_blank_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "spotlight.png",
+  "tileColors": "00168+",
+  "autoColor": false
+}

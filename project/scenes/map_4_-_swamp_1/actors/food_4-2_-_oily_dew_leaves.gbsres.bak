@@ -1,0 +1,158 @@
+{
+  "_resourceType": "actor",
+  "id": "49c0ad0a-bd10-40ec-a8b4-20c6dd83bf11",
+  "_index": 1,
+  "symbol": "actor_27",
+  "prefabId": "",
+  "name": "Food 4-2 - Oily Dew Leaves",
+  "x": 11,
+  "y": 86,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "214",
+        "__collapse": true
+      },
+      "id": "c48054a0-b3e3-4a18-8974-f49d824c4817"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "135",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "2125a507-7f3c-4f5b-a009-04274e5f90e6"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle",
+        "__comment": false,
+        "__collapse": true
+      },
+      "id": "34ee436d-77cc-4834-9735-373f259631dd"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "8369696d-d9d1-4be9-9bc4-e18703a13fda"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Okay. Annoying as it was to get\nhere, these dew leaves are\ncovered in an especially rare",
+          "and umami oil."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "155be6c3-0516-46e9-b890-7a3e496b34cf"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "It... sure is dripping. Do you\nhave somewhere safe to stash\nthat?"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "f97369e1-0775-4065-82d4-1934b6ccb710"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Don't question the experts,\nEionn."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "2709c384-c877-4a36-a288-07624bf1aa52"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Forget I said anything."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "882c998d-34d3-469c-b990-f8fb49806913"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Wait, what's that?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "1d870c32-7027-4ad7-8db9-c1e2bc798caf"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "",
+        "__comment": false,
+        "__collapse": true
+      },
+      "id": "af038c5d-040d-452b-836a-82a59fe4a0f7"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "209cdc30-7f4d-44b0-a73c-5a18ca089379"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "135",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "135"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "aed7bb93-01e3-495e-b9fe-74ecb9454e90"
+          }
+        ],
+        "false": []
+      },
+      "id": "47e9a122-986b-45ee-b4bf-6fdbdb674cb6"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

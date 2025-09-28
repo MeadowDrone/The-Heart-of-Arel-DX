@@ -1,0 +1,48 @@
+{
+  "_resourceType": "script",
+  "id": "26402ccc-49e4-4a03-bce5-d196a363e6ea",
+  "name": "Alchemy - Still Knob Animation",
+  "symbol": "script_13",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Knob Left"
+    },
+    "1": {
+      "id": "1",
+      "name": "Knob Middle"
+    },
+    "2": {
+      "id": "2",
+      "name": "Knob Right"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": ""
+      },
+      "id": "00148c29-4807-440f-b38c-73d014477291"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1",
+        "spriteStateId": ""
+      },
+      "id": "0285d877-2705-437d-93f7-dfb0c4f8dd4a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "2",
+        "spriteStateId": ""
+      },
+      "id": "5d3555ff-a9cf-4dd7-a048-75547104bea6"
+    }
+  ]
+}

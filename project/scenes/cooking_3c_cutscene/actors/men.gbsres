@@ -1,0 +1,36 @@
+{
+  "_resourceType": "actor",
+  "id": "8dc9fd3c-68fe-4b96-b89a-7eb6e4c1afd0",
+  "_index": 2,
+  "symbol": "actor_154",
+  "prefabId": "",
+  "name": "Men",
+  "x": 14,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0a860628-2ea4-42a2-a490-c88cf0f93d3b",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Group of Three"
+      },
+      "id": "e3b0ce9c-3e1e-4b72-9004-7f44d3d56c03"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

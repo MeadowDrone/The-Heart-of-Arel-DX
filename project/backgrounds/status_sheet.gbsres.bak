@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d3af87f6-a731-42b9-9889-21d4c2a53a86",
+  "name": "status_sheet",
+  "symbol": "bg_blank_copy_1",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "status_sheet.png",
+  "tileColors": "0015+073+0011+073+0011+073+0035+073+0011+073+0011+076+0011+073+003f+073+008+073+006+073+008+073+006+073+0047+",
+  "autoColor": false
+}

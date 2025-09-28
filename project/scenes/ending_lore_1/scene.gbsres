@@ -1,0 +1,299 @@
+{
+  "_resourceType": "scene",
+  "id": "699ea239-5fb1-4a39-bcf9-dff4aef4e5f7",
+  "_index": 61,
+  "type": "TOPDOWN",
+  "name": "Ending Lore 1",
+  "symbol": "scene_65",
+  "x": 4603.563528050976,
+  "y": 1283.7855881896387,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "47394f67-e7e0-4a0a-9e1c-31ae8b049b8a",
+  "tilesetId": "",
+  "paletteIds": [
+    "ee2315bd-2be4-49ae-bec8-5cccbc00fd4a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "225",
+        "choices": 5,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "922fabfe-41d0-43b9-ae37-960b29226ce4",
+              "__collapse": false
+            },
+            "id": "d71ecebc-db50-433e-b62e-d088bb5f6309"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "922fabfe-41d0-43b9-ae37-960b29226ce4",
+              "__collapse": false
+            },
+            "id": "fd5ee712-34b2-40be-b2d1-ea44615a2efa"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "922fabfe-41d0-43b9-ae37-960b29226ce4"
+            },
+            "id": "e203b7b8-5704-4d49-868c-929069e10a6f"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "a18e4168-5e40-4382-8c8f-9f38b91c15ce"
+            },
+            "id": "bd36443d-1c64-465e-a356-e5b14d4386a3"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "e58e4748-366d-4fd4-a40b-1f1391e884bb"
+            },
+            "id": "2247b5a2-71db-4878-8380-2ce044721d8b"
+          }
+        ],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "f7e1d57e-1911-4bbb-9705-3db8bd8ba84a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Why does this feel so--"
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "47fab3c4-7a32-464e-b328-70f67c3fb30b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Eionn??"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "121513c6-a0ee-4e9c-8f53-8d52753b5eab"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I understand this!!"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "fff3052f-e38a-4944-a80d-4326127d4b96"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "what? how?? are you ok???"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "c6f38399-930a-452a-8ce5-a82a6c84748d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I don't know... and I think so?",
+          "I don't think I can *read* this,\nbut it I can sense a kind of\nmessage communicated directly",
+          "to me, internally."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "a045402d-e872-4a3d-bdd9-0133fa0cced0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "What do you think it's\ntelling you?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "db488a4d-eec8-4ca1-a30c-6c5c624a0ef3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "7826a713-73a7-4eee-951e-a45977e962ab"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-bg-2"
+      },
+      "id": "5c32e5e3-519d-4ed1-a093-c1803a09b991"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"In the distant past, the great Mount Arel\nrumbled with a terrible force, setting\nloose a Foulness, blanketing the lands.",
+          "Flora and Fauna alike were helpless as\nshe poisoned the minds and withered\naway the spirits of the forests.\""
+        ],
+        "avatarId": "",
+        "__section": "text"
+      },
+      "id": "befda815-f205-4437-8918-2ded7323bb1a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "329d11a3-0c92-47cf-bfb7-7e3b33f5ae75"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Mount Arel..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "2bd42f8b-cbfc-478d-baa7-3e5a30db2cc2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "225",
+        "operator": ">=",
+        "comparator": 2,
+        "__collapseElse": false,
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "225"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "65c4e529-3074-44f7-8d49-bac657ea8377",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 4
+            },
+            "id": "6928482a-aca9-4ae0-8aa1-7ef479e6ee0d"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "945d8b3e-66ce-45e7-bfcf-3b1546c10917",
+              "x": {
+                "type": "number",
+                "value": 35
+              },
+              "y": {
+                "type": "number",
+                "value": 107
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "16bad9a8-2f0f-4521-acc8-a1b77adf68d7"
+          }
+        ]
+      },
+      "id": "3d1f9871-e710-4e63-90d3-5aabb92dded2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

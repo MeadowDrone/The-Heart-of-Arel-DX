@@ -1,0 +1,356 @@
+{
+  "_resourceType": "trigger",
+  "id": "abbb1f9b-40df-4c44-8989-c5d3506bd2d7",
+  "_index": 2,
+  "symbol": "trigger_84",
+  "prefabId": "",
+  "name": "",
+  "x": 116,
+  "y": 70,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle",
+        "__collapse": true
+      },
+      "id": "2e77381b-804b-4c6a-a392-0ba8dcd1ae28"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "193",
+        "operator": "==",
+        "comparator": 5,
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "193"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 5
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 116
+              },
+              "y": {
+                "type": "number",
+                "value": 71
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "02683262-9897-41d6-a933-97db1a7ecf7e"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            },
+            "id": "b00c4f69-d8c9-42d0-9bdc-cbc1a566e20e"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "245",
+              "__collapseElse": true,
+              "__disableElse": true,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "245"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "245",
+                    "__collapse": true,
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "6f02e400-d78a-4625-b808-575f522ba464"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "__collapse": true,
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "0ea68f4b-520b-4250-95a2-6c51c5d97f4d"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "b0882f1b-e6ba-4a4e-aa55-103d3e44a7b7"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_AOBA",
+                  "args": {
+                    "__scriptTabs": "text",
+                    "text": [
+                      "The door just opened without\nmuch of a fuss."
+                    ],
+                    "nameTag": "ÜÝÞ",
+                    "nameX": 16,
+                    "avatarType": "large",
+                    "avatarId": "",
+                    "largeAvatar": "ÙÚÛ\néêë\nùúû",
+                    "avatarX": 2,
+                    "avatarY": 2,
+                    "avatarWidth": 4,
+                    "orientation": "left"
+                  },
+                  "id": "425ba731-cba6-4554-b8e2-6f50df0de2cf"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR",
+                  "args": {
+                    "__scriptTabs": "text",
+                    "text": [
+                      "It's a dark, echoey one... but\nthere's something on the other\nside there."
+                    ],
+                    "nameTag": "ÇÈÉ",
+                    "nameX": 16,
+                    "avatarType": "large",
+                    "avatarId": "",
+                    "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+                    "avatarX": 2,
+                    "avatarY": 2,
+                    "avatarWidth": 4,
+                    "orientation": "left"
+                  },
+                  "id": "27792190-2a05-43d3-862a-3b3bd0246ce5"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN",
+                  "args": {
+                    "__scriptTabs": "text",
+                    "text": [
+                      "Well, we've been through\nworse. Shall we?"
+                    ],
+                    "nameTag": "ÄÅÆ",
+                    "nameX": 16,
+                    "avatarType": "large",
+                    "avatarId": "",
+                    "largeAvatar": "あÑÒ\nàáâ\nðñò",
+                    "avatarX": 2,
+                    "avatarY": 2,
+                    "avatarWidth": 4,
+                    "orientation": "left"
+                  },
+                  "id": "20a41b74-1735-404a-b241-6fc6ba51d052"
+                }
+              ],
+              "false": []
+            },
+            "id": "e7e09727-7143-4d3e-a549-d76464242ad5"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1171d110-f536-4b98-b3d0-afe01fa3d9f6"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 107
+              },
+              "y": {
+                "type": "number",
+                "value": 71
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "f0eaefa0-4f9a-4265-affe-7a4af568d271"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ce0ea1c6-1791-419b-87b3-d9484e9e5eb1"
+            },
+            "id": "3ab95ed5-9e46-4bfb-b583-263834f1bc1d"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "986293b7-0fdc-4314-b92b-cbe0354a5c43",
+              "x": {
+                "type": "number",
+                "value": 25
+              },
+              "y": {
+                "type": "number",
+                "value": 21
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "31bad370-3130-462a-9f3a-48398844949c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 116
+              },
+              "y": {
+                "type": "number",
+                "value": 72
+              },
+              "moveType": "vertical",
+              "useCollisions": false
+            },
+            "id": "df05876b-61bc-4f72-a01f-4e18450e01c1"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            },
+            "id": "ad150e2b-dab5-4b63-b7a2-0dacabf2a586"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Argh... this thing is sealed\nshut..."
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "f57989f2-edc4-4150-9ca6-74f1b0ea43d6"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "its ok! we can find a way to\nopen it. it cant be too\ndifficult surely",
+                "i mean, just look at this\nincredibly obvious hint\non the wall here"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "aff65783-154d-487e-a387-af88a0f5dcba"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Mmm. Let's come back later."
+              ],
+              "nameTag": "ÜÝÞ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "ÙÚÛ\néêë\nùúû",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "386cb757-9616-4a1a-9b7c-60633a983710"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 118
+              },
+              "y": {
+                "type": "number",
+                "value": 72
+              },
+              "moveType": "vertical",
+              "useCollisions": false
+            },
+            "id": "ec9c78b0-adf4-4ad4-a436-90cfa276252c"
+          }
+        ]
+      },
+      "id": "3dc8c8bb-af1a-47af-b383-8f34c8e312b7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "",
+        "__collapse": true
+      },
+      "id": "e59d128d-b4cb-44ea-8fba-fcb3d3149ed3"
+    }
+  ],
+  "leaveScript": []
+}

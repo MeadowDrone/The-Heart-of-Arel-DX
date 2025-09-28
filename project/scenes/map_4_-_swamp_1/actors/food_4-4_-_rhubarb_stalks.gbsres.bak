@@ -1,0 +1,188 @@
+{
+  "_resourceType": "actor",
+  "id": "a32db851-2a22-4706-9cf6-e6e0c027b128",
+  "_index": 3,
+  "symbol": "actor_211",
+  "prefabId": "",
+  "name": "Food 4-4 - Rhubarb Stalks",
+  "x": 108,
+  "y": 93,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "214"
+      },
+      "id": "46e8341d-5d59-4152-a68b-ac5ba486d9bb"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "184",
+        "__collapse": false,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "26c8b344-c855-427c-9fc1-1cc4cb96372c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "c872472f-b8fe-445a-8073-1d12250b222e"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "a7017775-6142-437a-97b4-f8df5d10c5f5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "oh YES",
+          "i love rhubarb so much",
+          "give it to me!!!"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "d7f27792-593d-480a-8bbd-f1a8cc46a956"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Uh, Harthe? Are you\nokay?!"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "4a06d377-fa1e-4b9a-86c7-9fdca38e902d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "sorry",
+          "i have a problem.. a\nrhubarb problem.",
+          "i never told you."
+        ],
+        "portraitType": "struggle"
+      },
+      "id": "7cfc7aad-2c79-4e20-9a3c-ed96873b801c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I mean, it's okay, Harthe.\nHappens to all of us. But..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "9bf745e1-4951-4599-beae-6e32552f4140"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "... rhubarb?"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "7401a5ec-3dce-4dd1-8398-3ab725b9a783"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "look i know okay",
+          "if you all shut up about it\nnow ill give you extra long\ncuddles later"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "8f8908b0-5a42-4391-b3dc-57149d1aa213"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I-- okay, let's go."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "5a945ead-44b4-466b-9ad9-90402e8c951c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "I-- sure, let's go."
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "あÑÒ\nàáâ\nðñò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "ca71a0cb-2b03-4653-95f3-95fcfb4c8070"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "ec6421fb-be1d-41d3-93d0-09066c9ead69"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "184",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "184"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "19b767eb-a154-41a3-954a-fc8e7300df86"
+          }
+        ],
+        "false": []
+      },
+      "id": "8ad250fa-1900-4d6b-a84b-7d92aac0f022"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,230 @@
+{
+  "_resourceType": "trigger",
+  "id": "a1edfbcc-ce82-444f-bf84-5eb0f347a4b0",
+  "_index": 4,
+  "symbol": "trigger_24",
+  "prefabId": "",
+  "name": "Encounter 2-2",
+  "x": 41,
+  "y": 45,
+  "width": 1,
+  "height": 21,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "80",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "80"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "212"
+            },
+            "id": "0ba0126b-1a7a-44af-aefc-2a63ab37318f"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "2e112b7d-df64-4b6e-b151-f064b19779b8"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Scared away an angry goose!"
+              ],
+              "avatarId": ""
+            },
+            "id": "5c84f60e-4ce7-48fc-8050-3fdb04043a70"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "4ccc42ca-e3a9-445d-9a82-6e2b7770cf87"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "*sigh*"
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "856831ea-e19b-4c3b-ba32-a0c69c76a74b"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "831af2ee-b9e1-442a-98fd-69823d4ecd0c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Really???"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "0f6f4189-ff32-4b77-8c85-a533331ce856"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "22",
+              "__collapseElse": true,
+              "__disableElse": true,
+              "condition": {
+                "type": "variable",
+                "value": "22"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "variable": "30",
+                    "__collapseElse": true,
+                    "__disableElse": true,
+                    "__collapse": false,
+                    "condition": {
+                      "type": "variable",
+                      "value": "30"
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                        "args": {
+                          "text": [
+                            "waaaaaah"
+                          ],
+                          "portraitType": "shock"
+                        },
+                        "id": "2422fb55-f12f-4236-9382-72f0be93042e"
+                      },
+                      {
+                        "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                        "args": {
+                          "text": [
+                            "im sorry, aoba..",
+                            "i think you might need to give\nthose eggs back"
+                          ],
+                          "portraitType": "struggle"
+                        },
+                        "id": "104158d2-d401-426a-aad4-e12e2b769958"
+                      },
+                      {
+                        "command": "EVENT_DIALOGUE_AOBA_NEW",
+                        "args": {
+                          "text": [
+                            "But..."
+                          ],
+                          "portraitType": "normal"
+                        },
+                        "id": "7e98cf9c-da62-4c3a-96fb-8d765385f45e"
+                      },
+                      {
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "time": 1,
+                          "frames": 30
+                        },
+                        "id": "3ed13b1b-7133-4c5e-aa8c-fcf9e768fd75"
+                      },
+                      {
+                        "command": "EVENT_DIALOGUE_AOBA_NEW",
+                        "args": {
+                          "text": [
+                            "*sigh*"
+                          ],
+                          "portraitType": "expressionless"
+                        },
+                        "id": "a0bbafff-a13f-4607-8c43-d3960e4adef5"
+                      },
+                      {
+                        "command": "EVENT_DIALOGUE_AOBA_NEW",
+                        "args": {
+                          "text": [
+                            "Here you go. For the love of\neverything, leave us alone."
+                          ],
+                          "portraitType": "normal"
+                        },
+                        "id": "c2b3c8e0-7553-4339-9c69-c7f9f496507a"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "*honk*"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "e1000a68-3c27-47c3-bb9d-9327ec9b766e"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "9547058f-fec6-44a5-8c52-03054fbc429d"
+                }
+              ],
+              "false": []
+            },
+            "id": "1c8be5ea-4bc4-4ef0-8b10-663e1daa6128"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "80",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "609524c5-0d7b-4d77-8a6c-198ad466c3ab"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "a8560cf9-b307-42f8-b622-1efc7567a346"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd"
+            },
+            "id": "8f78544b-0171-4feb-a8b6-d20d615b2d3c"
+          }
+        ],
+        "false": []
+      },
+      "id": "73b02221-fc25-48fe-b9ab-51317b575176"
+    }
+  ],
+  "leaveScript": []
+}

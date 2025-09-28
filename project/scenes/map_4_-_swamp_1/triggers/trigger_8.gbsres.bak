@@ -1,0 +1,53 @@
+{
+  "_resourceType": "trigger",
+  "id": "38dd457a-2a3e-4b42-bf7b-0f237861eed4",
+  "_index": 14,
+  "symbol": "trigger_51",
+  "prefabId": "",
+  "name": "",
+  "x": 70,
+  "y": 82,
+  "width": 3,
+  "height": 8,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "In Water"
+      },
+      "id": "091afc48-8370-4374-97cd-d1323ce40958"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "f3472f3b-80d1-487f-9630-fea5b2b67b60"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "9526bd72-ad71-4a11-b60b-7068b48f0acc"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "81007107-414c-4475-a628-dd781c74e5e2"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "_resourceType": "scene",
+  "id": "941a3da6-6d26-4025-8b77-ce7d44b73b7d",
+  "_index": 35,
+  "type": "TOPDOWN",
+  "name": "Cooking 3D Cutscene",
+  "symbol": "scene_40",
+  "labelColor": "red",
+  "x": 352,
+  "y": 2664,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "593e01e0-3e56-4f8d-9c11-a961da86188d",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 4,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "35036014-4f36-4a78-97b5-71b6755f038d",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 19
+        }
+      },
+      "id": "a341f07f-6583-46c3-8ad2-7107cb4821b0"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "2b755cf6-d68a-4923-933c-b9af4bfe00c1"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "a1717e6a-ac39-4b3b-b731-34e4571185ea",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "36810347-544b-45eb-a7f3-0ae4721032c2"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "f9a12fca-725d-4572-9356-1f83c7aa9d6a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "a1717e6a-ac39-4b3b-b731-34e4571185ea",
+        "spriteStateId": "Singing"
+      },
+      "id": "199bce00-74b9-4674-9043-fea3b3431904"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "12a0300d-1309-4f68-83cc-4e14eb7f52c2"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "35036014-4f36-4a78-97b5-71b6755f038d",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "5dca7097-854d-4c85-8d44-6757bc89dcfd"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "5951ed4d-2d43-4224-ae8f-054c9a959166"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "35036014-4f36-4a78-97b5-71b6755f038d",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "011e8cff-ebf5-4850-9746-1656717b1ab1"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "d82e3c03-6a43-4143-9861-93ec9c77ec4a"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "35036014-4f36-4a78-97b5-71b6755f038d",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "b43a4b85-c484-4a64-9b98-0b30c486d97f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "35036014-4f36-4a78-97b5-71b6755f038d",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "bb6c7b8b-2144-4b24-a9a3-ba0c2c56c6ca"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "37fe2765-27d1-4bcf-933b-47077af7508d"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "35036014-4f36-4a78-97b5-71b6755f038d",
+        "emoteId": "8fc2352b-ff55-45ee-8603-25d1315cee19"
+      },
+      "id": "223465f3-60fb-402c-a8f0-5a87297f6c24"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "325146e0-4c54-4df9-a9dd-ec0805e47a74"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "eb071970-344a-4f1d-89bd-fe3564161f93",
+        "$actor[926e8ed8-2738-46fd-9b0e-082da61dcef3]$": "35036014-4f36-4a78-97b5-71b6755f038d",
+        "$actor[0]$": "35036014-4f36-4a78-97b5-71b6755f038d"
+      },
+      "id": "04b384b9-433b-4fbc-b96c-0629cef8efec"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "bf2ae54d-3eaa-4236-a782-e306e0088500"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "And so the day we met... the\nday we properly met, I just\nhad a feeling inside me that",
+          "made me feel whole within\nmyself. Making a connection\nwith nature that I'd been",
+          "yearning for my whole life.\nAnd well, I guess it kinda\nset the tone for the rest",
+          "of my life."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "36e5eda2-144a-4377-99a8-f952ae8d7c26"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "e6260948-5616-43f8-954f-d28b58313a48",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "bdd5d850-1452-4d87-a752-edf405d08310"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

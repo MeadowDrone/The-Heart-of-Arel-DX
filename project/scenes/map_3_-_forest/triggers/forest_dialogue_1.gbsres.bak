@@ -1,0 +1,134 @@
+{
+  "_resourceType": "trigger",
+  "id": "723049e7-047c-48af-8721-df14f3d85df0",
+  "_index": 1,
+  "symbol": "trigger_40",
+  "prefabId": "",
+  "name": "Forest Dialogue 1",
+  "x": 26,
+  "y": 97,
+  "width": 2,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "185",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "185"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "185",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "a4c86805-3c21-4e2b-99c9-3e4c2e9d7779"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Idle"
+            },
+            "id": "30589a7d-94b7-4074-914c-c6503663c918"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "spooks"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "9b030fd6-de3b-48b5-97a1-84f00e057704"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "spooks"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "2f26316f-3c6e-47c3-8c70-bbe8f8ca12a5"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "It's not spooks. It's just a\nnice little woodland."
+              ],
+              "nameTag": "ÇÈÉ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "03f62f50-d17b-4754-adb7-7dfd89e06a43"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "mmm i dunno",
+                "feelin kinda spooks"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "d9f7ca65-63e5-4fd2-a873-f09004e039d2"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "1e2b21cc-b67c-4e8c-b12b-3895578dfe8d"
+          }
+        ],
+        "false": []
+      },
+      "id": "543658a2-961b-485b-a447-18f8be2f1b1c"
+    }
+  ],
+  "leaveScript": []
+}

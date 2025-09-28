@@ -1,0 +1,15 @@
+{
+  "_resourceType": "font",
+  "id": "9d090742-f097-4842-bfc8-480d8070c213",
+  "name": "Eryr Dialogue",
+  "symbol": "font_eryr_dialogue",
+  "width": 128,
+  "height": 112,
+  "filename": "font-eryr.png",
+  "mapping": {
+    "﹩": 36,
+    "あ": 208,
+    "お": 227,
+    "え": 228
+  }
+}

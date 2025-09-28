@@ -1,0 +1,253 @@
+{
+  "_resourceType": "scene",
+  "id": "42fc2bc1-ba0a-4dd0-b0a8-3d210e07f9e0",
+  "_index": 53,
+  "type": "TOPDOWN",
+  "name": "Lore Reverse - Empty",
+  "symbol": "scene_57",
+  "labelColor": "gray",
+  "x": 863.5960002918877,
+  "y": 484.5812541506858,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "b79db68b-4ae6-49a5-83b0-128c89ac19f8",
+  "tilesetId": "",
+  "paletteIds": [
+    "ee2315bd-2be4-49ae-bec8-5cccbc00fd4a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "221",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "221"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "221",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "3f446002-5c02-44f6-ae98-72201f145ea2"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Nor what these markings on\nthe other side of it are\nsupposed to mean."
+              ],
+              "portraitType": "pensive"
+            },
+            "id": "2dbc5d05-cffe-495a-a056-6cd0bd465e1e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "ngl",
+                "this does not make a lot of\nsense to me"
+              ],
+              "portraitType": "blush"
+            },
+            "id": "bbfa0f0f-7a80-4a2f-907b-e0484beea718"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "ngl",
+                "this does not make a lot of\nsense to me"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "d5b24f99-294b-4634-98af-f876be0f868c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Let's just keep it close by,\nI'm sure that noggin of yours\nwill figure it out as we go."
+              ],
+              "nameTag": "ÇÈÉ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "f8f30035-8293-474f-8c77-dde79f6cadb1"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "I hope I can figure it out..."
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "7790e402-c19a-4b3e-9ec9-3fc846bfd7e4"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "0b08bfcd-3682-4a2c-8063-ffc86794c4ad",
+              "x": {
+                "type": "number",
+                "value": 20
+              },
+              "y": {
+                "type": "number",
+                "value": 124
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "c76c89bb-ed86-4c8c-aa9a-66c4dd1c9c81"
+          }
+        ],
+        "false": []
+      },
+      "id": "2d70e4dc-5d50-4642-ae75-a9dfd34e39c7"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left",
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "7c234924-dd3e-4151-be3c-f5b2462b7ae1",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "77562201-3816-4a98-b951-93b3e1f486da"
+          }
+        ]
+      },
+      "id": "00159ed3-779a-4886-9187-b2611154306d"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "a",
+          "start",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "208",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "208"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "e7bd5b85-406d-4f2b-958a-7d3b29becf47"
+                  },
+                  "id": "de9e42c3-9f98-4034-89e7-18334c1e2b1b"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "9bc1ea3f-68be-4e6e-b7db-fb512b67bdf0",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "4296ee0a-ad43-4179-a609-d048bf440c7a"
+                }
+              ]
+            },
+            "id": "0d9fff77-9159-4ebe-8932-7e1d08affea5"
+          }
+        ]
+      },
+      "id": "a8bf8528-6443-44ef-a285-977288644dda"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

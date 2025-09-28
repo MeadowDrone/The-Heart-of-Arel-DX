@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "dc5a410d-f876-4bf1-a242-4255dcd51be8",
+  "_index": 1,
+  "symbol": "actor_75",
+  "prefabId": "",
+  "name": "Aoba",
+  "x": 7,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "542b3299-862f-4232-bfb7-abcf13f289e2",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "bd4a23d1-8785-49c2-8ca1-b6ee843d4715"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

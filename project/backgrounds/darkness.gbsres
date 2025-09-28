@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "81d27fd3-dae5-441f-8cbb-c030b1d6cb09",
+  "name": "darkness",
+  "symbol": "bg_blank_copy_0",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "darkness.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,51 @@
+{
+  "_resourceType": "trigger",
+  "id": "e1ef89bf-270e-4fa2-91b0-877fef64027f",
+  "_index": 11,
+  "symbol": "trigger_41",
+  "prefabId": "",
+  "name": "Move to Map 4",
+  "x": 82,
+  "y": 126,
+  "width": 42,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "104",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "a71d9bf4-de65-4fd4-9dfc-6a635e9417e6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ce0ea1c6-1791-419b-87b3-d9484e9e5eb1"
+      },
+      "id": "2bbfa4e7-cafa-4c59-bec9-7c3e52613f2d"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "cf9ea9a3-fb44-404c-9c25-b6926bd055eb",
+        "x": {
+          "type": "number",
+          "value": 30
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__comment": false
+      },
+      "id": "090cfd4a-e17b-44cb-a9cc-0b6e87369ff8"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,53 @@
+{
+  "_resourceType": "trigger",
+  "id": "3f98f1c3-fe37-4ef1-b9bf-411e648353d4",
+  "_index": 6,
+  "symbol": "trigger_53",
+  "prefabId": "",
+  "name": "Enter Swamp",
+  "x": 37,
+  "y": 116,
+  "width": 6,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "In Water"
+      },
+      "id": "7162e12e-34d6-4827-b8b8-3bf84be38659"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "9625ca43-b5b1-4fd4-949b-98b059d797bc"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "65bb6f73-de4a-4186-bba9-d926b57ba504"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "c3c22a71-ed8d-462a-b494-3c584179cd76"
+    }
+  ]
+}

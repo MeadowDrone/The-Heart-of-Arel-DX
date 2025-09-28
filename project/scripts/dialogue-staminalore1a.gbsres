@@ -1,0 +1,129 @@
+{
+  "_resourceType": "script",
+  "id": "fa93e157-2cb4-48ce-ad3c-6ac45b219351",
+  "name": "Dialogue-StaminaLore1A",
+  "symbol": "script_5",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Eionn"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Hey, is... there something\ndown there?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "668ec050-3506-4eab-b6a4-56910b606289"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Probably a boot or\nsomething?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "7d9b8ef4-6b65-43b0-8f20-1ba61b8463d7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "a01faf80-0a36-4f36-8cd2-c0ae3aca5eff"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I don't know why, but it feels\nsignificant."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "2931cc7a-9148-4852-8784-651640a78501"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "2384c274-1854-43ac-a2af-916a5744fdd0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": false
+      },
+      "id": "f99be80f-6097-42d6-8dd4-399aaca7b250"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I--"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "c1eab662-5ca5-4fb9-9abe-d619ece19960"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "you gotta find out."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "aca08a25-cb61-416d-b312-fe265b63576d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Come on! Like. I can't just ignore\nit, right?"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "ad58b13b-bd28-4611-9300-d47291070791"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Significant! Your words."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "f170a06b-b15a-4e9f-9732-8d94332669f1"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "See? You get me, Eryr. Well,\nhere goes nothing."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "23c6883e-95b6-479b-ac90-ff751495395a"
+    }
+  ]
+}

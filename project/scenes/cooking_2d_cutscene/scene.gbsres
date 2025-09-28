@@ -1,0 +1,272 @@
+{
+  "_resourceType": "scene",
+  "id": "96cef5bc-d10a-484d-aa81-bc62f29b722e",
+  "_index": 31,
+  "type": "TOPDOWN",
+  "name": "Cooking 2D Cutscene",
+  "symbol": "scene_36",
+  "labelColor": "red",
+  "x": 1032,
+  "y": 2088,
+  "width": 80,
+  "height": 18,
+  "backgroundId": "41e02d97-88eb-4a31-a700-efa0125b1b15",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "60c36bbc-0f91-4c83-a16f-a44b35e17fec",
+    "b55d841d-cab9-4ef2-b879-b446acfc99ce",
+    "5bd03c58-55c3-4920-ac47-c3fc3398dd09",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "92dab46c-dc33-4354-aa4e-cb70ba2c6a11",
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "1d5e87f9-41d5-4e41-ab99-b034ad8da07a"
+  ],
+  "autoFadeSpeed": null,
+  "autoFadeEventCollapse": false,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1292b9c-0797-4b9a-9c40-4a1d143dbd3a"
+      },
+      "id": "7ccc30b2-059e-4953-8070-d4b8982df8e5"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bf69484f-3c14-4d85-905b-632a93eea47d",
+        "__comment": true
+      },
+      "id": "74c06dea-d664-4c5b-9533-60fa9e010a40"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 4
+      },
+      "id": "a5f215d6-66b2-44a4-934f-1746b3bbb75e"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player",
+        "__collapse": true
+      },
+      "id": "f632131e-cfd7-445a-b458-e01d08ff66b5"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "533b93e8-ae7f-464e-bcbf-4ee480acb4aa"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "in fact, the more i began to\nrealise this, the more people\ni saw around me who don't get",
+          "that, because they're shy or\nafraid, or just don't realise\nit's something we all need"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "fd21355f-adcd-414d-93cd-16dc0f84950d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "or maybe they just never got\nthe chance to make those\nconnections"
+        ],
+        "portraitType": "struggle"
+      },
+      "id": "f52dbb54-b105-4918-be41-1f8f46c33b0e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "so i kind of fell into trying\nto set it right. ",
+          "plus, i just wanted more\ncuddles in my life ^^;",
+          "i just kinda became someone\nwho loves to touch, and hug,\nand give headpats, and cuddle"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "bb139733-0148-4f5a-b200-b526c4260ef9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "not to mention encourage and\nlift up and highlight the\ngood in people's hearts"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "1a86c82d-f68f-4679-bff7-ca09ccb2aeac"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "and.."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "a8323487-13bb-4981-b3dd-b67f10693c0b"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "and..."
+        ],
+        "portraitType": "struggle"
+      },
+      "id": "8a6513be-3b1d-47d4-97f4-bb4236d5e7ef"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "27cb5513-211a-44e4-8283-c13760b2c550"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "ed5fab58-72e7-42f5-91de-7a96bb64ff83",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "1417e768-b0bd-40a9-83ab-a2488fc4b347"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "ed5fab58-72e7-42f5-91de-7a96bb64ff83",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "17d543ca-02e4-44a4-97bf-61ea6b7abc1e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1f705787-f0ee-472e-bf5d-008ce0a02a1b",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "90eba68d-b1a1-4cf9-88e2-e081696e10a0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "ed5fab58-72e7-42f5-91de-7a96bb64ff83",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "8ad6aa2c-1b9b-4db9-9ed1-ed0031ec7580"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "You are such a sweetheart.",
+          "Come here."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "c70f9def-f1da-4222-a41d-aec4cae05a83"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "ed5fab58-72e7-42f5-91de-7a96bb64ff83",
+        "speed": 127
+      },
+      "id": "68c5cf61-b500-42b3-bfc1-ce3d15f1bf8c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "ed5fab58-72e7-42f5-91de-7a96bb64ff83",
+        "spriteStateId": "Giving Headpats"
+      },
+      "id": "01a0dbcc-87a9-4993-ba24-09ed3c1bc271"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1f705787-f0ee-472e-bf5d-008ce0a02a1b",
+        "spriteStateId": "Affection"
+      },
+      "id": "9c1a27f4-52c7-4752-a14f-9c718002b6ba"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "d36c1ac9-b019-4793-aee5-28c09144c7e0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "*sniff*",
+          "thank you, honey bee"
+        ],
+        "portraitType": "struggle"
+      },
+      "id": "ad33a78a-476c-4e48-b7dd-5ad982b6ca77"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "5efe3023-7029-4bab-a741-7adad399fad1"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "b822cc59-6436-4c65-9994-72a6213a8357",
+        "__collapse": false
+      },
+      "id": "86a7a86a-357d-4284-a488-7a8f907e62d4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005a0+"
+}

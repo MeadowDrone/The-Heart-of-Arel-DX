@@ -1,0 +1,25 @@
+{
+  "_resourceType": "trigger",
+  "id": "672b9250-9d26-4d53-8068-fa0f6809028c",
+  "_index": 0,
+  "symbol": "trigger_11",
+  "prefabId": "",
+  "name": "",
+  "x": 7,
+  "y": 3,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 4,
+        "units": "frames"
+      },
+      "id": "43b72f11-b840-4a38-acc2-2bc78c5931b7"
+    }
+  ],
+  "leaveScript": []
+}

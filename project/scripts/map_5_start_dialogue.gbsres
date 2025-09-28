@@ -1,0 +1,124 @@
+{
+  "_resourceType": "script",
+  "id": "5c3b86ec-48ef-4e3d-af13-924a66cbeaca",
+  "name": "Map 5 Start Dialogue",
+  "symbol": "script_90",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Whoa."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "232acb11-7fe7-450f-89b8-3e9a7bf1f433"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "soooo high",
+          "we're really going all the\nway up there??"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "0274896b-809d-426e-bb3a-15bd35d74aeb"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "That's the way!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "c5d34d83-43cc-46ea-8708-81cfb3a56982"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "well it turns out\nmountains are like, really\ntall and stuff"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "ac626ffe-fbe8-4716-9e4a-dcc7b4210736"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "If I could ask it nicely to\ncome down and meet us half\nway, I would.",
+          "Alas..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "b8d98965-0f12-4529-862e-64119c46b4db"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "At least we know we're close.\nThe air feels really pungent,\nand I don't see much edible",
+          "food around."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "d40cd412-7648-44e8-a620-70bb35cd6698"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I'll go scavenge and rummage\naround so you don't have to,\nAoba."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "452caa14-f61c-4338-aa6c-e7a31b5323d2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Such a sweet thing."
+        ],
+        "portraitType": "smile"
+      },
+      "id": "9661c995-7c0b-4b4d-9e3b-86d1876ccdaf"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I--"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "a54c48bc-85d7-41d5-9a8f-1851f8ee7160"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Yes ma'am, I sure am."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "0ee84ea4-38ab-40c3-8e26-61747303b162"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Onward and upward!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "f2bb1bf8-809d-4565-90e4-49837d392876"
+    }
+  ]
+}

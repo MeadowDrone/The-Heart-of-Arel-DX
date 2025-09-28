@@ -1,0 +1,78 @@
+{
+  "_resourceType": "script",
+  "id": "0bf47e0c-46ee-41ed-a0d3-e8349a35fd62",
+  "name": "Alchemy - Brew Climb Dialogue",
+  "symbol": "script_63",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Hmm... an interesting tasting\npotion, but I don't know if I\nfeel any different..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "9340191c-7dde-461f-8bd7-82d39a7e6cf5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I do! I'm sticky!"
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "6cae6df2-6df3-4536-85a5-b09f82e6f8ea"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "sticky eryr"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "8d2d596a-b493-42a9-8bed-cde8004802db"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I mean, I wanna climb up some\nwalls! Do you feel it too? "
+        ],
+        "portraitType": "normal"
+      },
+      "id": "d3a43313-5c8f-4ba8-9941-fa51e9050660"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Oh, I do! This will help us\nget to the source easily!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "49b0e655-afe4-4630-8878-725ee929c699"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "c8a69661-8dbb-4e09-b188-9c2aaaa33b2d"
+      },
+      "id": "7977fb53-6739-40e9-b8aa-f92069e3aa27"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You got the CLIMB ability! You're able to\nget up steep walls and scale mountains!"
+        ],
+        "avatarId": ""
+      },
+      "id": "41d46383-8470-47d1-acd8-32d7315a2d2c"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "_resourceType": "scene",
+  "id": "84940f90-a421-4ce2-8769-696c20706029",
+  "_index": 64,
+  "type": "TOPDOWN",
+  "name": "Ending Lore 4",
+  "symbol": "scene_68",
+  "x": 4600,
+  "y": 1912,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7ee010f0-8336-49a5-a139-642a608e86d2",
+  "tilesetId": "",
+  "paletteIds": [
+    "ee2315bd-2be4-49ae-bec8-5cccbc00fd4a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"To our own harm, we wilfully entered\nthe blighted lands. We researched the\nqualities of the Foulness itself, and",
+          "only through dedication, perseverance\nand sacrifice were we able to conjure\npowers far beyond human capabilities.\""
+        ],
+        "avatarId": ""
+      },
+      "id": "0dd2d739-1f1b-4233-9e3b-bd5330a95cc8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "169a158e-9cb5-4643-9065-e3dc57135b84"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "225",
+        "operator": ">=",
+        "comparator": 5,
+        "__collapseElse": false,
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "225"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 5
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "80a4120f-c06e-4b8a-b5b0-65a65c6fff3c",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 4
+            },
+            "id": "ed900742-94e5-4218-b0f1-bbe3215107e3"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "945d8b3e-66ce-45e7-bfcf-3b1546c10917",
+              "x": {
+                "type": "number",
+                "value": 35
+              },
+              "y": {
+                "type": "number",
+                "value": 107
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "3d3ba095-9419-4336-8ae8-d67546acda47"
+          }
+        ]
+      },
+      "id": "978ca42b-c3b9-4cf1-808f-5bd0eaa1b8d8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

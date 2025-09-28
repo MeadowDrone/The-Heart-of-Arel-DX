@@ -1,0 +1,43 @@
+{
+  "_resourceType": "script",
+  "id": "07663e9e-f870-4b1d-aa83-ae1413b1a18b",
+  "name": "Press Headpat Up",
+  "symbol": "script_36",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Headpat Giver"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Giving Headpats Up",
+        "__collapse": false
+      },
+      "id": "bfcffa5b-e9c5-4aef-bd55-4343991def7d"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "113b95d6-ea1f-49bd-ad1d-471223a2f641"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "Giving Headpats Still High",
+        "__collapse": false
+      },
+      "id": "91495665-a9dc-4485-b982-5985639fcec1"
+    }
+  ]
+}

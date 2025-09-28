@@ -1,0 +1,292 @@
+{
+  "_resourceType": "scene",
+  "id": "9eff3feb-751c-4bed-9524-dbdf9e3ea3bd",
+  "_index": 10,
+  "type": "TOPDOWN",
+  "name": "Miasma Res 3",
+  "symbol": "scene_12",
+  "labelColor": "orange",
+  "x": 2344,
+  "y": 2536,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "218bba71-e49a-4c41-8034-8728f156766f",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "5b573c0d-4b4f-4b75-91c8-9e0a809f5ab8",
+    "a325b3db-653e-4b28-a9d0-68d953430d82",
+    "c67e6087-96ac-4f9f-baad-0544401ed375",
+    "ff5fb13a-7200-4e93-b4d3-9f09153704d5"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "46bde555-e9fd-4905-993e-a5903ed8e9b4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I knew there'd be another one\nhere!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "81b34c5e-b9f6-4c3b-96fa-7324796d2809"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "3112f440-4942-478a-b2de-d426fcd7a92a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "speed": 127,
+        "__collapse": true
+      },
+      "id": "d522df70-133e-4a8c-b0ab-7af198c00572"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "spriteStateId": "In Water Pulling",
+        "__collapse": false
+      },
+      "id": "8a3f9136-5fcc-4e7e-a493-d95148abcd63"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "1dcf4b4b-3d44-4b3e-95e3-abb90798e1d9",
+        "__collapse": true
+      },
+      "id": "6cfd033d-a467-4a69-8053-c9ec60fd8b2a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "597516a5-ee79-4c3c-acd9-22eec61250aa",
+        "$actor[0]$": "1dcf4b4b-3d44-4b3e-95e3-abb90798e1d9"
+      },
+      "id": "c0d76f1f-32cc-4d7e-8ac7-fd9cd9a4cbae"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 22
+      },
+      "id": "e72f9800-57b9-4d53-a41b-ee376d879f37"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "speed": 15,
+        "__collapse": true
+      },
+      "id": "f47b3c16-309e-486c-9136-d5ea5ad52728"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "spriteStateId": "Success",
+        "__collapse": true
+      },
+      "id": "82c52004-de92-4d2b-875c-b2759ddd769b"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "eb2eac79-0973-448b-806d-64df9b11dcef"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": true
+      },
+      "id": "3cfbd486-8ab8-462a-9bb0-308adbc25d92"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "36b5909d-2763-4386-b393-27a11d2c3180"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "go eionn!! you got it!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "359a3ee6-1cee-46c3-b20b-03819ae839f3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "spriteStateId": "",
+        "__collapse": true
+      },
+      "id": "2fb86554-3018-430a-beb0-ca43628acae1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "spriteStateId": "Read Paper"
+      },
+      "id": "d321dc65-83c5-4598-9d37-7a3dbb7eb67d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I sure did! I wonder how this\nlore actually fits together..."
+        ],
+        "portraitType": "happy"
+      },
+      "id": "2b559e38-7230-4266-b776-6a2e585e2b69"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "50c16486-ca60-48aa-af70-d69c086b2ca4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "It looks like you'll need to do\nsome shuffling around. But I\nknow that amazing scholarly",
+          "mind of yours will be able to\nfigure it all out."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "31d38ede-c20e-4f98-be2b-79f4a74f94a8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "spriteStateId": ""
+      },
+      "id": "443ad413-aa02-44b7-a5e6-ff021d2ed92d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "5ed4a9e1-d46f-47dc-a3b4-92c8288be4e5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Oh... thanks, Aoba."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "4a936282-00fa-4879-b263-b13ba0809bce"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1d443837-e4c1-4e99-85b0-fc4f20b0b0c0",
+        "spriteStateId": "Read Paper"
+      },
+      "id": "c07ed3c3-4f71-4c3c-bbf1-d759769a6fcb"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "f2230f20-a037-4f70-abd3-cb05bc9e7a40"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "df7f6a70-d9f5-404d-ab5b-221558f66643",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "828b6cbd-2214-488c-bbac-de8534ae9921"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

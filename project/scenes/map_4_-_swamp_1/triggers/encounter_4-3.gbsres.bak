@@ -1,0 +1,176 @@
+{
+  "_resourceType": "trigger",
+  "id": "5c5a5c17-6997-4c55-9a32-a27595b44c77",
+  "_index": 0,
+  "symbol": "trigger_44",
+  "prefabId": "",
+  "name": "Encounter 4-3",
+  "x": 24,
+  "y": 56,
+  "width": 14,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "118",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "118"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "220"
+            },
+            "id": "1e198fb3-059e-4390-8ea1-68b6ba816a67"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "118",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "9ea6c276-50fa-4839-80f1-a5b7c20ec925"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "29a35657-10f5-4808-8bbc-894f2ea757eb"
+            },
+            "id": "0d74dd2e-8b23-40dd-805f-0c79aa78c4a7"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Attacked from above by a circling\nbird of prey!",
+                "Eryr scared it away with a booming\nshout!"
+              ],
+              "avatarId": ""
+            },
+            "id": "304599dd-1053-44cf-9657-c80e80764500"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "0f0c6c42-6872-40ad-9dca-4c7452dd3f40"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "HOLY THAT WAS SCARY"
+              ],
+              "portraitType": "shy"
+            },
+            "id": "acf32dae-f781-4c82-8226-5b02c2f7abb7"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_NEW",
+            "args": {
+              "text": [
+                "Thank you Eryr..."
+              ],
+              "portraitType": "blush"
+            },
+            "id": "ee18acd5-a007-42d2-832c-2e99afbf059b"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN_BLUSH",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Thank you Eryr..."
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "°Ñ±\n³´µ\nð¶ò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "33d89a88-6aeb-4661-9248-7529912e1efb"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_ANGRY",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Dumb birb ain't no match for me."
+              ],
+              "nameTag": "ÇÈÉ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "ìÔÕ\nüíå\nóýõ",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "8e21eb66-d832-4bf2-9ded-ca0dccc4ed0f"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Heh heh heh heh."
+              ],
+              "nameTag": "ÇÈÉ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "ÓÔÕ\nおえå\nóôõ",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "ca62a1fe-2084-46a1-81ac-6c0a8c175e5a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fd841a79-e686-4199-970d-ee375171a9bd",
+              "__collapse": false
+            },
+            "id": "6c96194c-d45e-4aa5-868e-1cb6f1401adc"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9c80b0a2-6238-45b8-a52a-697bc57cd21e"
+            },
+            "id": "35d32271-66b2-4a0f-a8f7-c736d7d7315f"
+          }
+        ],
+        "false": []
+      },
+      "id": "63a039f1-9d27-40b0-832c-65c8b1a10205"
+    }
+  ],
+  "leaveScript": []
+}

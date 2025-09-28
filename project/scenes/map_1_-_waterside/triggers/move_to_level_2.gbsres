@@ -1,0 +1,63 @@
+{
+  "_resourceType": "trigger",
+  "id": "fea9d003-b0f5-4aeb-b59c-88bfcf6575f9",
+  "_index": 7,
+  "symbol": "trigger_9",
+  "prefabId": "",
+  "name": "Move to Level 2",
+  "x": 120,
+  "y": 114,
+  "width": 4,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "28",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "788ca2bb-5aec-4a69-b6b9-4b3330749dfe"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "27",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "d88e5172-3d2f-4ced-817d-5a45b918685d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "29",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "251e72fc-2780-45ac-854a-7040673acab6"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2af58929-9ce0-4199-9cf4-05934a4cf5ef",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 58
+        },
+        "direction": "",
+        "fadeSpeed": 3
+      },
+      "id": "7a218f19-be1e-4236-a3f0-032abbcbf82b"
+    }
+  ],
+  "leaveScript": []
+}

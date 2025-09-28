@@ -1,0 +1,650 @@
+{
+  "_resourceType": "script",
+  "id": "0bc4d629-9fd6-4743-82fe-0700b0c7f308",
+  "name": "Dialogue-SingingSceneForest",
+  "symbol": "script_47",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Sing Scene Eionn"
+    },
+    "1": {
+      "id": "1",
+      "name": "Sing Scene Aoba"
+    },
+    "3": {
+      "id": "3",
+      "name": "Sing Scene Eryr"
+    },
+    "4": {
+      "id": "4",
+      "name": "Harthe"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 113
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "125937f8-5675-42af-803f-e1879b509f92"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player",
+        "__collapse": true
+      },
+      "id": "17a9e774-4038-46a6-b1f9-df6b1e39cd39"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "ba71fd14-009c-40f7-abfc-8bde562b6951"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "1",
+        "__collapse": true
+      },
+      "id": "4689c077-8596-4829-b3e9-538d51589319"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "4",
+        "__collapse": true
+      },
+      "id": "229e7aa2-1cce-4911-86ff-dd5f17ad861c"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "3",
+        "__collapse": true
+      },
+      "id": "700ad100-6864-4cf9-a60e-f775c5b024de"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3",
+        "x": {
+          "type": "number",
+          "value": 116
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "892cb5e1-4e62-40be-8716-c278c8228560"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3",
+        "x": {
+          "type": "number",
+          "value": 116
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "moveType": "vertical",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "43d84b26-dd2f-4822-9d3e-8a5d5e8c11a7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "3",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": true
+      },
+      "id": "884c7814-b55e-4092-b23c-862435a1e18c"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "1",
+        "x": {
+          "type": "number",
+          "value": 115
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "adb95220-1eb2-4369-b48d-a0875524d312"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "6eeff04f-c5c8-4198-8de3-e06a0dc609df"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "4",
+        "x": {
+          "type": "number",
+          "value": 111
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "87f9977a-ad63-48b3-9b38-bad055657dc0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "4",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "d0344068-b7f4-492d-9a9a-8a0ae6a3b944"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "1",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "d935518a-f148-43ca-8ebc-407fffc74535"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "88ab47e7-df41-4d04-b79e-860879f2878e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "3fa0b224-3837-4e43-a31e-b7f8e6252be0"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I wonder when this campfire\nwas last used."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "bccc9a68-b3ce-41c2-8de7-3d625da1e552"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Hmm."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "3c02ef3d-ffa4-4fc7-af57-5c6020f9f82e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3",
+        "x": {
+          "type": "number",
+          "value": 115
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": true
+      },
+      "id": "45db1f84-c52c-435d-844e-d353fa21b351"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "40e943ae-cf8f-414f-aacd-e4263778683a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Huh. It's not too damp!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "31e7cace-60d9-4d36-9bc4-7343bf9de221"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Hang on..."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "7e162495-b284-4fb2-b3b0-b031d9c6206e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "d78b38e9-b38a-4ecf-94a2-350bf069fb3b"
+    },
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": 4,
+        "__collapse": true
+      },
+      "id": "d2da7d72-6b62-46f3-b874-4412721a0d86"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "171",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "e340bb3f-9588-4e02-b36d-ca7833ddfc30"
+    },
+    {
+      "command": "EVENT_GBVM_SCRIPT",
+      "args": {
+        "script": "VM_PUSH_CONST 76\nVM_REPLACE_TILE_XY     113, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 77\nVM_REPLACE_TILE_XY     114, 12, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 96\nVM_REPLACE_TILE_XY     113, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_PUSH_CONST 97\nVM_REPLACE_TILE_XY     114, 13, ___bank_bg_anim_tileset, _bg_anim_tileset, .ARG0\nVM_POP 1",
+        "references": [
+          {
+            "type": "background",
+            "id": "fc07dab7-6c04-4222-a572-d37c155c898c"
+          }
+        ],
+        "__collapse": true
+      },
+      "id": "8bb3919f-a7f2-4076-b8bf-a79ce118100e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "0c98f0cf-8792-462f-afd0-e5091a9c5403"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 4,
+        "__collapse": true
+      },
+      "id": "aa778762-031e-494d-8231-0b28124ecfd8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "1"
+        ],
+        "avatarId": "",
+        "__collapse": true
+      },
+      "id": "15bf29fc-f7d1-41b1-b869-d87992ad3ea7"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "4b521b77-3dda-451b-9c1c-8623e5d337d8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "2"
+        ],
+        "avatarId": "",
+        "__collapse": true
+      },
+      "id": "fbb8e913-48a1-435c-b07a-cfb67e747141"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "3",
+        "x": {
+          "type": "number",
+          "value": 117
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "a18b9184-b814-4817-974b-ba929c268ebe"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "3",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "ef0d6972-cc9c-4f52-a3d8-b46a44f847ee"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "holy moly youre the best eryr"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "9c23abd0-f5d8-4f14-8f1d-e5adaa6e3a05"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "This feels sooo good."
+        ],
+        "portraitType": "happy"
+      },
+      "id": "66fe7229-680b-4462-ab3a-437be3f27bd5"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "a4352223-4f89-4ead-8929-e371d9e3dfc3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "9bfdec0a-d000-433c-8164-4ebd77d8fe61"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Don't go falling asleep, now."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "7d97d9f9-210c-46f8-944d-25ad3d906b7a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Or... maybe do."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "fcec3a88-298b-4adf-9133-478613de5940"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Aaah. The grass on my feet.",
+          "That musty scent of bark and\nleaves.",
+          "The tingling chill of the air.",
+          "Feels like my true home."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "bc2e72b8-23f3-4b5a-9476-eca4ee772536"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "i think ill take a big comfy\nbed and a nice view but"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "aa6c7c44-6f21-4fd6-adc8-5e16b5d96550"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "this place has your energy for\nsure"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "33b4af4a-f1bd-4cd6-8800-85d8853daa75"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I thought I'd be terrible at\nroughing it out away from\ncivilisation, but..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "cd5a9909-95dc-4c82-8f3b-07f41292b583"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Well, it's been way easier\nthan I thought with you three\naround."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "4be96930-298c-4b53-97e2-f19c4ba96df6"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "c9964272-f383-453d-81d9-40e34b857fa3"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "4",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "01ae6b18-4834-49cd-bb02-906d53607611"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "4",
+        "x": {
+          "type": "number",
+          "value": 112
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "5766b012-a8d1-4581-8c6a-38646b51c11d"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "0",
+        "emoteId": "8fc2352b-ff55-45ee-8603-25d1315cee19"
+      },
+      "id": "fb615138-2aee-42ea-a3b3-848eada3db61"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "portraitType": "shy"
+      },
+      "id": "bd177bbc-3fb7-44f2-b15a-5068b5192bd9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_BLUSH",
+      "args": {
+        "__scriptTabs": "text",
+        "text": [
+          "..."
+        ],
+        "nameTag": "ÄÅÆ",
+        "nameX": 16,
+        "avatarType": "large",
+        "avatarId": "",
+        "largeAvatar": "°Ñ±\n³´µ\nð¶ò",
+        "avatarX": 2,
+        "avatarY": 2,
+        "avatarWidth": 4,
+        "orientation": "left"
+      },
+      "id": "b1f576b4-89e1-49b8-9233-1b91a0ce8a29"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "4",
+        "x": {
+          "type": "number",
+          "value": 111
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "8410d560-d201-4276-9da5-b9212a9b40d1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "4",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "804e2b35-01b0-4d9a-8d3f-af9b71b7516a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "de42d1e5-8ea9-4011-8020-9f81f52ae15c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "4",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "f8d0120f-cbc2-456d-b1f9-e8ea3515bd53"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "_resourceType": "scene",
+  "id": "8887fbe8-1371-4c22-a782-313bc456102b",
+  "_index": 37,
+  "type": "TOPDOWN",
+  "name": "Cooking 4B Cutscene",
+  "symbol": "scene_42",
+  "labelColor": "red",
+  "x": 1024,
+  "y": 2512,
+  "width": 80,
+  "height": 18,
+  "backgroundId": "41e02d97-88eb-4a31-a700-efa0125b1b15",
+  "tilesetId": "",
+  "paletteIds": [
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b",
+    "60c36bbc-0f91-4c83-a16f-a44b35e17fec",
+    "b55d841d-cab9-4ef2-b879-b446acfc99ce",
+    "5bd03c58-55c3-4920-ac47-c3fc3398dd09",
+    "8e46949f-0641-478c-b9fc-f3b78807618c",
+    "b508b487-ac76-456f-93ba-143baf0bbc78",
+    "d53a49f5-49a3-44ea-8d01-3f4be253d96b"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "1d5e87f9-41d5-4e41-ab99-b034ad8da07a"
+  ],
+  "autoFadeSpeed": null,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f31446c2-6080-4f49-91b1-e8dd88b66e58",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a1292b9c-0797-4b9a-9c40-4a1d143dbd3a"
+      },
+      "id": "439afe81-d66b-488c-8011-28a566e0fed8"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "fbdeeb3e-bcf1-4e99-a85b-d0408071d1a3"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 4
+      },
+      "id": "11d67441-0ebe-4343-a76b-625d26cdd1da"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "this"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "2835182f-37f3-48fc-98e8-8ace224692b6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Is..."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "f271db8a-15f0-4829-9e2f-d9be639b9ed9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "SO GOOD"
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "40b061b2-c323-464d-bddf-126ab98b131d"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "not that we ever doubted you",
+          "from now on i shall call you"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "f94aea24-c046-47fa-87b5-250d13442ecf"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "5fb32fc2-a3c5-4390-92f3-0570b3987289"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "Snap Queen"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "b171db4e-287a-4c13-8247-72a7809fc994"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Obviously, I'm going to\nstart doing that too."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "8271f25f-e2e8-4b51-a677-c2414096db5c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Since we first ventured out on\nthis journey, you've been all\nso completely unconditional in",
+          "your support for me. I already\nmentioned how I found my love\nfor cooking, but what I've",
+          "felt from all of you has been\nso much more meaningful."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "d8ed80c8-2baf-4d8a-8e86-37327cce3d52"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "38936546-b03a-47b2-8641-86f4c350bd5a",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "60eeda42-ddb6-414f-9034-719d19bc0abe"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005a0+"
+}

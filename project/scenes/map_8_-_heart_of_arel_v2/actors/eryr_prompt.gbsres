@@ -1,0 +1,42 @@
+{
+  "_resourceType": "actor",
+  "id": "32f15712-7345-45fa-8c98-353444df71d7",
+  "_index": 5,
+  "symbol": "actor_245",
+  "prefabId": "",
+  "name": "Eryr Prompt",
+  "x": 12,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "16de3243-023e-4273-a0cc-ede2bedfa724",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "ede523b0-e895-4898-bbcc-101fa2bde010"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "9b1944d7-1a3b-460f-81db-5ce93ce26422"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

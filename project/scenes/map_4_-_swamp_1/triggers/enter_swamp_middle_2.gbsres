@@ -1,0 +1,53 @@
+{
+  "_resourceType": "trigger",
+  "id": "14813b24-7a9b-4c18-a37c-8d4cea5fd32a",
+  "_index": 13,
+  "symbol": "trigger_50",
+  "prefabId": "",
+  "name": "Enter Swamp Middle",
+  "x": 73,
+  "y": 90,
+  "width": 12,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "23c7345f-8167-4c1d-b04e-51534cb9031f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "In Water"
+      },
+      "id": "63ed2ac0-167c-4222-b8e0-83b33874f655"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": ""
+      },
+      "id": "1b72a33c-5294-402e-af2d-2c5a809d0303"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "125",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "2710b479-523a-4e51-ba68-903585f11090"
+    }
+  ]
+}

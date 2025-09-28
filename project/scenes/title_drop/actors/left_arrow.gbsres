@@ -1,0 +1,43 @@
+{
+  "_resourceType": "actor",
+  "id": "0856fa54-eeb5-4dad-9c6c-9661f4704fcc",
+  "_index": 6,
+  "symbol": "actor_179",
+  "prefabId": "",
+  "name": "Left Arrow",
+  "x": 4,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bebd59f2-ca1c-48af-a579-587a8eb1e91a",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "18a37afc-5766-4e55-ada1-cbb1ddd960fc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Idle Left"
+      },
+      "id": "1e926e84-2f83-4bb1-b517-525621661ff9"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

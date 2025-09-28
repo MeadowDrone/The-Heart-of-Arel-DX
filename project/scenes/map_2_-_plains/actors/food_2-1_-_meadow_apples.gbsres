@@ -1,0 +1,468 @@
+{
+  "_resourceType": "actor",
+  "id": "0d442f07-8c3b-45e7-ac3f-d050a85abf97",
+  "_index": 2,
+  "symbol": "actor_35",
+  "prefabId": "",
+  "name": "Food 2-1 - Meadow Apples",
+  "x": 41,
+  "y": 24,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "bd596de5-50f2-4232-9d6e-f941cde4c5f3"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left",
+          "up",
+          "down",
+          "right",
+          "a",
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": []
+      },
+      "id": "c75212e2-f0d5-47e2-a0d9-a296ed53945a"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "213"
+      },
+      "id": "9fb0ff4c-407c-46fd-9253-fc228f9f5186"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "105",
+        "__collapse": false,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "a8f79d1a-7f4a-41cc-b2ff-c1ac8c2a96b9"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "e6cda6a9-0902-4508-8783-26f091e0cc54"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "meadow apples?!?!",
+          "my favourite!!!"
+        ],
+        "portraitType": "shock"
+      },
+      "id": "70205e7a-87d3-403b-8d85-3a1caee4b72c"
+    },
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "player",
+        "vectorX": "28",
+        "vectorY": "27",
+        "__collapse": true
+      },
+      "id": "106223fa-af29-40fb-bc65-e9c3016062ee"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "c273e6f6-d6e4-4f30-8e38-18b928601e5d",
+        "x": {
+          "type": "variable",
+          "value": "28"
+        },
+        "y": {
+          "type": "variable",
+          "value": "27"
+        },
+        "__collapse": true
+      },
+      "id": "8593a96e-1eb5-4552-a63d-cdecae76f0cc"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "fb1c90a7-1cc2-4dea-bb8a-91b5ae9348cc",
+        "persist": false,
+        "__collapse": false
+      },
+      "id": "b9fb4204-5699-4ec4-9b5b-bda7bf2b2d56"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "__collapse": false
+      },
+      "id": "1b2f4a34-5910-4162-96fb-905d7e37aedb"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "spriteStateId": ""
+      },
+      "id": "4d02bc2d-a927-40b0-892c-0e8d0473bef9"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "x": {
+          "type": "number",
+          "value": 44
+        },
+        "y": {
+          "type": "number",
+          "value": 22
+        },
+        "moveType": "diagonal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "8c0ef256-b72d-479c-83f8-1541e9f9af94"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": false
+      },
+      "id": "4961f34a-35ab-4a26-bc4e-fd9aa411a6c3"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Hehehe.",
+          "Hey Eionn."
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "c452c98f-fb25-4dc8-87d8-def55439ed56"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 42
+        },
+        "y": {
+          "type": "number",
+          "value": 22
+        },
+        "moveType": "diagonal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "f01ae06e-05f2-4cb7-b506-4c1b3c4a8cc8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": true
+      },
+      "id": "22403951-fd80-4f4d-becc-7f5e46129ede"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "What's up?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "33d9f59c-2223-45f5-a685-b31811d9b79e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "What if.",
+          "We kissed amongst the meadow\napples?"
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "dd95612d-9fa6-4b84-b4dc-d5efdb3a5548"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Umm...!"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "7727b1c7-3622-4e16-aded-48124f7f7202"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Hahaha, yeah. That would be\nsoooo--"
+        ],
+        "portraitType": "shy"
+      },
+      "id": "40e78be9-f7d6-4980-a519-54d9fe60fdd8"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "x": {
+          "type": "number",
+          "value": 43
+        },
+        "y": {
+          "type": "number",
+          "value": 22
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "e070dcee-ea0a-46aa-b99b-a03b854d64d3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "5769aa01-ed40-47b0-8669-43a99ba36cf0"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "emoteId": "8fc2352b-ff55-45ee-8603-25d1315cee19",
+        "__collapse": false
+      },
+      "id": "159e4a85-0550-4c54-aa71-27272d93fe75"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Oh",
+          " "
+        ],
+        "portraitType": "blush"
+      },
+      "id": "19642497-8087-4863-8c48-3f3b5d526730"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "2216db9d-e432-4199-974f-15916239633f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "7bcd6cb6-333f-4038-974c-d20a61f16a7a"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "x": {
+          "type": "number",
+          "value": 44
+        },
+        "y": {
+          "type": "number",
+          "value": 22
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "a97c7a61-ba41-449a-b43f-e24d2fd7bdb9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "44817122-3731-4a7f-9e7b-32e2135d5072"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          " "
+        ],
+        "portraitType": "blush"
+      },
+      "id": "7243f0f6-60c6-4fa5-a61c-86cfc044772c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I think you broke Eionn."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "cefb1213-1e45-4b92-9d4c-ccca4449e104"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "break me next"
+        ],
+        "portraitType": "blush"
+      },
+      "id": "8f952c4d-6129-4269-a409-a5b3e64513f4"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Anytime, babe."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "d905e7e0-3b22-49fb-bae3-dd80476d858d"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b",
+        "x": {
+          "type": "number",
+          "value": 42
+        },
+        "y": {
+          "type": "number",
+          "value": 22
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "5bc42912-7d77-4e64-a441-44ae797dfde3"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "e1f66848-1696-4bcc-97f2-612e3f262b9b"
+      },
+      "id": "b1921632-9eab-431f-85fe-9675fdb32e2b"
+    },
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left",
+          "up",
+          "down",
+          "right",
+          "a",
+          "b"
+        ],
+        "__collapse": false
+      },
+      "id": "6a894fbb-6977-4bdb-88db-7a7057b285bd"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "eb28956c-45f9-4f05-9f53-e2cb07fb0759"
+      },
+      "id": "c4847274-a949-4caa-a160-5f864095bfa6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "442d8c12-b317-4d42-a9a3-ab93b09ea1f7"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "105",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "105"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6315362b-97e8-4891-b280-ae8c754ac1ff"
+          }
+        ],
+        "false": []
+      },
+      "id": "f62292cd-9833-4a39-8000-649b581fcbeb"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,521 @@
+{
+  "_resourceType": "trigger",
+  "id": "c3b83277-3c33-4946-92d5-95d091164794",
+  "_index": 16,
+  "symbol": "trigger_55",
+  "prefabId": "",
+  "name": "Climb Up Wall - Start",
+  "x": 111,
+  "y": 13,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 111
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__collapse": false
+      },
+      "id": "b9e89bf1-b4bf-4937-a831-429463efe8a3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": true
+      },
+      "id": "4f704e59-d971-4da9-a9d3-a4440ae9d15f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "26",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "26"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": false,
+              "__disableElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "L0",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "4c3d41a1-6303-4017-bf81-5553b296a9db"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Climbing"
+                  },
+                  "id": "ca16ec2f-81a6-436b-86db-c157f60ca4b4"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "Sticky time!"
+                    ],
+                    "portraitType": "cheeky"
+                  },
+                  "id": "3c46fe53-ccba-4998-b7d4-e527e3ae4185"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_HARTHE_NEW",
+                  "args": {
+                    "text": [
+                      "sticky time sticky time",
+                      "lets clamber"
+                    ],
+                    "portraitType": "struggle"
+                  },
+                  "id": "635dbbee-8269-4c31-a202-ef4c235e7779"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 111
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": false
+                  },
+                  "id": "f98214b6-a20c-4716-9239-462c988a7128"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "f57c70d6-53f0-413f-9301-c46b16787d7d"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 111
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": false
+                  },
+                  "id": "cf494aab-8b66-4e4b-aa6e-8a20727da6e5"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "6357e362-9558-417b-ace8-dd0a610f1af6"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 111
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": false
+                  },
+                  "id": "d4726ad4-8657-4dbc-a2b3-0fa98ad4056f"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1,
+                    "frames": 30,
+                    "__collapse": true
+                  },
+                  "id": "f2d0a5de-409a-4679-8fd0-c607f126f93e"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 111
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": false
+                  },
+                  "id": "64950a95-c281-4c7f-b8c8-b7994574f623"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Success"
+                  },
+                  "id": "d21d8706-1f01-4de6-9f97-88deec5a2402"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Easy!"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "f09b6299-c9f8-4c93-a0f5-adc23ba246b0"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": ""
+                  },
+                  "id": "a8881cf8-bb49-42fc-b8e6-4d5d67f613c9"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_AOBA_NEW",
+                  "args": {
+                    "text": [
+                      "We're getting close, ladies."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "664979d0-0629-41ee-baf5-3e5658fefe73"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Climbing"
+                  },
+                  "id": "12f0ce54-534c-4448-9dc2-3ed11b6adec6"
+                }
+              ]
+            },
+            "id": "d09cf008-c1db-46b5-a285-04f3219a75c1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "155",
+              "__collapseElse": false,
+              "__disableElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "155"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "155",
+                    "__collapse": true,
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "9cdef516-84de-4167-9cbd-da2c8bb6fdae"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "This looks pretty climbable,\nright?"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "42123733-2ddc-4f06-ac1c-73f8afeef61c"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 111
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "005d7642-6c3a-41eb-b8da-f82022bceecc"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1.5,
+                    "frames": 30,
+                    "__collapse": false
+                  },
+                  "id": "aec4ea6f-87b5-4027-957c-b7f785f4c2fe"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "b1a6a104-2f77-45ca-921e-e14b6c4907a6"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1,
+                    "frames": 30
+                  },
+                  "id": "1de49821-ede8-41c2-a484-715a927bb661"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "down"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "adc50498-4100-4fdf-a996-a244f1264be7"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Success",
+                    "__collapse": true
+                  },
+                  "id": "b455081d-164d-451a-9a2a-195c8d484274"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 111
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "16e24ece-22cb-409a-b7b5-7c08831196c5"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "",
+                    "__collapse": true
+                  },
+                  "id": "d7c5454d-4758-43d3-8861-9829d0ce5493"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30,
+                    "shakeDirection": "vertical",
+                    "__collapse": false,
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "ec89dbd8-c971-41f3-8a69-5bb4c8afc7ee"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 27,
+                    "__collapse": true
+                  },
+                  "id": "074e83cc-334f-4254-986a-4759e93e3320"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "49b7d307-6266-49c5-b5cb-ebba8ed9b4f4"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Ow... it's so slippery."
+                    ],
+                    "portraitType": "blush"
+                  },
+                  "id": "c7971349-1fe7-479b-a50e-9d0438a91866"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "This is the only way to the\nsource. We have to figure\nout a way up there!"
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "5ceac0d1-9ee7-46e5-8e78-34bfe31e7566"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 111
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false,
+                    "__collapse": false
+                  },
+                  "id": "44b59822-14b2-41a4-8e7f-a33a2fa5c8cf"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Nope... hate to say it, but\nI just can't get a good grip."
+                    ],
+                    "portraitType": "normal"
+                  },
+                  "id": "73b4c76d-f357-40c3-9661-0e9de05406f8"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_ERYR_NEW",
+                  "args": {
+                    "text": [
+                      "Well you usually don't have\nthat pr--"
+                    ],
+                    "portraitType": "cheeky"
+                  },
+                  "id": "9b58c891-0778-423a-b1fd-c46bd5ad5885"
+                },
+                {
+                  "command": "EVENT_DIALOGUE_EIONN_NEW",
+                  "args": {
+                    "text": [
+                      "Yes yes thanks Eryr much\nappreciated okay let's go."
+                    ],
+                    "portraitType": "shy"
+                  },
+                  "id": "93f37538-1a87-4b0c-bedb-f20beaeeee24"
+                }
+              ]
+            },
+            "id": "0d0773ac-dc9f-4905-ad35-361c038a045f"
+          }
+        ]
+      },
+      "id": "365740d7-8f1a-4395-b2ab-75947de4c884"
+    }
+  ],
+  "leaveScript": []
+}

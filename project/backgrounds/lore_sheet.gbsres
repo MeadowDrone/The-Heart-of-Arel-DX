@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a9b410b7-b40a-4545-b8ed-275f0fba92f8",
+  "name": "lore_sheet",
+  "symbol": "bg_placeholder_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "lore_sheet.png",
+  "tileColors": "00168+",
+  "autoColor": false
+}

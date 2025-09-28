@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "28004d13-eada-4f35-a737-f1a4d7fc89b5",
+  "_index": 3,
+  "symbol": "actor_217",
+  "prefabId": "",
+  "name": "Anon Femme",
+  "x": 0,
+  "y": 17,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "210ec13e-ef3d-40a3-bbf9-974f70f42809",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "69d45d5d-8334-48d8-a42c-65e02e195ce6"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,123 @@
+{
+  "_resourceType": "actor",
+  "id": "4d088b18-4695-4629-adea-8a83b22c1032",
+  "_index": 4,
+  "symbol": "actor_18",
+  "prefabId": "",
+  "name": "Fox",
+  "x": 25,
+  "y": 46,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "80f983da-7e94-4e64-a7d1-93565caa76af",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "119"
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "119",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "30c34966-76bf-4455-96d9-8149ce213120"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "*pet pet pet*",
+                "youre my favourite friend",
+                "i wanna cuddle you all day"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "76471c8a-3392-457c-b555-f6e6812704ae"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "We should leave 'em to nap and\nbe comfy. Don't worry, when\nthis is over I'll be your fox."
+              ],
+              "portraitType": "normal"
+            },
+            "id": "9a7f76f3-a06c-446f-bb5e-3edb90a74c23"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "friend"
+              ],
+              "portraitType": "happy"
+            },
+            "id": "efee7c5d-4a2e-48fb-923e-b159175807d6"
+          }
+        ],
+        "false": []
+      },
+      "id": "62667818-f8c0-4243-83ec-91874ce67967"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "202",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "202"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "0cb7c634-595a-4a25-9398-ac46744c4696"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "832431c6-bde0-4bad-aadd-86cfd83ba306"
+          }
+        ]
+      },
+      "id": "d6242b67-9f3f-4c30-8509-18f5756613df"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

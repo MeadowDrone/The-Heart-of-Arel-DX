@@ -1,0 +1,126 @@
+{
+  "_resourceType": "trigger",
+  "id": "82334077-797d-41ba-8e9b-67bd1f49f032",
+  "_index": 2,
+  "symbol": "trigger_81",
+  "prefabId": "",
+  "name": "Rumble 2",
+  "x": 31,
+  "y": 170,
+  "width": 2,
+  "height": 10,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "980316eb-fa8e-4fdc-980a-323f9577c996",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 30
+      },
+      "id": "6e189dfc-bced-4699-93d8-fd4b2dac8ffd"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "250"
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "250",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "29eb5567-8890-4cca-82d1-e4fe0d22b62b"
+          },
+          {
+            "command": "EVENT_LOOP_FOR",
+            "args": {
+              "variable": "L0",
+              "from": {
+                "type": "number",
+                "value": 0
+              },
+              "comparison": "<=",
+              "to": {
+                "type": "number",
+                "value": 3
+              },
+              "operation": "+=",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Success"
+                  },
+                  "id": "3f061a3f-5ca4-416e-8a9e-27ff0c58b35a"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "338bb8fa-3b71-414f-8d17-d76b52f7995b"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 30,
+                    "shakeDirection": "vertical",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "9f684042-160a-4c0b-804c-88cbfcd289e8"
+                }
+              ]
+            },
+            "id": "305278d4-6413-4303-8d9b-3e03db7ea7b2"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "9dac934b-b8fe-4a34-8fe5-246bce382e20"
+          }
+        ],
+        "false": []
+      },
+      "id": "e12192ec-4081-4b3e-92c9-61eeb54f17c9"
+    }
+  ],
+  "leaveScript": []
+}

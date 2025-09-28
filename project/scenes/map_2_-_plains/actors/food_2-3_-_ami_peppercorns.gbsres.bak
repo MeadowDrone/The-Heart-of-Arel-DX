@@ -1,0 +1,190 @@
+{
+  "_resourceType": "actor",
+  "id": "ba3ee095-5573-43b0-9096-dc5e2fc24b9e",
+  "_index": 1,
+  "symbol": "actor_13",
+  "prefabId": "",
+  "name": "Food 2-3 - Ami Peppercorns",
+  "x": 101,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "213",
+        "__collapse": true
+      },
+      "id": "d34d45f2-91b1-4127-bc2c-6466ab728133"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle",
+        "__collapse": true
+      },
+      "id": "3ecc56b4-627c-4cfe-b2ee-7712d9944b51"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "31",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "b57cfd40-36d4-42bd-abd6-06ba34e79d16"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde",
+        "__collapse": false
+      },
+      "id": "efbcc4c6-ee4d-4658-a2ca-1b93db75abdd"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Got Ami Peppercorns!"
+        ],
+        "avatarId": "",
+        "__collapse": true
+      },
+      "id": "5b4eed21-f1bd-41a4-bb22-3bbd97794e77"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Nice. Good intuition on our\npart, huh?"
+        ],
+        "portraitType": "cheeky"
+      },
+      "id": "5e58b906-3640-4d34-b8a7-80ca06bdd15e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "Oh! I had no idea this type of\npepper grew here..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "cfe1e30a-d5e2-4d9d-bae4-500de498571e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "I haven't had them for a long\ntime... once, when I was a kid,\nI put way too many in my food."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "b174471c-f591-4b6c-86e1-d5575d1a0256"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Oh no..."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "04c40677-64f9-458b-b6e7-a158a83bdb20"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "... whole peppercorns.\nI didn't grind them\nbeforehand."
+        ],
+        "portraitType": "pensive"
+      },
+      "id": "06c37d5c-54b1-4646-98df-0607ee945ee9"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Augh, rip."
+        ],
+        "portraitType": "angry"
+      },
+      "id": "8ff5b02e-ae4c-4ad0-b084-be458099d29a"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "You poor thing. No wonder\nyou have an aversion to them.\nIf you're OK with it, I'll try",
+          "to make a subtle blend with\nthem. I'm sure you'll come to\nlike them again."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "d057dffb-e197-4a85-9ee0-ed7ff0cda51e"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "That would be so lovely..."
+        ],
+        "portraitType": "blush"
+      },
+      "id": "8c916d96-5ef6-4cd1-8e51-ec123cc52c3b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": ""
+      },
+      "id": "16beb172-8670-4174-8c6d-24e9d1781ac9"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "31",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "31"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "b187c4fa-53cf-42fd-91d3-31aff3b8ccb3"
+          }
+        ],
+        "false": []
+      },
+      "id": "d68c7e7c-9237-4a16-b8bd-ff1b4f16f143"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

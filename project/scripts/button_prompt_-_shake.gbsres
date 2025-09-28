@@ -1,0 +1,84 @@
+{
+  "_resourceType": "script",
+  "id": "6e0e0e6b-6a65-4963-b78d-f9a6bcec585a",
+  "name": "Button Prompt - Shake",
+  "symbol": "script_2",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "1": {
+      "id": "1",
+      "name": "Button"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "1",
+        "speed": 1,
+        "__collapse": false
+      },
+      "id": "d8f70ab3-0d07-46d0-b895-8d92e689b541"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1",
+        "spriteStateId": "Button Shake",
+        "__collapse": false
+      },
+      "id": "59b42218-d84f-4636-805c-b4cbdd87ba10"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.3,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "8e087982-6449-46ac-8b95-582f4845f27d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1",
+        "spriteStateId": "Prompt Opening 2"
+      },
+      "id": "bda8cdac-d98b-4d93-bc18-979e82e3374f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 4,
+        "units": "frames"
+      },
+      "id": "341f9fdc-d38a-4fee-8ab7-022e384af3dd"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1",
+        "spriteStateId": "Prompt Opening 1"
+      },
+      "id": "1eab2eb2-69c0-4e6b-813d-cd85dc8ad477"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 4,
+        "units": "frames"
+      },
+      "id": "d69ff19c-2561-4493-83ef-8279750805e7"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "1"
+      },
+      "id": "7c3506b7-104a-490f-9b71-465484fd366a"
+    }
+  ]
+}

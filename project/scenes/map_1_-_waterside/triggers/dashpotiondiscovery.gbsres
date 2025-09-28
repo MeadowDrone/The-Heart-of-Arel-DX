@@ -1,0 +1,99 @@
+{
+  "_resourceType": "trigger",
+  "id": "cf7fd3bb-d520-4f76-aacc-0f871506db21",
+  "_index": 11,
+  "symbol": "trigger_12",
+  "prefabId": "",
+  "name": "DashPotionDiscovery",
+  "x": 110,
+  "y": 120,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "52",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "52"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "28",
+              "vectorY": "27"
+            },
+            "id": "56fdea6a-c1e8-486f-9899-b80e0b03c058"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "52",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "57cb043e-874a-4d20-b04a-e29c109d6575"
+          },
+          {
+            "command": "EVENT_SET_FLAGS",
+            "args": {
+              "variable": "139",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": true,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "d9352729-d432-4f4c-800e-2d8f66213dfa"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "25c5eb85-2764-492d-ac49-8129c0b0d0a7",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "d0ba6025-28d0-4f1d-a06a-b2d054ddd0b2"
+          }
+        ],
+        "false": []
+      },
+      "id": "6a9014c4-9e10-4484-a6fa-f901d8d40780"
+    }
+  ],
+  "leaveScript": []
+}

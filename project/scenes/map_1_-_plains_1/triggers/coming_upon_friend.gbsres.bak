@@ -1,0 +1,154 @@
+{
+  "_resourceType": "trigger",
+  "id": "f1d66e2d-5aa0-46b0-9f67-3449097afda8",
+  "_index": 6,
+  "symbol": "trigger_29",
+  "prefabId": "",
+  "name": "Coming Upon Friend",
+  "x": 53,
+  "y": 111,
+  "width": 17,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "94",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "94"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "94",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "43fe1806-3386-4d29-919e-2358ec72dfea"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "player",
+              "spriteStateId": "Idle"
+            },
+            "id": "253fde82-daa8-493d-a1d5-3d0f2e69145b"
+          },
+          {
+            "command": "EVENT_DIALOGUE_AOBA_NEW",
+            "args": {
+              "text": [
+                "Ah."
+              ],
+              "portraitType": "smile"
+            },
+            "id": "c77c9031-40e3-4163-8b2a-99aca0a1bf9d"
+          },
+          {
+            "command": "EVENT_DIALOGUE_ERYR_NEW",
+            "args": {
+              "text": [
+                "It's Friend!"
+              ],
+              "portraitType": "cheeky"
+            },
+            "id": "558916db-428c-4d87-8aeb-0b185f893789"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE_NEW",
+            "args": {
+              "text": [
+                "hi friend :3"
+              ],
+              "portraitType": "normal"
+            },
+            "id": "5e5e88f3-4ea7-421f-a6b0-2ce8b5fca165"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "hi friend :3"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "f94015eb-5d6e-4774-9dfd-90079b0f168e"
+          },
+          {
+            "command": "EVENT_DIALOGUE_EIONN",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "Awwww!",
+                "Let's leave them to their nap."
+              ],
+              "nameTag": "ÄÅÆ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "あÑÒ\nàáâ\nðñò",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "022c6adb-c5df-49e1-902f-be1138757d5c"
+          },
+          {
+            "command": "EVENT_DIALOGUE_HARTHE",
+            "args": {
+              "__scriptTabs": "text",
+              "text": [
+                "mood honestly"
+              ],
+              "nameTag": "ÀÁÂÃ",
+              "nameX": 16,
+              "avatarType": "large",
+              "avatarId": "",
+              "largeAvatar": "Ö×Ø\næçè\nö÷ø",
+              "avatarX": 2,
+              "avatarY": 2,
+              "avatarWidth": 4,
+              "orientation": "left"
+            },
+            "id": "be4feff9-5c69-4474-a6b3-2eb5ecf45767"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": ""
+            },
+            "id": "5ae3ec70-d11d-43ed-badf-f99066939942"
+          }
+        ],
+        "false": []
+      },
+      "id": "25c4066d-90c6-4687-81cd-ca6d0d75a996"
+    }
+  ],
+  "leaveScript": []
+}

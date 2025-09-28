@@ -1,0 +1,64 @@
+{
+  "_resourceType": "script",
+  "id": "8f8ba4d5-1fbf-4592-9579-6faa08fae4b9",
+  "name": "Change Scene - Map to Recipes",
+  "symbol": "script_7",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "58f10195-65f5-4394-aefa-dfd60bfc665c": {
+      "id": "58f10195-65f5-4394-aefa-dfd60bfc665c",
+      "name": "Actor {"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "vectorX": "28",
+        "vectorY": "27",
+        "__comment": true
+      },
+      "id": "de4bc4dd-80b1-4e6d-b587-c4b616b8303b"
+    },
+    {
+      "command": "EVENT_ACTOR_GET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": "29",
+        "__comment": true
+      },
+      "id": "6b7a388e-cca6-4567-8a2e-62b83a06a324"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "24ea5e9f-de9a-4221-93fc-84d4d71f02ec",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L4"
+        },
+        "$actor[0]$": "58f10195-65f5-4394-aefa-dfd60bfc665c"
+      },
+      "id": "7eac1eb1-adc0-4018-9ad4-6d4ff8cee9f2"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "df7f6a70-d9f5-404d-ab5b-221558f66643",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "cb87d6a2-18a9-4c5b-afbc-d1ef38ce361c"
+    }
+  ]
+}

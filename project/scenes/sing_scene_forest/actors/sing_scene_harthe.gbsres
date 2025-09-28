@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "9c259d7f-fca9-4b2e-9c0c-00ca63513ef3",
+  "_index": 1,
+  "symbol": "actor_203",
+  "prefabId": "",
+  "name": "Sing Scene Harthe",
+  "x": 2,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "29dda22c-80a1-41da-bf60-b682242b9860",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "b13ddfe6-3e3f-4cef-beea-b76b20932e1d"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

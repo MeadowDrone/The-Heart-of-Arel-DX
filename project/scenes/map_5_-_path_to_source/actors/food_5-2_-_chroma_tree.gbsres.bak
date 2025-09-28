@@ -1,0 +1,114 @@
+{
+  "_resourceType": "actor",
+  "id": "82ba1629-f9d2-4eb2-8fd1-996f891d442a",
+  "_index": 1,
+  "symbol": "actor_207",
+  "prefabId": "",
+  "name": "Food 5-2 - Chroma Tree",
+  "x": 8,
+  "y": 63,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "92d45ae2-d7df-4965-890f-88914c11ef81",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "218"
+      },
+      "id": "465f98b0-7461-49df-9ad1-0271f4064a3a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "179",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "c8b6d851-21c1-4dae-a776-65ac56aa7a12"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "Idle"
+      },
+      "id": "b860218b-7fe9-4c1e-9bb2-30d70434650d"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ba4f268f-ec70-47a9-8bfb-450f47d97bde"
+      },
+      "id": "1f1ca750-82e7-47d0-851a-5e7afadf0cd6"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "I've never seen a chroma\ntree before. I hear its\nleaves are not only edible,",
+          "but when its leaves fall,\nthe surrounding flora\nbecomes more vivid."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "c617d3b2-eea9-4976-a142-032a52fa68c8"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Wow. Let's taste the\nrainbow..."
+        ],
+        "portraitType": "happy"
+      },
+      "id": "18abb6bb-aa80-4c1f-8752-3b9bdbe2d8cb"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "40031eac-3e2f-4cda-8e63-32ab48f63147"
+      },
+      "id": "ef26d62d-8e18-4bd4-abf9-257ae401aab3"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "179",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "179"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1fc20fff-715b-4e35-818a-0b2f87014fe3"
+          }
+        ],
+        "false": []
+      },
+      "id": "a1acf967-a5a4-487d-95e7-599c1fb44bdb"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

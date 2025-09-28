@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f787eea8-e283-45e3-b85a-9a541f5bcfc0",
+  "name": "guide",
+  "symbol": "bg_blank_copy_2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "guide.png",
+  "tileColors": "0070+03!00f7+",
+  "autoColor": false
+}

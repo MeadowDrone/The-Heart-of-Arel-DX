@@ -1,0 +1,95 @@
+{
+  "_resourceType": "script",
+  "id": "9aa05422-eaed-447a-8563-ec18f6bed363",
+  "name": "Dialogue-Level1Start",
+  "symbol": "script_42",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "Ugh.",
+          "I can smell the miasma even\nfrom here.",
+          "It's vile!"
+        ],
+        "portraitType": "angry"
+      },
+      "id": "0e8594ca-b92a-4c0a-b22a-281af7b8129c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "how far away is the source of\nthe miasma, anyway?"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "09cc8b34-a453-4fe1-8339-36bfa58add17"
+    },
+    {
+      "command": "EVENT_DIALOGUE_ERYR_NEW",
+      "args": {
+        "text": [
+          "I know the village seer said\nit was about four days' trek.",
+          "... But from here it looks more\nlike three to me. Easy!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "46b86244-fedc-43bc-a69d-4a37b8a35c94"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "Provided I can help with my\npotions..."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "b2136141-3e53-4508-9da1-0363b1e83e6c"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "of course you can!"
+        ],
+        "portraitType": "normal"
+      },
+      "id": "2a087a6c-fbb9-43fe-b569-8c5905de6e97"
+    },
+    {
+      "command": "EVENT_DIALOGUE_AOBA_NEW",
+      "args": {
+        "text": [
+          "And provided we gather enough\ningredients for me to cook with."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "f5edc5e2-2fd2-4125-aa01-a63f5a529ac5"
+    },
+    {
+      "command": "EVENT_DIALOGUE_HARTHE_NEW",
+      "args": {
+        "text": [
+          "of course we can!!"
+        ],
+        "portraitType": "happy"
+      },
+      "id": "fd0e4483-3507-46aa-8a9a-4ba6541b5eb2"
+    },
+    {
+      "command": "EVENT_DIALOGUE_EIONN_NEW",
+      "args": {
+        "text": [
+          "We just need to be careful for\nwhat we might stumble on here.",
+          "Let's be careful."
+        ],
+        "portraitType": "normal"
+      },
+      "id": "347e3087-e3e0-4370-b1ae-5d494fc36a75"
+    }
+  ]
+}
